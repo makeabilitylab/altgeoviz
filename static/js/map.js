@@ -6,28 +6,6 @@ var map = new mapboxgl.Map({
     zoom: 10
 });
 
-map.on('load', function () {
-    map.addSource('seattle', {
-        type: 'geojson',
-        data: '/seattle_pop_income_data'
-    });
-
-    map.addLayer({
-        id: 'seattle-layer',
-        type: 'fill',
-        source: 'seattle',
-        layout: {},
-        paint: {
-            'fill-color': '#088',
-            'fill-opacity': 0.5,
-            'fill-outline-color': 'white'
-        }
-    });
-
-    updateHighlight();
-});
-
-
 function updateHighlight() {
     var bounds = map.getBounds();
     var url = `/polygons_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}`;
@@ -36,12 +14,10 @@ function updateHighlight() {
         .then(response => response.json())
         .then(data => {
             if (data.length > 0) {
-                // Assuming data[0].geometry is the correct GeoJSON object
-                // No need for JSON.parse if the server response is already an object
                 var feature = {
                     type: 'Feature',
-                    properties: data[0].properties, // Assuming properties are set correctly in the server response
-                    geometry: data[0].geometry // Directly using the geometry object
+                    properties: data[0].properties,
+                    geometry: data[0].geometry
                 };
 
                 if (map.getSource('highlight')) {
@@ -52,9 +28,8 @@ function updateHighlight() {
                         id: 'highlight',
                         type: 'fill',
                         source: 'highlight',
-                        layout: {},
                         paint: {
-                            'fill-color': '#00ff00', // Green
+                            'fill-color': '#00ff00',
                             'fill-opacity': 0.5
                         }
                     });
@@ -64,6 +39,41 @@ function updateHighlight() {
         .catch(error => console.error('Error fetching highlight data:', error));
 }
 
+map.on('load', function () {
+    fetch('/seattle_pop_income_data')
+        .then(response => response.json())
+        .then(data => {
+            map.addSource('seattle', {
+                type: 'geojson',
+                data: data
+            });
 
-map.on('load', updateHighlight);
+            map.addLayer({
+                id: 'seattle-layer',
+                type: 'fill',
+                source: 'seattle',
+                paint: {
+                    'fill-color': '#088',
+                    'fill-opacity': 0.1,
+                }
+            });
+
+            map.addLayer({
+                id: 'seattle-outline',
+                type: 'line',
+                source: 'seattle', // Use the same source as your fill layer
+                layout: {},
+                paint: {
+                    'line-color': 'white', // Set the color of the border
+                    'line-width': 1 // Set the thickness of the border
+                }
+            });
+
+            // Call updateHighlight here to ensure it's only called after the map is loaded
+            updateHighlight();
+        })
+        .catch(error => console.error('Error loading GeoJSON data:', error));
+});
+
+// Attach updateHighlight to moveend event after map is loaded
 map.on('moveend', updateHighlight);
