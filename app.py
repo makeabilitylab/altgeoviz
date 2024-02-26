@@ -39,18 +39,31 @@ def polygons_in_view():
         # Ensure spatial extension is loaded
         con.execute("LOAD 'spatial';")
 
-        # Query polygons within the provided bounds
-        query = f"""
+        # Query for the maximum median income polygon
+        max_query = f"""
         SELECT *, ST_AsGeoJSON(geom) AS geojson FROM seattle_pop_income
-        WHERE ST_Intersects(geom, ST_MakeEnvelope(CAST({minLon} AS DOUBLE), CAST({minLat} AS DOUBLE), CAST({maxLon} AS DOUBLE), CAST({maxLat} AS DOUBLE)))
+        WHERE ST_Intersects(geom, ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}))
         ORDER BY median_inc DESC
-        LIMIT 1;
+        LIMIT 1
         """
-        result = con.execute(query).fetchdf()
+
+        # Query for the minimum median income polygon
+        min_query = f"""
+        SELECT *, ST_AsGeoJSON(geom) AS geojson FROM seattle_pop_income
+        WHERE ST_Intersects(geom, ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}))
+        ORDER BY median_inc ASC
+        LIMIT 1
+        """
+
+        # Combine the queries
+        combined_query = f"({max_query}) UNION ALL ({min_query});"
+
+        result = con.execute(combined_query).fetchdf()
 
         if result.empty:
             return jsonify([])  # Return an empty list if no results
 
+        # Prepare the GeoJSON data for the response
         geojson_data = [{
             "type": "Feature",
             "properties": {
@@ -66,7 +79,6 @@ def polygons_in_view():
         print(f"Error in polygons_in_view: {e}")
         return jsonify({"error": "An error occurred processing your request."}), 500
 
-
-
+  
 if __name__ == '__main__':
     app.run(debug=True)

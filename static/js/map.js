@@ -7,6 +7,39 @@ var map = new mapboxgl.Map({
     zoom: 10
 });
 
+// function updateHighlight() {
+//     var bounds = map.getBounds();
+//     var url = `/polygons_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}`;
+
+//     fetch(url)
+//         .then(response => response.json())
+//         .then(data => {
+//             if (data.length > 0) {
+//                 var feature = {
+//                     type: 'Feature',
+//                     properties: data[0].properties,
+//                     geometry: data[0].geometry
+//                 };
+
+//                 if (map.getSource('highlight')) {
+//                     map.getSource('highlight').setData({ type: 'FeatureCollection', features: [feature] });
+//                 } else {
+//                     map.addSource('highlight', { type: 'geojson', data: { type: 'FeatureCollection', features: [feature] } });
+//                     map.addLayer({
+//                         id: 'highlight',
+//                         type: 'fill',
+//                         source: 'highlight',
+//                         paint: {
+//                             'fill-color': '#B2D235',
+//                             'fill-opacity': 0.8
+//                         }
+//                     });
+//                 }
+//             }
+//         })
+//         .catch(error => console.error('Error fetching highlight data:', error));
+// }
+
 function updateHighlight() {
     var bounds = map.getBounds();
     var url = `/polygons_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}`;
@@ -14,31 +47,43 @@ function updateHighlight() {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            if (data.length > 0) {
-                var feature = {
-                    type: 'Feature',
-                    properties: data[0].properties,
-                    geometry: data[0].geometry
-                };
-
-                if (map.getSource('highlight')) {
-                    map.getSource('highlight').setData({ type: 'FeatureCollection', features: [feature] });
-                } else {
-                    map.addSource('highlight', { type: 'geojson', data: { type: 'FeatureCollection', features: [feature] } });
-                    map.addLayer({
-                        id: 'highlight',
-                        type: 'fill',
-                        source: 'highlight',
-                        paint: {
-                            'fill-color': '#B2D235',
-                            'fill-opacity': 0.8
-                        }
-                    });
-                }
+            // Remove previous highlights if they exist
+            if (map.getLayer('highlight-max')) {
+                map.removeLayer('highlight-max');
+                map.removeSource('highlight-max');
             }
+            if (map.getLayer('highlight-min')) {
+                map.removeLayer('highlight-min');
+                map.removeSource('highlight-min');
+            }
+
+            // Assuming server returns two features, the first is max and the second is min
+            data.forEach((featureData, index) => {
+                const layerId = index === 0 ? 'highlight-max' : 'highlight-min';
+                const color = index === 0 ? '#B2D235' : '#EF6074'; // Green for max, Red for min
+
+                map.addSource(layerId, {
+                    type: 'geojson',
+                    data: {
+                        type: 'FeatureCollection',
+                        features: [featureData]
+                    }
+                });
+
+                map.addLayer({
+                    id: layerId,
+                    type: 'fill',
+                    source: layerId,
+                    paint: {
+                        'fill-color': color,
+                        'fill-opacity': 0.8
+                    }
+                });
+            });
         })
         .catch(error => console.error('Error fetching highlight data:', error));
 }
+
 
 map.on('load', function () {
     fetch('/seattle_pop_income_data')
