@@ -1,7 +1,8 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY3Jlc2NlbmRvY2h1IiwiYSI6ImNpdGR5MWZ5aDAycjIyc3A5ZHoxZzRwMGsifQ.nEaSxm520v7TpKAy2GG_kA'; 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/crescendochu/clhdvk3i400ea01rhep06ap9r',
+    // style: 'mapbox://styles/crescendochu/clhdvk3i400ea01rhep06ap9r',
+    style: 'mapbox://styles/mapbox/light-v11',
     center: [-122.335167, 47.608013], // Seattle coordinates
     zoom: 10
 });
@@ -29,8 +30,8 @@ function updateHighlight() {
                         type: 'fill',
                         source: 'highlight',
                         paint: {
-                            'fill-color': '#00ff00',
-                            'fill-opacity': 0.5
+                            'fill-color': '#B2D235',
+                            'fill-opacity': 0.8
                         }
                     });
                 }
@@ -53,8 +54,8 @@ map.on('load', function () {
                 type: 'fill',
                 source: 'seattle',
                 paint: {
-                    'fill-color': '#088',
-                    'fill-opacity': 0.1,
+                    'fill-color': '#88C0D0',
+                    'fill-opacity': 0.2,
                 }
             });
 
@@ -64,7 +65,7 @@ map.on('load', function () {
                 source: 'seattle', // Use the same source as your fill layer
                 layout: {},
                 paint: {
-                    'line-color': 'white', // Set the color of the border
+                    'line-color': '#88C0D0',
                     'line-width': 1 // Set the thickness of the border
                 }
             });
