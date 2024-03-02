@@ -7,82 +7,88 @@ var map = new mapboxgl.Map({
     zoom: 10
 });
 
-// function updateHighlight() {
-//     var bounds = map.getBounds();
-//     var url = `/polygons_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}`;
+var popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+});
 
-//     fetch(url)
-//         .then(response => response.json())
-//         .then(data => {
-//             if (data.length > 0) {
-//                 var feature = {
-//                     type: 'Feature',
-//                     properties: data[0].properties,
-//                     geometry: data[0].geometry
-//                 };
 
-//                 if (map.getSource('highlight')) {
-//                     map.getSource('highlight').setData({ type: 'FeatureCollection', features: [feature] });
-//                 } else {
-//                     map.addSource('highlight', { type: 'geojson', data: { type: 'FeatureCollection', features: [feature] } });
-//                     map.addLayer({
-//                         id: 'highlight',
-//                         type: 'fill',
-//                         source: 'highlight',
-//                         paint: {
-//                             'fill-color': '#B2D235',
-//                             'fill-opacity': 0.8
-//                         }
-//                     });
-//                 }
-//             }
-//         })
-//         .catch(error => console.error('Error fetching highlight data:', error));
-// }
-
-function updateHighlight() {
+function updateMapAndStats() {
     var bounds = map.getBounds();
-    var url = `/polygons_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}`;
+    var url = `/data_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}`;
 
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            // Remove previous highlights if they exist
-            if (map.getLayer('highlight-max')) {
-                map.removeLayer('highlight-max');
-                map.removeSource('highlight-max');
-            }
-            if (map.getLayer('highlight-min')) {
-                map.removeLayer('highlight-min');
-                map.removeSource('highlight-min');
-            }
+            const { highlights, stats } = data;
 
-            // Assuming server returns two features, the first is max and the second is min
-            data.forEach((featureData, index) => {
-                const layerId = index === 0 ? 'highlight-max' : 'highlight-min';
-                const color = index === 0 ? '#B2D235' : '#EF6074'; // Green for max, Red for min
-
-                map.addSource(layerId, {
-                    type: 'geojson',
-                    data: {
-                        type: 'FeatureCollection',
-                        features: [featureData]
-                    }
+            // Update highlights
+            if (highlights.length > 0) {
+                map.getSource('highlight-max').setData({
+                    type: 'FeatureCollection',
+                    features: [highlights[0]]
                 });
+            } else {
+                map.getSource('highlight-max').setData({ type: 'FeatureCollection', features: [] });
+            }
 
-                map.addLayer({
-                    id: layerId,
-                    type: 'fill',
-                    source: layerId,
-                    paint: {
-                        'fill-color': color,
-                        'fill-opacity': 0.8
-                    }
+            if (highlights.length > 1) {
+                map.getSource('highlight-min').setData({
+                    type: 'FeatureCollection',
+                    features: [highlights[1]]
                 });
-            });
+            } else {
+                map.getSource('highlight-min').setData({ type: 'FeatureCollection', features: [] });
+            }
+
+            // Update stats display, including max and min
+            document.getElementById('stats-display').innerHTML = `
+            <p>For the annual median household income per neighborhood in the current view: </p>
+            <p>Average Income: <b>$${stats.average_income.toLocaleString(undefined, {style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0}).slice(1)} </b></p>
+            <p>Median Income: <b>$${stats.median_income.toLocaleString(undefined, {style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0}).slice(1)}</b></p>
+            <p>Maximum Median Income: <b>${highlights.length > 0 ? '$' + highlights[0].properties.median_inc.toLocaleString(undefined, {style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0}).slice(1) : 'N/A'}</b></p>
+            <p>Minimum Median Income: <b>${highlights.length > 1 ? '$' + highlights[1].properties.median_inc.toLocaleString(undefined, {style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0}).slice(1) : 'N/A'} </b></p>
+        `;        
         })
-        .catch(error => console.error('Error fetching highlight data:', error));
+        .catch(error => console.error('Error fetching data:', error));
 }
+
+
+
+// map.on('mouseenter', 'seattle-layer', (e) => {
+//     if (!e.features.length) {
+//         return;
+//     }
+//     var feature = e.features[0];
+
+//     // Debug: Log the properties of the hovered feature
+//     console.log(feature.properties);
+
+//     var medianIncome = feature.properties.median_inc || 'Data not available';
+//     var GEOID10 = feature.properties.GEOID10 || 'Data not available';
+
+//     var popupContent = `
+//         <p>Median Household Income:</p> 
+//         <p>${medianIncome.toLocaleString(undefined, {style: 'currency', currency: 'USD', minimumFractionDigits: 0, maximumFractionDigits: 0})}</p>
+//     `;
+
+//     popup.setLngLat(e.lngLat)
+//         .setHTML(popupContent)
+//         .addTo(map);
+
+//     map.getCanvas().style.cursor = 'pointer';
+// });
+
+
+// map.on('mouseleave', 'seattle-layer', () => {
+//     // Remove the popup when the mouse leaves the layer area.
+//     popup.remove();
+
+//     // Reset the cursor style.
+//     map.getCanvas().style.cursor = '';
+// });
+
+
 
 
 map.on('load', function () {
@@ -115,11 +121,39 @@ map.on('load', function () {
                 }
             });
 
-            // Call updateHighlight here to ensure it's only called after the map is loaded
-            updateHighlight();
+            map.addSource('highlight-max', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+            map.addLayer({
+                id: 'highlight-max',
+                type: 'fill',
+                source: 'highlight-max',
+                paint: {
+                    'fill-color': '#B2D235', // Green for max
+                    'fill-opacity': 0.8
+                }
+            });
+        
+            map.addSource('highlight-min', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+            map.addLayer({
+                id: 'highlight-min',
+                type: 'fill',
+                source: 'highlight-min',
+                paint: {
+                    'fill-color': '#EF6074', // Red for min
+                    'fill-opacity': 0.8
+                }
+            });        
+
+            updateMapAndStats();
+            
         })
         .catch(error => console.error('Error loading GeoJSON data:', error));
 });
 
 // Attach updateHighlight to moveend event after map is loaded
-map.on('moveend', updateHighlight);
+map.on('moveend', function() {
+    updateMapAndStats();
+    // updateStatsDisplay();
+    // updateHighlight();
+});
+
+

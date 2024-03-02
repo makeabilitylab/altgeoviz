@@ -1,0 +1,19 @@
+body { margin: 0; 
+    padding: 0; 
+    font-family: 'Encode Sans', sans-serif;
+    }
+
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+#stats-display {
+    max-width: 30%;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    z-index: 100;
+    font-size: 18pt;
+}
