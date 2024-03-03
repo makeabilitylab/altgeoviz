@@ -1,16 +1,18 @@
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify, request, session
 import duckdb
 import geopandas as gpd
 import json
 
-from utils import *
+import utils
 
 app = Flask(__name__)
+app.secret_key = 'abc'
 
 # Database connection
 con = duckdb.connect(database='data/my_spatial_db.duckdb', read_only=True)
 con.execute("INSTALL 'spatial';")
 con.execute("LOAD 'spatial';")
+
 
 @app.route('/')
 def index():
@@ -18,6 +20,7 @@ def index():
     return render_template('index.html')
 
 def fetch_density_data(table_name):
+    session["global_table_name"] = table_name
     # Get bounding box parameters from the request
     bbox = request.args.get('bbox', '')
     if bbox:
@@ -57,37 +60,36 @@ def tract_density_data():
 
 @app.route('/stats_in_view')
 def stats_in_view():
-    try:
-        minLon = request.args.get('minLon', type=float)
-        minLat = request.args.get('minLat', type=float)
-        maxLon = request.args.get('maxLon', type=float)
-        maxLat = request.args.get('maxLat', type=float)
-
-        # Ensure spatial extension is loaded
-        con.execute("LOAD 'spatial';")
-
-        # Query to calculate average and median
-        stats_query = f"""
-        SELECT 
-            AVG(median_inc) AS average_income, 
-            PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY median_inc) AS median_income
-        FROM seattle_pop_income
-        WHERE ST_Intersects(geom, ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}))
-        """
-
-        result = con.execute(stats_query).fetchdf()
-
-        if result.empty:
-            return jsonify({"average_income": 0, "median_income": 0})
-
-        # Extracting the first row as it contains our results
-        stats = result.iloc[0].to_dict()
-
-        return jsonify(stats)
-    except Exception as e:
-        print(f"Error in stats_in_view: {e}")
-        return jsonify({"error": "An error occurred processing your request."}), 500
+    minLon = request.args.get('minLon', type=float)
+    minLat = request.args.get('minLat', type=float)
+    maxLon = request.args.get('maxLon', type=float)
+    maxLat = request.args.get('maxLat', type=float)
     
-
+    # print(f"minLon: {minLon}, minLat: {minLat}, maxLon: {maxLon}, maxLat: {maxLat}")
+    # logging.error(f"minLon: {minLon}, minLat: {minLat}, maxLon: {maxLon}, maxLat: {maxLat}")
+    
+    table_name = session.get('global_table_name', None)
+    stats_query = f"""
+    SELECT 
+        GEOID, ppl_densit, c_lat, c_lon
+    FROM {table_name} AS tn
+    WHERE ST_Intersects(tn.geom, ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}));
+    """
+    
+    result = con.execute(stats_query).fetchdf()
+    
+    map = utils.Map(minLon, minLat, maxLon, maxLat)
+    polygons = []
+    for index, row in result.iterrows():
+        polygon = utils.Polygon(row['GEOID'], float(row['ppl_densit']), (float(row['c_lon']), float(row['c_lat'])))
+        polygons.append(polygon)
+        
+    map.set_polygons(polygons)
+    map.calculate_section_densities()
+    map.rank_sections()
+    map.find_high_density_clusters()
+    
+    return jsonify(map.trends)
+   
 if __name__ == '__main__':
     app.run(debug=True)
