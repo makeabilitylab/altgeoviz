@@ -1,87 +1,137 @@
-from flask import Flask, render_template, jsonify, request, session
-import duckdb
-import geopandas as gpd
+from flask import Flask, jsonify, request, render_template, session
+import psycopg2
+import psycopg2.extras
 import json
-
+import logging
 import utils
 
 app = Flask(__name__)
-app.secret_key = 'abc'
+app.logger.setLevel(logging.DEBUG)
 
-# Database connection
-con = duckdb.connect(database='data/my_spatial_db.duckdb', read_only=True)
-con.execute("INSTALL 'spatial';")
-con.execute("LOAD 'spatial';")
+# Database connection parameters
+db_params = {
+    'database': 'chuli',
+    'user': 'chuli',
+    'password': '1234',
+    'host': 'localhost',
+    'port': '5433'
+}
 
+def fetch_density_data(table_name, zoom):
+    app.logger.debug(f'Received zoom level: {zoom}')
+    bbox = request.args.get('bbox', '')
+    bbox_values = bbox.split(',') if bbox else []
+
+    if len(bbox_values) == 4:
+        min_lon, min_lat, max_lon, max_lat = map(float, bbox_values)
+        # accuracy = 0.01 if zoom >=7, else if  else 0.0001 
+        if zoom >= 7:
+            accuracy = 0.00001
+            app.logger.debug(f"Using accuracy {accuracy}")
+        elif zoom >= 5:
+            accuracy = 0.001
+            app.logger.debug(f"Using accuracy {accuracy}") 
+        else:
+            accuracy = 0.01
+            app.logger.debug(f"Using accuracy {accuracy}") 
+
+        try:
+            conn = psycopg2.connect(**db_params)
+            cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+
+            query = f"""
+            SELECT geoid, ppl_densit, ST_AsGeoJSON(ST_Simplify(geom, {accuracy}))::json AS geometry
+            FROM {table_name}
+            WHERE geom && ST_MakeEnvelope(%s, %s, %s, %s, 4326);
+            """
+            cursor.execute(query, (min_lon, min_lat, max_lon, max_lat))
+
+            rows = cursor.fetchall()
+            features = [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "geoid": row['geoid'],
+                        "ppl_densit": float(row['ppl_densit']),  # Convert to float
+                    },
+                    "geometry": row['geometry']
+                } for row in rows
+            ]
+
+            feature_collection = {
+                "type": "FeatureCollection",
+                "features": features
+            }
+            
+            # session['global_table_name'] = table_name
+            return jsonify(feature_collection)
+        except Exception as e:
+            return jsonify({"error": str(e)})
+        finally:
+            if conn:
+                conn.close()
+    else:
+        return jsonify({"error": "Invalid bbox parameter"})
 
 @app.route('/')
 def index():
     # Serve the main page with the Mapbox GL JS map
     return render_template('index.html')
 
-def fetch_density_data(table_name):
-    session["global_table_name"] = table_name
-    # Get bounding box parameters from the request
-    bbox = request.args.get('bbox', '')
-    if bbox:
-        bbox = [float(coord) for coord in bbox.split(',')]
-        bbox_polygon = f"POLYGON(({bbox[0]} {bbox[1]}, {bbox[2]} {bbox[1]}, {bbox[2]} {bbox[3]}, {bbox[0]} {bbox[3]}, {bbox[0]} {bbox[1]}))"
-    else:
-        # Default bounding box that covers the whole world if not specified
-        bbox_polygon = "POLYGON((-180 -90, 180 -90, 180 90, -180 90, -180 -90))"
+@app.route('/state_density_data', methods=['GET'])
+def get_state_data():
+    zoom = request.args.get('zoom', default=5, type=int) 
+    return fetch_density_data('population_density.state_ppl_density',zoom)
 
-    query = f"""
-    SELECT GEOID, ppl_densit, ST_AsText(geom) AS geom_wkt
-    FROM {table_name}
-    WHERE ST_Intersects(geom, ST_GeomFromText('{bbox_polygon}'));
-    """
+@app.route('/county_density_data', methods=['GET'])
+def get_county_data():
+    zoom = request.args.get('zoom', default=5, type=int) 
+    return fetch_density_data('population_density.w_county_ppl_density',zoom)
 
-    query_result = con.execute(query).fetchdf()
+@app.route('/tract_density_data', methods=['GET'])
+def get_tract_data():
+    zoom = request.args.get('zoom', default=5, type=int) 
+    return fetch_density_data('population_density.wa_tract_ppl_density', zoom)
 
-    gdf = gpd.GeoDataFrame(query_result, geometry=gpd.GeoSeries.from_wkt(query_result['geom_wkt']))
-    gdf.drop(columns=['geom_wkt'], inplace=True)
-    
-    geojson_data = json.loads(gdf.to_json())
-    
-    return jsonify(geojson_data)
-
-
-@app.route('/state_density_data')
-def state_density_data():
-    return fetch_density_data('state_ppl_density')
-
-@app.route('/county_density_data')
-def county_density_data():
-    return fetch_density_data('w_county_ppl_density')
-
-@app.route('/tract_density_data')
-def tract_density_data():
-    return fetch_density_data('wa_tract_ppl_density')
-
-@app.route('/stats_in_view')
-def stats_in_view():
+@app.route('/stats_in_view', methods=['GET'])
+def stats_in_view(table_name, zoom):
     minLon = request.args.get('minLon', type=float)
     minLat = request.args.get('minLat', type=float)
     maxLon = request.args.get('maxLon', type=float)
     maxLat = request.args.get('maxLat', type=float)
     
-    # print(f"minLon: {minLon}, minLat: {minLat}, maxLon: {maxLon}, maxLat: {maxLat}")
-    # logging.error(f"minLon: {minLon}, minLat: {minLat}, maxLon: {maxLon}, maxLat: {maxLat}")
+    # table_name = session.get('global_table_name', None)
+    if table_name is None:
+        return jsonify({"error": "No table name found in session"})
     
-    table_name = session.get('global_table_name', None)
-    stats_query = f"""
+    if zoom >= 7:
+        accuracy = 0.00001
+        app.logger.debug(f"Using accuracy {accuracy}")
+    elif zoom >= 5:
+        accuracy = 0.001
+        app.logger.debug(f"Using accuracy {accuracy}") 
+    else:
+        accuracy = 0.01
+        app.logger.debug(f"Using accuracy {accuracy}") 
+
+    conn = psycopg2.connect(**db_params)
+    cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+
+    query = f"""
     SELECT 
         GEOID, ppl_densit, c_lat, c_lon
     FROM {table_name} AS tn
     WHERE ST_Intersects(tn.geom, ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}));
     """
     
-    result = con.execute(stats_query).fetchdf()
-    
+    cursor.execute(query, (minLon, minLat, maxLon, maxLat))
+    rows = cursor.fetchall()
+
     map = utils.Map(minLon, minLat, maxLon, maxLat)
     polygons = []
-    for index, row in result.iterrows():
-        polygon = utils.Polygon(row['GEOID'], float(row['ppl_densit']), (float(row['c_lon']), float(row['c_lat'])))
+    
+    for row in rows:
+        polygon = utils.Polygon(row['geoid'], float(row['ppl_densit']), (float(row['c_lon']), float(row['c_lat'])))
         polygons.append(polygon)
         
     map.set_polygons(polygons)
@@ -90,6 +140,6 @@ def stats_in_view():
     map.find_high_density_clusters()
     
     return jsonify(map.trends)
-   
+
 if __name__ == '__main__':
     app.run(debug=True)
