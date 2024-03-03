@@ -16,6 +16,13 @@ db_params = {
     'port': '5433'
 }
 
+@app.before_request
+def before_request_logging():
+    app.logger.debug(f"Request URL: {request.url}")
+    app.logger.debug(f"Query String: {request.query_string}")
+    app.logger.debug("Request Params: %s", request.args)
+
+
 def fetch_density_data(table_name, zoom):
     app.logger.debug(f'Received zoom level: {zoom}')
     bbox = request.args.get('bbox', '')
@@ -78,7 +85,7 @@ def index():
 
 @app.route('/state_density_data', methods=['GET'])
 def get_state_data():
-    zoom = request.args.get('zoom', default=5, type=int) 
+    zoom = request.args.get('zoom', default=4, type=int) 
     return fetch_density_data('population_density.state_ppl_density',zoom)
 
 @app.route('/county_density_data', methods=['GET'])
@@ -88,7 +95,7 @@ def get_county_data():
 
 @app.route('/tract_density_data', methods=['GET'])
 def get_tract_data():
-    zoom = request.args.get('zoom', default=5, type=int) 
+    zoom = request.args.get('zoom', default=7, type=int) 
     return fetch_density_data('population_density.wa_tract_ppl_density', zoom)
 
 if __name__ == '__main__':

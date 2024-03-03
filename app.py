@@ -94,26 +94,26 @@ def get_tract_data():
     return fetch_density_data('population_density.wa_tract_ppl_density', zoom)
 
 @app.route('/stats_in_view', methods=['GET'])
-def stats_in_view(table_name, zoom):
+def stats_in_view():
     minLon = request.args.get('minLon', type=float)
     minLat = request.args.get('minLat', type=float)
     maxLon = request.args.get('maxLon', type=float)
     maxLat = request.args.get('maxLat', type=float)
+
+    sourceURL = request.args.get('sourceURL', None)
+    if sourceURL == "/state_density_data":
+        table_name = 'population_density.state_ppl_density'
+    elif sourceURL == "/county_density_data":
+        table_name = 'population_density.w_county_ppl_density'
+    elif sourceURL == "/tract_density_data":
+        table_name = 'population_density.wa_tract_ppl_density'
+    else:
+        return jsonify({"error": "Invalid sourceURL parameter"})
     
     # table_name = session.get('global_table_name', None)
     if table_name is None:
         return jsonify({"error": "No table name found in session"})
     
-    if zoom >= 7:
-        accuracy = 0.00001
-        app.logger.debug(f"Using accuracy {accuracy}")
-    elif zoom >= 5:
-        accuracy = 0.001
-        app.logger.debug(f"Using accuracy {accuracy}") 
-    else:
-        accuracy = 0.01
-        app.logger.debug(f"Using accuracy {accuracy}") 
-
     conn = psycopg2.connect(**db_params)
     cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 

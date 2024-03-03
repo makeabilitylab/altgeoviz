@@ -7,26 +7,27 @@ var map = new mapboxgl.Map({
     zoom: 4
 });
 
-function updateStats() {
+function updateStats(sourceURL) {
     let bounds = map.getBounds();
-    let url = `/stats_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}`;
+    let url = `/stats_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}&sourceURL=${sourceURL}`;
 
     fetch(url)
         .then(response => response.json())
         .then(data => {
             let content = 'Hello world! <br>';
 
-            for (const [section, trends] of Object.entries(data)) {
-                // Check if the 'high' trend exists for this section and add it to the content string
-                if (trends.high && trends.high.length > 0) {
-                    content += `<strong>${section} - High:</strong> Decision based on: ${trends.high.join(', ')}<br>`;
-                }
 
-                // Check if the 'low' trend exists for this section and add it to the content string
-                if (trends.low && trends.low.length > 0) {
-                    content += `<strong>${section} - Low:</strong> Decision based on: ${trends.low.join(', ')}<br>`;
-                }
-            }
+            // for (const [section, trends] of Object.entries(data)) {
+            //     // Check if the 'high' trend exists for this section and add it to the content string
+            //     if (trends.high && trends.high.length > 0) {
+            //         content += `<strong>${section} - High:</strong> Decision based on: ${trends.high.join(', ')}<br>`;
+            //     }
+
+            //     // Check if the 'low' trend exists for this section and add it to the content string
+            //     if (trends.low && trends.low.length > 0) {
+            //         content += `<strong>${section} - Low:</strong> Decision based on: ${trends.low.join(', ')}<br>`;
+            //     }
+            // }
             document.getElementById('stats-display').innerHTML = content;
         })
         .catch(error => console.error('Error fetching data:', error));
@@ -48,7 +49,7 @@ function fetchAndUpdateData() {
 
     map.getSource('stateDensity').setData(apiURL);
 
-    updateStats();
+    updateStats(sourceURL);
 }
 
 map.on('load', function () {
