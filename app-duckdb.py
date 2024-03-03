@@ -31,7 +31,7 @@ def fetch_density_data(table_name):
         bbox_polygon = "POLYGON((-180 -90, 180 -90, 180 90, -180 90, -180 -90))"
 
     query = f"""
-    SELECT GEOID, ppl_densit, ST_AsText(geom) AS geom_wkt
+    SELECT GEOID, ppl_densit, ST_AsText(ST_Simplify(geom, 0.001)) AS simplified_geom_wkt
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_GeomFromText('{bbox_polygon}'));
     """
