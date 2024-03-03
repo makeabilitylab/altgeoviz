@@ -101,11 +101,11 @@ def stats_in_view():
     maxLat = request.args.get('maxLat', type=float)
 
     sourceURL = request.args.get('sourceURL', None)
-    if sourceURL == "/state_density_data":
+    if sourceURL == "state_density_data":
         table_name = 'population_density.state_ppl_density'
-    elif sourceURL == "/county_density_data":
+    elif sourceURL == "county_density_data":
         table_name = 'population_density.w_county_ppl_density'
-    elif sourceURL == "/tract_density_data":
+    elif sourceURL == "tract_density_data":
         table_name = 'population_density.wa_tract_ppl_density'
     else:
         return jsonify({"error": "Invalid sourceURL parameter"})
