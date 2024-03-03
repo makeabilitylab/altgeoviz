@@ -1,4 +1,5 @@
 import logging
+import math
 
 class Section():
     # a section has left and right boundaries, and top and bottom boundaries
@@ -10,17 +11,19 @@ class Section():
         self.name = name
         
     def include(self, x, y):
-        return self.left <= x <= self.right and self.top <= y <= self.bottom
+        return self.left <= x <= self.right and self.bottom <= y <= self.top 
     
     def include_polygon(self, polygon):
         if not isinstance(polygon, Polygon):
-            logging.error(f"Error: include_polygon: polygon is not of type Polygon: {polygon}")
             return False
         
-        return self.left <= polygon.centroid[0] <= self.right and self.top <= polygon.centroid[1] <= self.bottom
+        return self.left <= polygon.centroid[0] <= self.right and self.bottom <= polygon.centroid[1] <= self.top
     
     def get_name(self):
         return self.name
+    
+    def __str__(self):
+        return f"Section: {self.name}, left={self.left}, right={self.right}, top={self.top}, bottom={self.bottom}"
 
 
 class Polygon():
@@ -104,14 +107,20 @@ class Map():
         ]
     }
     
-    def __init__(self, map_width, map_height):
+    def __init__(self, min_lon, min_lat, max_lon, max_lat):
         # initialize the map that hold the boundaries of the map sections
-        self.map_width = map_width
-        self.map_height = map_height
-        self.cell_size = 1     # for quantization, we will use 10x10 cells
-        self.map_sections = self.create_map_sections(map_width, map_height)
-        self.section_lookup = self.create_section_lookup()
+        self.min_lon = min_lon
+        self.min_lat = min_lat
+        self.max_lon = max_lon
+        self.max_lat = max_lat
         
+        self.map_width = max_lon - min_lon
+        self.map_height = max_lat - min_lat
+        # print(f"Map width: {self.map_width}, Map height: {self.map_height}")
+        self.cell_size = 1     # for quantization, we will use 10x10 cells
+        self.map_sections = self.create_map_sections(self.map_width, self.map_height)
+        # self.section_lookup = self.create_section_lookup()
+                
         self.polygons = []
         
         self.section_polygons = {}
@@ -121,20 +130,6 @@ class Map():
         self.trends = {
             "NW": {}, "N": {}, "NE": {}, "W": {}, "C": {}, "E": {}, "SW": {}, "S": {}, "SE": {},
             "left_diagonal": {}, "right_diagonal": {}, "horizontal": {}, "vertical": {}
-            
-            # "NW": {"high": (), "low": ()},
-            # "N": {"high": (), "low": ()},
-            # "NE": {"high": (), "low": ()},
-            # "W": {"high": (), "low": ()},
-            # "C": {"high": (), "low": ()},
-            # "E": {"high": (), "low": ()},
-            # "SW": {"high": (), "low": ()},
-            # "S": {"high": (), "low": ()},
-            # "SE": {"high": (), "low": ()},
-            # "left_diagonal": {"high": (), "low": ()},
-            # "right_diagonal": {"high": (), "low": ()},
-            # "horizontal": {"high": (), "low": ()},
-            # "vertical": {"high": (), "low": ()}
         }
     
     ###########################################################################
@@ -142,48 +137,76 @@ class Map():
     ###########################################################################
     def create_map_sections(self, map_width, map_height) -> list:
         # divide the map into 9 sections, split into 3 columns and 3 rows
-        map_sections = [
-            Section(0, map_width/3, 0, map_height/3, "NW"),
-            Section(map_width/3, 2*map_width/3, 0, map_height/3, "N"),
-            Section(2*map_width/3, map_width, 0, map_height/3, "NE"),
-            Section(0, map_width/3, map_height/3, 2*map_height/3, "W"),
-            Section(map_width/3, 2*map_width/3, map_height/3, 2*map_height/3, "C"),
-            Section(2*map_width/3, map_width, map_height/3, 2*map_height/3, "E"),
-            Section(0, map_width/3, 2*map_height/3, map_height, "SW"),
-            Section(map_width/3, 2*map_width/3, 2*map_height/3, map_height, "S"),
-            Section(2*map_width/3, map_width, 2*map_height/3, map_height, "SE")
-        ]
-        
+        map_sections = []
+        # section_names = ["NW", "N", "NE", "W", "C", "E", "SW", "S", "SE"]
+        section_names = ["SW", "S", "SE", "W", "C", "E", "NW", "N", "NE"]
+        for i in range(3): 
+            for j in range(3):
+                left = self.min_lon + j * map_width / 3
+                right = left + map_width / 3
+                bottom = self.min_lat + i * map_height / 3
+                top = bottom + map_height / 3
+                section_name = section_names[i * 3 + j]
+                
+                section = Section(left, right, top, bottom, section_name)
+                map_sections.append(section)
+
         return map_sections
     
-    def get_section_by_boundary_checks(self, x, y):
-        for section in self.map_sections:
-            if section.include(x, y):
-                return section
+    ###########################################################################
+    ####### Remove the speedup functions and use the original ones ############
+    ###########################################################################
+    # def get_section_by_boundary_checks(self, x, y):
+    #     for section in self.map_sections:
+    #         if section.include(x, y):
+    #             return section
         
-        logging.error(f"Error: get_section_by_boundary_checks: x={x}, y={y}")
-        return None
+    #     logging.error(f"Error: get_section_by_boundary_checks: x={x}, y={y}")
+    #     return None
     
-    def create_section_lookup(self):
-        section_lookup = {}
-        for x in range(0, self.map_width, self.cell_size):
-            for y in range(0, self.map_height, self.cell_size):
-                section = self.get_section_by_boundary_checks(x, y)
-                # Map the quantized coordinates to the section
-                if section:
-                    section_lookup[(x // self.cell_size, y // self.cell_size)] = section.get_name()
-                else:
-                    logging.error(f"Error: create_section_lookup: x={x}, y={y}")
-        return section_lookup
+    # def create_section_lookup(self):
+    #     section_lookup = {}
+        
+    #     # Calculate the number of cells across the width and height
+    #     num_cells_width = math.ceil(self.map_width / self.cell_size)
+    #     num_cells_height = math.ceil(self.map_height / self.cell_size)
+
+    #     # Iterate over each cell in the grid
+    #     for i in range(num_cells_width):
+    #         for j in range(num_cells_height):
+    #             # Calculate the actual x, y coordinates for the current cell
+    #             x = i * self.cell_size
+    #             y = j * self.cell_size
+
+    #             # Get the section by boundary checks
+    #             section = self.get_section_by_boundary_checks(x, y)
+                
+    #             # Map the cell indices to the section name
+    #             if section:
+    #                 section_lookup[(i, j)] = section.get_name()
+    #             else:
+    #                 logging.error(f"Error: create_section_lookup: x={x}, y={y}")
+        
+    #     return section_lookup
+    
+    # def get_section(self, x, y):
+    #     # Use the quantized coordinates to lookup the section
+    #     quantized_x = x // self.cell_size
+    #     quantized_y = y // self.cell_size
+    #     return self.section_lookup.get((quantized_x, quantized_y))
+    ####### Remove the speedup functions and use the original ones ############
+    ###########################################################################
     
     ###########################################################################
     ######### Given one polygon, check which section it belongs to ############
     ###########################################################################
     def get_section(self, x, y):
-        # Use the quantized coordinates to lookup the section
-        quantized_x = x // self.cell_size
-        quantized_y = y // self.cell_size
-        return self.section_lookup.get((quantized_x, quantized_y))
+        for section in self.map_sections:
+            if section.include(x, y):        
+                return section.get_name()
+        # logging.error(f"xd: {self.min_lon}, min_lat: {self.max_lon}, max_lon: {self.min_lat}, max_lat: {self.max_lat}")
+        # logging.error(f"Error: get_section_by_boundary_checks: x={x}, y={y}")
+        return None
     
     def get_section_by_centroid(self, polygon):
         x = polygon.centroid[0]
@@ -196,6 +219,7 @@ class Map():
     def set_polygons(self, polygons):
         self.polygons = polygons
         self.section_polygons = self.assign_polygons_to_sections()
+        
         
     def assign_polygons_to_sections(self):
         section_polygons = {section.get_name(): [] for section in self.map_sections}
@@ -290,4 +314,57 @@ class Map():
                 self.trends[area]["high"] = bounding_box
             elif any(temp_trends == low_trend for low_trend in self.TWO_SECTION_RANK_RULE["low"]):
                 self.trends[area]["low"] = bounding_box
-            
+                
+
+# # Create a map object and test functions
+# map = Map(100, 100)
+
+# # Test the map object
+# print("Test the map object")
+# print(map.get_section(0, 0))  # NW
+# print(map.get_section(50.01, 50))  # C
+# print(map.get_section(99, 99))  # SE:
+
+# # Create a list of polygons
+# polygons = [
+#     Polygon("1", 100000, (1, 1)),
+#     Polygon("1.1", 2, (2, 2)),
+#     Polygon("1.2", 3, (3, 3)),
+#     Polygon("1.3", 4, (4, 4)),
+#     Polygon("2", 300, (35, 20)),
+#     Polygon("3", 100, (35, 50)),
+#     Polygon("4", 49, (0, 62)),
+#     # Polygon("5", 20000, (70, 70)),
+#     # Polygon("6", 15000, (50, 50)),
+# ]
+
+# # Set the polygons to the map
+# map.set_polygons(polygons)
+
+# # Test where the polygons are assigned
+# print("Test where the polygons are assigned")
+# for section, polygons in map.section_polygons.items():
+#     print(f"Section: {section}")
+#     for polygon in polygons:
+#         print(polygon) 
+#   # {'NW': [1, 1.1, 1.2, 1.3], 'N': [2], 'NE': [3], 'W': [], 'C': [4], 'E': [5], 'SW': [6], 'S': [7], 'SE': [8, 9]}
+
+# # Test the map object
+# # print(map.section_polygons)
+# map.calculate_section_densities()
+# map.rank_sections()
+# map.find_high_density_clusters()
+
+
+# print(map.section_densities)
+# print(map.section_ranks)
+# print(map.trends)
+
+# # requirements:
+# # given one polygon, check which section it belongs to
+# # given a list of polygons, check which section each polygon belongs to
+# # given a list of polygons, calculate the average population density for each section
+# # now rank the sections by population density
+# # now I have the rank for each section, 
+
+# -131.8021562500005,24.590508519208925,-65.35684375000055,52.31077689140619
