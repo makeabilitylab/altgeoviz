@@ -19,7 +19,7 @@ function updateStats(sourceURL) {
             console.log(data);
             content += `<p><strong>The geospatial trend are: </strong><p>`;
 
-            for (const [section, trends] of Object.entries(data)) {
+            for (const [section, trends] of Object.entries(data.trends)) {
                 // Check if the 'high' trend exists for this section and add it to the content string
                 if (trends.high && trends.high.length > 0) {
                     content += `The ${section} region on the map has a high density of population. <br>`;
