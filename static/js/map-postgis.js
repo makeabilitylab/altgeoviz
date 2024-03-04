@@ -34,7 +34,8 @@ function updateStats(sourceURL) {
 
             console.log(data);
             
-            highs, lows = [], [];
+            let highs = [];
+            let lows = [];
             for (const [section, trends] of Object.entries(data.trends)) {
                 if (trends.high && trends.high.length > 0) {
                     highs.push(section);
