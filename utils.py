@@ -331,7 +331,7 @@ class Map():
         min_polygon = min(self.polygons, key=lambda p: p.ppl_density)
         return {
             "geoid": min_polygon.geoid,
-            "ppl_density": min_polygon.ppl_density,
+            "ppl_densit": min_polygon.ppl_density,
             "geom": min_polygon.geom
         }
     
@@ -340,7 +340,7 @@ class Map():
         max_polygon = max(self.polygons, key=lambda p: p.ppl_density)
         return {
             "geoid": max_polygon.geoid,
-            "ppl_density": max_polygon.ppl_density,
+            "ppl_densit": max_polygon.ppl_density,
             "geom": max_polygon.geom
         }
         

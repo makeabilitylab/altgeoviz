@@ -126,7 +126,7 @@ def stats_in_view():
 
     query = f"""
         SELECT 
-            GEOID, ppl_densit, c_lat, c_lon
+            GEOID, ppl_densit, c_lat, c_lon, ST_AsGeoJSON(ST_Simplify(geom, 0.001))::json AS geom
         FROM {table_name} AS tn
         WHERE ST_Intersects(tn.geom, ST_SetSRID(ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}), 4269));
         """
@@ -161,17 +161,17 @@ def stats_in_view():
                 "type": "Feature",
                 "properties": {
                     "geoid": map_min['geoid'],
-                    "pop_densit": map_min['ppl_densit']
+                    "ppl_densit": map_min['ppl_densit']
                 },
-                "geometry": json.loads(map_min['geom'])
+                "geometry": map_min['geom']
             },
             "max": {
                 "type": "Feature",
                 "properties": {
                     "geoid": map_max['geoid'],
-                    "pop_densit": map_max['ppl_densit']
+                    "ppl_densit": map_max['ppl_densit']
                 },
-                "geometry": json.loads(map_max['geom'])
+                "geometry": map_max['geom']
             }
         }
     })

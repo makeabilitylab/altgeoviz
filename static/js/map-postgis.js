@@ -31,8 +31,10 @@ function updateStats(sourceURL) {
         .then(response => response.json())
         .then(data => {
             // highlights 
-            if (data.highlights && data.highlights.length > 0) {
+            console.log(data.highlights.max.geometry);
+               
                 if(data.highlights.max) {
+                    
                     map.getSource('highlight-max').setData({
                         type: 'FeatureCollection',
                         features: [data.highlights.max]
@@ -55,7 +57,6 @@ function updateStats(sourceURL) {
                         features: []
                     });
                 }
-            }
 
             // stats + alt text
             let content = '<p>In the current view, the spatial trend is:</p>';
@@ -137,8 +138,8 @@ function updateStats(sourceURL) {
             content += `<ul>
                 <li><strong>Average Density</strong>: ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'}</li>
                 <li><strong>Median Density</strong>: ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'}</li>
-                <li><strong>Maximum Density</strong>: ${data.max && data.max != null ? parseFloat(data.max.ppl_density).toFixed(2) : 'Not available'}</li>
-                <li><strong>Minimum Density</strong>: ${data.min && data.min != null ? parseFloat(data.min.ppl_density).toFixed(2) : 'Not available'}</li>
+                <li><strong>Maximum Density</strong>: ${data.max && data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'}</li>
+                <li><strong>Minimum Density</strong>: ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'}</li>
             </ul>`;
 
 
