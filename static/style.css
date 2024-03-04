@@ -8,12 +8,12 @@ body { margin: 0;
 #stats-display {
     max-width: 30%;
     position: absolute;
-    top: 40px;
+    bottom: 40px;
     left: 40px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
     border-radius: 5px;
     color: #000;
     z-index: 100;
-    font-size: 18pt;
+    font-size: 16pt;
 }

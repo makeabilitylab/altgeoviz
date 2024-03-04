@@ -59,7 +59,7 @@ function updateStats(sourceURL) {
                 }
 
             // stats + alt text
-            let content = '<p>In the current view, the spatial trend is:</p>';
+            let content = '<p>In the current view, the spatial trends are:</p>';
 
             console.log(data);
             
@@ -75,7 +75,7 @@ function updateStats(sourceURL) {
             }
 
             if (highs.length > 0) {
-                content += 'The population density is high ';
+                content += '- Population density is high ';
                 highs.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -100,11 +100,11 @@ function updateStats(sourceURL) {
                 });
                 content += `.</p>`;
             } else {
-                content += '<p>No regions with particularly high population density.</p>';
+                content += '<p>- No regions with particularly high population density.</p>';
             }
 
             if (lows.length > 0) {
-                content += 'The population density is low ';
+                content += '- Population density is low ';
                 lows.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -130,17 +130,24 @@ function updateStats(sourceURL) {
                 }); 
                 content += `.</p>`;
             } else {
-                content += '<p>No regions with particularly low population density.</p>';
+                content += '<p>- No regions with particularly low population density.</p>';
             }
 
 
-            content += '<p>The statistics for the population density in the current view are:</p>';
-            content += `<ul>
-                <li><strong>Average Density</strong>: ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'}</li>
-                <li><strong>Median Density</strong>: ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'}</li>
-                <li><strong>Maximum Density</strong>: ${data.max && data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'}</li>
-                <li><strong>Minimum Density</strong>: ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'}</li>
-            </ul>`;
+            content += `<p>In the current view, 
+            the <b>average</b> population density is ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'} per square mile, 
+            the <b>median</b> is ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'}, 
+            the <b>maximum</b> is ${data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'},
+            the <b>minimum</b> is ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'}.</p>`;
+
+
+            // content += '<p>Statistics for the population density in the current view are:</p>';
+            // content += `<ul>
+            //     <li><strong>Average</strong>: ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'} per sq. mile</li>
+            //     <li><strong>Median</strong>: ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'} per sq. mile</li>
+            //     <li><strong>Maximum</strong>: ${data.max && data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'} per sq. mile</li>
+            //     <li><strong>Minimum</strong>: ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'} per sq. mile</li>
+            // </ul>`;
 
 
             document.getElementById('stats-display').innerHTML = content;
@@ -202,24 +209,35 @@ map.on('load', function () {
     });
 
     map.addSource('highlight-max', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    // map.addLayer({
+    //     id: 'highlight-max',
+    //     type: 'fill',
+    //     source: 'highlight-max',
+    //     paint: {
+    //         'fill-color': '#B2D235', // Green for max
+    //         'fill-opacity': 0.8
+    //     }
+    // });
+
     map.addLayer({
-        id: 'highlight-max',
-        type: 'fill',
+        id: 'highlight-max-outline',
+        type: 'line',
         source: 'highlight-max',
+        layout: {},
         paint: {
-            'fill-color': '#B2D235', // Green for max
-            'fill-opacity': 0.8
+            'line-color': '#B2D235', // Green for the outline
+            'line-width': 2 // Adjust the line width as needed
         }
     });
 
     map.addSource('highlight-min', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
     map.addLayer({
         id: 'highlight-min',
-        type: 'fill',
+        type: 'line',
         source: 'highlight-min',
         paint: {
-            'fill-color': '#EF6074', // Red for min
-            'fill-opacity': 0.8
+            'line-color': '#EF6074', // Red for min
+            'line-width': 2
         }
     });        
 
