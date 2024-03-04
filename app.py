@@ -140,20 +140,40 @@ def stats_in_view():
     
     for row in rows:
         polygon = utils.Polygon(row['geoid'], float(row['ppl_densit']), (float(row['c_lon']), float(row['c_lat'])))
-        # polygon.geom = row['geom']
+        polygon.geom = row['geom']
         polygons.append(polygon)
         
     map.set_polygons(polygons)
     map.calculate_section_densities()
     map.rank_sections()
     map.find_high_density_clusters()
+    map_min = map.find_min()
+    map_max = map.find_max()
     
     return jsonify({
         "trends": map.trends,
-        "min": map.find_min(),
-        "max": map.find_max(),
+        "min": map_min['ppl_densit'],
+        "max": map_max['ppl_densit'],
         "average": map.calculate_mean(),
-        "median": map.calculate_median()
+        "median": map.calculate_median(),
+        "highlights": {
+            "min": {
+                "type": "Feature",
+                "properties": {
+                    "geoid": map_min['geoid'],
+                    "pop_densit": map_min['ppl_densit']
+                },
+                "geometry": json.loads(map_min['geom'])
+            },
+            "max": {
+                "type": "Feature",
+                "properties": {
+                    "geoid": map_max['geoid'],
+                    "pop_densit": map_max['ppl_densit']
+                },
+                "geometry": json.loads(map_max['geom'])
+            }
+        }
     })
 
 if __name__ == '__main__':
