@@ -30,6 +30,34 @@ function updateStats(sourceURL) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
+            // highlights 
+            if (data.highlights && data.highlights.length > 0) {
+                if(data.highlights.max) {
+                    map.getSource('highlight-max').setData({
+                        type: 'FeatureCollection',
+                        features: [data.highlights.max]
+                    });
+                } else {
+                    map.getSource('highlight-max').setData({
+                        type: 'FeatureCollection',
+                        features: []
+                    });
+                }
+
+                if(data.highlights.min) {
+                    map.getSource('highlight-min').setData({
+                        type: 'FeatureCollection',
+                        features: [data.highlights.min]
+                    });
+                } else {
+                    map.getSource('highlight-min').setData({
+                        type: 'FeatureCollection',
+                        features: []
+                    });
+                }
+            }
+
+            // stats + alt text
             let content = '<p>In the current view, the spatial trend is:</p>';
 
             console.log(data);
@@ -46,9 +74,28 @@ function updateStats(sourceURL) {
             }
 
             if (highs.length > 0) {
-                content += '<p>The population density is high ';
+                content += 'The population density is high ';
                 highs.forEach((section, index) => {
-                    content += `${REGION_MAP[section]}${index < highs.length - 1 ? ', ' : ''}`;
+                    // Check if the section is one of the special cases
+                    if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
+                        // For special cases, add directly without "in the"
+                        if (index === 0) { // First item or single item
+                            content += `${REGION_MAP[section]}`;
+                        } else if (index === highs.length - 1) { // Last item
+                            content += `${highs.length > 1 ? ', and ' : ' and '}${REGION_MAP[section]}`;
+                        } else { // Middle items
+                            content += `, ${REGION_MAP[section]}`;
+                        }
+                    } else {
+                        // For regular cases, start with "in the"
+                        if (index === 0) {
+                            content += `in the ${REGION_MAP[section]}`;
+                        } else if (index === highs.length - 1) { // Last item
+                            content += `${highs.length > 1 ? ', and the ' : ' and the '}${REGION_MAP[section]}`;
+                        } else { // Middle items
+                            content += `, the ${REGION_MAP[section]}`;
+                        }
+                    }
                 });
                 content += `.</p>`;
             } else {
@@ -56,22 +103,44 @@ function updateStats(sourceURL) {
             }
 
             if (lows.length > 0) {
-                content += '<p>The population density is low ';
+                content += 'The population density is low ';
                 lows.forEach((section, index) => {
-                    content += `${REGION_MAP[section]}${index < lows.length - 1 ? ', ' : ''}`;
-                });
+                    // Check if the section is one of the special cases
+                    if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
+                        // For special cases, add directly without "in the"
+                        if (index === 0) { // First item or single item
+                            content += `${REGION_MAP[section]}`;
+                        } else if (index === lows.length - 1) { // Last item
+                            content += `${lows.length > 1 ? ', and ' : ' and '}${REGION_MAP[section]}`;
+                        } else { // Middle items
+                            content += `, ${REGION_MAP[section]}`;
+                        }
+                    }
+                    else {
+                        // For regular cases, start with "in the"
+                        if (index === 0) {
+                            content += `in the ${REGION_MAP[section]}`;
+                        } else if (index === lows.length - 1) { // Last item
+                            content += `${lows.length > 1 ? ', and the ' : ' and the '}${REGION_MAP[section]}`;
+                        } else { // Middle items
+                            content += `, the ${REGION_MAP[section]}`;
+                        }
+                    }
+                }); 
                 content += `.</p>`;
             } else {
                 content += '<p>No regions with particularly low population density.</p>';
             }
 
+
             content += '<p>The statistics for the population density in the current view are:</p>';
             content += `<ul>
-                            <li><strong>Average Density</strong>: ${data.average}</li>
-                            <li><strong>Median Density</strong>: ${data.median}</li>
-                            <li><strong>Maximum Density</strong>: ${data.max.ppl_density}</li>
-                            <li><strong>Minimum Density</strong>: ${data.min.ppl_density}</li>
-                        </ul>`;
+                <li><strong>Average Density</strong>: ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'}</li>
+                <li><strong>Median Density</strong>: ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'}</li>
+                <li><strong>Maximum Density</strong>: ${data.max && data.max != null ? parseFloat(data.max.ppl_density).toFixed(2) : 'Not available'}</li>
+                <li><strong>Minimum Density</strong>: ${data.min && data.min != null ? parseFloat(data.min.ppl_density).toFixed(2) : 'Not available'}</li>
+            </ul>`;
+
 
             document.getElementById('stats-display').innerHTML = content;
         })
