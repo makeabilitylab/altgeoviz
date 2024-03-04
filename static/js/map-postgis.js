@@ -17,10 +17,10 @@ REGION_MAP = {
     "N": "North",
     "S": "South",
     "C": "Central",
-    "left_diagonal": "from Northwest to Southeast",
-    "right_diagonal": "from Southwest to Northeast",
-    "horizontal": "in the middle from West to East",
-    "vertical": "in the middle from North to South"
+    "left_diagonal": "diagonally from Northwest to Southeast",
+    "right_diagonal": "diagonally from Southwest to Northeast",
+    "horizontal": "horizontally across the center",
+    "vertical": "vertically through the center"
 }
 
 function updateStats(sourceURL) {
@@ -30,7 +30,7 @@ function updateStats(sourceURL) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            let content = 'In the current view, the spatial trend is: <br>'
+            let content = '<p>In the current view, the spatial trend is:</p>';
 
             console.log(data);
             
@@ -45,25 +45,33 @@ function updateStats(sourceURL) {
                 }
             }
 
-            content += `The population density is high in the `;
-            for (const section of highs) {
-                content += `${REGION_MAP[section]}, `;
+            if (highs.length > 0) {
+                content += '<p>The population density is high ';
+                highs.forEach((section, index) => {
+                    content += `${REGION_MAP[section]}${index < highs.length - 1 ? ', ' : ''}`;
+                });
+                content += `.</p>`;
+            } else {
+                content += '<p>No regions with particularly high population density.</p>';
             }
-            content = content.slice(0, -2);
-            content += ` region${highs.length > 1 ? 's' : ''} on the map. <br>`;
 
-            content += `The population density is low in the `;
-            for (const section of lows) {
-                content += `${REGION_MAP[section]}, `;
+            if (lows.length > 0) {
+                content += '<p>The population density is low ';
+                lows.forEach((section, index) => {
+                    content += `${REGION_MAP[section]}${index < lows.length - 1 ? ', ' : ''}`;
+                });
+                content += `.</p>`;
+            } else {
+                content += '<p>No regions with particularly low population density.</p>';
             }
-            content = content.slice(0, -2);
-            content += ` region${lows.length > 1 ? 's' : ''} on the map. <br>`;
 
-            content += `<p>The statistics for the population density in the current view are: </p>`;
-            content += `<p><strong>Average Density</strong>: <b>${data.average}</b></p>`;
-            content += `<p><strong>Median Density</strong>: <b>${data.median}</b></p>`;
-            content += `<p><strong>Maximum Density</strong>: <b>${data.max.ppl_density}</b></p>`;
-            content += `<p><strong>Minimum Density</strong>: <b>${data.min.ppl_density}</b></p>`;
+            content += '<p>The statistics for the population density in the current view are:</p>';
+            content += `<ul>
+                            <li><strong>Average Density</strong>: ${data.average}</li>
+                            <li><strong>Median Density</strong>: ${data.median}</li>
+                            <li><strong>Maximum Density</strong>: ${data.max.ppl_density}</li>
+                            <li><strong>Minimum Density</strong>: ${data.min.ppl_density}</li>
+                        </ul>`;
 
             document.getElementById('stats-display').innerHTML = content;
         })
