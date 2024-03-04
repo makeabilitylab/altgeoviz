@@ -73,11 +73,10 @@ def fetch_density_data(table_name, zoom):
     else:
         return jsonify({"error": "Invalid bbox parameter"})
 
-@app.route('/geometry_bounds', methods=['GET'])
-def get_geometry_bounds():
-    table_name = request.args.get('table_name')
+def calculate_geometry_bounds(table_name):
     if not table_name:
-        return jsonify({"error": "Table name parameter is missing"})
+        logging.error("No table name provided")
+        return None
 
     try:
         conn = psycopg2.connect(**db_params)
@@ -104,11 +103,12 @@ def get_geometry_bounds():
                 "max_lon": max_lon,
                 "max_lat": max_lat
             }
-            return jsonify(bbox)
+            return bbox
         else:
-            return jsonify({"error": "Could not retrieve the bounding box"})
+            return None
     except Exception as e:
-        return jsonify({"error": str(e)})
+        logging.error(str(e))
+        return None
     finally:
         if conn:
             conn.close()
@@ -140,7 +140,7 @@ def stats_in_view():
     minLat = request.args.get('minLat', type=float)
     maxLon = request.args.get('maxLon', type=float)
     maxLat = request.args.get('maxLat', type=float)
-
+    
     sourceURL = request.args.get('sourceURL', None)
     if sourceURL == "state_density_data":
         table_name = 'population_density.state_ppl_density'
@@ -154,6 +154,14 @@ def stats_in_view():
     # table_name = session.get('global_table_name', None)
     if table_name is None:
         return jsonify({"error": "No table name found in session"})
+    
+    bbox = calculate_geometry_bounds(table_name)
+    if bbox:
+        # check if minLon is smaller than bbox['min_lon'], then set minLon = bbox['min_lon']
+        minLon = max(minLon, bbox['min_lon'])
+        maxLon = min(maxLon, bbox['max_lon'])
+        minLat = max(minLat, bbox['min_lat'])
+        maxLat = min(maxLat, bbox['max_lat'])
     
     conn = psycopg2.connect(**db_params)
     cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
