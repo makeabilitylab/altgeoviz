@@ -10,25 +10,34 @@ var map = new mapboxgl.Map({
 function updateStats(sourceURL) {
     let bounds = map.getBounds();
     let url = `/stats_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}&sourceURL=${sourceURL}`;
-    console.log(url);
+    
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            let content = 'Hello world! <br>';
+            let content = 'In the current view: <br>'
 
             console.log(data);
+            content += `<p><strong>The geospatial trend are: </strong><p>`;
 
             for (const [section, trends] of Object.entries(data)) {
                 // Check if the 'high' trend exists for this section and add it to the content string
                 if (trends.high && trends.high.length > 0) {
-                    content += `<strong>${section} - High:</strong> Decision based on: ${trends.high.join(', ')}<br>`;
+                    content += `The ${section} region on the map has a high density of population. <br>`;
                 }
 
                 // Check if the 'low' trend exists for this section and add it to the content string
                 if (trends.low && trends.low.length > 0) {
-                    content += `<strong>${section} - Low:</strong> Decision based on: ${trends.low.join(', ')}<br>`;
+                    content += `The ${section} region on the map has a low density of population. <br>`;
                 }
             }
+
+            content += `<p><strong>Average Density</strong>: <b>${data.average}</b></p>`;
+            content += `<p><strong>Median Density</strong>: <b>${data.median}</b></p>`;
+            content += `<p><strong>Maximum Density</strong>: <b>${data.max.ppl_density}</b></p>`;
+            content += `<p><strong>Minimum Density</strong>: <b>${data.min.ppl_density}</b></p>`;
+
+
+            
             document.getElementById('stats-display').innerHTML = content;
         })
         .catch(error => console.error('Error fetching data:', error));
@@ -86,6 +95,28 @@ map.on('load', function () {
             'fill-opacity': 0.75
         }
     });
+
+    map.addSource('highlight-max', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    map.addLayer({
+        id: 'highlight-max',
+        type: 'fill',
+        source: 'highlight-max',
+        paint: {
+            'fill-color': '#B2D235', // Green for max
+            'fill-opacity': 0.8
+        }
+    });
+
+    map.addSource('highlight-min', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
+    map.addLayer({
+        id: 'highlight-min',
+        type: 'fill',
+        source: 'highlight-min',
+        paint: {
+            'fill-color': '#EF6074', // Red for min
+            'fill-opacity': 0.8
+        }
+    });        
 
     // Fetch and update data initially
     fetchAndUpdateData();
