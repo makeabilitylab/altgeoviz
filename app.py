@@ -80,7 +80,7 @@ def index():
 
 @app.route('/state_density_data', methods=['GET'])
 def get_state_data():
-    zoom = request.args.get('zoom', default=5, type=int) 
+    zoom = request.args.get('zoom', default=4, type=int) 
     return fetch_density_data('population_density.state_ppl_density',zoom)
 
 @app.route('/county_density_data', methods=['GET'])
@@ -90,7 +90,7 @@ def get_county_data():
 
 @app.route('/tract_density_data', methods=['GET'])
 def get_tract_data():
-    zoom = request.args.get('zoom', default=5, type=int) 
+    zoom = request.args.get('zoom', default=7, type=int) 
     return fetch_density_data('population_density.wa_tract_ppl_density', zoom)
 
 @app.route('/stats_in_view', methods=['GET'])
