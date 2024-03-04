@@ -7,6 +7,22 @@ var map = new mapboxgl.Map({
     zoom: 4
 });
 
+REGION_MAP = {
+    "NW": "Northwest",
+    "NE": "Northeast",
+    "SW": "Southwest",
+    "SE": "Southeast",
+    "W": "West",
+    "E": "East",
+    "N": "North",
+    "S": "South",
+    "C": "Central",
+    "left_diagonal": "from Northwest to Southeast",
+    "right_diagonal": "from Southwest to Northeast",
+    "horizontal": "in the middle from West to East",
+    "vertical": "in the middle from North to South"
+}
+
 function updateStats(sourceURL) {
     let bounds = map.getBounds();
     let url = `/stats_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}&sourceURL=${sourceURL}`;
@@ -14,30 +30,40 @@ function updateStats(sourceURL) {
     fetch(url)
         .then(response => response.json())
         .then(data => {
-            let content = 'In the current view: <br>'
+            let content = 'In the current view, the spatial trend is: <br>'
 
             console.log(data);
-            content += `<p><strong>The geospatial trend are: </strong><p>`;
-
+            
+            highs, lows = [], [];
             for (const [section, trends] of Object.entries(data.trends)) {
-                // Check if the 'high' trend exists for this section and add it to the content string
                 if (trends.high && trends.high.length > 0) {
-                    content += `The ${section} region on the map has a high density of population. <br>`;
+                    highs.push(section);
                 }
-
-                // Check if the 'low' trend exists for this section and add it to the content string
                 if (trends.low && trends.low.length > 0) {
-                    content += `The ${section} region on the map has a low density of population. <br>`;
+                    lows.push(section);
                 }
             }
 
+            content += `The population density is high in the `;
+            for (const section of highs) {
+                content += `${REGION_MAP[section]}, `;
+            }
+            content = content.slice(0, -2);
+            content += ` region${highs.length > 1 ? 's' : ''} on the map. <br>`;
+
+            content += `The population density is low in the `;
+            for (const section of lows) {
+                content += `${REGION_MAP[section]}, `;
+            }
+            content = content.slice(0, -2);
+            content += ` region${lows.length > 1 ? 's' : ''} on the map. <br>`;
+
+            content += `<p>The statistics for the population density in the current view are: </p>`;
             content += `<p><strong>Average Density</strong>: <b>${data.average}</b></p>`;
             content += `<p><strong>Median Density</strong>: <b>${data.median}</b></p>`;
             content += `<p><strong>Maximum Density</strong>: <b>${data.max.ppl_density}</b></p>`;
             content += `<p><strong>Minimum Density</strong>: <b>${data.min.ppl_density}</b></p>`;
 
-
-            
             document.getElementById('stats-display').innerHTML = content;
         })
         .catch(error => console.error('Error fetching data:', error));
