@@ -73,6 +73,47 @@ def fetch_density_data(table_name, zoom):
     else:
         return jsonify({"error": "Invalid bbox parameter"})
 
+@app.route('/geometry_bounds', methods=['GET'])
+def get_geometry_bounds():
+    table_name = request.args.get('table_name')
+    if not table_name:
+        return jsonify({"error": "Table name parameter is missing"})
+
+    try:
+        conn = psycopg2.connect(**db_params)
+        cursor = conn.cursor()
+
+        # Assuming the geometry column is named 'geom'
+        query = f"""
+        SELECT ST_AsText(ST_Extent(geom)) AS bbox
+        FROM {table_name};
+        """
+        cursor.execute(query)
+        bbox_text = cursor.fetchone()[0]
+
+        if bbox_text:
+            # Convert the bbox text into a more usable format, if needed
+            bbox_values = bbox_text.strip('BOX()').split(',')
+            min_corner, max_corner = bbox_values
+            min_lon, min_lat = map(float, min_corner.split(' '))
+            max_lon, max_lat = map(float, max_corner.split(' '))
+
+            bbox = {
+                "min_lon": min_lon,
+                "min_lat": min_lat,
+                "max_lon": max_lon,
+                "max_lat": max_lat
+            }
+            return jsonify(bbox)
+        else:
+            return jsonify({"error": "Could not retrieve the bounding box"})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+    finally:
+        if conn:
+            conn.close()
+
+
 @app.route('/')
 def index():
     # Serve the main page with the Mapbox GL JS map
@@ -118,11 +159,12 @@ def stats_in_view():
     cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
     query = f"""
-    SELECT 
-        GEOID, ppl_densit, c_lat, c_lon
-    FROM {table_name} AS tn
-    WHERE ST_Intersects(tn.geom, ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}));
-    """
+        SELECT 
+            GEOID, ppl_densit, c_lat, c_lon
+        FROM {table_name} AS tn
+        WHERE ST_Intersects(tn.geom, ST_SetSRID(ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}), 4269));
+        """
+
     
     cursor.execute(query, (minLon, minLat, maxLon, maxLat))
     rows = cursor.fetchall()

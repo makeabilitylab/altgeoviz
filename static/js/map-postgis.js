@@ -10,7 +10,7 @@ var map = new mapboxgl.Map({
 function updateStats(sourceURL) {
     let bounds = map.getBounds();
     let url = `/stats_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}&sourceURL=${sourceURL}`;
-    
+    console.log(url);
     fetch(url)
         .then(response => response.json())
         .then(data => {
