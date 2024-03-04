@@ -73,47 +73,6 @@ def fetch_density_data(table_name, zoom):
     else:
         return jsonify({"error": "Invalid bbox parameter"})
 
-def calculate_geometry_bounds(table_name):
-    if not table_name:
-        logging.error("No table name provided")
-        return None
-
-    try:
-        conn = psycopg2.connect(**db_params)
-        cursor = conn.cursor()
-
-        # Assuming the geometry column is named 'geom'
-        query = f"""
-        SELECT ST_AsText(ST_Extent(geom)) AS bbox
-        FROM {table_name};
-        """
-        cursor.execute(query)
-        bbox_text = cursor.fetchone()[0]
-
-        if bbox_text:
-            # Convert the bbox text into a more usable format, if needed
-            bbox_values = bbox_text.strip('BOX()').split(',')
-            min_corner, max_corner = bbox_values
-            min_lon, min_lat = map(float, min_corner.split(' '))
-            max_lon, max_lat = map(float, max_corner.split(' '))
-
-            bbox = {
-                "min_lon": min_lon,
-                "min_lat": min_lat,
-                "max_lon": max_lon,
-                "max_lat": max_lat
-            }
-            return bbox
-        else:
-            return None
-    except Exception as e:
-        logging.error(str(e))
-        return None
-    finally:
-        if conn:
-            conn.close()
-
-
 @app.route('/')
 def index():
     # Serve the main page with the Mapbox GL JS map
@@ -155,13 +114,13 @@ def stats_in_view():
     if table_name is None:
         return jsonify({"error": "No table name found in session"})
     
-    bbox = calculate_geometry_bounds(table_name)
-    if bbox:
-        # check if minLon is smaller than bbox['min_lon'], then set minLon = bbox['min_lon']
-        minLon = max(minLon, bbox['min_lon'])
-        maxLon = min(maxLon, bbox['max_lon'])
-        minLat = max(minLat, bbox['min_lat'])
-        maxLat = min(maxLat, bbox['max_lat'])
+    
+    
+    # check if minLon is smaller than bbox['min_lon'], then set minLon = bbox['min_lon']
+    minLon = max(minLon, -124.848974)
+    maxLon = min(maxLon, -66.885444)
+    minLat = max(minLat, 24.396308)
+    maxLat = min(maxLat, 49.384479)
     
     conn = psycopg2.connect(**db_params)
     cursor = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
