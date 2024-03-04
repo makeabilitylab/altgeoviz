@@ -314,7 +314,37 @@ class Map():
                 self.trends[area]["high"] = bounding_box
             elif any(temp_trends == low_trend for low_trend in self.TWO_SECTION_RANK_RULE["low"]):
                 self.trends[area]["low"] = bounding_box
-                
+    
+    ##############################################################################
+    ######## Calculate the average population density for each section ###########
+    ##############################################################################
+    def calculate_mean(self):
+        # calculate the mean of the section_densities
+        return sum(self.section_densities.values()) / len(self.section_densities)
+    
+    def calculate_median(self):
+        densities = [p.ppl_density for p in self.polygons]
+        return sorted(densities)[len(densities) // 2]
+    
+    def find_min(self):
+        # return the polygon with the minimum population density
+        min_polygon = min(self.polygons, key=lambda p: p.ppl_density)
+        return {
+            "geoid": min_polygon.geoid,
+            "ppl_density": min_polygon.ppl_density
+        }
+    
+    def find_max(self):
+        # return the polygon with the maximum population density
+        max_polygon = max(self.polygons, key=lambda p: p.ppl_density)
+        return {
+            "geoid": max_polygon.geoid,
+            "ppl_density": max_polygon.ppl_density
+        }
+    
+            
+            
+        
 
 # # Create a map object and test functions
 # map = Map(100, 100)
