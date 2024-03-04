@@ -115,7 +115,6 @@ def stats_in_view():
         return jsonify({"error": "No table name found in session"})
     
     
-    
     # check if minLon is smaller than bbox['min_lon'], then set minLon = bbox['min_lon']
     minLon = max(minLon, -124.848974)
     maxLon = min(maxLon, -66.885444)
@@ -141,6 +140,7 @@ def stats_in_view():
     
     for row in rows:
         polygon = utils.Polygon(row['geoid'], float(row['ppl_densit']), (float(row['c_lon']), float(row['c_lat'])))
+        # polygon.geom = row['geom']
         polygons.append(polygon)
         
     map.set_polygons(polygons)
@@ -148,7 +148,13 @@ def stats_in_view():
     map.rank_sections()
     map.find_high_density_clusters()
     
-    return jsonify(map.trends)
+    return jsonify({
+        "trends": map.trends,
+        "min": map.find_min(),
+        "max": map.find_max(),
+        "average": map.calculate_mean(),
+        "median": map.calculate_median()
+    })
 
 if __name__ == '__main__':
     app.run(debug=True)
