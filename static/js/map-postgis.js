@@ -7,6 +7,31 @@ var map = new mapboxgl.Map({
     zoom: 4
 });
 
+function calculateColor(value, min, max) {
+    const colors = [
+        { threshold: 0, color: '#F2F12D' },
+        { threshold: 36, color: '#EED322' },
+        { threshold: 72, color: '#E6B71E' },
+        { threshold: 124, color: '#DA9C20' },
+        { threshold: 188, color: '#CA8323' },
+        { threshold: 290, color: '#B86B25' },
+        { threshold: 500, color: '#A25626' },
+        { threshold: 750, color: '#8B4225' },
+        { threshold: 1000, color: '#723122' },
+        { threshold: 1500, color: '#79264E' },
+    ];
+    const normalizedValue = (value - min) / (max - min);
+    const maxThreshold = colors[colors.length - 1].threshold;
+    const normalizedThreshold = normalizedValue * maxThreshold;
+    for (let i = 0; i < colors.length - 1; i++) {
+        if (normalizedThreshold >= colors[i].threshold && normalizedThreshold < colors[i + 1].threshold) {
+            return colors[i].color;
+        }
+    }
+    return colors[colors.length - 1].color;
+}
+
+
 REGION_MAP = {
     "NW": "Northwest",
     "NE": "Northeast",
@@ -140,20 +165,11 @@ function updateStats(sourceURL) {
             the <b>maximum</b> is ${data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'},
             the <b>minimum</b> is ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'}.</p>`;
 
-
-            // content += '<p>Statistics for the population density in the current view are:</p>';
-            // content += `<ul>
-            //     <li><strong>Average</strong>: ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'} per sq. mile</li>
-            //     <li><strong>Median</strong>: ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'} per sq. mile</li>
-            //     <li><strong>Maximum</strong>: ${data.max && data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'} per sq. mile</li>
-            //     <li><strong>Minimum</strong>: ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'} per sq. mile</li>
-            // </ul>`;
-
-
             document.getElementById('stats-display').innerHTML = content;
         })
         .catch(error => console.error('Error fetching data:', error));
 }
+
 
 function fetchAndUpdateData() {
     var bounds = map.getBounds();
@@ -194,30 +210,21 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'ppl_densit'],
-                0, '#F2F12D',    
-                36, '#EED322',   
-                72, '#E6B71E',     
-                124, '#DA9C20', 
-                188, '#CA8323',   
-                290, '#B86B25',   
-                500, '#A25626',    
-                750, '#8B4225',   
-                1000, '#723122',  
+                0, '#F6D2A9',
+                50, '#F5B78E',
+                100, '#F19C7C',
+                250, '#EA8171',
+                500, '#DD686C',
+                750, '#CA5268',
+                1000, '#B13F64',
+                2000, '#9C3F5D',
+                5000, '#853F56',
             ],
             'fill-opacity': 0.75
         }
     });
 
     map.addSource('highlight-max', { type: 'geojson', data: { type: 'FeatureCollection', features: [] } });
-    // map.addLayer({
-    //     id: 'highlight-max',
-    //     type: 'fill',
-    //     source: 'highlight-max',
-    //     paint: {
-    //         'fill-color': '#B2D235', // Green for max
-    //         'fill-opacity': 0.8
-    //     }
-    // });
 
     map.addLayer({
         id: 'highlight-max-outline',
@@ -243,6 +250,45 @@ map.on('load', function () {
 
     // Fetch and update data initially
     fetchAndUpdateData();
+
+
+    map.on('data', function (e) {
+        if (e.sourceId !== 'stateDensity' || !e.isSourceLoaded) return;
+    
+        let data = map.querySourceFeatures('stateDensity');
+    
+        // Assuming 'ppl_densit' is the correct property name
+        let min = Math.min(...data.map(f => f.properties.ppl_densit));
+        let max = Math.max(...data.map(f => f.properties.ppl_densit));
+    
+        // Define a more comprehensive set of steps for the interpolate expression
+        const colorStops = [
+            0, '#F6D2A9',
+            25, '#F5B78E',
+            50, '#F19C7C',
+            100, '#EA8171',
+            200, '#DD686C',
+            500, '#CA5268',
+            1000, '#B13F64',
+            2000, '#9C3F5D',
+            5000, '#853F56',
+        ].map(stop => {
+            if (typeof stop === 'number') {
+                // Scale the number to fit within the current min-max range
+                return min + (stop / 3000) * (max - min);
+            }
+            return stop;
+        });
+    
+        map.setPaintProperty('density-layer', 'fill-color', [
+            'interpolate',
+            ['linear'],
+            ['get', 'ppl_densit'],
+            ...colorStops
+        ]);
+    });
+    
+
 
     // Update data on zoom end to avoid too many requests during zooming
     map.on('zoomend', fetchAndUpdateData);

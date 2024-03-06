@@ -15,5 +15,38 @@ body { margin: 0;
     border-radius: 5px;
     color: #000;
     z-index: 100;
-    font-size: 16pt;
+    font-size: 20pt;
+}
+
+#legend {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    z-index: 100;
+    font-size: 12pt;
+    min-width: 400px;
+}
+
+
+#legend h4 {
+    margin: 0 0 10px 0; /* Adjusts spacing for the title */
+}
+
+#legend-gradient {
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to right, 
+                                #F6D2A9 0%,  /* Start color */
+                                #F5B78E 11%, /* Approximation for 50 */
+                                #F19C7C 20%, /* Approximation for 100 */
+                                #EA8171 30%, /* Approximation for 150 */
+                                #DD686C 37%, /* Approximation for 188 */
+                                #CA5268 58%, /* Approximation for 290 */
+                                #B13F64 100%, /* End color for 500 and beyond */
+                                #9C3F5D 100%, /* Continuation for 750 */
+                                #853F56 100%); /* Continuation for 1000 */
 }
