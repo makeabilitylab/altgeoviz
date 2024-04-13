@@ -2,6 +2,8 @@ from flask import Flask, render_template, jsonify, request, session
 import duckdb
 import geopandas as gpd
 import json
+import logging
+import time  
 
 import utils
 
@@ -19,7 +21,7 @@ def index():
     # Serve the main page with the Mapbox GL JS map
     return render_template('index.html')
 
-def fetch_density_data(table_name):
+def fetch_density_data(table_name,accuracy):
     session["global_table_name"] = table_name
     # Get bounding box parameters from the request
     bbox = request.args.get('bbox', '')
@@ -29,14 +31,23 @@ def fetch_density_data(table_name):
     else:
         # Default bounding box that covers the whole world if not specified
         bbox_polygon = "POLYGON((-180 -90, 180 -90, 180 90, -180 90, -180 -90))"
+    
+
 
     query = f"""
-    SELECT GEOID, ppl_densit, ST_AsText(ST_Simplify(geom, 0.001)) AS geom_wkt
+    SELECT GEOID, ppl_densit, ST_AsText(ST_Simplify(geom, {accuracy} )) AS geom_wkt
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_GeomFromText('{bbox_polygon}'));
     """
+    
 
+    start_time = time.time()
     query_result = con.execute(query).fetchdf()
+
+    end_time = time.time()
+    
+    load_time = end_time - start_time
+    app.logger.debug(f"Data load time: {load_time:.3f} seconds")
 
     gdf = gpd.GeoDataFrame(query_result, geometry=gpd.GeoSeries.from_wkt(query_result['geom_wkt']))
     gdf.drop(columns=['geom_wkt'], inplace=True)
@@ -48,15 +59,18 @@ def fetch_density_data(table_name):
 
 @app.route('/state_density_data')
 def state_density_data():
-    return fetch_density_data('state_ppl_density')
+    accuracy = 0.001
+    return fetch_density_data('state_ppl_density', accuracy)
 
 @app.route('/county_density_data')
 def county_density_data():
-    return fetch_density_data('w_county_ppl_density')
+    accuracy = 0.0001
+    return fetch_density_data('w_county_ppl_density', accuracy)
 
 @app.route('/tract_density_data')
 def tract_density_data():
-    return fetch_density_data('wa_tract_ppl_density')
+    accuracy = 0.00001
+    return fetch_density_data('wa_tract_ppl_density', accuracy)
 
 @app.route('/stats_in_view')
 def stats_in_view():
