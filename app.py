@@ -5,6 +5,7 @@ import json
 import time  
 import logging
 import utils
+import reverse_geocoder as rg
 
 app = Flask(__name__)
 app.secret_key = 'abc'
@@ -134,5 +135,51 @@ def stats_in_view():
         }
     })
     
+@app.route('/reverse_geocode')
+def reverse_geocode():
+    table = {
+        "CA": "Canada",
+        "PR": "Puerto Rico",
+        "": "undefined"
+    }
+    
+    def construct_location(location, zoom_level=0):
+        if zoom_level >= 7:
+            return f"{location['name']}, {location['admin1']}"
+        elif zoom_level >= 5:
+            if location['cc'] != 'US':
+                return f"{location['name']}, {table[location['cc']]}"
+            return f"{location['admin2']}, {location['admin1']}"
+        else: 
+            if location['cc'] != 'US':
+                return f"{location['admin1']}, {table[location['cc']]}"
+            return f"{location['admin1']}, {location['cc']}"
+        
+    
+    screen_left = request.args.get('minLon', type=float)
+    screen_right = request.args.get('maxLon', type=float)
+    screen_top = request.args.get('maxLat', type=float)
+    screen_bottom = request.args.get('minLat', type=float)
+    zoom_level = request.args.get('zoom', type=float)
+    
+    # screen_left = request.args.get('screen_left', type=float)
+    # screen_right = request.args.get('screen_right', type=float)
+    # screen_top = request.args.get('screen_top', type=float)
+    # screen_bottom = request.args.get('screen_bottom', type=float)
+    
+    top_left = (screen_top, screen_left)
+    top_right = (screen_top, screen_right)
+    bottom_left = (screen_bottom, screen_left)
+    bottom_right = (screen_bottom, screen_right)
+    
+    top_left_res, top_right_res, bottom_left_res, bottom_right_res = rg.search([top_left, top_right, bottom_left, bottom_right])
+    
+    # construct the response
+    response = f"The current view is bounded by {construct_location(top_left_res, zoom_level)} on the top-left, {construct_location(top_right_res, zoom_level)} on the top-right, {construct_location(bottom_left_res, zoom_level)} on the bottom-left, and {construct_location(bottom_right_res, zoom_level)} on the bottom-right."
+    
+    return jsonify({
+        "response": response
+    })
+    
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5001)
