@@ -188,7 +188,13 @@ function fetchAndUpdateData() {
     map.getSource('stateDensity').setData(apiURL);
 
     // remove '/' from the beginning of the sourceURL
-    updateStats(sourceURL.replace(/^\//, ''));
+    // updateStats(sourceURL.replace(/^\//, ''));
+    map.on('data', function (e) {
+        if (e.sourceId === 'stateDensity' && e.isSourceLoaded) {
+            map.off('data', arguments.callee);
+            updateStats(sourceURL.replace(/^\//, ''));
+        }
+    });
 }
 
 map.on('load', function () {
