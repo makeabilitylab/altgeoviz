@@ -27,17 +27,18 @@ class Section():
 
 
 class Polygon():
-    def __init__(self, geoid, ppl_density, centroid):
+    def __init__(self, geoid, ppl_density, centroid, geom=None):
         self.geoid = geoid
         self.ppl_density = ppl_density
         self.centroid = centroid
         self.section = None
+        self.geom = geom
     
     def set_section(self, section: Section):
         self.section = section
         
     def __str__(self):
-        return f"geoid={self.geoid}, ppl_density={self.ppl_density}, centroid={self.centroid}, section={self.section}"
+        return f"geoid={self.geoid}, ppl_density={self.ppl_density}, centroid={self.centroid}, section={self.section}, geom={self.geom}"
         
         
 
