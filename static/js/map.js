@@ -1,11 +1,28 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiY3Jlc2NlbmRvY2h1IiwiYSI6ImNpdGR5MWZ5aDAycjIyc3A5ZHoxZzRwMGsifQ.nEaSxm520v7TpKAy2GG_kA';
 
+const bounds = [
+    [-128.0, 22.0], // Southwest
+    [-64.0, 52.0]   // Northeast
+];
+
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/light-v10',
     center: [-98.5795, 39.8283],
-    zoom: 4
+    dragRotate: false,
+    zoom: 4,
+    maxBounds: bounds,
 });
+
+//disable map rotation and changing pitch
+window.addEventListener('keydown', function(event) {
+    console.log("Event captured: ", event.key, "Shift pressed: ", event.shiftKey);
+    if (event.shiftKey && ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+        console.log("Blocking this event");
+        event.preventDefault();
+        event.stopPropagation();
+    }
+}, true);
 
 function calculateColor(value, min, max) {
     const colors = [
@@ -187,8 +204,6 @@ function fetchAndUpdateData() {
 
     map.getSource('stateDensity').setData(apiURL);
 
-    // remove '/' from the beginning of the sourceURL
-    // updateStats(sourceURL.replace(/^\//, ''));
     map.on('data', function (e) {
         if (e.sourceId === 'stateDensity' && e.isSourceLoaded) {
             map.off('data', arguments.callee);
@@ -238,8 +253,8 @@ map.on('load', function () {
         source: 'highlight-max',
         layout: {},
         paint: {
-            'line-color': '#B2D235', // Green for the outline
-            'line-width': 2 // Adjust the line width as needed
+            'line-color': '#B2D235',
+            'line-width': 2 
         }
     });
 
@@ -263,11 +278,9 @@ map.on('load', function () {
     
         let data = map.querySourceFeatures('stateDensity');
     
-        // Assuming 'ppl_densit' is the correct property name
         let min = Math.min(...data.map(f => f.properties.ppl_densit));
         let max = Math.max(...data.map(f => f.properties.ppl_densit));
-    
-        // Define a more comprehensive set of steps for the interpolate expression
+
         const colorStops = [
             0, '#F6D2A9',
             25, '#F5B78E',
@@ -295,10 +308,7 @@ map.on('load', function () {
     });
     
 
-
-    // Update data on zoom end to avoid too many requests during zooming
     map.on('zoomend', fetchAndUpdateData);
 
-    // Update data when the map is panned
     map.on('moveend', fetchAndUpdateData);
 });

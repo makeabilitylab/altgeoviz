@@ -41,13 +41,13 @@ def fetch_density_data(table_name,accuracy):
     """
     
 
-    start_time = time.time()
+    # start_time = time.time()
     query_result = con.execute(query).fetchdf()
 
-    end_time = time.time()
+    # end_time = time.time()
     
-    load_time = end_time - start_time
-    app.logger.debug(f"Data load time: {load_time:.3f} seconds")
+    # load_time = end_time - start_time
+    # app.logger.debug(f"Data load time: {load_time:.3f} seconds")
 
     gdf = gpd.GeoDataFrame(query_result, geometry=gpd.GeoSeries.from_wkt(query_result['geom_wkt']))
     gdf.drop(columns=['geom_wkt'], inplace=True)
