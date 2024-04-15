@@ -50,63 +50,92 @@ function calculateColor(value, min, max) {
 
 
 REGION_MAP = {
-    "NW": "Northwest",
-    "NE": "Northeast",
-    "SW": "Southwest",
-    "SE": "Southeast",
-    "W": "West",
-    "E": "East",
-    "N": "North",
-    "S": "South",
-    "C": "Central",
-    "left_diagonal": "diagonally from Northwest to Southeast",
-    "right_diagonal": "diagonally from Southwest to Northeast",
-    "horizontal": "horizontally across the center",
+    "NW": "top-left",
+    "NE": "top-right",
+    "SW": "bottom-left",
+    "SE": "bottom-right",
+    "W": "left",
+    "E": "right",
+    "N": "top",
+    "S": "bottom",
+    "C": "center",
+    "left_diagonal": "diagonally from top-left to bottom-right",
+    "right_diagonal": "diagonally from bottom-left to top-right",
+    "horizontal": "horizontally through the center",
     "vertical": "vertically through the center"
 }
 
-function updateStats(sourceURL) {
-    let bounds = map.getBounds();
-    let url = `/stats_in_view?minLon=${bounds.getWest()}&minLat=${bounds.getSouth()}&maxLon=${bounds.getEast()}&maxLat=${bounds.getNorth()}&sourceURL=${sourceURL}`;
+const MAPTYPE = "choropleth map";
+
+const MAPBOUNDS = [
+    [-128.0, 22.0], // Southwest
+    [-64.0, 52.0]   // Northeast
+];
+
+const ZOOM_LEVEL_TRACT = 7;
+const ZOOM_LEVEL_COUNTY = 5;
+const ZOOM_LEVEL_STATE = 0;
+
+const constructGeoUnit = (zoom) => {
+    let zoomText = "";
     
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            // highlights 
-            console.log(data.highlights.max.geometry);
-               
-                if(data.highlights.max) {
-                    
-                    map.getSource('highlight-max').setData({
-                        type: 'FeatureCollection',
-                        features: [data.highlights.max]
-                    });
-                } else {
-                    map.getSource('highlight-max').setData({
-                        type: 'FeatureCollection',
-                        features: []
-                    });
-                }
+    if (zoom >= ZOOM_LEVEL_TRACT) {
+        zoomText = "census track";
+    } else if (zoom >= ZOOM_LEVEL_COUNTY) {
+        zoomText = "county";
+    } else {
+        zoomText = "state";
+    }
+    return zoomText;
+}
 
-                if(data.highlights.min) {
-                    map.getSource('highlight-min').setData({
-                        type: 'FeatureCollection',
-                        features: [data.highlights.min]
-                    });
-                } else {
-                    map.getSource('highlight-min').setData({
-                        type: 'FeatureCollection',
-                        features: []
-                    });
-                }
+const constructBoundary = async (screenLeft, screenRight, screenTop, screenBottom, zoom) => {
+    // call the api /get_boundary by passing the bounds of the map
+    let url = `/reverse_geocode?screenLeft=${screenLeft}&screenRight=${screenRight}&screenTop=${screenTop}&screenBottom=${screenBottom}&zoom=${zoom}`;
 
-            // stats + alt text
-            let content = '<p>In the current view, the spatial trends are:</p>';
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
 
-            console.log(data);
-            
+        if (response.ok && data['response']) {
+            return data['response'];
+        } else {
+            return "Failed to retrieve boundary information.";
+        }
+    } catch (error) {
+        console.error("Error fetching boundary data:", error);
+        return "An error occurred while fetching boundary information.";
+    }
+}
+
+const constructZoom = (zoom) => {
+    // Zoom in to interact with the data at [next level]; zoom out to interact with the data at [previous level].
+    let zoomText = "";
+    if (zoom >= ZOOM_LEVEL_TRACT) {
+        zoomText = "Zoom out to interact with the data at county level.";
+    } else if (zoom >= ZOOM_LEVEL_COUNTY) {
+        zoomText = "Zoom out to interact with the data at state level. Zoom in to interact with the data at census track level.";
+    } else {
+        zoomText = "Zoom in to interact with the data at county level.";
+    }
+    return zoomText;
+}
+
+const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom) => {
+    var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}`;
+
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        console.log(data);
+
+        if (response.ok) {
             let highs = [];
             let lows = [];
+
+            let content = "";
+
             for (const [section, trends] of Object.entries(data.trends)) {
                 if (trends.high && trends.high.length > 0) {
                     highs.push(section);
@@ -175,16 +204,45 @@ function updateStats(sourceURL) {
                 content += '<p>- No regions with particularly low population density.</p>';
             }
 
+            // construct the stats
+            content += `
+                the <b>average</b> population density is ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'} per square mile, 
+                the <b>median</b> is ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'}, 
+                the <b>maximum</b> is ${data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'},
+                the <b>minimum</b> is ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'}.</p>`;
 
-            content += `<p>In the current view, 
-            the <b>average</b> population density is ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'} per square mile, 
-            the <b>median</b> is ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'}, 
-            the <b>maximum</b> is ${data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'},
-            the <b>minimum</b> is ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'}.</p>`;
+            return content;
+        }
+    } catch (error) {
+        console.error("Error fetching trend data:", error);
+        return "An error occurred while fetching trend information.";
+    }
+}
 
-            document.getElementById('stats-display').innerHTML = content;
-        })
-        .catch(error => console.error('Error fetching data:', error));
+datasetName = "population density";
+async function updateStats(sourceURL) {
+    let zoom = map.getZoom();
+    let bounds = map.getBounds();
+
+    const screenLeft = bounds.getWest() < MAPBOUNDS[0][0] ? MAPBOUNDS[0][0] : bounds.getWest();
+    const screenRight = bounds.getEast() > MAPBOUNDS[1][0] ? MAPBOUNDS[1][0] : bounds.getEast();
+    const screenTop = bounds.getNorth() > MAPBOUNDS[1][1] ? MAPBOUNDS[1][1] : bounds.getNorth();
+    const screenBottom = bounds.getSouth() < MAPBOUNDS[0][1] ? MAPBOUNDS[0][1] : bounds.getSouth();
+
+    let output = "";
+    
+    let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
+    let boundary = await constructBoundary(screenLeft, screenRight, screenTop, screenBottom, zoom);
+    let zoomText = constructZoom(zoom);
+    let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom);
+    
+
+    document.getElementById('stats-display').innerHTML = `
+        <h3>${overview}</h3>
+        <p>${boundary}</p>
+        <p>${zoomText}</p>
+        <p>${trendText}</p>
+    `;
 }
 
 
