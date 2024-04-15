@@ -219,7 +219,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(0) + " people per square mile.";
             }
 
-            let average = `The average population density in the view is ${data.average.toFixed(2)} people per square mile.`;
+            let average = `The average population density in the view is ${data.average.toFixed(0)} people per square mile.`;
             content += `<p>${minText}</p><p>${maxText}</p><p>${average}</p>`;
 
             return content;
@@ -270,7 +270,7 @@ async function updateStats(sourceURL) {
 function fetchAndUpdateData() {
     var bounds = map.getBounds();
     var zoom = map.getZoom();
-    var sourceURL = '/state_density_data'; // Default to state-level data
+    var sourceURL = '/state_density_data'; 
 
     if (zoom >= 7) {
         sourceURL = '/tract_density_data';
@@ -278,7 +278,6 @@ function fetchAndUpdateData() {
         sourceURL = '/county_density_data';
     }
 
-    // Construct the URL with bounds and zoom level if your API supports it
     var apiURL = `${sourceURL}?bbox=${bounds.getWest()},${bounds.getSouth()},${bounds.getEast()},${bounds.getNorth()}&zoom=${zoom}`;
 
     map.getSource('stateDensity').setData(apiURL);
@@ -297,7 +296,7 @@ map.on('load', function () {
         data: {
             "type": "FeatureCollection",
             "features": []
-        } // Start with an empty GeoJSON FeatureCollection
+        } 
     });
 
     map.addLayer({
