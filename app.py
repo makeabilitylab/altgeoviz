@@ -9,7 +9,7 @@ import reverse_geocoder as rg
 
 app = Flask(__name__)
 app.secret_key = 'abc'
-app.logger.setLevel(logging.DEBUG)
+# app.logger.setLevel(logging.DEBUG)
 
 # Database connection
 con = duckdb.connect(database='data/my_spatial_db.duckdb', read_only=True)

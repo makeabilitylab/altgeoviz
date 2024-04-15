@@ -80,7 +80,7 @@ const constructGeoUnit = (zoom) => {
     let zoomText = "";
     
     if (zoom >= ZOOM_LEVEL_TRACT) {
-        zoomText = "census track";
+        zoomText = "census tract";
     } else if (zoom >= ZOOM_LEVEL_COUNTY) {
         zoomText = "county";
     } else {
@@ -114,7 +114,7 @@ const constructZoom = (zoom) => {
     if (zoom >= ZOOM_LEVEL_TRACT) {
         zoomText = "Zoom out to interact with the data at county level.";
     } else if (zoom >= ZOOM_LEVEL_COUNTY) {
-        zoomText = "Zoom out to interact with the data at state level. Zoom in to interact with the data at census track level.";
+        zoomText = "Zoom out to interact with the data at state level. Zoom in to interact with the data at census tract level.";
     } else {
         zoomText = "Zoom in to interact with the data at county level.";
     }
@@ -209,17 +209,17 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             let minText = "";
             let maxText = "";
             if (zoom >= ZOOM_LEVEL_TRACT) {
-                minText += "The census track with the lowest population density is " + data.min.text + ", located in the " + REGION_MAP[data.min.section] + ", with a population density of " + data.min.value.toFixed(2) + ".";
-                maxText += "The census track with the highest population density is " + data.max.text + ", located in the " + REGION_MAP[data.max.section] + ", with a population density of " + data.max.value.toFixed(2) + ".";
+                minText += "The census tract with the lowest population density is " + data.min.text + ", located in the " + REGION_MAP[data.min.section] + ", with a population density of " + data.min.value.toFixed(0) + " people per square mile.";
+                maxText += "The census tract with the highest population density is " + data.max.text + ", located in the " + REGION_MAP[data.max.section] + ", with a population density of " + data.max.value.toFixed(0) + " people per square mile.";
             } else if (zoom >= ZOOM_LEVEL_COUNTY) {
-                minText += "The county with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(2) + ".";
-                maxText += "The county with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(2) + ".";
+                minText += "The county with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(0) + " people per square mile.";
+                maxText += "The county with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(0) + " people per square mile.";
             } else {
-                minText += "The state with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(2) + ".";
-                maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(2) + ".";
+                minText += "The state with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(0) + " people per square mile.";
+                maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(0) + " people per square mile.";
             }
 
-            let average = `The average population density in the view is ${data.average.toFixed(2)}.`;
+            let average = `The average population density in the view is ${data.average.toFixed(2)} people per square mile.`;
             content += `<p>${minText}</p><p>${maxText}</p><p>${average}</p>`;
 
             return content;
@@ -249,11 +249,21 @@ async function updateStats(sourceURL) {
     
 
     document.getElementById('stats-display').innerHTML = `
-        <h3>${overview}</h3>
+        <p>${overview}</p>
         <p>${boundary}</p>
         <p>${zoomText}</p>
-        <p>${trendText}</p>
+        <p>Press i to hear more information.</p>
     `;
+
+    function handleKeypress(event) {
+        if (event.key === 'i') {
+            document.getElementById('stats-display').innerHTML = `<p>${trendText}</p>`;
+        }
+    }
+
+    // Adding the keypress event listener to the window object
+    window.addEventListener('keypress', handleKeypress);
+
 }
 
 
