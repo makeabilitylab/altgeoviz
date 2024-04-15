@@ -140,6 +140,8 @@ def reverse_geocode():
     table = {
         "CA": "Canada",
         "PR": "Puerto Rico",
+        "MX": "Mexico",
+        "BS": "The Bahamas",
         "": "undefined"
     }
     
@@ -155,17 +157,11 @@ def reverse_geocode():
                 return f"{location['admin1']}, {table[location['cc']]}"
             return f"{location['admin1']}, {location['cc']}"
         
-    
-    screen_left = request.args.get('minLon', type=float)
-    screen_right = request.args.get('maxLon', type=float)
-    screen_top = request.args.get('maxLat', type=float)
-    screen_bottom = request.args.get('minLat', type=float)
+    screen_left = request.args.get('screenLeft', type=float)
+    screen_right = request.args.get('screenRight', type=float)
+    screen_top = request.args.get('screenTop', type=float)
+    screen_bottom = request.args.get('screenBottom', type=float)
     zoom_level = request.args.get('zoom', type=float)
-    
-    # screen_left = request.args.get('screen_left', type=float)
-    # screen_right = request.args.get('screen_right', type=float)
-    # screen_top = request.args.get('screen_top', type=float)
-    # screen_bottom = request.args.get('screen_bottom', type=float)
     
     top_left = (screen_top, screen_left)
     top_right = (screen_top, screen_right)
