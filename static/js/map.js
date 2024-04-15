@@ -121,8 +121,8 @@ const constructZoom = (zoom) => {
     return zoomText;
 }
 
-const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom) => {
-    var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}`;
+const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, zoom) => {
+    var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}&zoom=${zoom}`;
 
     try {
         const response = await fetch(url);
@@ -204,12 +204,23 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom) 
                 content += '<p>- No regions with particularly low population density.</p>';
             }
 
-            // construct the stats
-            content += `
-                the <b>average</b> population density is ${data.average != null ? parseFloat(data.average).toFixed(2) : 'Not available'} per square mile, 
-                the <b>median</b> is ${data.median != null ? parseFloat(data.median).toFixed(2) : 'Not available'}, 
-                the <b>maximum</b> is ${data.max != null ? parseFloat(data.max).toFixed(2) : 'Not available'},
-                the <b>minimum</b> is ${data.min && data.min != null ? parseFloat(data.min).toFixed(2) : 'Not available'}.</p>`;
+            // census track level
+            // min, max
+            let minText = "";
+            let maxText = "";
+            if (zoom >= ZOOM_LEVEL_TRACT) {
+                minText += "The census track with the lowest population density is " + data.min.text + ", located in the " + REGION_MAP[data.min.section] + ", with a population density of " + data.min.value.toFixed(2) + ".";
+                maxText += "The census track with the highest population density is " + data.max.text + ", located in the " + REGION_MAP[data.max.section] + ", with a population density of " + data.max.value.toFixed(2) + ".";
+            } else if (zoom >= ZOOM_LEVEL_COUNTY) {
+                minText += "The county with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(2) + ".";
+                maxText += "The county with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(2) + ".";
+            } else {
+                minText += "The state with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(2) + ".";
+                maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(2) + ".";
+            }
+
+            let average = `The average population density in the view is ${data.average.toFixed(2)}.`;
+            content += `<p>${minText}</p><p>${maxText}</p><p>${average}</p>`;
 
             return content;
         }
@@ -234,7 +245,7 @@ async function updateStats(sourceURL) {
     let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
     let boundary = await constructBoundary(screenLeft, screenRight, screenTop, screenBottom, zoom);
     let zoomText = constructZoom(zoom);
-    let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom);
+    let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
     
 
     document.getElementById('stats-display').innerHTML = `

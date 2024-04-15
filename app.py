@@ -74,12 +74,17 @@ def tract_density_data():
     accuracy = 0.001
     return fetch_density_data('wa_tract_ppl_density', accuracy)
 
+def reverse_helper(lon, lat): 
+    result = rg.search((lat, lon))
+    return result[0]
+
 @app.route('/stats_in_view')
 def stats_in_view():
     minLon = request.args.get('minLon', type=float)
     minLat = request.args.get('minLat', type=float)
     maxLon = request.args.get('maxLon', type=float)
     maxLat = request.args.get('maxLat', type=float)
+    zoom_level = request.args.get('zoom', type=float)
     
     # fetch the data from the map that is bounded by the min/max of longitude and latitude
     table_name = session.get('global_table_name', None)
@@ -108,11 +113,41 @@ def stats_in_view():
     map.find_high_density_clusters()    
     map_min = map.find_min()
     map_max = map.find_max()
+    
+    table = {
+        "CA": "Canada",
+        "PR": "Puerto Rico",
+        "MX": "Mexico",
+        "BS": "The Bahamas",
+        "": "undefined"
+    }
+    
+    def construct_location(location, zoom_level=0):
+        if zoom_level >= 7:
+            return f"{location['name']}, {location['admin1']}"
+        elif zoom_level >= 5:
+            if location['cc'] != 'US':
+                return f"{location['name']}, {table[location['cc']]}"
+            return f"{location['admin2']}, {location['admin1']}"
+        else: 
+            if location['cc'] != 'US':
+                return f"{location['admin1']}, {table[location['cc']]}"
+            return f"{location['admin1']}, {location['cc']}"
+
 
     return jsonify({
         "trends": map.trends,
-        "min": map_min['ppl_densit'],
-        "max": map_max['ppl_densit'],
+        "min": {
+            "value": map_min['ppl_densit'],
+            "text": construct_location(reverse_helper(map_min['centroid'][0], map_min['centroid'][1]), zoom_level),
+            "section": map_min['section']
+            
+        },
+        "max": {
+            "value": map_max['ppl_densit'],
+            "text": construct_location(reverse_helper(map_max['centroid'][0], map_max['centroid'][1]), zoom_level),
+            "section": map_max['section']
+        },
         "average": map.calculate_mean(),
         "median": map.calculate_median(),
         "highlights": {
@@ -178,4 +213,4 @@ def reverse_geocode():
     })
     
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=True, port=5007)

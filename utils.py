@@ -333,7 +333,9 @@ class Map():
         return {
             "geoid": min_polygon.geoid,
             "ppl_densit": min_polygon.ppl_density,
-            "geom": min_polygon.geom
+            "geom": min_polygon.geom,
+            "centroid": min_polygon.centroid,
+            "section": min_polygon.section
         }
     
     def find_max(self):
@@ -342,7 +344,9 @@ class Map():
         return {
             "geoid": max_polygon.geoid,
             "ppl_densit": max_polygon.ppl_density,
-            "geom": max_polygon.geom
+            "geom": max_polygon.geom,
+            "centroid": max_polygon.centroid,
+            "section": max_polygon.section
         }
         
         
