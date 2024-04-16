@@ -273,16 +273,18 @@ class Map():
     def find_high_density_clusters(self):
         if not self.section_ranks:
             self.section_ranks = self.rank_sections()
+            
+        def is_added(area):
+            for temp_trend, _ in self.trends.items():
+                if (area in temp_trend or temp_trend in area) and len(_) > 0:
+                    return True
+            return False
         
             
         # check the four section trend first
         for bounding_box, area in self.FOUR_SECTION_TREND_BOUNDING_BOX.items():
             if area not in self.trends and len(self.trends[area]) > 0:
                 continue
-
-            for temp_trend, _ in self.trends.items():
-                if area in temp_trend and len(_) > 0:
-                    continue
 
             temp_trends = []
             for section in bounding_box:
@@ -298,9 +300,8 @@ class Map():
             if area not in self.trends and len(self.trends[area]) > 0:
                 continue
 
-            for temp_trend, _ in self.trends.items():
-                if area in temp_trend and len(_) > 0:
-                    continue
+            if is_added(area):
+                continue
             
             temp_trends = []
             for section in bounding_box:
@@ -308,17 +309,18 @@ class Map():
             temp_trends = sorted(temp_trends)
             
             if any(temp_trends == high_trend for high_trend in self.THREE_SECTION_RANK_RULE["high"]):
-                self.trends[area]["high"] = bounding_box
+                if not is_added(area):
+                    self.trends[area]["high"] = bounding_box
             elif any(temp_trends == low_trend for low_trend in self.THREE_SECTION_RANK_RULE["low"]):
-                self.trends[area]["low"] = bounding_box
+                if not is_added(area):
+                    self.trends[area]["low"] = bounding_box
                 
         for bounding_box, area in self.TWO_SECTION_TREND_BOUNDING_BOX.items():
             if area not in self.trends and len(self.trends[area]) > 0:
                 continue
 
-            for temp_trend, _ in self.trends.items():
-                if area in temp_trend and len(_) > 0:
-                    continue
+            if is_added(area):
+                continue
             
             temp_trends = []
             for section in bounding_box:
@@ -326,9 +328,11 @@ class Map():
             temp_trends = sorted(temp_trends)
             
             if any(temp_trends == high_trend for high_trend in self.TWO_SECTION_RANK_RULE["high"]):
-                self.trends[area]["high"] = bounding_box
+                if not is_added(area):
+                    self.trends[area]["high"] = bounding_box
             elif any(temp_trends == low_trend for low_trend in self.TWO_SECTION_RANK_RULE["low"]):
-                self.trends[area]["low"] = bounding_box
+                if not is_added(area):
+                    self.trends[area]["low"] = bounding_box
     
     ##############################################################################
     ######## Calculate the average population density for each section ###########
