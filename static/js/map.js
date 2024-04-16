@@ -210,17 +210,17 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             let minText = "";
             let maxText = "";
             if (zoom >= ZOOM_LEVEL_TRACT) {
-                minText += "The census tract with the lowest population density is " + data.min.text + ", located in the " + REGION_MAP[data.min.section] + ", with a population density of " + data.min.value.toFixed(0) + " people per square mile.";
-                maxText += "The census tract with the highest population density is " + data.max.text + ", located in the " + REGION_MAP[data.max.section] + ", with a population density of " + data.max.value.toFixed(0) + " people per square mile.";
+                minText += "The census tract with the lowest population density is " + data.min.text + ", located in the " + REGION_MAP[data.min.section] + ", with a population density of " + data.min.value.toFixed(1) + " people per square mile.";
+                maxText += "The census tract with the highest population density is " + data.max.text + ", located in the " + REGION_MAP[data.max.section] + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
             } else if (zoom >= ZOOM_LEVEL_COUNTY) {
-                minText += "The county with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(0) + " people per square mile.";
-                maxText += "The county with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(0) + " people per square mile.";
+                minText += "The county with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(1) + " people per square mile.";
+                maxText += "The county with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
             } else {
-                minText += "The state with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(0) + " people per square mile.";
-                maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(0) + " people per square mile.";
+                minText += "The state with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(1) + " people per square mile.";
+                maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
             }
 
-            let average = `The average population density in the view is ${data.average.toFixed(0)} people per square mile.`;
+            let average = `The average population density in the view is ${data.average.toFixed(1)} people per square mile.`;
             content += `<p>${minText}</p><p>${maxText}</p><p>${average}</p>`;
 
             return {
@@ -235,41 +235,6 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
 }
 
 datasetName = "population density";
-// async function updateStats() {
-//     let zoom = map.getZoom();
-//     let bounds = map.getBounds();
-
-//     const screenLeft = bounds.getWest() < MAPBOUNDS[0][0] ? MAPBOUNDS[0][0] : bounds.getWest();
-//     const screenRight = bounds.getEast() > MAPBOUNDS[1][0] ? MAPBOUNDS[1][0] : bounds.getEast();
-//     const screenTop = bounds.getNorth() > MAPBOUNDS[1][1] ? MAPBOUNDS[1][1] : bounds.getNorth();
-//     const screenBottom = bounds.getSouth() < MAPBOUNDS[0][1] ? MAPBOUNDS[0][1] : bounds.getSouth();
-
-//     let output = "";
-    
-//     let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
-//     // let boundary = await constructBoundary(screenLeft, screenRight, screenTop, screenBottom, zoom);
-//     let zoomText = constructZoom(zoom);
-//     let statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
-//     // let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
-    
-
-//     document.getElementById('stats-display').innerHTML = `
-//         <p>${overview}</p>
-//         <p>${statsTrend.geocode}</p>
-//         <p>${zoomText}</p>
-//         <p>Press i to hear more information.</p>
-//     `;
-
-//     function handleKeypress(event) {
-//         if (event.key === 'i') {
-//             document.getElementById('stats-display').innerHTML = `<p>${statsTrend.trend}</p>`;
-//         }
-//     }
-
-//     // Adding the keypress event listener to the window object
-//     window.addEventListener('keypress', handleKeypress);
-
-// }
 
 async function updateStats() {
     let zoom = map.getZoom();
@@ -289,17 +254,27 @@ async function updateStats() {
         let zoomText = constructZoom(zoom);
         let statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
 
-        // Update the stats display with the retrieved information
-        document.getElementById('stats-display').innerHTML = `
+        let initialStatsDisplay = `
             <p>${overview}</p>
             <p>${statsTrend.geocode}</p>
             <p>${zoomText}</p>
             <p>Press i to hear more information.</p>
         `;
 
+        // Update the stats display with the retrieved information
+        document.getElementById('stats-display').innerHTML = initialStatsDisplay;
+
         function handleKeypress(event) {
             if (event.key === 'i') {
-                document.getElementById('stats-display').innerHTML = `<p>${statsTrend.trend}</p>`;
+                // Show trend information and set state to true
+                document.getElementById('stats-display').innerHTML = 
+                `<p>${statsTrend.trend}</p>
+                <p>Press k to go back.</p>`;
+                inDetailedView = true;
+            } else if (event.key === 'k' && inDetailedView) {
+                // Revert to initial stats display only if in detailed view
+                document.getElementById('stats-display').innerHTML = initialStatsDisplay;
+                inDetailedView = false;  // Reset the state
             }
         }
 
@@ -311,6 +286,7 @@ async function updateStats() {
         document.getElementById('stats-display').innerHTML = '<p>Error loading information. Please try again.</p>';
     }
 }
+
 
 
 

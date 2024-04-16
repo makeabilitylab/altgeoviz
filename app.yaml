@@ -1,7 +1,7 @@
 runtime: python39
 entrypoint: gunicorn -b :$PORT app:app
 
-instance_class: B2  # Upgraded instance class for increased memory limits
+instance_class: B4  # Upgraded instance class for increased memory limits
 
 env_variables:
   MAPBOX_ACCESS_TOKEN: 'YOUR_MAPBOX_ACCESS_TOKEN_HERE'
