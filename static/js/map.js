@@ -235,6 +235,42 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
 }
 
 datasetName = "population density";
+// async function updateStats() {
+//     let zoom = map.getZoom();
+//     let bounds = map.getBounds();
+
+//     const screenLeft = bounds.getWest() < MAPBOUNDS[0][0] ? MAPBOUNDS[0][0] : bounds.getWest();
+//     const screenRight = bounds.getEast() > MAPBOUNDS[1][0] ? MAPBOUNDS[1][0] : bounds.getEast();
+//     const screenTop = bounds.getNorth() > MAPBOUNDS[1][1] ? MAPBOUNDS[1][1] : bounds.getNorth();
+//     const screenBottom = bounds.getSouth() < MAPBOUNDS[0][1] ? MAPBOUNDS[0][1] : bounds.getSouth();
+
+//     let output = "";
+    
+//     let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
+//     // let boundary = await constructBoundary(screenLeft, screenRight, screenTop, screenBottom, zoom);
+//     let zoomText = constructZoom(zoom);
+//     let statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
+//     // let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
+    
+
+//     document.getElementById('stats-display').innerHTML = `
+//         <p>${overview}</p>
+//         <p>${statsTrend.geocode}</p>
+//         <p>${zoomText}</p>
+//         <p>Press i to hear more information.</p>
+//     `;
+
+//     function handleKeypress(event) {
+//         if (event.key === 'i') {
+//             document.getElementById('stats-display').innerHTML = `<p>${statsTrend.trend}</p>`;
+//         }
+//     }
+
+//     // Adding the keypress event listener to the window object
+//     window.addEventListener('keypress', handleKeypress);
+
+// }
+
 async function updateStats() {
     let zoom = map.getZoom();
     let bounds = map.getBounds();
@@ -244,32 +280,38 @@ async function updateStats() {
     const screenTop = bounds.getNorth() > MAPBOUNDS[1][1] ? MAPBOUNDS[1][1] : bounds.getNorth();
     const screenBottom = bounds.getSouth() < MAPBOUNDS[0][1] ? MAPBOUNDS[0][1] : bounds.getSouth();
 
-    let output = "";
-    
-    let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
-    // let boundary = await constructBoundary(screenLeft, screenRight, screenTop, screenBottom, zoom);
-    let zoomText = constructZoom(zoom);
-    let statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
-    // let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
-    
+    // Display loading message
+    document.getElementById('stats-display').innerHTML = '<p>Information is loading...</p>';
 
-    document.getElementById('stats-display').innerHTML = `
-        <p>${overview}</p>
-        <p>${statsTrend.geocode}</p>
-        <p>${zoomText}</p>
-        <p>Press i to hear more information.</p>
-    `;
+    // Fetch and process the trend data
+    try {
+        let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
+        let zoomText = constructZoom(zoom);
+        let statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
 
-    function handleKeypress(event) {
-        if (event.key === 'i') {
-            document.getElementById('stats-display').innerHTML = `<p>${statsTrend.trend}</p>`;
+        // Update the stats display with the retrieved information
+        document.getElementById('stats-display').innerHTML = `
+            <p>${overview}</p>
+            <p>${statsTrend.geocode}</p>
+            <p>${zoomText}</p>
+            <p>Press i to hear more information.</p>
+        `;
+
+        function handleKeypress(event) {
+            if (event.key === 'i') {
+                document.getElementById('stats-display').innerHTML = `<p>${statsTrend.trend}</p>`;
+            }
         }
+
+        // Adding the keypress event listener to the window object
+        window.addEventListener('keypress', handleKeypress);
+    } catch (error) {
+        console.error("Error updating stats:", error);
+        // Update display to show error message
+        document.getElementById('stats-display').innerHTML = '<p>Error loading information. Please try again.</p>';
     }
-
-    // Adding the keypress event listener to the window object
-    window.addEventListener('keypress', handleKeypress);
-
 }
+
 
 
 function fetchAndUpdateData() {
