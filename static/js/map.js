@@ -223,7 +223,10 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             let average = `The average population density in the view is ${data.average.toFixed(0)} people per square mile.`;
             content += `<p>${minText}</p><p>${maxText}</p><p>${average}</p>`;
 
-            return content;
+            return {
+                geocode: data.geocode,
+                trend: content
+            };
         }
     } catch (error) {
         console.error("Error fetching trend data:", error);
@@ -244,21 +247,22 @@ async function updateStats() {
     let output = "";
     
     let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
-    let boundary = await constructBoundary(screenLeft, screenRight, screenTop, screenBottom, zoom);
+    // let boundary = await constructBoundary(screenLeft, screenRight, screenTop, screenBottom, zoom);
     let zoomText = constructZoom(zoom);
-    let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
+    let statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
+    // let trendText = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
     
 
     document.getElementById('stats-display').innerHTML = `
         <p>${overview}</p>
-        <p>${boundary}</p>
+        <p>${statsTrend.geocode}</p>
         <p>${zoomText}</p>
         <p>Press i to hear more information.</p>
     `;
 
     function handleKeypress(event) {
         if (event.key === 'i') {
-            document.getElementById('stats-display').innerHTML = `<p>${trendText}</p>`;
+            document.getElementById('stats-display').innerHTML = `<p>${statsTrend.trend}</p>`;
         }
     }
 
