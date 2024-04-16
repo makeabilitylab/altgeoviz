@@ -122,7 +122,8 @@ const constructZoom = (zoom) => {
 }
 
 const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, zoom) => {
-    var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}&zoom=${zoom}`;
+    // var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}&zoom=${zoom}`;
+    var url = `/stats_in_view?screenLeft=${screenLeft}&screenBottom=${screenBottom}&screenRight=${screenRight}&screenTop=${screenTop}&zoom=${zoom}`;
 
     try {
         const response = await fetch(url);

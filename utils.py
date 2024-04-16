@@ -231,8 +231,8 @@ class Map():
             if section_name:
                 polygon.set_section(section_name)
                 section_polygons[section_name].append(polygon)
-            else:
-                logging.error(f"Polygon with centroid ({polygon.centroid[0]}, {polygon.centroid[1]}) is out of map bounds.")
+            # else:
+                # logging.error(f"Polygon with centroid ({polygon.centroid[0]}, {polygon.centroid[1]}) is out of map bounds.")
 
         return section_polygons
     
