@@ -110,10 +110,37 @@ def tract_density_data():
     accuracy = 0.001
     return fetch_density_data('wa_tract_ppl_density', accuracy)
 
-@lru_cache(maxsize=1000)
+# @lru_cache(maxsize=1000)
 def reverse_helper(lon, lat): 
     result = rg.search((lat, lon))
     return result[0]
+
+def reverse_geocode(screen_left, screen_right, screen_top, screen_bottom, zoom_level):
+
+    # viewport = get_viewport_params()
+
+    # top_left_res = reverse_helper(viewport['screen_left'], viewport['screen_top'])
+    # top_right_res = reverse_helper(viewport['screen_right'], viewport['screen_top'])
+    # bottom_left_res = reverse_helper(viewport['screen_left'], viewport['screen_bottom'])
+    # bottom_right_res = reverse_helper(viewport['screen_right'], viewport['screen_bottom'])
+    top_left = (screen_top, screen_left)
+    top_right = (screen_top, screen_right)
+    bottom_left = (screen_bottom, screen_left)
+    bottom_right = (screen_bottom, screen_right)
+    
+    top_left_res, top_right_res, bottom_left_res, bottom_right_res = rg.search([top_left, top_right, bottom_left, bottom_right])
+    
+    # Constructing location description for each corner using the helper
+    top_left_location = construct_location(top_left_res, zoom_level)
+    top_right_location = construct_location(top_right_res, zoom_level)
+    bottom_left_location = construct_location(bottom_left_res, zoom_level)
+    bottom_right_location = construct_location(bottom_right_res, zoom_level)
+    
+    # Construct the response
+    response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_left_location} on the bottom-left, and {bottom_right_location} on the bottom-right."
+    
+    return response
+
 
 @app.route('/stats_in_view')
 def stats_in_view():
@@ -126,6 +153,9 @@ def stats_in_view():
     zoom_level = viewport['zoom_level']
 
     # Take out the geom from this query 
+    # geocode text 
+    geotext = reverse_geocode(min_lon, max_lon, max_lat, min_lat, zoom_level)
+    
 
     # Fetch the data from the map that is bounded by the min/max of longitude and latitude
     table_name = session.get('global_table_name', None)
@@ -155,6 +185,7 @@ def stats_in_view():
     map_max = map_instance.find_max()
 
     return jsonify({
+        "geocode": geotext, 
         "trends": map_instance.trends,
         "min": {
             "value": map_min['ppl_densit'],
@@ -170,28 +201,28 @@ def stats_in_view():
         "median": map_instance.calculate_median()
     })
     
-@app.route('/reverse_geocode')
-def reverse_geocode():
+# @app.route('/reverse_geocode')
+# def reverse_geocode():
 
-    viewport = get_viewport_params()
+#     viewport = get_viewport_params()
 
-    top_left_res = reverse_helper(viewport['screen_left'], viewport['screen_top'])
-    top_right_res = reverse_helper(viewport['screen_right'], viewport['screen_top'])
-    bottom_left_res = reverse_helper(viewport['screen_left'], viewport['screen_bottom'])
-    bottom_right_res = reverse_helper(viewport['screen_right'], viewport['screen_bottom'])
+#     top_left_res = reverse_helper(viewport['screen_left'], viewport['screen_top'])
+#     top_right_res = reverse_helper(viewport['screen_right'], viewport['screen_top'])
+#     bottom_left_res = reverse_helper(viewport['screen_left'], viewport['screen_bottom'])
+#     bottom_right_res = reverse_helper(viewport['screen_right'], viewport['screen_bottom'])
     
-    # Constructing location description for each corner using the helper
-    top_left_location = construct_location(top_left_res, viewport['zoom_level'])
-    top_right_location = construct_location(top_right_res, viewport['zoom_level'])
-    bottom_left_location = construct_location(bottom_left_res, viewport['zoom_level'])
-    bottom_right_location = construct_location(bottom_right_res, viewport['zoom_level'])
+#     # Constructing location description for each corner using the helper
+#     top_left_location = construct_location(top_left_res, viewport['zoom_level'])
+#     top_right_location = construct_location(top_right_res, viewport['zoom_level'])
+#     bottom_left_location = construct_location(bottom_left_res, viewport['zoom_level'])
+#     bottom_right_location = construct_location(bottom_right_res, viewport['zoom_level'])
     
-    # Construct the response
-    response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_left_location} on the bottom-left, and {bottom_right_location} on the bottom-right."
+#     # Construct the response
+#     response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_left_location} on the bottom-left, and {bottom_right_location} on the bottom-right."
     
-    return jsonify({
-        "response": response
-    })
+#     return jsonify({
+#         "response": response
+#     })
 
 
 if __name__ == '__main__':

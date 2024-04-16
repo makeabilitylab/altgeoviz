@@ -1,11 +1,11 @@
-from flask import Flask, render_template, jsonify, request, session
+from flask import Flask, render_template, jsonify, request, session,g
 import duckdb
 import geopandas as gpd
 import json
-import time  
-import logging
 import utils
 import reverse_geocoder as rg
+from functools import lru_cache
+
 
 app = Flask(__name__)
 app.secret_key = 'abc'
@@ -15,6 +15,42 @@ app.secret_key = 'abc'
 con = duckdb.connect(database='data/my_spatial_db.duckdb', read_only=True)
 con.execute("INSTALL 'spatial';")
 con.execute("LOAD 'spatial';")
+
+
+def get_viewport_params():
+    if 'viewport' not in g:
+        g.viewport = {
+            'screen_left': request.args.get('screenLeft', type=float),
+            'screen_right': request.args.get('screenRight', type=float),
+            'screen_top': request.args.get('screenTop', type=float),
+            'screen_bottom': request.args.get('screenBottom', type=float),
+            'zoom_level': request.args.get('zoom', type=float)
+        }
+    return g.viewport
+
+
+# Helper function to construct location strings based on zoom level
+def construct_location(location, zoom_level):
+    table = {
+        "CA": "Canada",
+        "PR": "Puerto Rico",
+        "MX": "Mexico",
+        "BS": "The Bahamas",
+        "TC": "Turks and Caicos Islands",
+        "VG": "British Virgin Islands",
+        "CU": "Cuba",
+        "": "undefined"
+    }
+    if zoom_level >= 7:
+        return f"{location['name']}, {location['admin1']}"
+    elif zoom_level >= 5:
+        if location['cc'] != 'US':
+            return f"{location['name']}, {table[location['cc']]}"
+        return f"{location['admin2']}, {location['admin1']}"
+    else:
+        if location['cc'] != 'US':
+            return f"{location['admin1']}, {table[location['cc']]}"
+        return f"{location['admin1']}, {location['cc']}"
 
 
 @app.route('/')
@@ -74,145 +110,96 @@ def tract_density_data():
     accuracy = 0.001
     return fetch_density_data('wa_tract_ppl_density', accuracy)
 
+# @lru_cache(maxsize=1000)
 def reverse_helper(lon, lat): 
     result = rg.search((lat, lon))
     return result[0]
 
+def reverse_geocode(screen_left, screen_right, screen_top, screen_bottom, zoom_level):
+    top_left = (screen_top, screen_left)
+    top_right = (screen_top, screen_right)
+    bottom_left = (screen_bottom, screen_left)
+    bottom_right = (screen_bottom, screen_right)
+    
+    try:
+        top_left_res, top_right_res, bottom_left_res, bottom_right_res = rg.search([top_left, top_right, bottom_left, bottom_right])
+    except RuntimeError as e:
+        print(f"Error using multiprocessing in reverse geocoding: {e}")
+        # Fallback to single-process method if multiprocessing fails
+        top_left_res, top_right_res, bottom_left_res, bottom_right_res = [rg.search_single(loc) for loc in [top_left, top_right, bottom_left, bottom_right]]
+
+    
+    # Constructing location description for each corner using the helper
+    top_left_location = construct_location(top_left_res, zoom_level)
+    top_right_location = construct_location(top_right_res, zoom_level)
+    bottom_left_location = construct_location(bottom_left_res, zoom_level)
+    bottom_right_location = construct_location(bottom_right_res, zoom_level)
+    
+    # Construct the response
+    response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_left_location} on the bottom-left, and {bottom_right_location} on the bottom-right."
+    
+    return response
+
+
 @app.route('/stats_in_view')
 def stats_in_view():
-    minLon = request.args.get('minLon', type=float)
-    minLat = request.args.get('minLat', type=float)
-    maxLon = request.args.get('maxLon', type=float)
-    maxLat = request.args.get('maxLat', type=float)
-    zoom_level = request.args.get('zoom', type=float)
-    
-    # fetch the data from the map that is bounded by the min/max of longitude and latitude
+
+    viewport = get_viewport_params()
+    min_lon = viewport['screen_left']
+    min_lat = viewport['screen_bottom']
+    max_lon = viewport['screen_right']
+    max_lat = viewport['screen_top']
+    zoom_level = viewport['zoom_level']
+
+    # Take out the geom from this query 
+    # geocode text 
+    geotext = reverse_geocode(min_lon, max_lon, max_lat, min_lat, zoom_level)
+
+    # Fetch the data from the map that is bounded by the min/max of longitude and latitude
     table_name = session.get('global_table_name', None)
     stats_query = f"""
     SELECT 
-        GEOID, ppl_densit, c_lat, c_lon, ST_AsGeoJSON(ST_Simplify(tn.geom, 0.001)) AS geom
-    FROM {table_name} AS tn
-    WHERE ST_Intersects(tn.geom, ST_MakeEnvelope({minLon}, {minLat}, {maxLon}, {maxLat}));
+        GEOID, ppl_densit, c_lat, c_lon
+    FROM {table_name}
+    WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
     """
     
     result = con.execute(stats_query).fetchdf()
-    
-    map = utils.Map(minLon, minLat, maxLon, maxLat)
+
+    map_instance = utils.Map(min_lon, min_lat, max_lon, max_lat)
     polygons = []
     for index, row in result.iterrows():
         polygon = utils.Polygon(
             row['GEOID'], 
             float(row['ppl_densit']), 
-            (float(row['c_lon']), float(row['c_lat'])),
-            row['geom'])
+            (float(row['c_lon']), float(row['c_lat'])))
         polygons.append(polygon)
         
-    map.set_polygons(polygons)
-    map.calculate_section_densities()
-    map.rank_sections()
-    map.find_high_density_clusters()    
-    map_min = map.find_min()
-    map_max = map.find_max()
-    
-    table = {
-        "CA": "Canada",
-        "PR": "Puerto Rico",
-        "MX": "Mexico",
-        "BS": "The Bahamas",
-        "": "undefined"
-    }
-    
-    def construct_location(location, zoom_level=0):
-        if zoom_level >= 7:
-            return f"{location['name']}, {location['admin1']}"
-        elif zoom_level >= 5:
-            if location['cc'] != 'US':
-                return f"{location['name']}, {table[location['cc']]}"
-            return f"{location['admin2']}, {location['admin1']}"
-        else: 
-            if location['cc'] != 'US':
-                return f"{location['admin1']}, {table[location['cc']]}"
-            return f"{location['admin1']}, {location['cc']}"
-
+    map_instance.set_polygons(polygons)
+    map_instance.calculate_section_densities()
+    map_instance.rank_sections()
+    map_instance.find_high_density_clusters()    
+    map_min = map_instance.find_min()
+    map_max = map_instance.find_max()
 
     return jsonify({
-        "trends": map.trends,
+        "geocode": geotext, 
+        "trends": map_instance.trends,
         "min": {
             "value": map_min['ppl_densit'],
             "text": construct_location(reverse_helper(map_min['centroid'][0], map_min['centroid'][1]), zoom_level),
             "section": map_min['section']
-            
         },
         "max": {
             "value": map_max['ppl_densit'],
             "text": construct_location(reverse_helper(map_max['centroid'][0], map_max['centroid'][1]), zoom_level),
             "section": map_max['section']
         },
-        "average": map.calculate_mean(),
-        "median": map.calculate_median(),
-        "highlights": {
-            "min": {
-                "type": "Feature",
-                "properties": {
-                    "geoid": map_min['geoid'],
-                    "ppl_densit": map_min['ppl_densit']
-                },
-                "geometry": map_min['geom']
-            },
-            "max": {
-                "type": "Feature",
-                "properties": {
-                    "geoid": map_max['geoid'],
-                    "ppl_densit": map_max['ppl_densit']
-                },
-                "geometry": map_max['geom']
-            }
-        }
+        "average": map_instance.calculate_mean(),
+        "median": map_instance.calculate_median()
     })
     
-@app.route('/reverse_geocode')
-def reverse_geocode():
-    table = {
-        "CA": "Canada",
-        "PR": "Puerto Rico",
-        "MX": "Mexico",
-        "BS": "The Bahamas",
-        "TC": "Turks and Caicos Islands",
-        "VG": "British Virgin Islands",
-        "": "undefined"
-    }
-    
-    def construct_location(location, zoom_level=0):
-        if zoom_level >= 7:
-            return f"{location['name']}, {location['admin1']}"
-        elif zoom_level >= 5:
-            if location['cc'] != 'US':
-                return f"{location['name']}, {table[location['cc']]}"
-            return f"{location['admin2']}, {location['admin1']}"
-        else: 
-            if location['cc'] != 'US':
-                return f"{location['admin1']}, {table[location['cc']]}"
-            return f"{location['admin1']}, {location['cc']}"
-        
-    screen_left = request.args.get('screenLeft', type=float)
-    screen_right = request.args.get('screenRight', type=float)
-    screen_top = request.args.get('screenTop', type=float)
-    screen_bottom = request.args.get('screenBottom', type=float)
-    zoom_level = request.args.get('zoom', type=float)
-    
-    top_left = (screen_top, screen_left)
-    top_right = (screen_top, screen_right)
-    bottom_left = (screen_bottom, screen_left)
-    bottom_right = (screen_bottom, screen_right)
-    
-    top_left_res, top_right_res, bottom_left_res, bottom_right_res = rg.search([top_left, top_right, bottom_left, bottom_right])
-    
-    # construct the response
-    response = f"The current view is bounded by {construct_location(top_left_res, zoom_level)} on the top-left, {construct_location(top_right_res, zoom_level)} on the top-right, {construct_location(bottom_left_res, zoom_level)} on the bottom-left, and {construct_location(bottom_right_res, zoom_level)} on the bottom-right."
-    
-    return jsonify({
-        "response": response
-    })
-    
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5007)
