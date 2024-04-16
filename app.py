@@ -202,4 +202,4 @@ def stats_in_view():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5007)
+    app.run(host='0.0.0.0', port=8080)
