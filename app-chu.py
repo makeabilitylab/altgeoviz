@@ -38,6 +38,7 @@ def construct_location(location, zoom_level):
         "BS": "The Bahamas",
         "TC": "Turks and Caicos Islands",
         "VG": "British Virgin Islands",
+        "CU": "Cuba",
         "": "undefined"
     }
     if zoom_level >= 7:
