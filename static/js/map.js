@@ -231,7 +231,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
 }
 
 datasetName = "population density";
-async function updateStats(sourceURL) {
+async function updateStats() {
     let zoom = map.getZoom();
     let bounds = map.getBounds();
 

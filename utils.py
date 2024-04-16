@@ -277,20 +277,30 @@ class Map():
             
         # check the four section trend first
         for bounding_box, area in self.FOUR_SECTION_TREND_BOUNDING_BOX.items():
+            if area not in self.trends and len(self.trends[area]) > 0:
+                continue
+
+            for temp_trend, _ in self.trends.items():
+                if area in temp_trend and len(_) > 0:
+                    continue
+
             temp_trends = []
             for section in bounding_box:
                 temp_trends.append(self.section_ranks[section])
             temp_trend = sorted(temp_trends)
-            
             if temp_trend == self.FOUR_SECTION_RANK_RULE["high"]:
                 self.trends[area]["high"] = bounding_box
             elif temp_trend == self.FOUR_SECTION_RANK_RULE["low"]:
                 self.trends[area]["low"] = bounding_box
-                
+
         # check the three section trend
         for bounding_box, area in self.THREE_SECTION_TREND_BOUNDING_BOX.items():
             if area not in self.trends and len(self.trends[area]) > 0:
                 continue
+
+            for temp_trend, _ in self.trends.items():
+                if area in temp_trend and len(_) > 0:
+                    continue
             
             temp_trends = []
             for section in bounding_box:
@@ -305,6 +315,10 @@ class Map():
         for bounding_box, area in self.TWO_SECTION_TREND_BOUNDING_BOX.items():
             if area not in self.trends and len(self.trends[area]) > 0:
                 continue
+
+            for temp_trend, _ in self.trends.items():
+                if area in temp_trend and len(_) > 0:
+                    continue
             
             temp_trends = []
             for section in bounding_box:

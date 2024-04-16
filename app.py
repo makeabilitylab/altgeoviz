@@ -177,6 +177,8 @@ def reverse_geocode():
         "PR": "Puerto Rico",
         "MX": "Mexico",
         "BS": "The Bahamas",
+        "TC": "Turks and Caicos Islands",
+        "VG": "British Virgin Islands",
         "": "undefined"
     }
     
