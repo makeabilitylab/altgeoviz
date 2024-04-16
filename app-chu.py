@@ -131,7 +131,7 @@ def stats_in_view():
     table_name = session.get('global_table_name', None)
     stats_query = f"""
     SELECT 
-        GEOID, ppl_densit, c_lat, c_lon, ST_AsGeoJSON(ST_Simplify(geom, 0.1)) AS geom
+        GEOID, ppl_densit, c_lat, c_lon
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
     """
@@ -144,8 +144,7 @@ def stats_in_view():
         polygon = utils.Polygon(
             row['GEOID'], 
             float(row['ppl_densit']), 
-            (float(row['c_lon']), float(row['c_lat'])),
-            row['geom'])
+            (float(row['c_lon']), float(row['c_lat'])))
         polygons.append(polygon)
         
     map_instance.set_polygons(polygons)
@@ -168,25 +167,7 @@ def stats_in_view():
             "section": map_max['section']
         },
         "average": map_instance.calculate_mean(),
-        "median": map_instance.calculate_median(),
-        "highlights": {
-            "min": {
-                "type": "Feature",
-                "properties": {
-                    "geoid": map_min['geoid'],
-                    "ppl_densit": map_min['ppl_densit']
-                },
-                "geometry": map_min['geom']
-            },
-            "max": {
-                "type": "Feature",
-                "properties": {
-                    "geoid": map_max['geoid'],
-                    "ppl_densit": map_max['ppl_densit']
-                },
-                "geometry": map_max['geom']
-            }
-        }
+        "median": map_instance.calculate_median()
     })
     
 @app.route('/reverse_geocode')
