@@ -97,7 +97,7 @@ def fetch_density_data(table_name,accuracy):
 @app.route('/state_density_data')
 def state_density_data():
     accuracy = 0.01
-    return fetch_density_data('state_ppl_density', accuracy)
+    return fetch_density_data('state', accuracy)
 
 @app.route('/county_density_data')
 def county_density_data():
@@ -108,7 +108,7 @@ def county_density_data():
 @app.route('/tract_density_data')
 def tract_density_data():
     accuracy = 0.001
-    return fetch_density_data('wa_tract_ppl_density', accuracy)
+    return fetch_density_data('wa_tract', accuracy)
 
 # @lru_cache(maxsize=1000)
 def reverse_helper(lon, lat): 
