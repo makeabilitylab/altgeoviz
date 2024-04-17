@@ -236,6 +236,37 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
 
 datasetName = "population density";
 
+
+function setupKeyControls() {
+    let inDetailedView = false; // State for managing the detailed view
+    let statsDisplay = document.getElementById('stats-display');
+
+    window.addEventListener('keydown', function(event) {
+        if (document.activeElement === statsDisplay) {
+            switch (event.key) {
+                case 'i':
+                    if (!inDetailedView) {
+                        // Switch to detailed view
+                        statsDisplay.innerHTML = `<p>${statsTrend.trend}</p><p>Press k to go back.</p>`;
+                        inDetailedView = true;
+                    }
+                    break;
+                case 'k':
+                    if (inDetailedView) {
+                        // Revert to initial overview
+                        statsDisplay.innerHTML = `<p>Overview...</p><p>Press i for more info.</p>`;
+                        inDetailedView = false;
+                    }
+                    break;
+                default:
+                    // Redirect all other keys to the map container
+                    map.getCanvas().focus();
+                    break;
+            }
+        }
+    });
+}
+
 async function updateStats() {
     let zoom = map.getZoom();
     let bounds = map.getBounds();
@@ -265,42 +296,18 @@ async function updateStats() {
         `;
 
         statsDisplay.innerHTML = initialStatsDisplay;
-        statsDisplay.setAttribute('aria-busy', 'false');
+        // statsDisplay.setAttribute('aria-busy', 'false');
         statsDisplay.focus(); // Focus the stats display for screen reader announcement
 
-        // if (needFocus) {
-        //     statsDisplay.focus();
-        // }
-
-        function handleKeypress(event) {
-            if (event.key === 'i' && !inDetailedView) {
-                statsDisplay.innerHTML = `<p>${statsTrend.trend}</p>
-                <p>Press k to go back.</p>
-                <p>Press m to interact with the map.</p>
-                `;
-                statsDisplay.focus(); // Refocus on the updated content
-                inDetailedView = true;
-            } 
-            else if (event.key === 'm' && !inDetailedView) {
-                map.getCanvas().focus();
-            }
-            else if (event.key === 'k' && inDetailedView) {
-                statsDisplay.innerHTML = initialStatsDisplay;
-                statsDisplay.focus(); // Refocus on the original content
-                inDetailedView = false;
-            } else if (event.key === 'm' && inDetailedView) {
-                map.getCanvas().focus();
-            }
-        }
-
-        // Adding the keypress event listener to the window object
-        window.addEventListener('keypress', handleKeypress);
+        setupKeyControls(); // Set up key handling
     } catch (error) {
         console.error("Error updating stats:", error);
-        statsDisplay.innerHTML = '<p>Error loading information. Please try again.</p>';
-        statsDisplay.setAttribute('aria-busy', 'false');
+        statsDisplay.innerHTML = '<p>Error loading info. Please try again.</p>';
     }
 }
+
+
+
 
 
 function fetchAndUpdateData() {
