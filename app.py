@@ -4,7 +4,6 @@ import geopandas as gpd
 import json
 import utils
 import reverse_geocoder as rg
-from functools import lru_cache
 
 
 app = Flask(__name__)
@@ -77,15 +76,8 @@ def fetch_density_data(table_name,accuracy):
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_GeomFromText('{bbox_polygon}'));
     """
-    
 
-    # start_time = time.time()
     query_result = con.execute(query).fetchdf()
-
-    # end_time = time.time()
-    
-    # load_time = end_time - start_time
-    # app.logger.debug(f"Data load time: {load_time:.3f} seconds")
 
     gdf = gpd.GeoDataFrame(query_result, geometry=gpd.GeoSeries.from_wkt(query_result['geom_wkt']))
     gdf.drop(columns=['geom_wkt'], inplace=True)
@@ -103,7 +95,6 @@ def state_density_data():
 @app.route('/county_density_data')
 def county_density_data():
     accuracy = 0.01
-    # return fetch_density_data('w_county_ppl_density', accuracy)
     return fetch_density_data('county', accuracy)
 
 @app.route('/tract_density_data')
@@ -111,7 +102,7 @@ def tract_density_data():
     accuracy = 0.001
     return fetch_density_data('wa_tract', accuracy)
 
-# @lru_cache(maxsize=1000)
+
 def reverse_helper(lon, lat): 
     result = rg.search((lat, lon))
     return result[0]
@@ -137,7 +128,7 @@ def reverse_geocode(screen_left, screen_right, screen_top, screen_bottom, zoom_l
     bottom_right_location = construct_location(bottom_right_res, zoom_level)
     
     # Construct the response
-    response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_left_location} on the bottom-left, and {bottom_right_location} on the bottom-right."
+    response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_right_location} on the bottom-right, and {bottom_left_location} on the bottom-left,"
     
     return response
 
@@ -152,7 +143,6 @@ def stats_in_view():
     max_lat = viewport['screen_top']
     zoom_level = viewport['zoom_level']
 
-    # Take out the geom from this query 
     # geocode text 
     geotext = reverse_geocode(min_lon, max_lon, max_lat, min_lat, zoom_level)
 
@@ -164,7 +154,6 @@ def stats_in_view():
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
     """
-    
     result = con.execute(stats_query).fetchdf()
 
     map_instance = utils.Map(min_lon, min_lat, max_lon, max_lat)

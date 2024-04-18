@@ -25,17 +25,6 @@ window.addEventListener('keydown', function(event) {
     }
 }, true);
 
-
-map.on('zoomend', () => {
-    const statsDisplay = document.getElementById('stats-display');
-    statsDisplay.innerHTML = '<p>Map view changed. Press l to hear information about current view.</p>';
-});
-
-map.on('moveend', () => {
-    const statsDisplay = document.getElementById('stats-display');
-    statsDisplay.innerHTML = '<p>Map view changed. Press l to hear information about current view.</p>';
-});
-
 function calculateColor(value, min, max) {
     const colors = [
         { threshold: 0, color: '#F2F12D' },
@@ -248,23 +237,17 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
 
 datasetName = "population density";
 
-
-var statsTrend = null;
-var inDetailedView = false;
-var statsDisplay = document.getElementById('stats-display'); 
-var initialStatsDisplay = '';
-
 async function updateStats() {
     let zoom = map.getZoom();
     let bounds = map.getBounds();
-    const statsDisplay = document.getElementById('stats-display');
+    let inDetailedView = false; 
 
     const screenLeft = bounds.getWest() < MAPBOUNDS[0][0] ? MAPBOUNDS[0][0] : bounds.getWest();
     const screenRight = bounds.getEast() > MAPBOUNDS[1][0] ? MAPBOUNDS[1][0] : bounds.getEast();
     const screenTop = bounds.getNorth() > MAPBOUNDS[1][1] ? MAPBOUNDS[1][1] : bounds.getNorth();
     const screenBottom = bounds.getSouth() < MAPBOUNDS[0][1] ? MAPBOUNDS[0][1] : bounds.getSouth();
 
-    
+    const statsDisplay = document.getElementById('stats-display');
     statsDisplay.setAttribute('aria-busy', 'true');
     statsDisplay.setAttribute('tabindex', '-1');  // Make the div programmatically focusable
     statsDisplay.innerHTML = '<p>Information is loading...</p>';
@@ -272,9 +255,9 @@ async function updateStats() {
     try {
         let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
         let zoomText = constructZoom(zoom);
-        statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
+        let statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
 
-        initialStatsDisplay = `
+        let initialStatsDisplay = `
             <p>${overview}</p>
             <p>${statsTrend.geocode}</p>
             <p>Press i to hear more information.</p>
@@ -286,6 +269,30 @@ async function updateStats() {
         statsDisplay.setAttribute('aria-busy', 'false');
         statsDisplay.focus(); // Focus the stats display for screen reader announcement
 
+
+        function handleKeypress(event) {
+            if (event.key === 'i' && !inDetailedView) {
+                statsDisplay.innerHTML = `<p>${statsTrend.trend}</p>
+                <p>Press k to go back.</p>
+                <p>Press m to interact with the map.</p>
+                `;
+                statsDisplay.focus(); // Refocus on the updated content
+                inDetailedView = true;
+            } 
+            else if (event.key === 'm' && !inDetailedView) {
+                map.getCanvas().focus();
+            }
+            else if (event.key === 'k' && inDetailedView) {
+                statsDisplay.innerHTML = initialStatsDisplay;
+                statsDisplay.focus(); // Refocus on the original content
+                inDetailedView = false;
+            } else if (event.key === 'm' && inDetailedView) {
+                map.getCanvas().focus();
+            }
+        }
+
+        // Adding the keypress event listener to the window object
+        window.addEventListener('keypress', handleKeypress);
     } catch (error) {
         console.error("Error updating stats:", error);
         statsDisplay.innerHTML = '<p>Error loading information. Please try again.</p>';
@@ -293,42 +300,6 @@ async function updateStats() {
     }
 }
 
-
-function handleKeypress(event) {
-    const statsDisplay = document.getElementById('stats-display');
-    if (event.key === 'l') {
-        if (statsDisplay.getAttribute('aria-busy') === 'true') {
-            statsDisplay.innerHTML = '<p>Information is loading...</p>';
-            statsDisplay.focus();
-        } else {
-            // Fetch the latest information and update statsDisplay accordingly
-            fetchAndUpdateData();  // This function should update the statsDisplay once the data is fetched
-        }
-     } else if (event.key === 'i' && !inDetailedView) {
-        if (statsTrend !== null) { // Ensure statsTrend is available
-            statsDisplay.innerHTML = `<p>${statsTrend.trend}</p>
-            <p>Press k to go back.</p>
-            <p>Press m to interact with the map.</p>`;
-            statsDisplay.focus();
-            inDetailedView = true;
-        } else {
-            // Optionally handle the case where statsTrend is not ready
-            statsDisplay.innerHTML = `<p>Data not available yet. Please wait...</p>`;
-            statsDisplay.focus();
-        }
-    } else if (event.key === 'm' && !inDetailedView) {
-        map.getCanvas().focus();
-    } else if (event.key === 'k' && inDetailedView) {
-        statsDisplay.innerHTML = initialStatsDisplay;
-        statsDisplay.focus();
-        inDetailedView = false;
-    } else if (event.key === 'm' && inDetailedView) {
-        map.getCanvas().focus();
-    }
-}
-
-// Attach event listener
-window.addEventListener('keypress', handleKeypress);
 
 function fetchAndUpdateData() {
     var bounds = map.getBounds();
@@ -352,7 +323,6 @@ function fetchAndUpdateData() {
         }
     });
 }
-
 
 map.on('load', function () {
     map.addSource('stateDensity', {
@@ -395,7 +365,7 @@ map.on('load', function () {
         if (e.sourceId !== 'stateDensity' || !e.isSourceLoaded) return;
     
         let data = map.querySourceFeatures('stateDensity');
-
+    
         let min = Math.min(...data.map(f => f.properties.ppl_densit));
         let max = Math.max(...data.map(f => f.properties.ppl_densit));
 
@@ -424,17 +394,9 @@ map.on('load', function () {
             ...colorStops
         ]);
     });
+    
+
+    map.on('zoomend', fetchAndUpdateData);
+
+    map.on('moveend', fetchAndUpdateData);
 });
-
-window.onload = function() {
-    map.on('load', function() {
-        // Selecting both attribution links and the Mapbox logo
-        const elementsToHide = document.querySelectorAll('.mapboxgl-ctrl-attrib a, .mapboxgl-ctrl-logo');
-
-        elementsToHide.forEach(function(element) {
-            element.setAttribute('aria-hidden', 'true'); // Hide from screen readers
-            element.setAttribute('role', 'presentation'); // Mark as presentational
-        });
-    });
-};
-
