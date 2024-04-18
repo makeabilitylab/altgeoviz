@@ -265,8 +265,8 @@ async function updateStats() {
     const screenBottom = bounds.getSouth() < MAPBOUNDS[0][1] ? MAPBOUNDS[0][1] : bounds.getSouth();
 
     
-    statsDisplay.setAttribute('aria-busy', 'true');
-    statsDisplay.setAttribute('tabindex', '-1');  // Make the div programmatically focusable
+    // statsDisplay.setAttribute('aria-busy', 'true');
+    // statsDisplay.setAttribute('tabindex', '-1');  // Make the div programmatically focusable
     statsDisplay.innerHTML = '<p>Information is loading...</p>';
 
     try {
@@ -283,13 +283,12 @@ async function updateStats() {
         `;
 
         statsDisplay.innerHTML = initialStatsDisplay;
-        statsDisplay.setAttribute('aria-busy', 'false');
+        // statsDisplay.setAttribute('aria-busy', 'false');
         statsDisplay.focus(); // Focus the stats display for screen reader announcement
-
     } catch (error) {
         console.error("Error updating stats:", error);
         statsDisplay.innerHTML = '<p>Error loading information. Please try again.</p>';
-        statsDisplay.setAttribute('aria-busy', 'false');
+        // statsDisplay.setAttribute('aria-busy', 'false');
     }
 }
 
@@ -297,13 +296,17 @@ async function updateStats() {
 function handleKeypress(event) {
     const statsDisplay = document.getElementById('stats-display');
     if (event.key === 'l') {
-        if (statsDisplay.getAttribute('aria-busy') === 'true') {
-            statsDisplay.innerHTML = '<p>Information is loading...</p>';
-            statsDisplay.focus();
-        } else {
-            // Fetch the latest information and update statsDisplay accordingly
-            fetchAndUpdateData();  // This function should update the statsDisplay once the data is fetched
-        }
+        // if (statsDisplay.getAttribute('aria-busy') === 'true') {
+        //     statsDisplay.innerHTML = '<p>Information is loading...</p>';
+        //     statsDisplay.focus();
+        // } else {
+        //     // Fetch the latest information and update statsDisplay accordingly
+        //     fetchAndUpdateData();  // This function should update the statsDisplay once the data is fetched
+        // }
+        fetchAndUpdateData();
+
+
+
      } else if (event.key === 'i' && !inDetailedView) {
         if (statsTrend !== null) { // Ensure statsTrend is available
             statsDisplay.innerHTML = `<p>${statsTrend.trend}</p>
@@ -344,6 +347,8 @@ function fetchAndUpdateData() {
     var apiURL = `${sourceURL}?bbox=${bounds.getWest()},${bounds.getSouth()},${bounds.getEast()},${bounds.getNorth()}&zoom=${zoom}`;
 
     map.getSource('stateDensity').setData(apiURL);
+
+    // await updateStats(sourceURL.replace(/^\//, ''));
 
     map.on('data', function (e) {
         if (e.sourceId === 'stateDensity' && e.isSourceLoaded) {
