@@ -84,20 +84,19 @@ const MAPBOUNDS = [
     [-64.0, 52.0]   // Northeast
 ];
 
-const ZOOM_LEVEL_TRACT = 7;
-const ZOOM_LEVEL_COUNTY = 5;
+// const ZOOM_LEVEL_TRACT = 7;
+const ZOOM_LEVEL_COUNTY = 6;
 const ZOOM_LEVEL_STATE = 0;
 
 const constructGeoUnit = (zoom) => {
     let zoomText = "";
     
-    if (zoom >= ZOOM_LEVEL_TRACT) {
-        zoomText = "census tract";
-    } else if (zoom >= ZOOM_LEVEL_COUNTY) {
+    if (zoom >= ZOOM_LEVEL_COUNTY) {
         zoomText = "county";
     } else {
         zoomText = "state";
     }
+
     return zoomText;
 }
 
@@ -123,19 +122,19 @@ const constructBoundary = async (screenLeft, screenRight, screenTop, screenBotto
 const constructZoom = (zoom) => {
     // Zoom in to interact with the data at [next level]; zoom out to interact with the data at [previous level].
     let zoomText = "";
-    if (zoom >= ZOOM_LEVEL_TRACT) {
-        zoomText = "Zoom out to interact with the data at county level.";
-    } else if (zoom >= ZOOM_LEVEL_COUNTY) {
-        zoomText = "Zoom out to interact with the data at state level. Zoom in to interact with the data at census tract level.";
+
+    if (zoom >= ZOOM_LEVEL_COUNTY) {
+        zoomText = "Zoom out to interact with the data at state level.";
     } else {
         zoomText = "Zoom in to interact with the data at county level.";
     }
+
     return zoomText;
 }
 
 const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, zoom) => {
     // var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}&zoom=${zoom}`;
-    var url = `/stats_in_view?screenLeft=${screenLeft}&screenBottom=${screenBottom}&screenRight=${screenRight}&screenTop=${screenTop}&zoom=${zoom}`;
+    var url = `/stats_in_view?screenLeft=${screenLeft}&screenBottom=${screenBottom}&screenRight=${screenRight}&screenTop=${screenTop}&zoom=${zoom}&value_column=ppl_densit`;
 
     try {
         const response = await fetch(url);
@@ -221,10 +220,8 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             // min, max
             let minText = "";
             let maxText = "";
-            if (zoom >= ZOOM_LEVEL_TRACT) {
-                minText += "The census tract with the lowest population density is " + data.min.text + ", located in the " + REGION_MAP[data.min.section] + ", with a population density of " + data.min.value.toFixed(1) + " people per square mile.";
-                maxText += "The census tract with the highest population density is " + data.max.text + ", located in the " + REGION_MAP[data.max.section] + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
-            } else if (zoom >= ZOOM_LEVEL_COUNTY) {
+            
+            if (zoom >= ZOOM_LEVEL_COUNTY) {
                 minText += "The county with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(1) + " people per square mile.";
                 maxText += "The county with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
             } else {
