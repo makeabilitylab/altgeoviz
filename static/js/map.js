@@ -159,7 +159,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             }
 
             if (highs.length > 0) {
-                content += '- Population density is high ';
+                content += 'Population density is high ';
                 highs.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -188,7 +188,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             }
 
             if (lows.length > 0) {
-                content += '- Population density is low ';
+                content += 'Population density is low ';
                 lows.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -267,7 +267,7 @@ async function updateStats() {
     statsDisplay.innerHTML = '<p>Information is loading...</p>';
 
     try {
-        let overview = "This is a " + MAPTYPE + " of " + datasetName + " at a " + constructGeoUnit(zoom) + " level.";
+        let overview = "This is a " + MAPTYPE + " of " + datasetName + " in the US at a " + constructGeoUnit(zoom) + " level.";
         let zoomText = constructZoom(zoom);
         statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
 
@@ -304,15 +304,18 @@ function handleKeypress(event) {
             // Optionally handle the case where statsTrend is not ready
             statsDisplay.innerHTML = `<p>Data not available yet. Please wait...</p>`;
             statsDisplay.focus();
+            inDetailedView = false;
         }
     } else if (event.key === 'm' && !inDetailedView) {
         map.getCanvas().focus();
+        inDetailedView = false;
     } else if (event.key === 'k' && inDetailedView) {
         statsDisplay.innerHTML = initialStatsDisplay;
         statsDisplay.focus();
         inDetailedView = false;
     } else if (event.key === 'm' && inDetailedView) {
         map.getCanvas().focus();
+        inDetailedView = false;
     }
 }
 
