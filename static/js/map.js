@@ -327,9 +327,7 @@ function fetchAndUpdateData() {
     var zoom = map.getZoom();
     var sourceURL = '/state_density_data'; 
 
-    if (zoom >= 7) {
-        sourceURL = '/tract_density_data';
-    } else if (zoom >= 5) {
+    if (zoom >= 6) {
         sourceURL = '/county_density_data';
     }
 
