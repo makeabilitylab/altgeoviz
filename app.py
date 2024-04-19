@@ -58,7 +58,12 @@ def index():
     # Serve the main page with the Mapbox GL JS map
     return render_template('index.html')
 
-def fetch_density_data(table_name,accuracy):
+@app.route('/experiment')
+def experiment():
+    # Serve the main page with the Mapbox GL JS map
+    return render_template('experiment.html')
+
+def fetch_density_data(table_name, accuracy, value_column='ppl_densit'):
     session["global_table_name"] = table_name
     # Get bounding box parameters from the request
     bbox = request.args.get('bbox', '')
@@ -72,7 +77,7 @@ def fetch_density_data(table_name,accuracy):
 
 
     query = f"""
-    SELECT GEOID, ppl_densit, ST_AsText(ST_Simplify(geom, {accuracy} )) AS geom_wkt
+    SELECT GEOID, {value_column}, ST_AsText(ST_Simplify(geom, {accuracy} )) AS geom_wkt
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_GeomFromText('{bbox_polygon}'));
     """
@@ -90,17 +95,27 @@ def fetch_density_data(table_name,accuracy):
 @app.route('/state_density_data')
 def state_density_data():
     accuracy = 0.01
-    return fetch_density_data('state', accuracy)
+    return fetch_density_data('state', accuracy, "ppl_densit")
 
 @app.route('/county_density_data')
 def county_density_data():
     accuracy = 0.01
-    return fetch_density_data('county', accuracy)
+    return fetch_density_data('county', accuracy, "ppl_densit")
 
-@app.route('/tract_density_data')
-def tract_density_data():
-    accuracy = 0.001
-    return fetch_density_data('wa_tract', accuracy)
+@app.route('/state_walk_data')
+def state_walk_data():
+    accuracy = 0.01
+    return fetch_density_data('state', accuracy, "walk_to_wo")
+
+@app.route('/county_walk_data')
+def county_walk_data():
+    accuracy = 0.01
+    return fetch_density_data('county', accuracy, "walk_to_wo")
+
+# @app.route('/tract_density_data')
+# def tract_density_data():
+#     accuracy = 0.001
+#     return fetch_density_data('wa_tract', accuracy)
 
 
 def reverse_helper(lon, lat): 
@@ -142,6 +157,7 @@ def stats_in_view():
     max_lon = viewport['screen_right']
     max_lat = viewport['screen_top']
     zoom_level = viewport['zoom_level']
+    value_column = request.args.get('value_column', 'ppl_densit')
 
     # geocode text 
     geotext = reverse_geocode(min_lon, max_lon, max_lat, min_lat, zoom_level)
@@ -150,7 +166,7 @@ def stats_in_view():
     table_name = session.get('global_table_name', None)
     stats_query = f"""
     SELECT 
-        GEOID, ppl_densit, c_lat, c_lon
+        GEOID, {value_column}, c_lat, c_lon
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
     """
@@ -161,7 +177,7 @@ def stats_in_view():
     for index, row in result.iterrows():
         polygon = utils.Polygon(
             row['GEOID'], 
-            float(row['ppl_densit']), 
+            float(row[f"{value_column}"]), # doesn't need to change ppl_density in polygon
             (float(row['c_lon']), float(row['c_lat'])))
         polygons.append(polygon)
         
