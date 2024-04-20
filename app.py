@@ -48,9 +48,10 @@ def construct_location(location, zoom_level):
             return f"{location['name']}, {table[location['cc']]}"
         return f"{location['admin2']}, {location['admin1']}"
     else:
-        if location['cc'] != 'US':
-            return f"{location['admin1']}, {table[location['cc']]}"
+        # if location['cc'] != 'US':
+        #     return f"{location['admin1']}, {table[location['cc']]}"
         return f"{location['admin1']}, {location['cc']}"
+    
 
 
 @app.route('/')
@@ -75,7 +76,6 @@ def fetch_density_data(table_name, accuracy, value_column='ppl_densit'):
         bbox_polygon = "POLYGON((-180 -90, 180 -90, 180 90, -180 90, -180 -90))"
     
 
-
     query = f"""
     SELECT GEOID, {value_column}, ST_AsText(ST_Simplify(geom, {accuracy} )) AS geom_wkt
     FROM {table_name}
@@ -99,7 +99,7 @@ def state_density_data():
 
 @app.route('/county_density_data')
 def county_density_data():
-    accuracy = 0.01
+    accuracy = 0.001
     return fetch_density_data('county', accuracy, "ppl_densit")
 
 @app.route('/state_walk_data')
@@ -109,13 +109,53 @@ def state_walk_data():
 
 @app.route('/county_walk_data')
 def county_walk_data():
-    accuracy = 0.01
+    accuracy = 0.001
     return fetch_density_data('county', accuracy, "walk_to_wo")
 
 # @app.route('/tract_density_data')
 # def tract_density_data():
 #     accuracy = 0.001
 #     return fetch_density_data('wa_tract', accuracy)
+
+
+@app.route('/get_state')
+def get_state():
+    lat = request.args.get('lat', type=float)
+    lon = request.args.get('lon', type=float)
+    zoom = request.args.get('zoom', type=float)  # Capture zoom level as an integer.
+    print(f"Received lat: {lat}, lon: {lon}, zoom: {zoom}")  # Debug print
+
+    if zoom > 6:
+        # Fetch county and state information
+        query = """
+        SELECT county_name, state_name
+        FROM county
+        WHERE ST_Contains(geom, ST_Point(?, ?));
+        """
+    else:
+        # Fetch state information
+        query = """
+        SELECT state_name
+        FROM state
+        WHERE ST_Contains(geom, ST_Point(?, ?));
+        """
+
+    result = con.execute(query, (lon, lat)).fetchdf()
+
+    if not result.empty:
+        if zoom > 6:
+            # Return both county and state names if zoom level is greater than 6
+            county_name = result['county_name'].iloc[0]
+            state_name = result['state_name'].iloc[0]
+            return jsonify({"county": county_name, "state": state_name})
+        else:
+            # Return only the state name if zoom level is 6 or less
+            return jsonify({"state": result['state_name'].iloc[0]})
+    else:
+        return jsonify({"state": "No state found"})
+
+
+
 
 
 def reverse_helper(lon, lat): 
@@ -143,7 +183,7 @@ def reverse_geocode(screen_left, screen_right, screen_top, screen_bottom, zoom_l
     bottom_right_location = construct_location(bottom_right_res, zoom_level)
     
     # Construct the response
-    response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_right_location} on the bottom-right, and {bottom_left_location} on the bottom-left,"
+    response = f"The current view is bounded by {top_left_location} on the top-left, {top_right_location} on the top-right, {bottom_right_location} on the bottom-right, and {bottom_left_location} on the bottom-left."
     
     return response
 
@@ -164,9 +204,10 @@ def stats_in_view():
 
     # Fetch the data from the map that is bounded by the min/max of longitude and latitude
     table_name = session.get('global_table_name', None)
+    
     stats_query = f"""
     SELECT 
-        GEOID, {value_column}, c_lat, c_lon
+        GEOID, {value_column}, c_lat, c_lon, state_name,
     FROM {table_name}
     WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
     """
@@ -176,9 +217,11 @@ def stats_in_view():
     polygons = []
     for index, row in result.iterrows():
         polygon = utils.Polygon(
-            row['GEOID'], 
+            row['GEOID'],
             float(row[f"{value_column}"]), # doesn't need to change ppl_density in polygon
-            (float(row['c_lon']), float(row['c_lat'])))
+            (float(row['c_lon']), float(row['c_lat'])),
+            row['state_name']
+            )
         polygons.append(polygon)
         
     map_instance.set_polygons(polygons)
@@ -193,16 +236,17 @@ def stats_in_view():
         "trends": map_instance.trends,
         "min": {
             "value": map_min['ppl_densit'],
-            "text": construct_location(reverse_helper(map_min['centroid'][0], map_min['centroid'][1]), zoom_level),
+            # "text": construct_location(reverse_helper(map_min['centroid'][0], map_min['centroid'][1]), zoom_level),
+            "text": map_min['state_name'],
             "section": map_min['section']
         },
         "max": {
             "value": map_max['ppl_densit'],
-            "text": construct_location(reverse_helper(map_max['centroid'][0], map_max['centroid'][1]), zoom_level),
+            # "text": construct_location(reverse_helper(map_max['centroid'][0], map_max['centroid'][1]), zoom_level),
+            "text": map_max['state_name'],
             "section": map_max['section']
         },
-        "average": map_instance.calculate_mean(),
-        "median": map_instance.calculate_median()
+        "average": map_instance.calculate_mean()
     })
     
 

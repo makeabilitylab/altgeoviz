@@ -27,18 +27,20 @@ class Section():
 
 
 class Polygon():
-    def __init__(self, geoid, ppl_density, centroid, geom=None):
+    def __init__(self, geoid, ppl_density, centroid, state_name, geom=None):
         self.geoid = geoid
         self.ppl_density = ppl_density
         self.centroid = centroid
+        self.state_name = state_name
         self.section = None
         self.geom = geom
+       
     
     def set_section(self, section: Section):
         self.section = section
         
     def __str__(self):
-        return f"geoid={self.geoid}, ppl_density={self.ppl_density}, centroid={self.centroid}, section={self.section}, geom={self.geom}"
+        return f"geoid={self.geoid}, ppl_density={self.ppl_density}, centroid={self.centroid}, state_name={self.state_name},section={self.section}, geom={self.geom}"
         
         
 
@@ -353,7 +355,8 @@ class Map():
             "ppl_densit": min_polygon.ppl_density,
             "geom": min_polygon.geom,
             "centroid": min_polygon.centroid,
-            "section": min_polygon.section
+            "section": min_polygon.section,
+            "state_name": min_polygon.state_name
         }
     
     def find_max(self):
@@ -364,7 +367,8 @@ class Map():
             "ppl_densit": max_polygon.ppl_density,
             "geom": max_polygon.geom,
             "centroid": max_polygon.centroid,
-            "section": max_polygon.section
+            "section": max_polygon.section,
+            "state_name": max_polygon.state_name
         }
         
         

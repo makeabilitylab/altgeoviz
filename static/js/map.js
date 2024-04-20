@@ -36,6 +36,20 @@ map.on('moveend', () => {
     statsDisplay.innerHTML = '<p>Map view changed. Press l to hear information about current view.</p>';
 });
 
+
+map.on('moveend', function() {
+    var center = map.getCenter();
+    fetch(`/get_state?lat=${center.lat}&lon=${center.lng}&zoom=${map.getZoom()}`)
+        .then(response => response.json())
+        .then(data => {
+            console.log(map.getZoom());
+            console.log('State at center:', data.state);
+            console.log('County center:', data.county);
+        })
+        .catch(error => console.error('Error fetching state:', error));
+});
+
+
 function calculateColor(value, min, max) {
     const colors = [
         { threshold: 0, color: '#F2F12D' },
