@@ -25,30 +25,80 @@ window.addEventListener('keydown', function(event) {
     }
 }, true);
 
+document.addEventListener('keydown', (event) => {
+    const direction = getDirectionBasedOnKey(event.key);
+    const zoomkey = getZoomBasedOnKey(event.key);
 
-map.on('zoomend', () => {
-    const statsDisplay = document.getElementById('stats-display');
-    statsDisplay.innerHTML = '<p>Map view changed. Press l to hear information about current view.</p>';
+    if (direction) {
+        map.once('moveend', () => { // Use `once` to ensure the handler is executed only for the next occurrence
+            updateMapInfo(direction, 'Moved');
+        });
+    }
+
+    if (zoomkey) {
+        map.once('zoomend', () => { // Use `once` to ensure the handler is executed only for the next occurrence
+            updateMapInfo(zoomkey, 'Zoomed');
+        });
+    }
 });
 
-map.on('moveend', () => {
-    const statsDisplay = document.getElementById('stats-display');
-    statsDisplay.innerHTML = '<p>Map view changed. Press l to hear information about current view.</p>';
-});
-
-
-map.on('moveend', function() {
+function updateMapInfo(keyAction, actionType) {
     var center = map.getCenter();
+    const statsDisplay = document.getElementById('stats-display');
     fetch(`/get_state?lat=${center.lat}&lon=${center.lng}&zoom=${map.getZoom()}`)
         .then(response => response.json())
         .then(data => {
-            console.log(map.getZoom());
+            const zoomLevel = map.getZoom();
+            console.log(`Zoom level: ${zoomLevel}`);
             console.log('State at center:', data.state);
-            console.log('County center:', data.county);
+            console.log('County at center:', data.county);
+            console.log(`${actionType} ${keyAction}`);
+
+            let displayText;
+            if (actionType === 'Zoomed' && zoomLevel >= 6) {
+                displayText = `${actionType} ${keyAction}, now at county level, centered on ${data.county}, ${data.state}.`;
+            } else if (actionType === 'Zoomed' && zoomLevel < 6) {
+                displayText = `${actionType} ${keyAction}, now at state level, centered on ${data.state}.`;
+            } else if (actionType === 'Moved' && zoomLevel >= 6) {
+                // This else clause can be used for non-zoom related actions or to handle unexpected cases
+                displayText = `${actionType} ${keyAction}, centered on ${data.county}, ${data.state}.`;
+            } else {
+                displayText = `${actionType} ${keyAction}, centered on ${data.state}.`;
+            }
+            statsDisplay.innerHTML = `<p>${displayText}</p>
+            <p>Press i to get more information.</p>`;
         })
         .catch(error => console.error('Error fetching state:', error));
-});
+}
 
+
+function getDirectionBasedOnKey(key) {
+    switch(key) {
+        case 'ArrowRight':
+            return 'right';
+        case 'ArrowLeft':
+            return 'left';
+        case 'ArrowUp':
+            return 'up';
+        case 'ArrowDown':
+            return 'down';    
+        default:
+            return null; // Ignore other keys
+    }
+}
+
+function getZoomBasedOnKey(key) { 
+    switch(key) {
+        case '=':
+        case '+':
+            return 'in';
+        case '-':
+        case '_':
+            return 'out';
+        default:
+            return null;
+    }
+}
 
 function calculateColor(value, min, max) {
     const colors = [
@@ -74,7 +124,6 @@ function calculateColor(value, min, max) {
     return colors[colors.length - 1].color;
 }
 
-
 REGION_MAP = {
     "NW": "top-left",
     "NE": "top-right",
@@ -98,19 +147,16 @@ const MAPBOUNDS = [
     [-64.0, 52.0]   // Northeast
 ];
 
-// const ZOOM_LEVEL_TRACT = 7;
 const ZOOM_LEVEL_COUNTY = 6;
 const ZOOM_LEVEL_STATE = 0;
 
 const constructGeoUnit = (zoom) => {
     let zoomText = "";
-    
     if (zoom >= ZOOM_LEVEL_COUNTY) {
         zoomText = "county";
     } else {
         zoomText = "state";
     }
-
     return zoomText;
 }
 
@@ -136,18 +182,15 @@ const constructBoundary = async (screenLeft, screenRight, screenTop, screenBotto
 const constructZoom = (zoom) => {
     // Zoom in to interact with the data at [next level]; zoom out to interact with the data at [previous level].
     let zoomText = "";
-
     if (zoom >= ZOOM_LEVEL_COUNTY) {
-        zoomText = "Zoom out to interact with the data at state level.";
+        zoomText = "You are currently at county level, zoom out to interact with the data at state level.";
     } else {
-        zoomText = "Zoom in to interact with the data at county level.";
+        zoomText = "You are currently at state level, zoom in to interact with the data at county level.";
     }
-
     return zoomText;
 }
 
 const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, zoom) => {
-    // var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}&zoom=${zoom}`;
     var url = `/stats_in_view?screenLeft=${screenLeft}&screenBottom=${screenBottom}&screenRight=${screenRight}&screenTop=${screenTop}&zoom=${zoom}&value_column=ppl_densit`;
 
     try {
@@ -197,7 +240,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 });
                 content += `.</p>`;
             } else {
-                content += '<p>- No regions with particularly high population density.</p>';
+                content += '<p>No regions with particularly high population density.</p>';
             }
 
             if (lows.length > 0) {
@@ -227,7 +270,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 }); 
                 content += `.</p>`;
             } else {
-                content += '<p>- No regions with particularly low population density.</p>';
+                content += '<p>No regions with particularly low population density.</p>';
             }
 
             // census track level
@@ -243,8 +286,8 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
             }
 
-            let average = `The average population density in the view is ${data.average.toFixed(1)} people per square mile.`;
-            content += `<p>${minText}</p><p>${maxText}</p><p>${average}</p>`;
+            let average = `The average population density is ${data.average.toFixed(1)} people per square mile.`;
+            content += `<p>${average}</p><p>${maxText}</p><p>${minText}</p>`;
 
             return {
                 geocode: data.geocode,
@@ -257,11 +300,12 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
     }
 }
 
+
+
 datasetName = "population density";
 
-
 var statsTrend = null;
-var inDetailedView = false;
+var inBoundaryView = false;
 var statsDisplay = document.getElementById('stats-display'); 
 var initialStatsDisplay = '';
 
@@ -279,16 +323,17 @@ async function updateStats() {
 
     try {
         let overview = "This is a " + MAPTYPE + " of " + datasetName + " in the US at a " + constructGeoUnit(zoom) + " level.";
+
+
         let zoomText = constructZoom(zoom);
         statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
 
         initialStatsDisplay = `
-            <p>${overview}</p>
-            <p>${statsTrend.geocode}</p>
-            <p>Press i to hear more information.</p>
-            <p>Press m to interact with the map.</p>
-            <p>${zoomText}</p>
-        `;
+        <p>In the current view: </p>
+        <p>${statsTrend.trend}</p>
+        <p>Press l to hear the boundary of the current view.</p>
+        <p>Press m to interact with the map.</p>
+    `;
 
         statsDisplay.innerHTML = initialStatsDisplay;
         statsDisplay.focus(); 
@@ -301,32 +346,31 @@ async function updateStats() {
 
 function handleKeypress(event) {
     const statsDisplay = document.getElementById('stats-display');
-    if (event.key === 'l') {
+    if (event.key === 'i') {
         fetchAndUpdateData();
-
-     } else if (event.key === 'i' && !inDetailedView) {
+     } else if (event.key === 'l' && !inBoundaryView) {
         if (statsTrend !== null) { // Ensure statsTrend is available
-            statsDisplay.innerHTML = `<p>${statsTrend.trend}</p>
-            <p>Press k to go back.</p>
+            statsDisplay.innerHTML = `<p>${statsTrend.geocode}</p>
+            <p>Press b to go back.</p>
             <p>Press m to interact with the map.</p>`;
             statsDisplay.focus();
-            inDetailedView = true;
+            inBoundaryView = true;
         } else {
             // Optionally handle the case where statsTrend is not ready
             statsDisplay.innerHTML = `<p>Data not available yet. Please wait...</p>`;
             statsDisplay.focus();
-            inDetailedView = false;
+            inBoundaryView = false;
         }
-    } else if (event.key === 'm' && !inDetailedView) {
+    } else if (event.key === 'm' && !inBoundaryView) {
         map.getCanvas().focus();
-        inDetailedView = false;
-    } else if (event.key === 'k' && inDetailedView) {
+        inBoundaryView = false;
+    } else if (event.key === 'b' && inBoundaryView) {
         statsDisplay.innerHTML = initialStatsDisplay;
         statsDisplay.focus();
-        inDetailedView = false;
-    } else if (event.key === 'm' && inDetailedView) {
+        inBoundaryView = false;
+    } else if (event.key === 'm' && inBoundaryView) {
         map.getCanvas().focus();
-        inDetailedView = false;
+        inBoundaryView = false;
     }
 }
 

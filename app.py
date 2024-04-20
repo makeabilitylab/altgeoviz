@@ -125,7 +125,7 @@ def get_state():
     zoom = request.args.get('zoom', type=float)  # Capture zoom level as an integer.
     print(f"Received lat: {lat}, lon: {lon}, zoom: {zoom}")  # Debug print
 
-    if zoom > 6:
+    if zoom >= 6:
         # Fetch county and state information
         query = """
         SELECT county_nam, state_name
@@ -143,7 +143,7 @@ def get_state():
     result = con.execute(query, (lon, lat)).fetchdf()
 
     if not result.empty:
-        if zoom > 6:
+        if zoom >= 6:
             # Return both county and state names if zoom level is greater than 6
             county_name = result['county_nam'].iloc[0]
             state_name = result['state_name'].iloc[0]

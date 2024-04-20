@@ -15,7 +15,7 @@ body { margin: 0;
     border-radius: 5px;
     color: #000;
     z-index: 100;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 #legend {
@@ -32,9 +32,28 @@ body { margin: 0;
 }
 
 
+#map-heading {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    z-index: 100;
+    font-size: 12pt;
+    min-width: 400px;
+}
+
+
 #legend h4 {
     margin: 0 0 10px 0; /* Adjusts spacing for the title */
 }
+
+#map-heading h1 {
+    margin: 0 0 10px 0; /* Adjusts spacing for the title */
+}
+
 
 #legend-gradient {
     height: 20px;
