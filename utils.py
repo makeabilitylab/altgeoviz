@@ -27,20 +27,26 @@ class Section():
 
 
 class Polygon():
-    def __init__(self, geoid, ppl_density, centroid, state_name, geom=None):
+    def __init__(self, geoid, ppl_density, centroid, state_name, county_name=None, geom=None):
         self.geoid = geoid
         self.ppl_density = ppl_density
         self.centroid = centroid
         self.state_name = state_name
+        self.county_name = county_name
         self.section = None
         self.geom = geom
+
+        self.is_county = False
+
+        if self.county_name:
+            self.is_county = True
        
     
     def set_section(self, section: Section):
         self.section = section
         
     def __str__(self):
-        return f"geoid={self.geoid}, ppl_density={self.ppl_density}, centroid={self.centroid}, state_name={self.state_name},section={self.section}, geom={self.geom}"
+        return f"geoid={self.geoid}, ppl_density={self.ppl_density}, centroid={self.centroid}, state_name={self.state_name}, county_name={self.county_name},section={self.section}, geom={self.geom}"
         
         
 
@@ -350,26 +356,52 @@ class Map():
     def find_min(self):
         # return the polygon with the minimum population density
         min_polygon = min(self.polygons, key=lambda p: p.ppl_density)
-        return {
-            "geoid": min_polygon.geoid,
-            "ppl_densit": min_polygon.ppl_density,
-            "geom": min_polygon.geom,
-            "centroid": min_polygon.centroid,
-            "section": min_polygon.section,
-            "state_name": min_polygon.state_name
-        }
+        print("min ...")
+        print(min_polygon)
+
+        if min_polygon.is_county:
+            return {
+                "geoid": min_polygon.geoid,
+                "ppl_densit": min_polygon.ppl_density,
+                "geom": min_polygon.geom,
+                "centroid": min_polygon.centroid,
+                "section": min_polygon.section,
+                "state_name": f"{min_polygon.county_name}, {min_polygon.state_name}"
+            }
+        else:
+            return {
+                "geoid": min_polygon.geoid,
+                "ppl_densit": min_polygon.ppl_density,
+                "geom": min_polygon.geom,
+                "centroid": min_polygon.centroid,
+                "section": min_polygon.section,
+                "state_name": min_polygon.state_name
+            }
     
     def find_max(self):
         # return the polygon with the maximum population density
         max_polygon = max(self.polygons, key=lambda p: p.ppl_density)
-        return {
-            "geoid": max_polygon.geoid,
-            "ppl_densit": max_polygon.ppl_density,
-            "geom": max_polygon.geom,
-            "centroid": max_polygon.centroid,
-            "section": max_polygon.section,
-            "state_name": max_polygon.state_name
-        }
+        print("max ...")
+        print(max_polygon)
+
+        if max_polygon.is_county:
+            return {
+                "geoid": max_polygon.geoid,
+                "ppl_densit": max_polygon.ppl_density,
+                "geom": max_polygon.geom,
+                "centroid": max_polygon.centroid,
+                "section": max_polygon.section,
+                "state_name": f"{max_polygon.county_name}, {max_polygon.state_name}"
+            }
+        else:
+            return {
+                "geoid": max_polygon.geoid,
+                "ppl_densit": max_polygon.ppl_density,
+                "geom": max_polygon.geom,
+                "centroid": max_polygon.centroid,
+                "section": max_polygon.section,
+                "state_name": max_polygon.state_name
+            }
         
         
     

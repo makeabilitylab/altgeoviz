@@ -128,7 +128,7 @@ def get_state():
     if zoom > 6:
         # Fetch county and state information
         query = """
-        SELECT county_name, state_name
+        SELECT county_nam, state_name
         FROM county
         WHERE ST_Contains(geom, ST_Point(?, ?));
         """
@@ -145,7 +145,7 @@ def get_state():
     if not result.empty:
         if zoom > 6:
             # Return both county and state names if zoom level is greater than 6
-            county_name = result['county_name'].iloc[0]
+            county_name = result['county_nam'].iloc[0]
             state_name = result['state_name'].iloc[0]
             return jsonify({"county": county_name, "state": state_name})
         else:
@@ -204,24 +204,42 @@ def stats_in_view():
 
     # Fetch the data from the map that is bounded by the min/max of longitude and latitude
     table_name = session.get('global_table_name', None)
-    
-    stats_query = f"""
-    SELECT 
-        GEOID, {value_column}, c_lat, c_lon, state_name,
-    FROM {table_name}
-    WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
-    """
+
+    if table_name == "county":
+        stats_query = f"""
+        SELECT 
+            GEOID, {value_column}, c_lat, c_lon, state_name, county_nam
+        FROM {table_name}
+        WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
+        """
+    else:
+        stats_query = f"""
+        SELECT 
+            GEOID, {value_column}, c_lat, c_lon, state_name
+        FROM {table_name}
+        WHERE ST_Intersects(geom, ST_MakeEnvelope({min_lon}, {min_lat}, {max_lon}, {max_lat}));
+        """
     result = con.execute(stats_query).fetchdf()
 
     map_instance = utils.Map(min_lon, min_lat, max_lon, max_lat)
     polygons = []
     for index, row in result.iterrows():
-        polygon = utils.Polygon(
-            row['GEOID'],
-            float(row[f"{value_column}"]), # doesn't need to change ppl_density in polygon
-            (float(row['c_lon']), float(row['c_lat'])),
-            row['state_name']
-            )
+        if 'county_nam' not in row:
+            
+            polygon = utils.Polygon(
+                row['GEOID'],
+                float(row[f"{value_column}"]), # doesn't need to change ppl_density in polygon
+                (float(row['c_lon']), float(row['c_lat'])),
+                row['state_name']
+                )
+        else:
+            polygon = utils.Polygon(
+                row['GEOID'],
+                float(row[f"{value_column}"]),
+                (float(row['c_lon']), float(row['c_lat'])),
+                row['state_name'],
+                row['county_nam']
+                )
         polygons.append(polygon)
         
     map_instance.set_polygons(polygons)
@@ -230,6 +248,8 @@ def stats_in_view():
     map_instance.find_high_density_clusters()    
     map_min = map_instance.find_min()
     map_max = map_instance.find_max()
+
+    
 
     return jsonify({
         "geocode": geotext, 
