@@ -451,14 +451,14 @@ map.on('load', function () {
                 ['linear'],
                 ['get', 'walk_to_wo'],
                 0, '#F6D2A9',
-                50, '#F5B78E',
-                100, '#F19C7C',
-                250, '#EA8171',
-                500, '#DD686C',
-                750, '#CA5268',
-                1000, '#B13F64',
-                2000, '#9C3F5D',
-                5000, '#853F56',
+                1, '#F5B78E',
+                2, '#F19C7C',
+                5, '#EA8171',
+                10, '#DD686C',
+                20, '#CA5268',
+                30, '#B13F64',
+                50, '#9C3F5D',
+                100, '#853F56',
             ],
             'fill-opacity': 0.75
         }
@@ -478,18 +478,18 @@ map.on('load', function () {
 
         const colorStops = [
             0, '#F6D2A9',
-            25, '#F5B78E',
-            50, '#F19C7C',
-            100, '#EA8171',
-            200, '#DD686C',
-            500, '#CA5268',
-            1000, '#B13F64',
-            2000, '#9C3F5D',
-            5000, '#853F56',
+            1, '#F5B78E',
+            2, '#F19C7C',
+            5, '#EA8171',
+            10, '#DD686C',
+            20, '#CA5268',
+            30, '#B13F64',
+            50, '#9C3F5D',
+            100, '#853F56',
         ].map(stop => {
             if (typeof stop === 'number') {
                 // Scale the number to fit within the current min-max range
-                return min + (stop / 3000) * (max - min);
+                return min + (stop / 100) * (max - min);
             }
             return stop;
         });
