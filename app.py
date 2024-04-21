@@ -38,7 +38,9 @@ def log_event():
         document = {
             "uuid": data.get('uuid', str(uuid.uuid4())),
             "user_id": data.get('user_id', None),
-            "session_id": data.get('session_id', None),
+            # "session_id": data.get('session_id', None),
+            "session_id": session.get('session_id', None),
+            "page": session.get('page', None),
             "timestamp": data.get('timestamp', datetime.utcnow().isoformat()),
             "key_stroke": data.get('key_stroke', None),
             "zoom_level": data.get('zoom_level', None),
@@ -95,7 +97,11 @@ def construct_location(location, zoom_level):
 
 @app.route('/')
 def index():
-    # Serve the main page with the Mapbox GL JS map
+    if 'session_id' not in session or 'page' not in session or session['page'] != "index":
+        session['session_id'] = str(uuid.uuid4())
+        session['page'] = "index"
+        session.permanent = True
+        
     return render_template('index.html')
 
 # @app.route('/experiment')
@@ -106,7 +112,11 @@ def index():
 
 @app.route('/walk')
 def experiment():
-    # Serve the main page with the Mapbox GL JS map
+    if 'session_id' not in session or 'page' not in session or session['page'] != "walk":
+        session['session_id'] = str(uuid.uuid4())
+        session['page'] = "walk"
+        session.permanent = True
+    
     return render_template('walk.html')
 
 def fetch_density_data(table_name, accuracy, value_column='ppl_densit'):
