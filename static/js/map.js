@@ -1,18 +1,27 @@
-// intial map set up
-mapboxgl.accessToken = 'pk.eyJ1IjoiY3Jlc2NlbmRvY2h1IiwiYSI6ImNpdGR5MWZ5aDAycjIyc3A5ZHoxZzRwMGsifQ.nEaSxm520v7TpKAy2GG_kA';
+// Map configuration and initialization
+const mapboxConfig = {
+    accessToken: 'pk.eyJ1IjoiY3Jlc2NlbmRvY2h1IiwiYSI6ImNpdGR5MWZ5aDAycjIyc3A5ZHoxZzRwMGsifQ.nEaSxm520v7TpKAy2GG_kA',
+    styleUrl: 'mapbox://styles/mapbox/light-v10',
+    initialView: {
+        center: [-98.5795, 39.8283], // Geographic center of the contiguous United States
+        zoom: 4
+    },
+    bounds: [
+        [-128.0, 22.0], // Southwest corner of the continental US
+        [-64.0, 52.0]   // Northeast corner
+    ]
+};
 
-const bounds = [
-    [-128.0, 22.0], // Southwest
-    [-64.0, 52.0]   // Northeast
-];
+// Set Mapbox access token from configuration
+mapboxgl.accessToken = mapboxConfig.accessToken;
 
-var map = new mapboxgl.Map({
+const map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/light-v10',
-    center: [-98.5795, 39.8283],
+    style: mapboxConfig.styleUrl,
+    center: mapboxConfig.initialView.center,
+    zoom: mapboxConfig.initialView.zoom,
     dragRotate: false,
-    zoom: 4,
-    maxBounds: bounds,
+    maxBounds: mapboxConfig.bounds
 });
 
 //disable map rotation and changing pitch
@@ -25,22 +34,36 @@ window.addEventListener('keydown', function(event) {
     }
 }, true);
 
-document.addEventListener('keydown', (event) => {
-    const direction = getDirectionBasedOnKey(event.key);
-    const zoomkey = getZoomBasedOnKey(event.key);
 
-    if (direction) {
-        map.once('moveend', () => { // Use `once` to ensure the handler is executed only for the next occurrence
-            updateMapInfo(direction, 'Moved');
-        });
-    }
 
-    if (zoomkey) {
-        map.once('zoomend', () => { // Use `once` to ensure the handler is executed only for the next occurrence
-            updateMapInfo(zoomkey, 'Zoomed');
-        });
-    }
-});
+REGION_MAP = {
+    "NW": "top-left",
+    "NE": "top-right",
+    "SW": "bottom-left",
+    "SE": "bottom-right",
+    "W": "left",
+    "E": "right",
+    "N": "top",
+    "S": "bottom",
+    "C": "center",
+    "left_diagonal": "diagonally from top-left to bottom-right",
+    "right_diagonal": "diagonally from bottom-left to top-right",
+    "horizontal": "horizontally through the center",
+    "vertical": "vertically through the center"
+}
+
+const MAPTYPE = "choropleth map";
+
+const MAPBOUNDS = [
+    [-128.0, 22.0], // Southwest
+    [-64.0, 52.0]   // Northeast
+];
+
+const ZOOM_LEVEL_COUNTY = 6;
+const ZOOM_LEVEL_STATE = 0;
+
+datasetName = "population density";
+
 
 function updateMapInfo(keyAction, actionType) {
     var center = map.getCenter();
@@ -49,11 +72,6 @@ function updateMapInfo(keyAction, actionType) {
         .then(response => response.json())
         .then(data => {
             const zoomLevel = map.getZoom();
-            console.log(`Zoom level: ${zoomLevel}`);
-            console.log('State at center:', data.state);
-            console.log('County at center:', data.county);
-            console.log(`${actionType} ${keyAction}`);
-
             let displayText;
             if (actionType === 'Zoomed' && zoomLevel >= 6) {
                 displayText = `${actionType} ${keyAction}, now at county level, centered on ${data.county}, ${data.state}.`;
@@ -70,7 +88,6 @@ function updateMapInfo(keyAction, actionType) {
         })
         .catch(error => console.error('Error fetching state:', error));
 }
-
 
 function getDirectionBasedOnKey(key) {
     switch(key) {
@@ -99,56 +116,6 @@ function getZoomBasedOnKey(key) {
             return null;
     }
 }
-
-function calculateColor(value, min, max) {
-    const colors = [
-        { threshold: 0, color: '#F2F12D' },
-        { threshold: 36, color: '#EED322' },
-        { threshold: 72, color: '#E6B71E' },
-        { threshold: 124, color: '#DA9C20' },
-        { threshold: 188, color: '#CA8323' },
-        { threshold: 290, color: '#B86B25' },
-        { threshold: 500, color: '#A25626' },
-        { threshold: 750, color: '#8B4225' },
-        { threshold: 1000, color: '#723122' },
-        { threshold: 1500, color: '#79264E' },
-    ];
-    const normalizedValue = (value - min) / (max - min);
-    const maxThreshold = colors[colors.length - 1].threshold;
-    const normalizedThreshold = normalizedValue * maxThreshold;
-    for (let i = 0; i < colors.length - 1; i++) {
-        if (normalizedThreshold >= colors[i].threshold && normalizedThreshold < colors[i + 1].threshold) {
-            return colors[i].color;
-        }
-    }
-    return colors[colors.length - 1].color;
-}
-
-REGION_MAP = {
-    "NW": "top-left",
-    "NE": "top-right",
-    "SW": "bottom-left",
-    "SE": "bottom-right",
-    "W": "left",
-    "E": "right",
-    "N": "top",
-    "S": "bottom",
-    "C": "center",
-    "left_diagonal": "diagonally from top-left to bottom-right",
-    "right_diagonal": "diagonally from bottom-left to top-right",
-    "horizontal": "horizontally through the center",
-    "vertical": "vertically through the center"
-}
-
-const MAPTYPE = "choropleth map";
-
-const MAPBOUNDS = [
-    [-128.0, 22.0], // Southwest
-    [-64.0, 52.0]   // Northeast
-];
-
-const ZOOM_LEVEL_COUNTY = 6;
-const ZOOM_LEVEL_STATE = 0;
 
 const constructGeoUnit = (zoom) => {
     let zoomText = "";
@@ -300,13 +267,9 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
     }
 }
 
-
-
-datasetName = "population density";
-
 var statsTrend = null;
 var inBoundaryView = false;
-var statsDisplay = document.getElementById('stats-display'); 
+const statsDisplay = document.getElementById('stats-display'); 
 var initialStatsDisplay = '';
 
 async function updateStats() {
@@ -343,39 +306,85 @@ async function updateStats() {
     }
 }
 
-
-function handleKeypress(event) {
-    const statsDisplay = document.getElementById('stats-display');
-    if (event.key === 'i') {
-        fetchAndUpdateData();
-     } else if (event.key === 'l' && !inBoundaryView) {
-        if (statsTrend !== null) { // Ensure statsTrend is available
-            statsDisplay.innerHTML = `<p>${statsTrend.geocode}</p>
-            <p>Press b to go back.</p>
-            <p>Press m to interact with the map.</p>`;
-            statsDisplay.focus();
-            inBoundaryView = true;
-        } else {
-            // Optionally handle the case where statsTrend is not ready
-            statsDisplay.innerHTML = `<p>Data not available yet. Please wait...</p>`;
-            statsDisplay.focus();
-            inBoundaryView = false;
-        }
-    } else if (event.key === 'm' && !inBoundaryView) {
-        map.getCanvas().focus();
-        inBoundaryView = false;
-    } else if (event.key === 'b' && inBoundaryView) {
-        statsDisplay.innerHTML = initialStatsDisplay;
+function updateStatsDisplay(htmlContent, focus = true) {
+    statsDisplay.innerHTML = htmlContent;
+    if (focus) {
         statsDisplay.focus();
-        inBoundaryView = false;
-    } else if (event.key === 'm' && inBoundaryView) {
-        map.getCanvas().focus();
+    }
+}
+
+function handleBoundaryView() {
+    if (statsTrend !== null) {
+        updateStatsDisplay(`<p>${statsTrend.geocode}</p>
+            <p>Press b to go back.</p>
+            <p>Press m to interact with the map.</p>`);
+        inBoundaryView = true;
+    } else {
+        updateStatsDisplay(`<p>Data not available yet. Please wait...</p>`);
         inBoundaryView = false;
     }
 }
 
-// Attach event listener
-window.addEventListener('keypress', handleKeypress);
+const helpMessage = `
+    <p>Shortcut keys.</p>
+    <p>Press i to learn about data trends in the current view.</p>
+    <p>Press l to learn about the boudary of the current view. </p>
+    <p>Press m to interact with the map.</p>
+    <p>Use arrow keys to navigate the map up, down, left, right.</p>
+    <p>Use + or - to zoom in or out.</p>
+    <p>Press h to hear the short cut keys any time.</p>
+`;
+
+
+function handleKeyboardEvent(event) {
+    // Handle map rotation and pitch blocking
+    if (event.shiftKey && ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+        event.preventDefault();
+        event.stopPropagation();
+        return; // Stop further processing for rotation-blocking
+    }
+
+    // Handle direction and zoom interactions for the map
+    const direction = getDirectionBasedOnKey(event.key);
+    const zoomKey = getZoomBasedOnKey(event.key);
+
+    if (direction) {
+        map.once('moveend', () => updateMapInfo(direction, 'Moved'));
+    }
+
+    if (zoomKey) {
+        map.once('zoomend', () => updateMapInfo(zoomKey, 'Zoomed'));
+    }
+
+    // Handle UI-specific interactions
+    switch (event.key) {
+        case 'i':
+            fetchAndUpdateData();
+            break;
+        case 'l':
+            if (!inBoundaryView) {
+                handleBoundaryView();
+            }
+            break;
+        case 'b':
+            if (inBoundaryView) {
+                updateStatsDisplay(initialStatsDisplay);
+                inBoundaryView = false;
+            }
+            break;
+        case 'm':
+            if (!inBoundaryView) {
+                map.getCanvas().focus();
+            }
+            break;
+        case 'h':  // Handle help message display
+            updateStatsDisplay(helpMessage);
+            break;
+    }
+}
+
+window.addEventListener('keydown', handleKeyboardEvent);
+
 
 function fetchAndUpdateData() {
     var bounds = map.getBounds();
@@ -396,6 +405,30 @@ function fetchAndUpdateData() {
             updateStats(sourceURL.replace(/^\//, ''));
         }
     });
+}
+
+function calculateColor(value, min, max) {
+    const colors = [
+        { threshold: 0, color: '#F2F12D' },
+        { threshold: 36, color: '#EED322' },
+        { threshold: 72, color: '#E6B71E' },
+        { threshold: 124, color: '#DA9C20' },
+        { threshold: 188, color: '#CA8323' },
+        { threshold: 290, color: '#B86B25' },
+        { threshold: 500, color: '#A25626' },
+        { threshold: 750, color: '#8B4225' },
+        { threshold: 1000, color: '#723122' },
+        { threshold: 1500, color: '#79264E' },
+    ];
+    const normalizedValue = (value - min) / (max - min);
+    const maxThreshold = colors[colors.length - 1].threshold;
+    const normalizedThreshold = normalizedValue * maxThreshold;
+    for (let i = 0; i < colors.length - 1; i++) {
+        if (normalizedThreshold >= colors[i].threshold && normalizedThreshold < colors[i + 1].threshold) {
+            return colors[i].color;
+        }
+    }
+    return colors[colors.length - 1].color;
 }
 
 map.on('load', function () {
