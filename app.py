@@ -98,10 +98,16 @@ def index():
     # Serve the main page with the Mapbox GL JS map
     return render_template('index.html')
 
-@app.route('/experiment')
+# @app.route('/experiment')
+# def experiment():
+#     # Serve the main page with the Mapbox GL JS map
+#     return render_template('experiment.html')
+
+
+@app.route('/walk')
 def experiment():
     # Serve the main page with the Mapbox GL JS map
-    return render_template('experiment.html')
+    return render_template('walk.html')
 
 def fetch_density_data(table_name, accuracy, value_column='ppl_densit'):
     session["global_table_name"] = table_name

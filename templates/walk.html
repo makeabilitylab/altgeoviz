@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Alt Text For Dynamic Map Visualizations </title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="../static/style.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+</head>
+<body>
+
+<div id='map'></div>
+<!-- <div id="stats-display"></div> -->
+<div id="map-heading" tabindex="-1" aria-live="assertive" >
+    <h1>Map of Percentage of People Who Walk To Work in the United States</h1>
+    <p>Press h to hear short-cut keys.</p>
+</div>
+<div id="stats-display" tabindex="-1" aria-live="polite" >
+</div>
+
+<div id="legend" aria-hidden="true">
+    <h4>Population Density</h4>
+    <div style="display: flex; align-items: center;">
+        <span style="margin-right: 8px;">Low</span>
+        <div id="legend-gradient"></div>
+        <span style="margin-left: 8px;">High</span>
+    </div>
+</div>
+
+
+<script src="/static/js/walk.js"></script> 
+</body>
+</html>

@@ -1,4 +1,4 @@
-NAME = "percentage of walk to work";
+datasetName = "percentage of people who walk to work";
 
 // Map configuration and initialization
 const mapboxConfig = {
@@ -37,40 +37,6 @@ window.addEventListener('keydown', function(event) {
 }, true);
 
 
-map.on('zoomend', () => {
-    const statsDisplay = document.getElementById('stats-display');
-    statsDisplay.innerHTML = '<p>Map view changed. Press l to hear information about current view.</p>';
-});
-
-map.on('moveend', () => {
-    const statsDisplay = document.getElementById('stats-display');
-    statsDisplay.innerHTML = '<p>Map view changed. Press l to hear information about current view.</p>';
-});
-
-function calculateColor(value, min, max) {
-    const colors = [
-        { threshold: 0, color: '#F2F12D' },
-        { threshold: 36, color: '#EED322' },
-        { threshold: 72, color: '#E6B71E' },
-        { threshold: 124, color: '#DA9C20' },
-        { threshold: 188, color: '#CA8323' },
-        { threshold: 290, color: '#B86B25' },
-        { threshold: 500, color: '#A25626' },
-        { threshold: 750, color: '#8B4225' },
-        { threshold: 1000, color: '#723122' },
-        { threshold: 1500, color: '#79264E' },
-    ];
-    const normalizedValue = (value - min) / (max - min);
-    const maxThreshold = colors[colors.length - 1].threshold;
-    const normalizedThreshold = normalizedValue * maxThreshold;
-    for (let i = 0; i < colors.length - 1; i++) {
-        if (normalizedThreshold >= colors[i].threshold && normalizedThreshold < colors[i + 1].threshold) {
-            return colors[i].color;
-        }
-    }
-    return colors[colors.length - 1].color;
-}
-
 
 REGION_MAP = {
     "NW": "top-left",
@@ -95,19 +61,69 @@ const MAPBOUNDS = [
     [-64.0, 52.0]   // Northeast
 ];
 
-// const ZOOM_LEVEL_TRACT = 7;
 const ZOOM_LEVEL_COUNTY = 6;
 const ZOOM_LEVEL_STATE = 0;
 
+
+function updateMapInfo(keyAction, actionType) {
+    var center = map.getCenter();
+    const statsDisplay = document.getElementById('stats-display');
+    fetch(`/get_state?lat=${center.lat}&lon=${center.lng}&zoom=${map.getZoom()}`)
+        .then(response => response.json())
+        .then(data => {
+            const zoomLevel = map.getZoom();
+            let displayText;
+            if (actionType === 'Zoomed' && zoomLevel >= 6) {
+                displayText = `${actionType} ${keyAction}, now at county level, centered on ${data.county}, ${data.state}.`;
+            } else if (actionType === 'Zoomed' && zoomLevel < 6) {
+                displayText = `${actionType} ${keyAction}, now at state level, centered on ${data.state}.`;
+            } else if (actionType === 'Moved' && zoomLevel >= 6) {
+                // This else clause can be used for non-zoom related actions or to handle unexpected cases
+                displayText = `${actionType} ${keyAction}, centered on ${data.county}, ${data.state}.`;
+            } else {
+                displayText = `${actionType} ${keyAction}, centered on ${data.state}.`;
+            }
+            statsDisplay.innerHTML = `<p>${displayText}</p>
+            <p>Press i to get more information.</p>`;
+        })
+        .catch(error => console.error('Error fetching state:', error));
+}
+
+function getDirectionBasedOnKey(key) {
+    switch(key) {
+        case 'ArrowRight':
+            return 'right';
+        case 'ArrowLeft':
+            return 'left';
+        case 'ArrowUp':
+            return 'up';
+        case 'ArrowDown':
+            return 'down';    
+        default:
+            return null; // Ignore other keys
+    }
+}
+
+function getZoomBasedOnKey(key) { 
+    switch(key) {
+        case '=':
+        case '+':
+            return 'in';
+        case '-':
+        case '_':
+            return 'out';
+        default:
+            return null;
+    }
+}
+
 const constructGeoUnit = (zoom) => {
     let zoomText = "";
-
     if (zoom >= ZOOM_LEVEL_COUNTY) {
         zoomText = "county";
     } else {
         zoomText = "state";
     }
-
     return zoomText;
 }
 
@@ -134,15 +150,14 @@ const constructZoom = (zoom) => {
     // Zoom in to interact with the data at [next level]; zoom out to interact with the data at [previous level].
     let zoomText = "";
     if (zoom >= ZOOM_LEVEL_COUNTY) {
-        zoomText = "Zoom out to interact with the data at state level.";
+        zoomText = "You are currently at county level, zoom out to interact with the data at state level.";
     } else {
-        zoomText = "Zoom in to interact with the data at county level.";
+        zoomText = "You are currently at state level, zoom in to interact with the data at county level.";
     }
     return zoomText;
 }
 
 const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, zoom) => {
-    // var url = `/stats_in_view?minLon=${screenLeft}&minLat=${screenBottom}&maxLon=${screenRight}&maxLat=${screenTop}&zoom=${zoom}`;
     var url = `/stats_in_view?screenLeft=${screenLeft}&screenBottom=${screenBottom}&screenRight=${screenRight}&screenTop=${screenTop}&zoom=${zoom}&value_column=walk_to_wo`;
 
     try {
@@ -167,7 +182,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             }
 
             if (highs.length > 0) {
-                content += NAME + ' is high ';
+                content += datasetName + ' is high ';
                 highs.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -192,11 +207,11 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 });
                 content += `.</p>`;
             } else {
-                content += '<p>- No regions with particularly high ' + NAME + '.</p>';
+                content += '<p>No regions with particularly high ' + datasetName + '.</p>';
             }
 
             if (lows.length > 0) {
-                content += NAME + ' is low ';
+                content += datasetName + ' is low ';
                 lows.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -222,23 +237,24 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 }); 
                 content += `.</p>`;
             } else {
-                content += '<p>- No regions with particularly low' + NAME + '.</p>';
+                content += '<p>- No regions with particularly low' + datasetName + '.</p>';
             }
 
             // census track level
             // min, max
             let minText = "";
             let maxText = "";
-
-            if (zoom > ZOOM_LEVEL_COUNTY) {
-                minText += "The county with the lowest percentage is " + data.min.text + ", with a percentage of " + data.min.value.toFixed(1) + " people per square mile.";
-                maxText += "The county with the highest percentage is " + data.max.text + ", with a percentageof " + data.max.value.toFixed(1) + " people per square mile.";
+            
+            if (zoom >= ZOOM_LEVEL_COUNTY) {
+                minText += "The county with the lowest " + datasetName + " is " + data.min.text + ", with " + (data.min.value*100).toFixed(1) + "% of people who walk to work.";
+                maxText += "The county with the highest " + datasetName + " is " + data.max.text + ", with " + (data.max.value*100).toFixed(1) + "% of people who walk to work.";
             } else {
-                minText += "The state with the lowest percentage is " + data.min.text + ", with a percentage of " + data.min.value.toFixed(1) + " people per square mile.";
-                maxText += "The state with the highest percentage is " + data.max.text + ", with a percentage of " + data.max.value.toFixed(1) + " people per square mile.";
+                minText += "The state with the lowest " + datasetName + " is " + data.min.text + ", with " + (data.min.value*100).toFixed(1) + "% of people who walk to work.";
+                maxText += "The state with the highest " + datasetName + " is " + data.max.text + ", with " + (data.max.value*100).toFixed(1) + "% of people who walk to work.";
             }
-            let average = `The average percentage in the view is ${data.average.toFixed(1)} people per square mile.`;
-            content += `<p>${minText}</p><p>${maxText}</p><p>${average}</p>`;
+
+            let average = `The average ${datasetName} is ${data.average.toFixed(1)} people per square mile.`;
+            content += `<p>${average}</p><p>${maxText}</p><p>${minText}</p>`;
 
             return {
                 geocode: data.geocode,
@@ -251,12 +267,9 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
     }
 }
 
-datasetName = NAME;
-
-
 var statsTrend = null;
-var inDetailedView = false;
-var statsDisplay = document.getElementById('stats-display'); 
+var inBoundaryView = false;
+const statsDisplay = document.getElementById('stats-display'); 
 var initialStatsDisplay = '';
 
 async function updateStats() {
@@ -273,16 +286,17 @@ async function updateStats() {
 
     try {
         let overview = "This is a " + MAPTYPE + " of " + datasetName + " in the US at a " + constructGeoUnit(zoom) + " level.";
+
+
         let zoomText = constructZoom(zoom);
         statsTrend = await constructTrend(screenLeft, screenRight, screenTop, screenBottom, zoom);
 
         initialStatsDisplay = `
-            <p>${overview}</p>
-            <p>${statsTrend.geocode}</p>
-            <p>Press i to hear more information.</p>
-            <p>Press m to interact with the map.</p>
-            <p>${zoomText}</p>
-        `;
+        <p>In the current view: </p>
+        <p>${statsTrend.trend}</p>
+        <p>Press l to hear the boundary of the current view.</p>
+        <p>Press m to interact with the map.</p>
+    `;
 
         statsDisplay.innerHTML = initialStatsDisplay;
         statsDisplay.focus(); 
@@ -292,40 +306,85 @@ async function updateStats() {
     }
 }
 
-
-function handleKeypress(event) {
-    const statsDisplay = document.getElementById('stats-display');
-    if (event.key === 'l') {
-        fetchAndUpdateData();
-
-     } else if (event.key === 'i' && !inDetailedView) {
-        if (statsTrend !== null) { // Ensure statsTrend is available
-            statsDisplay.innerHTML = `<p>${statsTrend.trend}</p>
-            <p>Press k to go back.</p>
-            <p>Press m to interact with the map.</p>`;
-            statsDisplay.focus();
-            inDetailedView = true;
-        } else {
-            // Optionally handle the case where statsTrend is not ready
-            statsDisplay.innerHTML = `<p>Data not available yet. Please wait...</p>`;
-            statsDisplay.focus();
-            inDetailedView = false;
-        }
-    } else if (event.key === 'm' && !inDetailedView) {
-        map.getCanvas().focus();
-        inDetailedView = false;
-    } else if (event.key === 'k' && inDetailedView) {
-        statsDisplay.innerHTML = initialStatsDisplay;
+function updateStatsDisplay(htmlContent, focus = true) {
+    statsDisplay.innerHTML = htmlContent;
+    if (focus) {
         statsDisplay.focus();
-        inDetailedView = false;
-    } else if (event.key === 'm' && inDetailedView) {
-        map.getCanvas().focus();
-        inDetailedView = false;
     }
 }
 
-// Attach event listener
-window.addEventListener('keypress', handleKeypress);
+function handleBoundaryView() {
+    if (statsTrend !== null) {
+        updateStatsDisplay(`<p>${statsTrend.geocode}</p>
+            <p>Press b to go back.</p>
+            <p>Press m to interact with the map.</p>`);
+        inBoundaryView = true;
+    } else {
+        updateStatsDisplay(`<p>Data not available yet. Please wait...</p>`);
+        inBoundaryView = false;
+    }
+}
+
+const helpMessage = `
+    <p>Shortcut keys.</p>
+    <p>Press i to learn about data trends in the current view.</p>
+    <p>Press l to learn about the boudary of the current view. </p>
+    <p>Press m to interact with the map.</p>
+    <p>Use arrow keys to navigate the map up, down, left, right.</p>
+    <p>Use + or - to zoom in or out.</p>
+    <p>Press h to hear the short cut keys any time.</p>
+`;
+
+
+function handleKeyboardEvent(event) {
+    // Handle map rotation and pitch blocking
+    if (event.shiftKey && ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+        event.preventDefault();
+        event.stopPropagation();
+        return; // Stop further processing for rotation-blocking
+    }
+
+    // Handle direction and zoom interactions for the map
+    const direction = getDirectionBasedOnKey(event.key);
+    const zoomKey = getZoomBasedOnKey(event.key);
+
+    if (direction) {
+        map.once('moveend', () => updateMapInfo(direction, 'Moved'));
+    }
+
+    if (zoomKey) {
+        map.once('zoomend', () => updateMapInfo(zoomKey, 'Zoomed'));
+    }
+
+    // Handle UI-specific interactions
+    switch (event.key) {
+        case 'i':
+            fetchAndUpdateData();
+            break;
+        case 'l':
+            if (!inBoundaryView) {
+                handleBoundaryView();
+            }
+            break;
+        case 'b':
+            if (inBoundaryView) {
+                updateStatsDisplay(initialStatsDisplay);
+                inBoundaryView = false;
+            }
+            break;
+        case 'm':
+            if (!inBoundaryView) {
+                map.getCanvas().focus();
+            }
+            break;
+        case 'h':  // Handle help message display
+            updateStatsDisplay(helpMessage);
+            break;
+    }
+}
+
+window.addEventListener('keydown', handleKeyboardEvent);
+
 
 function fetchAndUpdateData() {
     var bounds = map.getBounds();
@@ -348,6 +407,30 @@ function fetchAndUpdateData() {
     });
 }
 
+function calculateColor(value, min, max) {
+    const colors = [
+        { threshold: 0, color: '#F2F12D' },
+        { threshold: 36, color: '#EED322' },
+        { threshold: 72, color: '#E6B71E' },
+        { threshold: 124, color: '#DA9C20' },
+        { threshold: 188, color: '#CA8323' },
+        { threshold: 290, color: '#B86B25' },
+        { threshold: 500, color: '#A25626' },
+        { threshold: 750, color: '#8B4225' },
+        { threshold: 1000, color: '#723122' },
+        { threshold: 1500, color: '#79264E' },
+    ];
+    const normalizedValue = (value - min) / (max - min);
+    const maxThreshold = colors[colors.length - 1].threshold;
+    const normalizedThreshold = normalizedValue * maxThreshold;
+    for (let i = 0; i < colors.length - 1; i++) {
+        if (normalizedThreshold >= colors[i].threshold && normalizedThreshold < colors[i + 1].threshold) {
+            return colors[i].color;
+        }
+    }
+    return colors[colors.length - 1].color;
+}
+
 map.on('load', function () {
     map.addSource('stateDensity', {
         type: 'geojson',
@@ -368,14 +451,14 @@ map.on('load', function () {
                 ['linear'],
                 ['get', 'walk_to_wo'],
                 0, '#F6D2A9',
-                50, '#F5B78E',
-                100, '#F19C7C',
-                250, '#EA8171',
-                500, '#DD686C',
-                750, '#CA5268',
-                1000, '#B13F64',
-                2000, '#9C3F5D',
-                5000, '#853F56',
+                1, '#F5B78E',
+                2, '#F19C7C',
+                5, '#EA8171',
+                10, '#DD686C',
+                20, '#CA5268',
+                30, '#B13F64',
+                50, '#9C3F5D',
+                100, '#853F56',
             ],
             'fill-opacity': 0.75
         }
@@ -395,18 +478,18 @@ map.on('load', function () {
 
         const colorStops = [
             0, '#F6D2A9',
-            25, '#F5B78E',
-            50, '#F19C7C',
-            100, '#EA8171',
-            200, '#DD686C',
-            500, '#CA5268',
-            1000, '#B13F64',
-            2000, '#9C3F5D',
-            5000, '#853F56',
+            1, '#F5B78E',
+            2, '#F19C7C',
+            5, '#EA8171',
+            10, '#DD686C',
+            20, '#CA5268',
+            30, '#B13F64',
+            50, '#9C3F5D',
+            100, '#853F56',
         ].map(stop => {
             if (typeof stop === 'number') {
                 // Scale the number to fit within the current min-max range
-                return min + (stop / 3000) * (max - min);
+                return min + (stop / 100) * (max - min);
             }
             return stop;
         });
