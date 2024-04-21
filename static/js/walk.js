@@ -17,7 +17,7 @@ const mapboxConfig = {
 // Set Mapbox access token from configuration
 mapboxgl.accessToken = mapboxConfig.accessToken;
 
-document.getElementById('map-heading').focus();
+// document.getElementById('map-heading').focus();
 
 const map = new mapboxgl.Map({
     container: 'map',
@@ -184,7 +184,10 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             }
 
             if (highs.length > 0) {
-                content += datasetName + ' is high ';
+                // content += datasetName + ' is high ';
+                let capitalizedDatasetName = datasetName.charAt(0).toUpperCase() + datasetName.slice(1);
+                content += capitalizedDatasetName + ' is high ';
+
                 highs.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -213,7 +216,9 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             }
 
             if (lows.length > 0) {
-                content += datasetName + ' is low ';
+                // content += datasetName.capitalize() + ' is low ';
+                let capitalizedDatasetName = datasetName.charAt(0).toUpperCase() + datasetName.slice(1);
+                content += capitalizedDatasetName + ' is low ';
                 lows.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -301,7 +306,7 @@ async function updateStats() {
     `;
 
         statsDisplay.innerHTML = initialStatsDisplay;
-        statsDisplay.focus(); 
+        // statsDisplay.focus(); 
     } catch (error) {
         console.error("Error updating stats:", error);
         statsDisplay.innerHTML = '<p>Error loading information. Please try again.</p>';
@@ -492,15 +497,15 @@ map.on('load', function () {
                 'interpolate',
                 ['linear'],
                 ['get', 'walk_to_wo'],
-                0, '#F6D2A9',
-                1, '#F5B78E',
-                2, '#F19C7C',
-                5, '#EA8171',
-                10, '#DD686C',
-                20, '#CA5268',
-                30, '#B13F64',
-                50, '#9C3F5D',
-                100, '#853F56',
+                0, '#d3f2a3',
+                1, '#B0F2BC',
+                2, '#89E8AC',
+                5, '#67DBA5',
+                10, '#4CC8A3',
+                20, '#38B2A3',
+                30, '#2C98A0',
+                50, '#257D98',
+                100, '#045275',
             ],
             'fill-opacity': 0.75
         }
@@ -516,18 +521,20 @@ map.on('load', function () {
         let data = map.querySourceFeatures('stateDensity');
 
         let min = Math.min(...data.map(f => f.properties.walk_to_wo));
+        console.log(min);
         let max = Math.max(...data.map(f => f.properties.walk_to_wo));
+        console.log(max);
 
         const colorStops = [
-            0, '#F6D2A9',
-            1, '#F5B78E',
-            2, '#F19C7C',
-            5, '#EA8171',
-            10, '#DD686C',
-            20, '#CA5268',
-            30, '#B13F64',
-            50, '#9C3F5D',
-            100, '#853F56',
+            0, '#d3f2a3',
+            1, '#B0F2BC',
+            2, '#89E8AC',
+            5, '#67DBA5',
+            10, '#4CC8A3',
+            20, '#38B2A3',
+            30, '#2C98A0',
+            50, '#257D98',
+            100, '#045275',
         ].map(stop => {
             if (typeof stop === 'number') {
                 // Scale the number to fit within the current min-max range
@@ -548,8 +555,10 @@ map.on('load', function () {
 window.onload = function() {
     map.on('load', function() {
         const elementsToHide = document.querySelectorAll('.mapboxgl-ctrl-attrib a, .mapboxgl-ctrl-logo');
+        
 
         elementsToHide.forEach(function(element) {
+            element.setAttribute('tabindex', '-1'); // Remove from tab order
             element.setAttribute('aria-hidden', 'true'); // Hide from screen readers
             element.setAttribute('role', 'presentation'); // Mark as presentational
         });

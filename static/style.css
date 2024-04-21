@@ -69,3 +69,19 @@ body { margin: 0;
                                 #9C3F5D 100%, /* Continuation for 750 */
                                 #853F56 100%); /* Continuation for 1000 */
 }
+
+
+#legend-gradient-walk {
+    height: 20px;
+    width: 100%;
+    background: linear-gradient(to right, 
+                                #f7feae 0%,  /* Start color */
+                                #b0f2bc 5%, /* Approximation for 50 */
+                                #89e8ac 10%, /* Approximation for 100 */
+                                #67dba5 20%, /* Approximation for 150 */
+                                #4cc8a3 30%, /* Approximation for 188 */
+                                #38b2a3 40%, /* Approximation for 290 */
+                                #2c98a0 50%, /* End color for 500 and beyond */
+                                #257d98 80%, /* Continuation for 750 */
+                                #045275 100%); /* Continuation for 1000 */
+}
