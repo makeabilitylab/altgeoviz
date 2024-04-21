@@ -15,6 +15,10 @@ const mapboxConfig = {
 // Set Mapbox access token from configuration
 mapboxgl.accessToken = mapboxConfig.accessToken;
 
+
+document.getElementById('map-heading').focus();
+
+
 const map = new mapboxgl.Map({
     container: 'map',
     style: mapboxConfig.styleUrl,
@@ -28,7 +32,6 @@ const map = new mapboxgl.Map({
 window.addEventListener('keydown', function(event) {
     console.log("Event captured: ", event.key, "Shift pressed: ", event.shiftKey);
     if (event.shiftKey && ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
-        console.log("Blocking this event");
         event.preventDefault();
         event.stopPropagation();
     }
