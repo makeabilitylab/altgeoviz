@@ -336,6 +336,44 @@ const helpMessage = `
 `;
 
 
+const logMessage = async (keystroke) => {
+    const url = "/log"
+
+    const center = map.getCenter();
+    console.log(keystroke)
+    
+    const eventData = {
+        user_id: "user101",
+        session_id: "session5678",
+        timestamp: new Date().toISOString(),
+        key_stroke: keystroke,
+        zoom_level: map.getZoom(),
+        lng: center.lng,
+        lat: center.lat,
+        stats: document.getElementById('stats-display').innerText
+    };
+
+    try {
+        // Making an API call to the Flask backend
+        const response = await fetch('/log', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(eventData) 
+        });
+
+        // Parsing the JSON response from the server
+        const responseData = await response.json();
+
+        // Log the response from the server (success message)
+        console.log('Server Response:', responseData);
+    } catch (error) {
+        // Error handling
+        console.error('Failed to log message:', error);
+    }
+}
+
 function handleKeyboardEvent(event) {
     // Handle map rotation and pitch blocking
     if (event.shiftKey && ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
@@ -381,6 +419,8 @@ function handleKeyboardEvent(event) {
             updateStatsDisplay(helpMessage);
             break;
     }
+
+    logMessage(event.key);
 }
 
 window.addEventListener('keydown', handleKeyboardEvent);
