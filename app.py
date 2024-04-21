@@ -6,6 +6,7 @@ import utils
 import os
 import reverse_geocoder as rg
 import uuid
+import pytz
 from datetime import datetime  
 
 from pymongo.mongo_client import MongoClient
@@ -15,6 +16,8 @@ from pymongo.server_api import ServerApi
 app = Flask(__name__)
 app.secret_key = 'abc'
 # app.logger.setLevel(logging.DEBUG)
+
+pdt = pytz.timezone('America/Los_Angeles')
 
 # Database connection
 con = duckdb.connect(database='data/my_spatial_db.duckdb', read_only=True)
@@ -41,7 +44,7 @@ def log_event():
             # "session_id": data.get('session_id', None),
             "session_id": session.get('session_id', None),
             "page": session.get('page', None),
-            "timestamp": data.get('timestamp', datetime.utcnow().isoformat()),
+            "timestamp": data.get('timestamp', datetime.now(pdt).isoformat()),
             "key_stroke": data.get('key_stroke', None),
             "zoom_level": data.get('zoom_level', None),
             "lng": data.get('lng', None),
