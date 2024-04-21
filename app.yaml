@@ -6,6 +6,7 @@ instance_class: B4  # Upgraded instance class for increased memory limits
 env_variables:
   MAPBOX_ACCESS_TOKEN: 'YOUR_MAPBOX_ACCESS_TOKEN_HERE'
   SECRET_KEY: 'abc'
+  MONGO_URL: 'mongodb+srv://chuchuli:GiUlmbOEHSWc66OG@accessiblemap.lsu6nk2.mongodb.net/?retryWrites=true&w=majority&appName=AccessibleMap'
 
 handlers:
   - url: /static

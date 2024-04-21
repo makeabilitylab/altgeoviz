@@ -4,3 +4,4 @@ gunicorn==21.2.0
 duckdb==0.10.1
 geopandas==0.14.3
 reverse_geocoder==1.5.1
+pymongo==4.6.2

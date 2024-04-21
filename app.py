@@ -3,7 +3,13 @@ import duckdb
 import geopandas as gpd
 import json
 import utils
+import os
 import reverse_geocoder as rg
+import uuid
+from datetime import datetime  
+
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
 
 
 app = Flask(__name__)
@@ -14,6 +20,39 @@ app.secret_key = 'abc'
 con = duckdb.connect(database='data/my_spatial_db.duckdb', read_only=True)
 con.execute("INSTALL 'spatial';")
 con.execute("LOAD 'spatial';")
+
+
+# mongo_url = app.config['MONGO_URL']
+mongo_url = os.getenv('MONGO_URL', 'mongodb+srv://chuchuli:GiUlmbOEHSWc66OG@accessiblemap.lsu6nk2.mongodb.net/?retryWrites=true&w=majority&appName=AccessibleMap')
+
+client = MongoClient(mongo_url)
+db = client.get_database('accessible_map') 
+collection = db['logs']
+
+
+@app.route('/log', methods=['POST'])
+def log_event():
+    try:
+        data = request.get_json()
+        
+        document = {
+            "uuid": data.get('uuid', str(uuid.uuid4())),
+            "user_id": data.get('user_id', None),
+            "session_id": data.get('session_id', None),
+            "timestamp": data.get('timestamp', datetime.utcnow().isoformat()),
+            "key_stroke": data.get('key_stroke', None),
+            "zoom_level": data.get('zoom_level', None),
+            "lng": data.get('lng', None),
+            "lat": data.get('lat', None),
+            "stats": data.get('stats', {}),
+        }
+        
+        collection.insert_one(document)
+        print("Success ...")
+        return jsonify({"status": "success", "message": "Event logged"}), 200
+    except Exception as e:
+        print(f"Error: {e}")
+        return jsonify({"status": "error", "message": "Error logging event"}), 500
 
 
 def get_viewport_params():
