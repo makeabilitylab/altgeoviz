@@ -75,17 +75,26 @@ function updateMapInfo(keyAction, actionType) {
         .then(response => response.json())
         .then(data => {
             const zoomLevel = map.getZoom();
+
+            // if data.county is undefined
             let displayText;
-            if (actionType === 'Zoomed' && zoomLevel >= 6) {
-                displayText = `${actionType} ${keyAction}, now at county level, centered on ${data.county}, ${data.state}.`;
-            } else if (actionType === 'Zoomed' && zoomLevel < 6) {
-                displayText = `${actionType} ${keyAction}, now at state level, centered on ${data.state}.`;
-            } else if (actionType === 'Moved' && zoomLevel >= 6) {
-                // This else clause can be used for non-zoom related actions or to handle unexpected cases
-                displayText = `${actionType} ${keyAction}, centered on ${data.county}, ${data.state}.`;
+            
+            // county not in data
+            if ((data.county === undefined || !"county" in data) && data.state === "No state found") {
+                displayText = "Currently out of bounds. Please move back on the map.";
             } else {
-                displayText = `${actionType} ${keyAction}, centered on ${data.state}.`;
+                if (actionType === 'Zoomed' && zoomLevel >= 6) {
+                    displayText = `${actionType} ${keyAction}, now at county level, centered on ${data.county}, ${data.state}.`;
+                } else if (actionType === 'Zoomed' && zoomLevel < 6) {
+                    displayText = `${actionType} ${keyAction}, now at state level, centered on ${data.state}.`;
+                } else if (actionType === 'Moved' && zoomLevel >= 6) {
+                    // This else clause can be used for non-zoom related actions or to handle unexpected cases
+                    displayText = `${actionType} ${keyAction}, centered on ${data.county}, ${data.state}.`;
+                } else {
+                    displayText = `${actionType} ${keyAction}, centered on ${data.state}.`;
+                }
             }
+            
             statsDisplay.innerHTML = `<p>${displayText}</p>
             <p>Press i to get more information.</p>`;
         })
