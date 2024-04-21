@@ -255,7 +255,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 maxText += "The state with the highest " + datasetName + " is " + data.max.text + ", with " + (data.max.value*100).toFixed(1) + "% of people who walk to work.";
             }
 
-            let average = `The average ${datasetName} is ${data.average.toFixed(1)} people per square mile.`;
+            let average = `The average ${datasetName} is ${(data.average*100).toFixed(1)}%.`;
             content += `<p>${average}</p><p>${maxText}</p><p>${minText}</p>`;
 
             return {

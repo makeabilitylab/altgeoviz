@@ -82,15 +82,13 @@ def construct_location(location, zoom_level):
         "BM": "Bermuda",
         "": "undefined"
     }
-    if zoom_level >= 7:
-        return f"{location['name']}, {location['admin1']}"
-    elif zoom_level >= 5:
+    if zoom_level >= 6:
         if location['cc'] != 'US':
             return f"{location['name']}, {table[location['cc']]}"
         return f"{location['admin2']}, {location['admin1']}"
     else:
-        # if location['cc'] != 'US':
-        #     return f"{location['admin1']}, {table[location['cc']]}"
+        if location['cc'] != 'US':
+            return f"{location['admin1']}, {table[location['cc']]}"
         return f"{location['admin1']}, {location['cc']}"
     
 

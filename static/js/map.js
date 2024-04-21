@@ -16,7 +16,7 @@ const mapboxConfig = {
 mapboxgl.accessToken = mapboxConfig.accessToken;
 
 
-document.getElementById('map-heading').focus();
+// document.getElementById('map-heading').focus();
 
 
 const map = new mapboxgl.Map({
@@ -249,11 +249,11 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             let maxText = "";
             
             if (zoom >= ZOOM_LEVEL_COUNTY) {
-                minText += "The county with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(1) + " people per square mile.";
-                maxText += "The county with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
+                minText += "The county with the lowest population density is " + data.min.text + ", with " + data.min.value.toFixed(1) + " people per square mile.";
+                maxText += "The county with the highest population density is " + data.max.text + ", with " + data.max.value.toFixed(1) + " people per square mile.";
             } else {
-                minText += "The state with the lowest population density is " + data.min.text + ", with a population density of " + data.min.value.toFixed(1) + " people per square mile.";
-                maxText += "The state with the highest population density is " + data.max.text + ", with a population density of " + data.max.value.toFixed(1) + " people per square mile.";
+                minText += "The state with the lowest population density is " + data.min.text + ", with " + data.min.value.toFixed(1) + " people per square mile.";
+                maxText += "The state with the highest population density is " + data.max.text + ", with " + data.max.value.toFixed(1) + " people per square mile.";
             }
 
             let average = `The average population density is ${data.average.toFixed(1)} people per square mile.`;
@@ -302,7 +302,7 @@ async function updateStats() {
     `;
 
         statsDisplay.innerHTML = initialStatsDisplay;
-        statsDisplay.focus(); 
+        // statsDisplay.focus(); 
     } catch (error) {
         console.error("Error updating stats:", error);
         statsDisplay.innerHTML = '<p>Error loading information. Please try again.</p>';
@@ -551,6 +551,8 @@ window.onload = function() {
         const elementsToHide = document.querySelectorAll('.mapboxgl-ctrl-attrib a, .mapboxgl-ctrl-logo');
 
         elementsToHide.forEach(function(element) {
+
+            element.setAttribute('tabindex', '-1');
             element.setAttribute('aria-hidden', 'true'); // Hide from screen readers
             element.setAttribute('role', 'presentation'); // Mark as presentational
         });
