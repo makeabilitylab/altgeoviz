@@ -465,6 +465,7 @@ function handleKeyboardEvent(event) {
     switch (event.key) {
         case 'i':
             fetchAndUpdateData();
+            inBoundaryView = false;
             break;
         case 'l':
             if (!inBoundaryView) {
@@ -480,9 +481,11 @@ function handleKeyboardEvent(event) {
         case 'm':
                 map.getCanvas().focus();
                 updateStatsDisplay(mapInteractMessage);
+                inBoundaryView = false;
                 break;
         case 'h':  // Handle help message display
             updateStatsDisplay(helpMessage);
+            inBoundaryView = false;
             break;
     }
 
