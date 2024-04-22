@@ -1,3 +1,5 @@
+datasetName = "percentage of transit commuters";
+
 // Map configuration and initialization
 const mapboxConfig = {
     accessToken: 'pk.eyJ1IjoiY3Jlc2NlbmRvY2h1IiwiYSI6ImNpdGR5MWZ5aDAycjIyc3A5ZHoxZzRwMGsifQ.nEaSxm520v7TpKAy2GG_kA',
@@ -15,9 +17,7 @@ const mapboxConfig = {
 // Set Mapbox access token from configuration
 mapboxgl.accessToken = mapboxConfig.accessToken;
 
-
 // document.getElementById('map-heading').focus();
-
 
 const map = new mapboxgl.Map({
     container: 'map',
@@ -33,6 +33,7 @@ const map = new mapboxgl.Map({
 window.addEventListener('keydown', function(event) {
     console.log("Event captured: ", event.key, "Shift pressed: ", event.shiftKey);
     if (event.shiftKey && ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+        console.log("Blocking this event");
         event.preventDefault();
         event.stopPropagation();
     }
@@ -66,8 +67,6 @@ const MAPBOUNDS = [
 const ZOOM_LEVEL_COUNTY = 6;
 const ZOOM_LEVEL_STATE = 0;
 
-datasetName = "population density";
-
 
 // function updateMapInfo(keyAction, actionType) {
 //     var center = map.getCenter();
@@ -76,10 +75,8 @@ datasetName = "population density";
 //         .then(response => response.json())
 //         .then(data => {
 //             const zoomLevel = map.getZoom();
-
-//             // if data.county is undefined
 //             let displayText;
-            
+
 //             // county not in data
 //             if ((data.county === undefined || !"county" in data) && data.state === "No state found") {
 //                 displayText = "Currently out of bounds. Please move back on the map.";
@@ -95,13 +92,11 @@ datasetName = "population density";
 //                     displayText = `${actionType} ${keyAction}, centered on ${data.state}.`;
 //                 }
 //             }
-            
 //             statsDisplay.innerHTML = `<p>${displayText}</p>
 //             <p>Press i to get more information.</p>`;
 //         })
 //         .catch(error => console.error('Error fetching state:', error));
 // }
-
 
 let maxZoomReached = false; 
 let minZoomReached = false;
@@ -151,8 +146,6 @@ function updateMapInfo(keyAction, actionType) {
         })
         .catch(error => console.error('Error fetching state:', error));
 }
-
-
 
 function getDirectionBasedOnKey(key) {
     switch(key) {
@@ -223,7 +216,7 @@ const constructZoom = (zoom) => {
 }
 
 const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, zoom) => {
-    var url = `/stats_in_view?screenLeft=${screenLeft}&screenBottom=${screenBottom}&screenRight=${screenRight}&screenTop=${screenTop}&zoom=${zoom}&value_column=ppl_densit`;
+    var url = `/stats_in_view?screenLeft=${screenLeft}&screenBottom=${screenBottom}&screenRight=${screenRight}&screenTop=${screenTop}&zoom=${zoom}&value_column=transit_to`;
 
     try {
         const response = await fetch(url);
@@ -247,7 +240,10 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             }
 
             if (highs.length > 0) {
-                content += 'Population density is high ';
+                // content += datasetName + ' is high ';
+                let capitalizedDatasetName = datasetName.charAt(0).toUpperCase() + datasetName.slice(1);
+                content += capitalizedDatasetName + ' is high ';
+
                 highs.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -272,11 +268,13 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 });
                 content += `.</p>`;
             } else {
-                content += '<p>No regions with particularly high population density.</p>';
+                content += '<p>No regions with particularly high ' + datasetName + '.</p>';
             }
 
             if (lows.length > 0) {
-                content += 'Population density is low ';
+                // content += datasetName.capitalize() + ' is low ';
+                let capitalizedDatasetName = datasetName.charAt(0).toUpperCase() + datasetName.slice(1);
+                content += capitalizedDatasetName + ' is low ';
                 lows.forEach((section, index) => {
                     // Check if the section is one of the special cases
                     if (["left_diagonal", "right_diagonal", "horizontal", "vertical"].includes(section)) {
@@ -302,7 +300,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 }); 
                 content += `.</p>`;
             } else {
-                content += '<p>No regions with particularly low population density.</p>';
+                content += '<p> No regions with particularly low' + datasetName + '.</p>';
             }
 
             // census track level
@@ -311,14 +309,14 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
             let maxText = "";
             
             if (zoom >= ZOOM_LEVEL_COUNTY) {
-                minText += "The county with the lowest population density is " + data.min.text + ", with " + data.min.value.toFixed(1) + " people per square mile.";
-                maxText += "The county with the highest population density is " + data.max.text + ", with " + data.max.value.toFixed(1) + " people per square mile.";
+                minText += "The county with the lowest " + datasetName + " is " + data.min.text + ", with " + (data.min.value*100).toFixed(1) + "% of people who take transit to work.";
+                maxText += "The county with the highest " + datasetName + " is " + data.max.text + ", with " + (data.max.value*100).toFixed(1) + "% of people who take transit to work.";
             } else {
-                minText += "The state with the lowest population density is " + data.min.text + ", with " + data.min.value.toFixed(1) + " people per square mile.";
-                maxText += "The state with the highest population density is " + data.max.text + ", with " + data.max.value.toFixed(1) + " people per square mile.";
+                minText += "The state with the lowest " + datasetName + " is " + data.min.text + ", with " + (data.min.value*100).toFixed(1) + "% of people who take transit to work.";
+                maxText += "The state with the highest " + datasetName + " is " + data.max.text + ", with " + (data.max.value*100).toFixed(1) + "% of people who take transit to work.";
             }
 
-            let average = `The average population density is ${data.average.toFixed(1)} people per square mile.`;
+            let average = `The average ${datasetName} is ${(data.average*100).toFixed(1)}%.`;
             content += `<p>${average}</p><p>${maxText}</p><p>${minText}</p>`;
 
             return {
@@ -393,7 +391,7 @@ function handleBoundaryView() {
 const helpMessage = `
     <p>Shortcut keys.</p>
     <p>Press i to learn about data trends in the current view.</p>
-    <p>Press l to learn about the boundary of the current view.</p>
+    <p>Press l to learn about the boudary of the current view. </p>
     <p>Press m to interact with the map.</p>
     <p>Use arrow keys to navigate the map up, down, left, right.</p>
     <p>Use + or - to zoom in or out.</p>
@@ -401,6 +399,7 @@ const helpMessage = `
 `;
 
 const mapInteractMessage = `<p>Now interacting with the map.</p>`;
+
 
 
 const logMessage = async (keystroke) => {
@@ -478,9 +477,9 @@ function handleKeyboardEvent(event) {
             }
             break;
         case 'm':
-                map.getCanvas().focus();
-                updateStatsDisplay(mapInteractMessage);
-                break;
+            map.getCanvas().focus();
+            updateStatsDisplay(mapInteractMessage);
+            break;
         case 'h':  // Handle help message display
             updateStatsDisplay(helpMessage);
             break;
@@ -495,10 +494,10 @@ window.addEventListener('keydown', handleKeyboardEvent);
 function fetchAndUpdateData() {
     var bounds = map.getBounds();
     var zoom = map.getZoom();
-    var sourceURL = '/state_density_data'; 
+    var sourceURL = '/state_transit_data'; 
 
     if (zoom >= 6) {
-        sourceURL = '/county_density_data';
+        sourceURL = '/county_transit_data';
     }
 
     var apiURL = `${sourceURL}?bbox=${bounds.getWest()},${bounds.getSouth()},${bounds.getEast()},${bounds.getNorth()}&zoom=${zoom}`;
@@ -555,16 +554,16 @@ map.on('load', function () {
             'fill-color': [
                 'interpolate',
                 ['linear'],
-                ['get', 'ppl_densit'],
-                0, '#F6D2A9',
-                50, '#F5B78E',
-                100, '#F19C7C',
-                250, '#EA8171',
-                500, '#DD686C',
-                750, '#CA5268',
-                1000, '#B13F64',
-                2000, '#9C3F5D',
-                5000, '#853F56',
+                ['get', 'transit_to'],
+                0, '#d3f2a3',
+                1, '#B0F2BC',
+                2, '#89E8AC',
+                5, '#67DBA5',
+                10, '#4CC8A3',
+                20, '#38B2A3',
+                30, '#2C98A0',
+                50, '#257D98',
+                100, '#045275',
             ],
             'fill-opacity': 0.75
         }
@@ -579,23 +578,25 @@ map.on('load', function () {
     
         let data = map.querySourceFeatures('stateDensity');
 
-        let min = Math.min(...data.map(f => f.properties.ppl_densit));
-        let max = Math.max(...data.map(f => f.properties.ppl_densit));
+        let min = Math.min(...data.map(f => f.properties.transit_to));
+        console.log(min);
+        let max = Math.max(...data.map(f => f.properties.transit_to));
+        console.log(max);
 
         const colorStops = [
-            0, '#F6D2A9',
-            25, '#F5B78E',
-            50, '#F19C7C',
-            100, '#EA8171',
-            200, '#DD686C',
-            500, '#CA5268',
-            1000, '#B13F64',
-            2000, '#9C3F5D',
-            5000, '#853F56',
+            0, '#d3f2a3',
+            1, '#B0F2BC',
+            2, '#89E8AC',
+            3, '#67DBA5',
+            4, '#4CC8A3',
+            5, '#38B2A3',
+            10, '#2C98A0',
+            15, '#257D98',
+            100, '#045275',
         ].map(stop => {
             if (typeof stop === 'number') {
                 // Scale the number to fit within the current min-max range
-                return min + (stop / 3000) * (max - min);
+                return min + (stop / 100) * (max - min);
             }
             return stop;
         });
@@ -603,7 +604,7 @@ map.on('load', function () {
         map.setPaintProperty('density-layer', 'fill-color', [
             'interpolate',
             ['linear'],
-            ['get', 'ppl_densit'],
+            ['get', 'transit_to'],
             ...colorStops
         ]);
     });
@@ -612,10 +613,10 @@ map.on('load', function () {
 window.onload = function() {
     map.on('load', function() {
         const elementsToHide = document.querySelectorAll('.mapboxgl-ctrl-attrib a, .mapboxgl-ctrl-logo');
+        
 
         elementsToHide.forEach(function(element) {
-
-            element.setAttribute('tabindex', '-1');
+            element.setAttribute('tabindex', '-1'); // Remove from tab order
             element.setAttribute('aria-hidden', 'true'); // Hide from screen readers
             element.setAttribute('role', 'presentation'); // Mark as presentational
         });

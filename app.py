@@ -120,6 +120,15 @@ def experiment():
     
     return render_template('walk.html')
 
+@app.route('/transit')
+def study():
+    if 'session_id' not in session or 'page' not in session or session['page'] != "transit":
+        session['session_id'] = str(uuid.uuid4())
+        session['page'] = "transit"
+        session.permanent = True
+    
+    return render_template('transit.html')
+
 def fetch_density_data(table_name, accuracy, value_column='ppl_densit'):
     session["global_table_name"] = table_name
     # Get bounding box parameters from the request
@@ -167,6 +176,17 @@ def state_walk_data():
 def county_walk_data():
     accuracy = 0.001
     return fetch_density_data('county', accuracy, "walk_to_wo")
+
+
+@app.route('/state_transit_data')
+def state_transit_data():
+    accuracy = 0.01
+    return fetch_density_data('state', accuracy, "transit_to")
+
+@app.route('/county_transit_data')
+def county_transit_data():
+    accuracy = 0.001
+    return fetch_density_data('county', accuracy, "transit_to")
 
 # @app.route('/tract_density_data')
 # def tract_density_data():
