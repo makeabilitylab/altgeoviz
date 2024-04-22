@@ -362,7 +362,7 @@ async function updateStats() {
     `;
 
         statsDisplay.innerHTML = initialStatsDisplay;
-        // statsDisplay.focus(); 
+        statsDisplay.focus(); 
     } catch (error) {
         console.error("Error updating stats:", error);
         statsDisplay.innerHTML = '<p>Error loading information. Please try again.</p>';
@@ -409,7 +409,7 @@ const logMessage = async (keystroke) => {
     console.log(keystroke)
     
     const eventData = {
-        user_id: "user1",
+        user_id: "user2",
         session_id: "session5678",
         timestamp: new Date().toISOString(),
         key_stroke: keystroke,
