@@ -250,7 +250,7 @@ const constructTrend = async (screenLeft, screenRight, screenTop, screenBottom, 
                 }); 
                 content += `.</p>`;
             } else {
-                content += '<p>- No regions with particularly low' + datasetName + '.</p>';
+                content += '<p>- No regions with particularly low ' + datasetName + '.</p>';
             }
 
             // census track level
