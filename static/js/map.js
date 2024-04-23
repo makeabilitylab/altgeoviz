@@ -347,7 +347,7 @@ async function updateStats() {
     const screenTop = bounds.getNorth() > MAPBOUNDS[1][1] ? MAPBOUNDS[1][1] : bounds.getNorth();
     const screenBottom = bounds.getSouth() < MAPBOUNDS[0][1] ? MAPBOUNDS[0][1] : bounds.getSouth();
 
-    statsDisplay.innerHTML = '<p>Information is loading...</p>';
+    statsDisplay.innerHTML = '<p>Information is loading.</p>';
 
     try {
         let overview = "This is a " + MAPTYPE + " of " + datasetName + " in the US at a " + constructGeoUnit(zoom) + " level.";
@@ -410,7 +410,7 @@ const logMessage = async (keystroke) => {
     console.log(keystroke)
     
     const eventData = {
-        user_id: "user2",
+        user_id: "user3",
         session_id: "session5678",
         timestamp: new Date().toISOString(),
         key_stroke: keystroke,
