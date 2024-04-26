@@ -1,0 +1,417 @@
+,_id,uuid,user_id,session_id,page,timestamp,key_stroke,zoom_level,lng,lat,stats,timestamp_pst
+1464,{'$oid': '662970ba1437491ce5eb32c5'},1d31953c-8525-4661-9c89-b5ee5d8f4ebe,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:51:05.103000+00:00,Control,4.0,-98.5795,39.8283,,2024-04-24 13:51:05.103000-07:00
+1465,{'$oid': '662970bc1437491ce5eb32c6'},624cbaf5-33e6-40f2-9554-9fc79c4beba3,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:51:07.135000+00:00,Tab,4.0,-98.5795,39.8283,,2024-04-24 13:51:07.135000-07:00
+1466,{'$oid': '662970bc1437491ce5eb32c7'},3d8e24ea-a2c4-4140-8afa-fbe0d5aaf625,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:51:07.494000+00:00,m,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 13:51:07.494000-07:00
+1467,{'$oid': '662970be1437491ce5eb32c8'},c0e583e5-7b42-4db6-8fb9-681915b78cc0,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:51:09.809000+00:00,ArrowUp,4.0,-98.5795,39.8283,"In the current view:
+
+undefined
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 13:51:09.809000-07:00
+1468,{'$oid': '662970bf1437491ce5eb32c9'},749260dc-ee62-476d-8e99-bb932a1d7415,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:51:10.728000+00:00,ArrowDown,4.0,-98.5795,43.11976802121504,"Moved up, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 13:51:10.728000-07:00
+1469,{'$oid': '662970c01437491ce5eb32ca'},5b123961-8ae1-4da8-9a03-136b7e1c005e,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:51:11.991000+00:00,ArrowUp,4.0,-98.5795,39.82829999999959,"Moved up, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 13:51:11.991000-07:00
+1470,{'$oid': '662970c61437491ce5eb32cb'},ce199484-b38a-4287-9854-b030892cb7a4,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:51:17.190000+00:00,m,4.0,-98.5795,43.119768021214554,Now interacting with the map.,2024-04-24 13:51:17.190000-07:00
+1471,{'$oid': '662971981437491ce5eb32cc'},16ea14aa-7f70-44dc-b9e7-e8b74af553d7,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:54:47.042000+00:00,h,4.0,-98.5795,43.119768021214554,"Shortcut keys.
+
+Press i to learn about data trends in the current view.
+
+Press l to learn about the boundary of the current view.
+
+Press m to interact with the map.
+
+Use arrow keys to navigate the map up, down, left, right.
+
+Use + or - to zoom in or out.
+
+Press h to hear the short cut keys any time.",2024-04-24 13:54:47.042000-07:00
+1472,{'$oid': '662971a11437491ce5eb32cd'},7628361d-249b-436a-8bb6-769b2a2710ca,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:54:56.359000+00:00,l,4.0,-98.5795,43.119768021214554,"undefined
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 13:54:56.359000-07:00
+1473,{'$oid': '662971a61437491ce5eb32ce'},51eda145-e148-4488-91d4-448c3f15e145,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:01.177000+00:00,m,4.0,-98.5795,43.119768021214554,Now interacting with the map.,2024-04-24 13:55:01.177000-07:00
+1474,{'$oid': '662971aa1437491ce5eb32cf'},ef0ecc37-e85e-41bd-8d86-fb2ff4b4a974,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:05.246000+00:00,ArrowDown,4.0,-98.5795,43.119768021214554,Now interacting with the map.,2024-04-24 13:55:05.246000-07:00
+1475,{'$oid': '662971ae1437491ce5eb32d0'},c85d8256-212a-4839-826c-c326a29a9c29,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:09.378000+00:00,i,4.0,-98.5795,39.82829999999905,"Moved down, centered on Kansas.
+
+Press i to get more information.",2024-04-24 13:55:09.378000-07:00
+1476,{'$oid': '662971bc1437491ce5eb32d1'},25ee340b-93ee-4f1e-9bcb-dc4884c062e3,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:23.262000+00:00,ArrowUp,4.0,-98.5795,39.82829999999905,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 214.7 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 13:55:23.262000-07:00
+1477,{'$oid': '662971c11437491ce5eb32d2'},f595fcad-e4c8-4f25-8cf6-0caa3e70017d,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:28.231000+00:00,Shift,4.0,-98.5795,43.11976802121407,"Moved up, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 13:55:28.231000-07:00
+1478,{'$oid': '662971c11437491ce5eb32d3'},916f2a69-9e13-46f7-b818-d39f0d2db7fe,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:28.334000+00:00,+,4.0,-98.5795,43.11976802121407,"Moved up, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 13:55:28.334000-07:00
+1479,{'$oid': '662971c91437491ce5eb32d4'},9d588b06-8f65-458b-aa3f-eb70a8098ee4,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:36.947000+00:00,i,6.0,-98.5795,43.11976802121407,"Zoomed in, now at county level, centered on Charles Mix, South Dakota.
+
+Press i to get more information.",2024-04-24 13:55:36.947000-07:00
+1480,{'$oid': '662971d71437491ce5eb32d5'},28c9f3f3-ffcd-4637-9d85-9dfdc5fb0ab0,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:51.015000+00:00,ArrowUp,6.0,-98.5795,43.11976802121407,"In the current view:
+
+Population density is high in the bottom-right.
+
+Population density is low in the top-left, and the bottom-left.
+
+The average population density is 56.6 people per square mile.
+
+The county with the highest population density is Ramsey, Minnesota, with 3594.1 people per square mile.
+
+The county with the lowest population density is Carter, Montana, with 0.4 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 13:55:51.015000-07:00
+1481,{'$oid': '662971da1437491ce5eb32d6'},47bbdb86-9fd2-4655-bab6-122e5c76fc20,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:53.486000+00:00,ArrowUp,6.0,-98.5795,43.91643117823793,"Moved up, centered on Aurora, South Dakota.
+
+Press i to get more information.",2024-04-24 13:55:53.486000-07:00
+1482,{'$oid': '662971dd1437491ce5eb32d7'},c12a2011-a9f7-4de7-ae23-53c9f692cc20,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:56.078000+00:00,Escape,6.0,-98.5795,44.702569540182395,"Moved up, centered on Spink, South Dakota.
+
+Press i to get more information.",2024-04-24 13:55:56.078000-07:00
+1483,{'$oid': '662971e01437491ce5eb32d8'},023eec6d-edad-49f6-bf17-d48d1677ecbc,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:55:59.231000+00:00,-,6.0,-98.5795,44.702569540182395,"Moved up, centered on Spink, South Dakota.
+
+Press i to get more information.",2024-04-24 13:55:59.231000-07:00
+1484,{'$oid': '662971e41437491ce5eb32d9'},efb9f826-ec28-42a8-b09b-f315346daad9,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:56:03.836000+00:00,Control,5.0,-98.5795,44.702569540182395,"Zoomed out, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 13:56:03.836000-07:00
+1485,{'$oid': '662972881437491ce5eb32da'},8d67288a-62a8-4548-af88-a8c6ab0e84e2,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:58:47.592000+00:00,Control,5.0,-98.5795,44.702569540182395,"Zoomed out, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 13:58:47.592000-07:00
+1486,{'$oid': '6629728a1437491ce5eb32db'},3205f815-f92b-43b5-ad53-c68982414b1d,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 20:58:49.945000+00:00,Alt,5.0,-98.5795,44.702569540182395,"Zoomed out, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 13:58:49.945000-07:00
+1487,{'$oid': '6629748f1437491ce5eb32dc'},079b5d42-c2da-465e-a1e3-c6c66c99959b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:07:26.054000+00:00,Alt,5.0,-98.5795,44.702569540182395,"Zoomed out, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 14:07:26.054000-07:00
+1488,{'$oid': '662974f11437491ce5eb32dd'},e81dfe32-77a3-479f-86e3-4a052c711be8,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:09:04.824000+00:00,Control,5.0,-98.5795,44.702569540182395,"Zoomed out, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 14:09:04.824000-07:00
+1489,{'$oid': '662975011437491ce5eb32de'},dc984886-fdd6-4196-9a0f-f71f3f62256b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:09:20.323000+00:00,Control,5.0,-98.5795,44.702569540182395,"Zoomed out, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 14:09:20.323000-07:00
+1490,{'$oid': '662975011437491ce5eb32df'},fa31813c-2516-4eb3-8a9b-ebe7d12fffb6,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:09:20.415000+00:00,F5,5.0,-98.5795,44.702569540182395,"Zoomed out, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 14:09:20.415000-07:00
+1491,{'$oid': '6629752b1437491ce5eb32e0'},5b2d2e04-08a8-44f2-9ab2-0f7c5a86753a,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:02.671000+00:00,Tab,4.0,-98.5795,39.8283,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 214.7 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:10:02.671000-07:00
+1492,{'$oid': '6629752f1437491ce5eb32e1'},0304cf84-8b1c-4f9f-b891-99a26c5b75ae,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:06.062000+00:00,m,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 14:10:06.062000-07:00
+1493,{'$oid': '662975371437491ce5eb32e2'},a74a8ebb-cb86-4704-a378-bc3f75f20dc8,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:14.375000+00:00,Shift,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 14:10:14.375000-07:00
+1494,{'$oid': '662975371437491ce5eb32e3'},880f1184-0ac7-4f3b-ad1a-65e9512e7642,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:14.474000+00:00,+,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 14:10:14.474000-07:00
+1495,{'$oid': '662975521437491ce5eb32e4'},da854891-f539-48ef-b2ec-d0fabfb57adf,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:41.089000+00:00,ArrowLeft,6.0,-98.5795,39.82830000000004,"Zoomed in, now at county level, centered on Smith, Kansas.
+
+Press i to get more information.",2024-04-24 14:10:41.089000-07:00
+1496,{'$oid': '662975541437491ce5eb32e5'},689ce6a5-a660-4414-a9e4-f57553442b93,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:43.815000+00:00,ArrowLeft,6.0,-99.67813281250017,39.82830000000004,"Moved left, centered on Norton, Kansas.
+
+Press i to get more information.",2024-04-24 14:10:43.815000-07:00
+1497,{'$oid': '662975561437491ce5eb32e6'},9a08be64-6808-48b3-a65f-a0d4e450a82b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:45.805000+00:00,ArrowRight,6.0,-100.7767656250004,39.82830000000004,"Moved left, centered on Norton, Kansas.
+
+Press i to get more information.",2024-04-24 14:10:45.805000-07:00
+1498,{'$oid': '662975601437491ce5eb32e7'},a2a15ef3-de24-43e8-b41d-41b1c10c978a,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:10:55.765000+00:00,i,6.0,-99.67813281250073,39.82830000000004,"Moved right, centered on Norton, Kansas.
+
+Press i to get more information.",2024-04-24 14:10:55.765000-07:00
+1499,{'$oid': '662975881437491ce5eb32e8'},7d4f18bd-cdff-41d0-8f28-35eaf1b4df23,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:11:35.270000+00:00,l,6.0,-99.67813281250073,39.82830000000004,"The current view is bounded by Natrona County, Wyoming on the top-left, Grundy County, Iowa on the top-right, Wright County, Missouri on the bottom-right, and Archuleta County, Colorado on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:11:35.270000-07:00
+1500,{'$oid': '662975931437491ce5eb32e9'},96cc5cf6-d2af-4272-b5c0-4145c7047def,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:11:46.768000+00:00,b,6.0,-99.67813281250073,39.82830000000004,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 93.4 people per square mile.
+
+The county with the highest population density is Denver, Colorado, with 4643.5 people per square mile.
+
+The county with the lowest population density is McPherson, Nebraska, with 0.5 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:11:46.768000-07:00
+1501,{'$oid': '662975951437491ce5eb32ea'},2e11faa0-cd00-4dc4-8e29-6f0a8ab030d5,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:11:48.742000+00:00,Control,6.0,-99.67813281250073,39.82830000000004,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 93.4 people per square mile.
+
+The county with the highest population density is Denver, Colorado, with 4643.5 people per square mile.
+
+The county with the lowest population density is McPherson, Nebraska, with 0.5 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:11:48.742000-07:00
+1502,{'$oid': '662975b81437491ce5eb32eb'},0593773b-4094-4f1f-b5f2-ad09646ea225,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:12:23.922000+00:00,=,6.0,-99.67813281250073,39.82830000000004,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 93.4 people per square mile.
+
+The county with the highest population density is Denver, Colorado, with 4643.5 people per square mile.
+
+The county with the lowest population density is McPherson, Nebraska, with 0.5 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:12:23.922000-07:00
+1503,{'$oid': '662975bc1437491ce5eb32ec'},f8915be1-701f-4a6d-8a9c-7eb10715bd00,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:12:27.693000+00:00,Control,7.0,-99.67813281250073,39.82830000000004,"Zoomed in, now at county level, centered on Norton, Kansas.
+
+Press i to get more information.",2024-04-24 14:12:27.693000-07:00
+1504,{'$oid': '662975dc1437491ce5eb32ed'},89bc6352-6bf1-4b9a-a131-93d694fff682,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:12:59.960000+00:00,Control,7.0,-99.67813281250073,39.82830000000004,"Zoomed in, now at county level, centered on Norton, Kansas.
+
+Press i to get more information.",2024-04-24 14:12:59.960000-07:00
+1505,{'$oid': '662975dd1437491ce5eb32ee'},9f6fc8eb-6aea-41f9-800e-f7deac4bfcdd,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:13:00.111000+00:00,F5,7.0,-99.67813281250073,39.82830000000004,"Zoomed in, now at county level, centered on Norton, Kansas.
+
+Press i to get more information.",2024-04-24 14:13:00.111000-07:00
+1506,{'$oid': '662975e61437491ce5eb32ef'},1d88c35e-a651-487f-9943-ca21f34e10fd,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:13:09.854000+00:00,Control,4.0,-98.5795,39.8283,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 214.7 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:13:09.854000-07:00
+1507,{'$oid': '6629763e1437491ce5eb32f0'},7082b9e7-e477-4c97-a7e0-32a0adcc851b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:14:37.310000+00:00,Tab,4.0,-98.5795,39.8283,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 214.7 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:14:37.310000-07:00
+1508,{'$oid': '662976401437491ce5eb32f1'},e3a5be0b-8589-44e3-a009-36b6ff834c1a,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:14:39.127000+00:00,m,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 14:14:39.127000-07:00
+1509,{'$oid': '662976411437491ce5eb32f2'},76ba2561-34a6-498c-975f-a8ff4ea1e750,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:14:40.326000+00:00,=,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 14:14:40.326000-07:00
+1510,{'$oid': '662976591437491ce5eb32f3'},20c87b9e-39fc-4a73-b71e-ae9b64f384c7,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:04.176000+00:00,b,5.0,-98.5795,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 14:15:04.176000-07:00
+1511,{'$oid': '662976651437491ce5eb32f4'},fcc42eca-9ed8-405b-84a7-96f015861638,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:16.607000+00:00,-,5.0,-98.5795,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 14:15:16.607000-07:00
+1512,{'$oid': '662976701437491ce5eb32f5'},262766fb-fc8d-4941-a9da-d27178bd2316,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:27.793000+00:00,i,4.0,-98.5795,39.82830000000004,"Zoomed out, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 14:15:27.793000-07:00
+1513,{'$oid': '662976801437491ce5eb32f6'},c90859d5-7524-4020-91ad-c3c39ff656d9,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:43.812000+00:00,ArrowRight,4.0,-98.5795,39.82830000000004,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 214.7 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:15:43.812000-07:00
+1514,{'$oid': '662976851437491ce5eb32f7'},f53d0c65-a8b8-43d0-b7a2-d53c287b6f7d,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:48.529000+00:00,ArrowRight,4.0,-94.18496874999971,39.82830000000004,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-24 14:15:48.529000-07:00
+1515,{'$oid': '662976891437491ce5eb32f8'},753452c6-f3d8-4d90-9525-49b59e96662b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:52.159000+00:00,ArrowUp,4.0,-92.125,39.82830000000004,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-24 14:15:52.159000-07:00
+1516,{'$oid': '6629768b1437491ce5eb32f9'},1fa409ec-d6ec-4aae-a0dd-c51cbdde223d,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:54.822000+00:00,ArrowUp,4.0,-92.125,43.11976802121504,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-24 14:15:54.822000-07:00
+1517,{'$oid': '6629768d1437491ce5eb32fa'},01c80f32-dd25-46b9-b6a8-42eeab7e7f2e,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:56.734000+00:00,ArrowRight,4.0,-92.125,43.24708343753139,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-24 14:15:56.734000-07:00
+1518,{'$oid': '662976901437491ce5eb32fb'},31f98bb3-04f6-42ac-baae-6d7afc72e622,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:15:59.022000+00:00,ArrowDown,4.0,-92.125,43.24708343753139,"Moved right, centered on Iowa.
+
+Press i to get more information.",2024-04-24 14:15:59.022000-07:00
+1519,{'$oid': '662976921437491ce5eb32fc'},e8b989a3-9a37-44aa-b344-2efdb349ab82,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:16:01.647000+00:00,ArrowRight,4.0,-92.125,39.96225934205057,"Moved down, centered on Missouri.
+
+Press i to get more information.",2024-04-24 14:16:01.647000-07:00
+1520,{'$oid': '662976941437491ce5eb32fd'},9c03ff0e-f826-411e-b078-e0f476c692f6,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:16:03.286000+00:00,ArrowDown,4.0,-92.125,39.96225934205057,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-24 14:16:03.286000-07:00
+1521,{'$oid': '662976981437491ce5eb32fe'},5dc85c01-01df-4c2e-8f7b-29ae5305f350,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:16:07.670000+00:00,ArrowRight,4.0,-92.125,36.51171136622041,"Moved down, centered on Missouri.
+
+Press i to get more information.",2024-04-24 14:16:07.670000-07:00
+1522,{'$oid': '6629769c1437491ce5eb32ff'},88700074-1555-4d49-992f-8521ad09df36,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:16:11.229000+00:00,l,4.0,-92.125,36.51171136622041,"The current view is bounded by British Columbia, Canada on the top-left, Quebec, Canada on the top-right, Hamilton city, Bermuda on the bottom-right, and California, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:16:11.229000-07:00
+1523,{'$oid': '662976be1437491ce5eb3300'},8176c41e-eb16-41b4-a137-55e6dcf588a3,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:16:45.447000+00:00,=,4.0,-92.125,36.51171136622041,"The current view is bounded by British Columbia, Canada on the top-left, Quebec, Canada on the top-right, Hamilton city, Bermuda on the bottom-right, and California, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:16:45.447000-07:00
+1524,{'$oid': '662976c31437491ce5eb3301'},e16ba134-45d2-4b72-8786-15035fe8302b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:16:50.044000+00:00,ArrowRight,5.0,-92.125,36.51171136622041,"Zoomed in, now at state level, centered on Missouri.
+
+Press i to get more information.",2024-04-24 14:16:50.044000-07:00
+1525,{'$oid': '662976ca1437491ce5eb3302'},a6962be7-f01e-4633-8ad0-4690a26f3acc,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:16:57.702000+00:00,ArrowRight,5.0,-89.92773437500011,36.51171136622041,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-24 14:16:57.702000-07:00
+1526,{'$oid': '662976cd1437491ce5eb3303'},0566bc3a-ddfe-42ad-b800-ab7636195919,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:00.600000+00:00,ArrowRight,5.0,-87.73046875000028,36.51171136622041,"Moved right, centered on Tennessee.
+
+Press i to get more information.",2024-04-24 14:17:00.600000-07:00
+1527,{'$oid': '662976d01437491ce5eb3304'},560e609e-1ede-4b64-84ff-ccb6b57fe3da,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:03.822000+00:00,ArrowUp,5.0,-85.53320312500045,36.51171136622041,"Moved right, centered on Tennessee.
+
+Press i to get more information.",2024-04-24 14:17:03.822000-07:00
+1528,{'$oid': '662976d31437491ce5eb3305'},fc49962f-fc1b-413f-9f57-d7bd98783087,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:06.453000+00:00,ArrowRight,5.0,-85.53320312500045,38.257463822814685,"Moved up, centered on Kentucky.
+
+Press i to get more information.",2024-04-24 14:17:06.453000-07:00
+1529,{'$oid': '662976d51437491ce5eb3306'},518cd863-f14c-4a23-af62-3a22424d46c2,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:09.006000+00:00,ArrowRight,5.0,-83.33593750000063,38.257463822814685,"Moved right, centered on Kentucky.
+
+Press i to get more information.",2024-04-24 14:17:09.006000-07:00
+1530,{'$oid': '662976da1437491ce5eb3307'},407b8c09-e5a6-41c3-8441-14475d089bb1,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:13.422000+00:00,ArrowRight,5.0,-81.1386718750008,38.257463822814685,"Moved right, centered on West Virginia.
+
+Press i to get more information.",2024-04-24 14:17:13.422000-07:00
+1531,{'$oid': '662976dc1437491ce5eb3308'},b764bd3a-00e8-4af7-bc04-53f487acce2b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:15.679000+00:00,ArrowRight,5.0,-78.94140625000097,38.257463822814685,"Moved right, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:17:15.679000-07:00
+1532,{'$oid': '662976df1437491ce5eb3309'},a563cf44-57b6-4131-b6d2-ba388c06d8d4,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:18.134000+00:00,ArrowRight,5.0,-78.0625,38.257463822814685,"Moved right, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:17:18.134000-07:00
+1533,{'$oid': '662976e21437491ce5eb330a'},984bc05a-429f-4ed9-9bae-ebb84e7542b1,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:21.453000+00:00,ArrowUp,5.0,-78.0625,38.257463822814685,"Moved right, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:17:21.453000-07:00
+1534,{'$oid': '662976e51437491ce5eb330b'},4e9b4836-e85b-4bae-abb0-ed2c7b257da5,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:24.614000+00:00,ArrowRight,5.0,-78.0625,39.96225934205057,"Moved up, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:17:24.614000-07:00
+1535,{'$oid': '662976e71437491ce5eb330c'},992fc4c0-33d7-4fed-861d-1d856db916a0,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:26.542000+00:00,ArrowRight,5.0,-78.0625,39.96225934205057,"Moved right, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:17:26.542000-07:00
+1536,{'$oid': '662976e91437491ce5eb330d'},62bfc25f-12c0-4d48-9153-ac5ec444427d,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:28.478000+00:00,ArrowUp,5.0,-78.0625,39.96225934205057,"Moved right, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:17:28.478000-07:00
+1537,{'$oid': '662976ed1437491ce5eb330e'},da8a2d87-fd20-42d7-a976-324098d0314b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:32.791000+00:00,ArrowUp,5.0,-78.0625,41.6255854096093,"Moved up, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:17:32.791000-07:00
+1538,{'$oid': '662976f21437491ce5eb330f'},a0d76d7f-9272-47f9-9fa4-7cc82329ee86,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:37.967000+00:00,ArrowRight,5.0,-78.0625,43.24708343753068,"Moved up, centered on New York.
+
+Press i to get more information.",2024-04-24 14:17:37.967000-07:00
+1539,{'$oid': '662976f51437491ce5eb3310'},2912fce7-317a-45a4-bccf-7ee22e197880,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:17:40.669000+00:00,ArrowRight,5.0,-78.0625,43.24708343753068,"Moved right, centered on New York.
+
+Press i to get more information.",2024-04-24 14:17:40.669000-07:00
+1540,{'$oid': '662977331437491ce5eb3311'},c5816c2e-f135-4b3a-8d64-350a252a5135,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:18:42.567000+00:00,l,5.0,-78.0625,43.24708343753068,"Moved right, centered on New York.
+
+Press i to get more information.",2024-04-24 14:18:42.567000-07:00
+1541,{'$oid': '6629773b1437491ce5eb3312'},dcb0bb22-69c2-4a42-9342-ded5ab9b813e,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:18:50.574000+00:00,i,5.0,-78.0625,43.24708343753068,"Moved right, centered on New York.
+
+Press i to get more information.",2024-04-24 14:18:50.574000-07:00
+1542,{'$oid': '662977471437491ce5eb3313'},e0d5ac0a-33d8-4ef8-acf1-564d5f42e02d,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:02.927000+00:00,l,5.0,-78.0625,43.24708343753068,"The current view is bounded by Minnesota, US on the top-left, Quebec, Canada on the top-right, Nova Scotia, Canada on the bottom-right, and Missouri, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:19:02.927000-07:00
+1543,{'$oid': '6629776b1437491ce5eb3314'},0525c58e-4082-4c03-8f30-ad327e289428,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:38.124000+00:00,ArrowDown,5.0,-78.0625,43.24708343753068,"The current view is bounded by Minnesota, US on the top-left, Quebec, Canada on the top-right, Nova Scotia, Canada on the bottom-right, and Missouri, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:19:38.124000-07:00
+1544,{'$oid': '6629776e1437491ce5eb3315'},768605ff-18de-4568-993e-ba89d7aabbb9,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:41.885000+00:00,ArrowDown,5.0,-78.0625,41.62558540960899,"Moved down, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:19:41.885000-07:00
+1545,{'$oid': '662977711437491ce5eb3316'},acac11f7-52d9-480d-ab93-1609fad53722,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:44.508000+00:00,ArrowDown,5.0,-78.0625,39.962259342050686,"Moved down, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:19:44.508000-07:00
+1546,{'$oid': '662977741437491ce5eb3317'},e8eea60f-0e50-402d-9fd2-14bd046e9e8b,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:47.211000+00:00,ArrowDown,5.0,-78.0625,38.25746382281568,"Moved down, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:19:47.211000-07:00
+1547,{'$oid': '662977771437491ce5eb3318'},3ef2e400-465b-4b48-b46e-c95c9a6e3a56,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:50.163000+00:00,ArrowUp,5.0,-78.0625,36.51171136622234,"Moved down, centered on North Carolina.
+
+Press i to get more information.",2024-04-24 14:19:50.163000-07:00
+1548,{'$oid': '662977791437491ce5eb3319'},696f4a01-3326-45e9-9ac3-c6c3fbe8d0ea,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:52.144000+00:00,ArrowRight,5.0,-78.0625,38.25746382281656,"Moved up, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:19:52.144000-07:00
+1549,{'$oid': '6629777a1437491ce5eb331a'},fc98bbf3-6df1-48a6-ac04-fe16f2466ca3,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:53.943000+00:00,ArrowRight,5.0,-78.0625,38.25746382281656,"Moved right, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:19:53.943000-07:00
+1550,{'$oid': '6629777e1437491ce5eb331b'},0295b63d-b28b-4372-bb86-1995c20d669f,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:19:57.731000+00:00,i,5.0,-78.0625,38.25746382281656,"Moved right, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:19:57.731000-07:00
+1551,{'$oid': '662977891437491ce5eb331c'},7933cbc0-46d2-439e-a27d-254e74740a63,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:20:08.095000+00:00,l,5.0,-78.0625,38.25746382281656,"The current view is bounded by Iowa, US on the top-left, Nova Scotia, Canada on the top-right, Saint George, Bermuda on the bottom-right, and Arkansas, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:20:08.095000-07:00
+1552,{'$oid': '662977971437491ce5eb331d'},6d205daf-e81b-44c2-a01d-43b431892ec1,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:20:22.442000+00:00,=,5.0,-78.0625,38.25746382281656,"The current view is bounded by Iowa, US on the top-left, Nova Scotia, Canada on the top-right, Saint George, Bermuda on the bottom-right, and Arkansas, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:20:22.442000-07:00
+1553,{'$oid': '662977aa1437491ce5eb331e'},c8fcd3ad-6107-4a29-a5a5-1d0c824ef586,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:20:41.871000+00:00,i,6.0,-78.0625,38.25746382281656,"Zoomed in, now at county level, centered on Orange, Virginia.
+
+Press i to get more information.",2024-04-24 14:20:41.871000-07:00
+1554,{'$oid': '662977e11437491ce5eb331f'},f2eb1829-7f13-486f-86a9-c87d4e282c30,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:21:36.043000+00:00,Alt,6.0,-78.0625,38.25746382281656,"In the current view:
+
+Population density is high vertically through the center.
+
+Population density is low in the bottom-left.
+
+The average population density is 870.7 people per square mile.
+
+The county with the highest population density is New York, New York, with 72639.6 people per square mile.
+
+The county with the lowest population density is Highland, Virginia, with 5.4 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:21:36.043000-07:00
+1555,{'$oid': '662977e11437491ce5eb3320'},046be913-afa8-4518-9e20-e8c7b2d462e5,user4,978ae6a2-881f-4717-97f7-77af8a9d6009,index,2024-04-24 21:21:36.059000+00:00,d,6.0,-78.0625,38.25746382281656,"In the current view:
+
+Population density is high vertically through the center.
+
+Population density is low in the bottom-left.
+
+The average population density is 870.7 people per square mile.
+
+The county with the highest population density is New York, New York, with 72639.6 people per square mile.
+
+The county with the lowest population density is Highland, Virginia, with 5.4 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:21:36.059000-07:00

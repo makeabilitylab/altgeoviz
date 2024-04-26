@@ -1,0 +1,1149 @@
+,_id,uuid,user_id,session_id,page,timestamp,key_stroke,zoom_level,lng,lat,stats,timestamp_pst
+264,{'$oid': '6627ee79fb500f596ec80f1f'},862a442c-0068-4697-8974-1fbd162cd53e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:23:04.985000+00:00,Control,4.0,-98.5795,39.8283,Information is loading.,2024-04-23 10:23:04.985000-07:00
+265,{'$oid': '6627ee7dfb500f596ec80f20'},ea7584a0-70b8-4582-ab7a-31b11e8385a6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:23:09.287000+00:00,Control,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:23:09.287000-07:00
+266,{'$oid': '6627ee7ffb500f596ec80f21'},c71ad9c9-8eaf-49e4-8464-1b9172e27408,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:23:11.687000+00:00,Control,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:23:11.687000-07:00
+267,{'$oid': '6627eea6fb500f596ec80f22'},4efb3b0b-161e-44f0-a9ef-e128471c8f86,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:23:50.371000+00:00,Tab,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:23:50.371000-07:00
+268,{'$oid': '6627eea7fb500f596ec80f23'},cb0760f2-2d78-4de5-a8db-bc89ead76ec2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:23:51.815000+00:00,Control,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:23:51.815000-07:00
+269,{'$oid': '6627eea9fb500f596ec80f24'},0a29fd4c-a964-40cf-a4d9-7a7782d8d04d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:23:53.350000+00:00,i,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:23:53.350000-07:00
+270,{'$oid': '6627eebefb500f596ec80f25'},abea81c1-2135-4e90-b8ec-63f8d23316db,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:24:14.583000+00:00,Control,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:24:14.583000-07:00
+271,{'$oid': '6627eed2fb500f596ec80f26'},5b903f2a-a26e-4f96-a4d8-b1d33aa8028d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:24:34.568000+00:00,i,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:24:34.568000-07:00
+272,{'$oid': '6627eed9fb500f596ec80f27'},9cf1399c-3f4b-4691-81ab-232c841e5506,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:24:41.690000+00:00,Control,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:24:41.690000-07:00
+273,{'$oid': '6627eee9fb500f596ec80f28'},ddfa11c3-549c-4ef1-8d57-ad251bb209b0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:24:57.900000+00:00,n,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:24:57.900000-07:00
+274,{'$oid': '6627eeeefb500f596ec80f29'},fec61d5e-3ac9-4091-a49d-c045caefaa6d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:02.785000+00:00,-,3.813781191217037,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:25:02.785000-07:00
+275,{'$oid': '6627eef0fb500f596ec80f2a'},176126eb-f874-4d61-b708-ad7b7cefb05c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:04.884000+00:00,m,3.813781191217037,-96.0,39.82830000000004,Now interacting with the map.,2024-04-23 10:25:04.884000-07:00
+276,{'$oid': '6627eef6fb500f596ec80f2b'},095661f8-05ed-4aa8-bd8d-9da7d1778fa6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:10.363000+00:00,i,3.813781191217037,-96.0,39.82830000000004,Now interacting with the map.,2024-04-23 10:25:10.363000-07:00
+277,{'$oid': '6627eefbfb500f596ec80f2c'},43335112-8dd2-465f-8803-821384bbd2e1,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:15.159000+00:00,Control,3.813781191217037,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:25:15.159000-07:00
+278,{'$oid': '6627eefcfb500f596ec80f2d'},b97c62aa-097a-405d-a817-3c1ee79388b6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:16.034000+00:00,ArrowRight,3.813781191217037,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:25:16.034000-07:00
+279,{'$oid': '6627eefdfb500f596ec80f2e'},b9ad6abe-9107-4b19-8314-1ad80dea0cf0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:17.748000+00:00,ArrowDown,3.813781191217037,-96.0,35.88220562947019,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:25:17.748000-07:00
+280,{'$oid': '6627ef00fb500f596ec80f2f'},72f4f55b-cda2-4d73-9167-80e4de490544,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:20.702000+00:00,ArrowUp,3.813781191217037,-96.0,39.828300000000525,"Moved right, centered on Oklahoma.
+
+Press i to get more information.",2024-04-23 10:25:20.702000-07:00
+281,{'$oid': '6627ef06fb500f596ec80f30'},32e70162-d146-4878-a766-f9a8d9e0fe23,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:26.318000+00:00,ArrowUp,3.813781191217037,-96.0,41.925418283187554,"Moved down, centered on Kansas.
+
+Press i to get more information.",2024-04-23 10:25:26.318000-07:00
+282,{'$oid': '6627ef08fb500f596ec80f31'},3d6214aa-efe3-4c49-9668-b07624e10901,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:28.317000+00:00,ArrowUp,3.813781191217037,-96.0,41.925418283187554,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:28.317000-07:00
+283,{'$oid': '6627ef0afb500f596ec80f32'},be330112-11f3-4d3a-9ad7-54aaa1c34923,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:30.897000+00:00,ArrowRight,3.813781191217037,-96.0,41.925418283187554,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:30.897000-07:00
+284,{'$oid': '6627ef0dfb500f596ec80f33'},6b11652c-d3b9-438b-b1ff-f8ec4b11d0aa,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:33.112000+00:00,ArrowRight,3.813781191217037,-96.0,41.925418283187554,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:33.112000-07:00
+285,{'$oid': '6627ef0ffb500f596ec80f34'},28df559f-fc14-4caa-852e-8a5caa234899,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:35.382000+00:00,Control,3.813781191217037,-96.0,41.925418283187554,"Moved right, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:35.382000-07:00
+286,{'$oid': '6627ef19fb500f596ec80f35'},c28427c1-60f7-48a0-b565-9f35449f8d61,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:44.985000+00:00,-,3.813781191217037,-96.0,41.925418283187554,"Moved right, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:44.985000-07:00
+287,{'$oid': '6627ef1afb500f596ec80f36'},bf644aaa-4cb0-4c20-a4db-f7438cd98e47,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:46.310000+00:00,0,3.813781191217037,-96.0,41.925418283187554,"Moved right, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:46.310000-07:00
+288,{'$oid': '6627ef1cfb500f596ec80f37'},f24be82d-c64e-40c1-8504-ba72698ebac1,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:48.841000+00:00,=,5.0,-96.0,41.925418283187554,"Moved right, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:48.841000-07:00
+289,{'$oid': '6627ef20fb500f596ec80f38'},47876050-2d2f-4601-ae66-9b0f33b41792,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:52.248000+00:00,Control,5.0,-96.0,41.925418283187554,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:52.248000-07:00
+290,{'$oid': '6627ef22fb500f596ec80f39'},dee1e7de-bb0f-43f6-8a1a-d710443b8f89,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:54.426000+00:00,NumLock,5.0,-96.0,41.925418283187554,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:54.426000-07:00
+291,{'$oid': '6627ef24fb500f596ec80f3a'},fa4215c0-2107-4438-a0fd-4203a26c885e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:25:55.977000+00:00,+,6.0,-96.0,41.925418283187554,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:25:55.977000-07:00
+292,{'$oid': '6627ef28fb500f596ec80f3b'},5f7ecad0-ac03-4932-b0d2-48f09fcb90b9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:00.825000+00:00,Control,6.0,-96.0,41.925418283187554,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:26:00.825000-07:00
+293,{'$oid': '6627ef2dfb500f596ec80f3c'},3b705846-156b-4eab-9414-ce387b37b2b9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:05.441000+00:00,ArrowDown,6.0,-96.0,41.10278830740614,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:26:05.441000-07:00
+294,{'$oid': '6627ef31fb500f596ec80f3d'},eecd0d9a-10b5-4475-a335-46212ed869b2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:09.509000+00:00,ArrowRight,6.0,-94.90136718750034,41.10278830740614,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:26:09.509000-07:00
+295,{'$oid': '6627ef34fb500f596ec80f3e'},40ecc188-8a8b-47ce-8501-356c430b724e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:12.868000+00:00,ArrowRight,6.0,-93.80273437500068,41.10278830740614,"Moved down, centered on Adams, Iowa.
+
+Press i to get more information.",2024-04-23 10:26:12.868000-07:00
+296,{'$oid': '6627ef37fb500f596ec80f3f'},add52da5-d7f0-494c-a5f7-a4469c3153ec,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:15.669000+00:00,ArrowRight,6.0,-92.70410156250102,41.10278830740614,"Moved right, centered on Clarke, Iowa.
+
+Press i to get more information.",2024-04-23 10:26:15.669000-07:00
+297,{'$oid': '6627ef3afb500f596ec80f40'},12ece280-7417-481a-a55c-e62d629ef610,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:18.109000+00:00,ArrowRight,6.0,-91.60546875000136,41.10278830740614,"Moved right, centered on Monroe, Iowa.
+
+Press i to get more information.",2024-04-23 10:26:18.109000-07:00
+298,{'$oid': '6627ef3cfb500f596ec80f41'},0d6b85c5-e4a3-4355-a7aa-7d3e108f3de4,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:20.559000+00:00,ArrowRight,6.0,-90.5068359375017,41.10278830740614,"Moved right, centered on Henry, Iowa.
+
+Press i to get more information.",2024-04-23 10:26:20.559000-07:00
+299,{'$oid': '6627ef40fb500f596ec80f42'},9af0fa22-7979-430b-8a6f-487c8f5d813e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:23.650000+00:00,ArrowRight,6.0,-89.40820312500205,41.10278830740614,"Moved right, centered on Mercer, Illinois.
+
+Press i to get more information.",2024-04-23 10:26:23.650000-07:00
+300,{'$oid': '6627ef41fb500f596ec80f43'},7a8252ba-4884-4029-95dc-8a80ff981b07,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:25.861000+00:00,ArrowRight,6.0,-88.30957031250239,41.10278830740614,"Moved right, centered on Marshall, Illinois.
+
+Press i to get more information.",2024-04-23 10:26:25.861000-07:00
+301,{'$oid': '6627ef44fb500f596ec80f44'},d8ff9b24-aed0-4438-8a8e-301def719c8b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:28.494000+00:00,ArrowRight,6.0,-87.21093750000273,41.10278830740614,"Moved right, centered on Livingston, Illinois.
+
+Press i to get more information.",2024-04-23 10:26:28.494000-07:00
+302,{'$oid': '6627ef45fb500f596ec80f45'},b82cdd12-6783-43a1-a52c-93be44a975cf,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:29.479000+00:00,ArrowRight,6.0,-86.11230468750307,41.10278830740614,"Moved right, centered on Jasper, Indiana.
+
+Press i to get more information.",2024-04-23 10:26:29.479000-07:00
+303,{'$oid': '6627ef46fb500f596ec80f46'},efa71392-066d-4a75-8ce1-690c53e285fd,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:30.003000+00:00,ArrowRight,6.0,-85.01367187500341,41.10278830740614,"Moved right, centered on Fulton, Indiana.
+
+Press i to get more information.",2024-04-23 10:26:30.003000-07:00
+304,{'$oid': '6627ef4afb500f596ec80f47'},c63048b6-5486-4958-9486-fb6913ea9816,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:33.972000+00:00,ArrowRight,6.0,-83.91503906250375,41.10278830740614,"Moved right, centered on Allen, Indiana.
+
+Press i to get more information.",2024-04-23 10:26:33.972000-07:00
+305,{'$oid': '6627ef4afb500f596ec80f48'},3edb3381-9c9a-482d-9753-6c8131b7baea,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:34.486000+00:00,ArrowRight,6.0,-82.81640625000409,41.10278830740614,"Moved right, centered on Allen, Indiana.
+
+Press i to get more information.",2024-04-23 10:26:34.486000-07:00
+306,{'$oid': '6627ef4bfb500f596ec80f49'},54c423ca-1903-44e5-80a5-8299497bbffd,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:35.072000+00:00,ArrowRight,6.0,-81.71777343750443,41.10278830740614,"Moved right, centered on Putnam, Ohio.
+
+Press i to get more information.",2024-04-23 10:26:35.072000-07:00
+307,{'$oid': '6627ef4efb500f596ec80f4a'},f076e38d-9e0e-42a7-8406-2d5eefc55651,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:38.292000+00:00,ArrowRight,6.0,-80.61914062500477,41.10278830740614,"Moved right, centered on Medina, Ohio.
+
+Press i to get more information.",2024-04-23 10:26:38.292000-07:00
+308,{'$oid': '6627ef4ffb500f596ec80f4b'},baf1a7b4-d6cf-457f-aa35-1db88721c328,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:38.817000+00:00,ArrowRight,6.0,-79.52050781250512,41.10278830740614,"Moved right, centered on Mahoning, Ohio.
+
+Press i to get more information.",2024-04-23 10:26:38.817000-07:00
+309,{'$oid': '6627ef4ffb500f596ec80f4c'},400ce811-ee16-40d7-90e4-a4d3d58cab2c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:39.682000+00:00,ArrowRight,6.0,-78.42187500000546,41.10278830740614,"Moved right, centered on Mahoning, Ohio.
+
+Press i to get more information.",2024-04-23 10:26:39.682000-07:00
+310,{'$oid': '6627ef50fb500f596ec80f4d'},fb9bc6bb-6d5d-471e-8ee1-44cb0844b126,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:40.158000+00:00,ArrowRight,6.0,-77.3232421875058,41.10278830740614,"Moved right, centered on Clarion, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:26:40.158000-07:00
+311,{'$oid': '6627ef54fb500f596ec80f4e'},66119257-69ab-4277-b01f-6c92b44b7cb3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:43.989000+00:00,ArrowRight,6.0,-76.22460937500614,41.10278830740614,"Moved right, centered on Clinton, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:26:43.989000-07:00
+312,{'$oid': '6627ef57fb500f596ec80f4f'},235c9b9a-5fcd-4204-a24d-bdabdcfe1f2c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:47.181000+00:00,ArrowRight,6.0,-75.12597656250648,41.10278830740614,"Moved right, centered on Luzerne, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:26:47.181000-07:00
+313,{'$oid': '6627ef57fb500f596ec80f50'},cbed38ed-7cd4-4573-bf37-d0002b2d656f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:47.648000+00:00,ArrowRight,6.0,-74.02734375000682,41.10278830740614,"Moved right, centered on Monroe, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:26:47.648000-07:00
+314,{'$oid': '6627ef58fb500f596ec80f51'},30773384-0fad-453c-a826-c1c2d37ed0f9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:48.152000+00:00,ArrowRight,6.0,-72.92871093750716,41.10278830740614,"Moved right, centered on Monroe, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:26:48.152000-07:00
+315,{'$oid': '6627ef58fb500f596ec80f52'},f40c5e10-2a07-4713-adae-90724dc2d076,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:48.705000+00:00,ArrowRight,6.0,-71.8300781250075,41.10278830740614,"Moved right, centered on Rockland, New York.
+
+Press i to get more information.",2024-04-23 10:26:48.705000-07:00
+316,{'$oid': '6627ef59fb500f596ec80f53'},7a99b28e-477e-475d-9d63-7869061e19f0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:49.292000+00:00,ArrowRight,6.0,-71.03125,41.10278830740614,"Moved right, centered on Suffolk, New York.
+
+Press i to get more information.",2024-04-23 10:26:49.292000-07:00
+317,{'$oid': '6627ef5cfb500f596ec80f54'},e1302f1a-138c-4093-8cc5-d669476fd559,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:52.371000+00:00,ArrowRight,6.0,-71.03125,41.10278830740614,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:26:52.371000-07:00
+318,{'$oid': '6627ef5cfb500f596ec80f55'},5ca451fb-07ac-4789-ad99-3f35fd3fdccd,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:52.874000+00:00,ArrowRight,6.0,-71.03125,41.10278830740614,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:26:52.874000-07:00
+319,{'$oid': '6627ef5ffb500f596ec80f56'},eb384a83-2c45-497f-8446-c7f1e50095e5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:54.967000+00:00,Control,6.0,-71.03125,41.10278830740614,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:26:54.967000-07:00
+320,{'$oid': '6627ef60fb500f596ec80f57'},a22595ca-0ef2-4507-baf2-a7c8109aabc7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:56.526000+00:00,ArrowRight,6.0,-71.03125,41.10278830740614,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:26:56.526000-07:00
+321,{'$oid': '6627ef62fb500f596ec80f58'},a5e1667f-3137-493b-98cb-fcd1f462bda3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:26:58.804000+00:00,ArrowLeft,6.0,-72.12988281250023,41.10278830740614,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:26:58.804000-07:00
+322,{'$oid': '6627ef65fb500f596ec80f59'},4efe68ad-61a3-4c5d-9c07-cd029a6c08f7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:01.799000+00:00,Control,6.0,-72.12988281250023,41.10278830740614,"Moved right, centered on Suffolk, New York.
+
+Press i to get more information.",2024-04-23 10:27:01.799000-07:00
+323,{'$oid': '6627ef67fb500f596ec80f5a'},01fa420f-6a5a-42d9-b99a-38ac193fd39b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:03.071000+00:00,ArrowUp,6.0,-72.12988281250023,41.92541828318792,"Moved right, centered on Suffolk, New York.
+
+Press i to get more information.",2024-04-23 10:27:03.071000-07:00
+324,{'$oid': '6627ef6afb500f596ec80f5b'},1b3f94af-d91a-4211-a6ec-83eca2e9f631,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:06.621000+00:00,ArrowRight,6.0,-71.03125000000057,41.92541828318792,"Moved left, centered on Northeastern Connecticut, Connecticut.
+
+Press i to get more information.",2024-04-23 10:27:06.621000-07:00
+325,{'$oid': '6627ef6dfb500f596ec80f5c'},616e0fca-8e3d-4a88-8fdf-bb92ff378a40,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:09.848000+00:00,ArrowRight,6.0,-71.03125,41.92541828318792,"Moved up, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:27:09.848000-07:00
+326,{'$oid': '6627ef70fb500f596ec80f5d'},0beffeb1-c426-471f-b13f-e1a008c04ce5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:12.782000+00:00,ArrowRight,6.0,-71.03125,41.92541828318792,"Moved right, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:27:12.782000-07:00
+327,{'$oid': '6627ef76fb500f596ec80f5e'},74c76fb1-30e2-46c6-94cb-74800367541c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:17.999000+00:00,ArrowDown,6.0,-71.03125,41.10278830740654,"Moved right, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:27:17.999000-07:00
+328,{'$oid': '6627ef78fb500f596ec80f5f'},876582ed-9a03-4fb4-822e-722e4ccdd8cb,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:20.594000+00:00,ArrowUp,6.0,-71.03125,41.92541828318835,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:27:20.594000-07:00
+329,{'$oid': '6627ef82fb500f596ec80f60'},145de444-75b1-4272-a393-700b6e3a7a0b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:30.775000+00:00,Control,6.0,-71.03125,41.92541828318835,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:27:30.775000-07:00
+330,{'$oid': '6627ef85fb500f596ec80f61'},81647061-c514-462d-b17f-159270481fd7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:33.533000+00:00,ArrowUp,6.0,-71.03125,42.737576596388465,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:27:33.533000-07:00
+331,{'$oid': '6627ef88fb500f596ec80f62'},da3a35ca-4514-4620-af99-51e3e2873940,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:36.853000+00:00,ArrowUp,6.0,-71.03125,43.53923544810479,"Moved up, centered on Essex, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:27:36.853000-07:00
+332,{'$oid': '6627ef8dfb500f596ec80f63'},bcfd2577-1fee-4104-8a84-709cdc714fdb,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:41.391000+00:00,ArrowUp,6.0,-71.03125,44.33037567353489,"Moved up, centered on Carroll, New Hampshire.
+
+Press i to get more information.",2024-04-23 10:27:41.391000-07:00
+333,{'$oid': '6627ef90fb500f596ec80f64'},44f72135-262b-4bb9-93fa-060598c5c8b3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:44.229000+00:00,ArrowUp,6.0,-71.03125,45.11098643394632,"Moved up, centered on Coos, New Hampshire.
+
+Press i to get more information.",2024-04-23 10:27:44.229000-07:00
+334,{'$oid': '6627ef93fb500f596ec80f65'},ba4a32d3-5672-40fb-9db5-76a96dcfa17b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:47.519000+00:00,ArrowUp,6.0,-71.03125,45.881064904921004,"Moved up, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:27:47.519000-07:00
+335,{'$oid': '6627ef96fb500f596ec80f66'},a315c9dd-c86b-4f8f-a53f-c68106142fbf,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:50.335000+00:00,ArrowDown,6.0,-71.03125,45.11098643394669,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:27:50.335000-07:00
+336,{'$oid': '6627ef98fb500f596ec80f67'},aae6dbfd-ea4b-4106-862b-47d701f6c5e8,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:51.943000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved up, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:27:51.943000-07:00
+337,{'$oid': '6627ef98fb500f596ec80f68'},696f2a31-4f85-4a91-a238-21293db31b29,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:52.246000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved up, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:27:52.246000-07:00
+338,{'$oid': '6627ef9bfb500f596ec80f69'},d9ac577f-5db6-4adc-ba1a-e9b7d0b5259b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:55.022000+00:00,ArrowRight,6.0,-71.03125,45.11098643394669,"Moved up, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:27:55.022000-07:00
+339,{'$oid': '6627ef9efb500f596ec80f6a'},f6f04aed-70af-4fe1-aee8-04fe27133d5b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:27:58.295000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved down, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:27:58.295000-07:00
+340,{'$oid': '6627efa1fb500f596ec80f6b'},ef65ec33-295e-4599-8e12-76f44883d139,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:01.763000+00:00,ArrowRight,6.0,-71.03125,45.11098643394669,"Moved down, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:01.763000-07:00
+341,{'$oid': '6627efa6fb500f596ec80f6c'},4a40bc58-d944-4889-8cb5-80590d7f840f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:06.038000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:06.038000-07:00
+342,{'$oid': '6627efc1fb500f596ec80f6d'},fe975512-2a5a-4350-84c7-b735c58dbd33,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:33.543000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:33.543000-07:00
+343,{'$oid': '6627efd2fb500f596ec80f6e'},82ca67be-ec3a-46c4-b165-956913a71628,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:50.014000+00:00,ArrowRight,6.0,-71.03125,45.11098643394669,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:50.014000-07:00
+344,{'$oid': '6627efd6fb500f596ec80f6f'},e47d44bb-0498-41fe-ac5a-c4b3eb3024ad,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:54.377000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:54.377000-07:00
+345,{'$oid': '6627efd6fb500f596ec80f70'},ab6d7d4f-cacd-4d6f-bff1-16cc2f5e8c22,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:54.630000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:54.630000-07:00
+346,{'$oid': '6627efd8fb500f596ec80f71'},d89e3db0-29a1-46fa-821a-367fb8487d84,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:56.084000+00:00,ArrowRight,6.0,-71.03125,45.11098643394669,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:56.084000-07:00
+347,{'$oid': '6627efdcfb500f596ec80f72'},05e99beb-a59f-493c-82ae-167aaae423df,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:28:59.958000+00:00,Control,6.0,-71.03125,45.11098643394669,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:28:59.958000-07:00
+348,{'$oid': '6627efe1fb500f596ec80f73'},983ad161-e8bb-457e-b0d3-725f4ed8edbd,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:05.442000+00:00,ArrowDown,6.0,-71.03125,44.330375673535656,"Moved right, centered on Oxford, Maine.
+
+Press i to get more information.",2024-04-23 10:29:05.442000-07:00
+349,{'$oid': '6627efe5fb500f596ec80f74'},a1bd2e5b-657f-417c-b0c5-a9b35f72c387,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:09.574000+00:00,Control,6.0,-71.03125,44.330375673535656,"Moved right, centered on Coos, New Hampshire.
+
+Press i to get more information.",2024-04-23 10:29:09.574000-07:00
+350,{'$oid': '6627efe8fb500f596ec80f75'},c178b384-6955-4bbf-997e-754f73e65a8b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:12.829000+00:00,ArrowDown,6.0,-71.03125,43.539235448105956,"Moved right, centered on Coos, New Hampshire.
+
+Press i to get more information.",2024-04-23 10:29:12.829000-07:00
+351,{'$oid': '6627eff0fb500f596ec80f76'},ca0d775f-d3b2-4325-aa99-da88127f91d2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:20.381000+00:00,ArrowRight,6.0,-71.03125,43.539235448105956,"Moved down, centered on Carroll, New Hampshire.
+
+Press i to get more information.",2024-04-23 10:29:20.381000-07:00
+352,{'$oid': '6627eff3fb500f596ec80f77'},610018b5-0ee1-428c-a9f5-b0238e66c4c7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:23.318000+00:00,Control,6.0,-71.03125,43.539235448105956,"Moved down, centered on Carroll, New Hampshire.
+
+Press i to get more information.",2024-04-23 10:29:23.318000-07:00
+353,{'$oid': '6627eff7fb500f596ec80f78'},33994e83-8c4d-449c-9f2d-96d278a7848e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:27.636000+00:00,ArrowDown,6.0,-71.03125,42.73757659639003,"Moved down, centered on Carroll, New Hampshire.
+
+Press i to get more information.",2024-04-23 10:29:27.636000-07:00
+354,{'$oid': '6627effbfb500f596ec80f79'},b1a63043-2fc9-48ae-ad59-8562fd8936c2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:31.212000+00:00,Control,6.0,-71.03125,42.73757659639003,"Moved right, centered on Essex, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:31.212000-07:00
+355,{'$oid': '6627effefb500f596ec80f7a'},3934530d-df15-4498-b86f-12c4c43cf1e8,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:34.001000+00:00,ArrowDown,6.0,-71.03125,41.92541828319031,"Moved right, centered on Essex, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:34.001000-07:00
+356,{'$oid': '6627f001fb500f596ec80f7b'},7412cac4-05e8-40cc-969e-6e3d664593bc,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:37.270000+00:00,Control,6.0,-71.03125,41.92541828319031,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:37.270000-07:00
+357,{'$oid': '6627f003fb500f596ec80f7c'},05a152e3-d677-4580-819d-d2a7b396ef5b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:39.167000+00:00,ArrowRight,6.0,-71.03125,41.92541828319031,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:39.167000-07:00
+358,{'$oid': '6627f005fb500f596ec80f7d'},3f315404-a545-487a-865c-8a4a082a56f8,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:41.878000+00:00,Control,6.0,-71.03125,41.92541828319031,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:41.878000-07:00
+359,{'$oid': '6627f006fb500f596ec80f7e'},51183553-42c8-4532-97d8-41f06fa3b291,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:42.069000+00:00,Control,6.0,-71.03125,41.92541828319031,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:42.069000-07:00
+360,{'$oid': '6627f006fb500f596ec80f7f'},f8e2274c-6340-4803-9dd2-a56840498706,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:42.230000+00:00,Control,6.0,-71.03125,41.92541828319031,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:42.230000-07:00
+361,{'$oid': '6627f00bfb500f596ec80f80'},8d73096f-0fd5-4b7f-9dd2-490121056ed0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:47.411000+00:00,ArrowDown,6.0,-71.03125,41.10278830740896,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:47.411000-07:00
+362,{'$oid': '6627f00dfb500f596ec80f81'},4ff5b783-d9e9-4a86-8405-5ac0dc0a19ec,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:49.590000+00:00,Control,6.0,-71.03125,41.10278830740896,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:29:49.590000-07:00
+363,{'$oid': '6627f00efb500f596ec80f82'},2a035daa-8949-4a83-9208-7e4699d08ad7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:50.150000+00:00,Control,6.0,-71.03125,41.10278830740896,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:29:50.150000-07:00
+364,{'$oid': '6627f00efb500f596ec80f83'},453581c6-d82a-455d-bd81-cc8f35ed4110,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:50.781000+00:00,ArrowUp,6.0,-71.03125,41.92541828319071,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:29:50.781000-07:00
+365,{'$oid': '6627f013fb500f596ec80f84'},ac88a3a3-ba99-4b80-a150-7a1cec0ba585,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:54.998000+00:00,Control,6.0,-71.03125,41.92541828319071,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:54.998000-07:00
+366,{'$oid': '6627f013fb500f596ec80f85'},c41e6608-0392-4bf1-9e05-95c2229df92a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:29:55.318000+00:00,Control,6.0,-71.03125,41.92541828319071,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:29:55.318000-07:00
+367,{'$oid': '6627f023fb500f596ec80f86'},a13b5ef8-6219-4c2f-a776-5098414efb09,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:30:11.103000+00:00,ArrowLeft,6.0,-72.12988281250023,41.92541828319071,"Moved down, centered on Bristol, Massachusetts.
+
+Press i to get more information.",2024-04-23 10:30:11.103000-07:00
+368,{'$oid': '6627f024fb500f596ec80f87'},b733cd9a-c2ad-47ab-bcf1-53f1e054b7a5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:30:12.459000+00:00,Control,6.0,-72.12988281250023,41.92541828319071,"Moved up, centered on Northeastern Connecticut, Connecticut.
+
+Press i to get more information.",2024-04-23 10:30:12.459000-07:00
+369,{'$oid': '6627f028fb500f596ec80f88'},03cc5031-0d70-41dd-8774-bafefa9ce9f0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:30:16.930000+00:00,i,6.0,-72.12988281250023,41.92541828319071,"Moved up, centered on Northeastern Connecticut, Connecticut.
+
+Press i to get more information.",2024-04-23 10:30:16.930000-07:00
+370,{'$oid': '6627f03bfb500f596ec80f89'},18b7c116-ee2a-460f-a222-97b12f8ef22f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:30:35.720000+00:00,Control,6.0,-72.12988281250023,41.92541828319071,"In the current view:
+
+No regions with particularly high percentage of transit commuters.
+
+Percentage of transit commuters is low in the right.
+
+The average percentage of transit commuters is 3.6%.
+
+The county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Forest, Pennsylvania, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:30:35.720000-07:00
+371,{'$oid': '6627f05afb500f596ec80f8a'},ad3ddc9d-192b-4130-85fd-f972827b1374,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:31:06.811000+00:00,i,6.0,-72.12988281250023,41.92541828319071,"In the current view:
+
+No regions with particularly high percentage of transit commuters.
+
+Percentage of transit commuters is low in the right.
+
+The average percentage of transit commuters is 3.6%.
+
+The county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Forest, Pennsylvania, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:31:06.811000-07:00
+372,{'$oid': '6627f06bfb500f596ec80f8b'},8f70afee-c9d3-4225-99b3-238d42a28f85,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:31:23.383000+00:00,Control,6.0,-72.12988281250023,41.92541828319071,"In the current view:
+
+No regions with particularly high percentage of transit commuters.
+
+Percentage of transit commuters is low in the right.
+
+The average percentage of transit commuters is 3.6%.
+
+The county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Forest, Pennsylvania, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:31:23.383000-07:00
+373,{'$oid': '6627f099fb500f596ec80f8c'},717d61de-0c4c-42ef-9aa0-4b8c9b3c20e9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:09.471000+00:00,=,7.0,-72.12988281250023,41.92541828319071,"In the current view:
+
+No regions with particularly high percentage of transit commuters.
+
+Percentage of transit commuters is low in the right.
+
+The average percentage of transit commuters is 3.6%.
+
+The county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Forest, Pennsylvania, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:32:09.471000-07:00
+374,{'$oid': '6627f09cfb500f596ec80f8d'},0c9279cc-69c1-4a8a-aac6-f8d637a530a6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:12.709000+00:00,ArrowDown,7.0,-72.12988281250023,41.51541017009643,"Moved left, centered on Northeastern Connecticut, Connecticut.
+
+Press i to get more information.",2024-04-23 10:32:12.709000-07:00
+375,{'$oid': '6627f09dfb500f596ec80f8e'},465e368f-57c4-4e65-8188-c9cad0d995b3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:13.903000+00:00,ArrowDown,7.0,-72.12988281250023,41.1027883074085,"Moved left, centered on Northeastern Connecticut, Connecticut.
+
+Press i to get more information.",2024-04-23 10:32:13.903000-07:00
+376,{'$oid': '6627f0a0fb500f596ec80f8f'},e9e6f88b-598f-4d49-a6f5-a06944aa29ae,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:16.009000+00:00,ArrowDown,7.0,-72.12988281250023,40.68755756877766,"Moved down, centered on Suffolk, New York.
+
+Press i to get more information.",2024-04-23 10:32:16.009000-07:00
+377,{'$oid': '6627f0a1fb500f596ec80f90'},f6ced86e-96a1-4d0d-ac4a-e4e6bde40a4c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:16.950000+00:00,ArrowUp,7.0,-72.12988281250023,41.10278830740856,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-23 10:32:16.950000-07:00
+378,{'$oid': '6627f0a3fb500f596ec80f91'},fec4c1a2-6a19-4045-8802-02041c352be7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:19.208000+00:00,Control,7.0,-72.12988281250023,41.10278830740856,"Moved down, centered on Suffolk, New York.
+
+Press i to get more information.",2024-04-23 10:32:19.208000-07:00
+379,{'$oid': '6627f0a8fb500f596ec80f92'},ae4960c1-28b7-4632-9a26-9db749acb672,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:24.087000+00:00,ArrowLeft,7.0,-72.67919921875006,41.10278830740859,"Moved down, centered on Suffolk, New York.
+
+Press i to get more information.",2024-04-23 10:32:24.087000-07:00
+380,{'$oid': '6627f0acfb500f596ec80f93'},1f20c559-ede7-4c6a-b664-d2675f2408b5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:27.982000+00:00,ArrowLeft,7.0,-73.22851562499989,41.10278830740859,"Moved up, centered on Suffolk, New York.
+
+Press i to get more information.",2024-04-23 10:32:27.982000-07:00
+381,{'$oid': '6627f0affb500f596ec80f94'},5bcc2e09-6f73-4e03-aae9-9eaaba99d123,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:31.079000+00:00,Control,7.0,-73.22851562499989,41.10278830740859,"Moved left, centered on Greater Bridgeport, Connecticut.
+
+Press i to get more information.",2024-04-23 10:32:31.079000-07:00
+382,{'$oid': '6627f0b1fb500f596ec80f95'},5b58361e-c5d6-4d5c-9a26-5bfb1e96e63d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:33.214000+00:00,ArrowLeft,7.0,-73.77783203124972,41.10278830740859,"Moved left, centered on Greater Bridgeport, Connecticut.
+
+Press i to get more information.",2024-04-23 10:32:33.214000-07:00
+383,{'$oid': '6627f0b3fb500f596ec80f96'},a35734a7-3ac4-429b-b5e9-5b3368614413,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:35.903000+00:00,ArrowLeft,7.0,-74.32714843749955,41.10278830740859,"Moved left, centered on Westchester, New York.
+
+Press i to get more information.",2024-04-23 10:32:35.903000-07:00
+384,{'$oid': '6627f0b6fb500f596ec80f97'},a4b023bf-9dd9-42de-91ce-743ba0f7f5b5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:38.477000+00:00,ArrowLeft,7.0,-74.87646484374937,41.10278830740859,"Moved left, centered on Passaic, New Jersey.
+
+Press i to get more information.",2024-04-23 10:32:38.477000-07:00
+385,{'$oid': '6627f0b8fb500f596ec80f98'},6d26ce49-9ca1-42c6-86d2-03ab562ba63f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:40.749000+00:00,ArrowLeft,7.0,-75.4257812499992,41.10278830740859,"Moved left, centered on Sussex, New Jersey.
+
+Press i to get more information.",2024-04-23 10:32:40.749000-07:00
+386,{'$oid': '6627f0bcfb500f596ec80f99'},12a40e71-bfb8-4930-880c-44afbbf1c175,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:44.640000+00:00,ArrowLeft,7.0,-75.97509765624903,41.10278830740859,"Moved left, centered on Monroe, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:32:44.640000-07:00
+387,{'$oid': '6627f0bffb500f596ec80f9a'},d958b57d-bee9-4394-82d2-f954f9a1c1e4,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:47.555000+00:00,ArrowLeft,7.0,-76.52441406249886,41.10278830740859,"Moved left, centered on Luzerne, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:32:47.555000-07:00
+388,{'$oid': '6627f0c2fb500f596ec80f9b'},9be28909-c458-46ca-bc68-28f32e58df5e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:50.183000+00:00,ArrowLeft,7.0,-77.07373046874869,41.10278830740859,"Moved left, centered on Columbia, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:32:50.183000-07:00
+389,{'$oid': '6627f0c5fb500f596ec80f9c'},1f6272c6-e670-42d6-b873-cf1dba8c8440,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:53.134000+00:00,ArrowLeft,7.0,-77.62304687499852,41.10278830740859,"Moved left, centered on Lycoming, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:32:53.134000-07:00
+390,{'$oid': '6627f0c8fb500f596ec80f9d'},797326dd-a5e7-48c9-953f-ed7333766fa0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:32:56.270000+00:00,ArrowLeft,7.0,-78.17236328124835,41.10278830740859,"Moved left, centered on Clinton, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:32:56.270000-07:00
+391,{'$oid': '6627f0ccfb500f596ec80f9e'},4d4fe14b-b463-4988-b82b-e94eae25fe6b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:00.200000+00:00,Control,7.0,-78.17236328124835,41.10278830740859,"Moved left, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:00.200000-07:00
+392,{'$oid': '6627f0cefb500f596ec80f9f'},65619780-fe47-4c59-85fa-1362b68b1060,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:02.873000+00:00,-,6.0,-78.17236328124835,41.10278830740859,"Moved left, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:02.873000-07:00
+393,{'$oid': '6627f0d2fb500f596ec80fa0'},13816c2c-72bd-4074-b26b-f9032a5a8c6b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:05.561000+00:00,=,7.0,-78.17236328124835,41.10278830740859,"Moved left, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:05.561000-07:00
+394,{'$oid': '6627f0d4fb500f596ec80fa1'},b4e13abc-c268-414e-addd-eca7923335e4,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:08.488000+00:00,=,8.0,-78.17236328124835,41.10278830740859,"Zoomed out, now at county level, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:08.488000-07:00
+395,{'$oid': '6627f0d6fb500f596ec80fa2'},0b46c2f7-3bd3-4142-b9fb-073208223a8a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:10.880000+00:00,ArrowLeft,8.0,-78.44702148437301,41.10278830740859,"Zoomed in, now at county level, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:10.880000-07:00
+396,{'$oid': '6627f0dafb500f596ec80fa3'},9a1e83ee-a106-4c6e-8bdd-da8bbb09c332,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:14.166000+00:00,ArrowLeft,8.0,-78.72167968749767,41.10278830740859,"Zoomed in, now at county level, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:14.166000-07:00
+397,{'$oid': '6627f0dbfb500f596ec80fa4'},91d5d2ce-1e11-4718-a430-a2f8518f6088,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:15.198000+00:00,ArrowRight,8.0,-78.4470214843725,41.10278830740859,"Moved left, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:15.198000-07:00
+398,{'$oid': '6627f0dcfb500f596ec80fa5'},1cbd1ef5-e907-46a0-a26c-2047e9156c7c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:16.509000+00:00,ArrowLeft,8.0,-78.72167968749716,41.10278830740859,"Moved left, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:16.509000-07:00
+399,{'$oid': '6627f0e0fb500f596ec80fa6'},8f108b90-a08c-4283-bacd-4ecf910dfd91,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:19.981000+00:00,ArrowLeft,8.0,-78.99633789062182,41.10278830740859,"Moved right, centered on Clearfield, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:19.981000-07:00
+400,{'$oid': '6627f0e3fb500f596ec80fa7'},c314101f-16d8-46fa-8300-dba05dcc3472,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:23.038000+00:00,ArrowLeft,8.0,-79.27099609374642,41.10278830740859,"Moved left, centered on Jefferson, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:23.038000-07:00
+401,{'$oid': '6627f0e6fb500f596ec80fa8'},587d9a31-e6c1-456e-9185-b58063478eb4,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:26.494000+00:00,ArrowLeft,8.0,-79.54565429687102,41.10278830740859,"Moved left, centered on Clarion, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:26.494000-07:00
+402,{'$oid': '6627f0e8fb500f596ec80fa9'},59aec0a5-bd5e-4201-81e4-f331c9dfd0d8,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:28.669000+00:00,ArrowLeft,8.0,-79.82031249999568,41.10278830740859,"Moved left, centered on Clarion, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:28.669000-07:00
+403,{'$oid': '6627f0ecfb500f596ec80faa'},82604d0c-38b7-40f7-ab1a-76c720c48000,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:32.611000+00:00,ArrowLeft,8.0,-80.09497070312028,41.10278830740859,"Moved left, centered on Butler, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:32.611000-07:00
+404,{'$oid': '6627f0eefb500f596ec80fab'},e4448e2b-af47-453d-924c-675db80c9056,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:34.898000+00:00,ArrowDown,8.0,-80.09497070312028,40.895498720545135,"Moved left, centered on Mercer, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:34.898000-07:00
+405,{'$oid': '6627f0f2fb500f596ec80fac'},e3915183-b4b9-44c4-88a2-fdaaa3c0335d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:37.975000+00:00,Control,8.0,-80.09497070312028,40.895498720545135,"Moved left, centered on Butler, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:37.975000-07:00
+406,{'$oid': '6627f0f2fb500f596ec80fad'},eab76aca-648e-490c-8104-6e3dc616df1d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:38.135000+00:00,Control,8.0,-80.09497070312028,40.895498720545135,"Moved left, centered on Butler, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:38.135000-07:00
+407,{'$oid': '6627f0f3fb500f596ec80fae'},2f542da0-e07f-4fd8-8f6c-eff92ee9cd32,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:39.021000+00:00,ArrowDown,8.0,-80.09497070312028,40.687557568778516,"Moved left, centered on Butler, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:39.021000-07:00
+408,{'$oid': '6627f0f5fb500f596ec80faf'},8e9eea0d-445a-479b-8a68-b78ed1372058,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:41.791000+00:00,ArrowDown,8.0,-80.09497070312028,40.47896555156797,"Moved down, centered on Butler, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:41.791000-07:00
+409,{'$oid': '6627f0fafb500f596ec80fb0'},31cd7b5a-11a8-4abc-8bcd-2053c8b8faa3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:46.130000+00:00,ArrowDown,8.0,-80.09497070312028,40.26972340501527,"Moved down, centered on Allegheny, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:46.130000-07:00
+410,{'$oid': '6627f0fdfb500f596ec80fb1'},2dbcb60e-f89a-483b-b79d-071042ba8893,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:49.646000+00:00,ArrowDown,8.0,-80.09497070312028,40.059831902144595,"Moved down, centered on Washington, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:49.646000-07:00
+411,{'$oid': '6627f100fb500f596ec80fb2'},ed58afde-03f4-4a92-b16e-99fe231e19ce,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:52.883000+00:00,ArrowLeft,8.0,-80.36962890624488,40.05983190214462,"Moved down, centered on Washington, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:52.883000-07:00
+412,{'$oid': '6627f104fb500f596ec80fb3'},aab984ff-bf31-44a1-ad7c-3b62e80aa9c7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:56.343000+00:00,Control,8.0,-80.36962890624488,40.05983190214462,"Moved down, centered on Washington, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:56.343000-07:00
+413,{'$oid': '6627f107fb500f596ec80fb4'},8d0ca715-c242-4e86-8152-2e850e678877,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:33:59.614000+00:00,ArrowLeft,8.0,-80.64428710936954,40.05983190214462,"Moved down, centered on Washington, Pennsylvania.
+
+Press i to get more information.",2024-04-23 10:33:59.614000-07:00
+414,{'$oid': '6627f10afb500f596ec80fb5'},34a2f467-0c9a-4bf6-a34f-e0719e3e347b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:02.766000+00:00,ArrowLeft,8.0,-80.9189453124942,40.05983190214462,"Moved left, centered on Ohio, West Virginia.
+
+Press i to get more information.",2024-04-23 10:34:02.766000-07:00
+415,{'$oid': '6627f10ffb500f596ec80fb6'},59dd6fbd-5678-4629-8bcf-14d97298e806,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:07.118000+00:00,ArrowLeft,8.0,-81.1936035156188,40.05983190214462,"Moved left, centered on Belmont, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:07.118000-07:00
+416,{'$oid': '6627f112fb500f596ec80fb7'},8c878a0b-8a1e-48ea-8ccb-024040ed8e39,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:10.001000+00:00,ArrowLeft,8.0,-81.4682617187434,40.05983190214462,"Moved left, centered on Belmont, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:10.001000-07:00
+417,{'$oid': '6627f115fb500f596ec80fb8'},74796ca4-11f7-4d98-8ffd-8c835d82c89b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:13.712000+00:00,ArrowLeft,8.0,-81.74291992186801,40.05983190214462,"Moved left, centered on Guernsey, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:13.712000-07:00
+418,{'$oid': '6627f118fb500f596ec80fb9'},96e2f9de-42fb-4b52-9cfc-7ff9d295dda6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:16.462000+00:00,ArrowLeft,8.0,-82.01757812499267,40.05983190214462,"Moved left, centered on Muskingum, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:16.462000-07:00
+419,{'$oid': '6627f11bfb500f596ec80fba'},c08d3ba4-d3ce-43d5-a05f-f560600928d8,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:19.375000+00:00,ArrowLeft,8.0,-82.29223632811727,40.05983190214462,"Moved left, centered on Muskingum, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:19.375000-07:00
+420,{'$oid': '6627f11efb500f596ec80fbb'},59e3abcc-37b8-45e1-af2e-5f096c51888a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:22.270000+00:00,ArrowLeft,8.0,-82.56689453124193,40.05983190214462,"Moved left, centered on Licking, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:22.270000-07:00
+421,{'$oid': '6627f122fb500f596ec80fbc'},2d6aa476-301e-44a5-ba9d-9a3d230c7e98,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:25.309000+00:00,ArrowLeft,8.0,-82.84155273436659,40.05983190214462,"Moved left, centered on Licking, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:25.309000-07:00
+422,{'$oid': '6627f125fb500f596ec80fbd'},5026c1e5-34a3-477f-b537-3f7d1f9f3e00,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:29.128000+00:00,Control,8.0,-82.84155273436659,40.05983190214462,"Moved left, centered on Franklin, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:29.128000-07:00
+423,{'$oid': '6627f126fb500f596ec80fbe'},1511a162-9d76-4d84-8e07-a98d72c56560,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:30.243000+00:00,ArrowLeft,8.0,-83.11621093749125,40.05983190214462,"Moved left, centered on Franklin, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:30.243000-07:00
+424,{'$oid': '6627f129fb500f596ec80fbf'},c7bb4347-062b-4201-980d-c69e14113efa,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:33.309000+00:00,ArrowLeft,8.0,-83.3908691406159,40.05983190214462,"Moved left, centered on Franklin, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:33.309000-07:00
+425,{'$oid': '6627f12cfb500f596ec80fc0'},2eb721b5-82fc-40c2-aee6-4d73b7a5c5a6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:36.813000+00:00,ArrowLeft,8.0,-83.66552734374051,40.05983190214462,"Moved left, centered on Madison, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:36.813000-07:00
+426,{'$oid': '6627f130fb500f596ec80fc1'},0de0ff2a-0db5-4c04-96cb-7b15e82e0252,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:40.109000+00:00,ArrowLeft,8.0,-83.94018554686517,40.05983190214462,"Moved left, centered on Champaign, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:40.109000-07:00
+427,{'$oid': '6627f130fb500f596ec80fc2'},7dfcfc20-f17d-4e69-aca1-43e47d4d6d9b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:40.594000+00:00,ArrowLeft,8.0,-84.21484374998977,40.05983190214462,"Moved left, centered on Champaign, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:40.594000-07:00
+428,{'$oid': '6627f131fb500f596ec80fc3'},f711a40e-7542-4333-a85a-bd814e6fe346,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:41.144000+00:00,ArrowLeft,8.0,-84.48950195311437,40.05983190214462,"Moved left, centered on Miami, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:41.144000-07:00
+429,{'$oid': '6627f131fb500f596ec80fc4'},a3ede8a3-fc64-45cd-8501-3d36e334afd2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:41.762000+00:00,ArrowLeft,8.0,-84.76416015623897,40.05983190214462,"Moved left, centered on Miami, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:41.762000-07:00
+430,{'$oid': '6627f132fb500f596ec80fc5'},b5f843ba-a0b2-4448-a2e2-f7df347d2f89,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:42.358000+00:00,ArrowLeft,8.0,-85.03881835936357,40.05983190214462,"Moved left, centered on Darke, Ohio.
+
+Press i to get more information.",2024-04-23 10:34:42.358000-07:00
+431,{'$oid': '6627f135fb500f596ec80fc6'},84304641-7f0d-45bd-b7fe-4aa4c4b7fc8e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:45.445000+00:00,ArrowLeft,8.0,-85.31347656248818,40.05983190214462,"Moved left, centered on Randolph, Indiana.
+
+Press i to get more information.",2024-04-23 10:34:45.445000-07:00
+432,{'$oid': '6627f138fb500f596ec80fc7'},8d581339-dca3-4c0a-ae4c-506a5fddc22a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:48.609000+00:00,ArrowLeft,8.0,-85.58813476561284,40.05983190214462,"Moved left, centered on Henry, Indiana.
+
+Press i to get more information.",2024-04-23 10:34:48.609000-07:00
+433,{'$oid': '6627f13bfb500f596ec80fc8'},55aef3a4-8d56-4365-b771-fa61c8f56062,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:51.928000+00:00,Control,8.0,-85.58813476561284,40.05983190214462,"Moved left, centered on Madison, Indiana.
+
+Press i to get more information.",2024-04-23 10:34:51.928000-07:00
+434,{'$oid': '6627f13cfb500f596ec80fc9'},54c29ded-a895-415f-9391-d09c6da4dafa,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:52.461000+00:00,ArrowDown,8.0,-85.58813476561284,39.84929185318154,"Moved left, centered on Madison, Indiana.
+
+Press i to get more information.",2024-04-23 10:34:52.461000-07:00
+435,{'$oid': '6627f143fb500f596ec80fca'},19cc338d-2699-4df7-be10-dbb40e93f86e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:34:59.204000+00:00,ArrowDown,8.0,-85.58813476561284,39.63810410582985,"Moved left, centered on Henry, Indiana.
+
+Press i to get more information.",2024-04-23 10:34:59.204000-07:00
+436,{'$oid': '6627f146fb500f596ec80fcb'},8f9d1afc-8475-4fd6-913d-84940a85eb5c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:02.166000+00:00,ArrowDown,8.0,-85.58813476561284,39.42626954554541,"Moved down, centered on Rush, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:02.166000-07:00
+437,{'$oid': '6627f14afb500f596ec80fcc'},b63034ac-81d4-4194-9480-a73aa747c5fa,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:06.132000+00:00,ArrowDown,8.0,-85.58813476561284,39.21378909580778,"Moved down, centered on Decatur, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:06.132000-07:00
+438,{'$oid': '6627f14cfb500f596ec80fcd'},faefc681-201f-490c-9937-87078eb232fb,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:08.703000+00:00,ArrowLeft,8.0,-85.8627929687375,39.21378909580778,"Moved down, centered on Decatur, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:08.703000-07:00
+439,{'$oid': '6627f14ffb500f596ec80fce'},2dd152a9-7631-41ed-91a4-acc754ce0522,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:11.809000+00:00,ArrowLeft,8.0,-86.13745117186215,39.21378909580778,"Moved down, centered on Bartholomew, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:11.809000-07:00
+440,{'$oid': '6627f152fb500f596ec80fcf'},2053fd37-a40e-4211-8097-e0aca964aec7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:14.646000+00:00,ArrowLeft,8.0,-86.41210937498681,39.21378909580778,"Moved left, centered on Brown, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:14.646000-07:00
+441,{'$oid': '6627f155fb500f596ec80fd0'},b1cb3fb8-f16e-479c-8524-c47320ce4a9d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:17.709000+00:00,ArrowLeft,8.0,-86.68676757811141,39.21378909580778,"Moved left, centered on Monroe, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:17.709000-07:00
+442,{'$oid': '6627f158fb500f596ec80fd1'},f4643a81-129b-4b4b-9605-41cdcdab785f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:20.528000+00:00,ArrowLeft,8.0,-86.96142578123607,39.21378909580778,"Moved left, centered on Owen, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:20.528000-07:00
+443,{'$oid': '6627f15cfb500f596ec80fd2'},fd5434b8-3213-4e46-a7e9-05336fede322,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:23.961000+00:00,ArrowLeft,8.0,-87.23608398436068,39.21378909580778,"Moved left, centered on Owen, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:23.961000-07:00
+444,{'$oid': '6627f15efb500f596ec80fd3'},9ba7d437-d5a3-47a9-b0bc-7225b79fc394,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:26.894000+00:00,ArrowLeft,8.0,-87.51074218748533,39.21378909580778,"Moved left, centered on Clay, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:26.894000-07:00
+445,{'$oid': '6627f162fb500f596ec80fd4'},9c22424c-fc70-472c-b3fe-dd11eff3fe23,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:30.094000+00:00,ArrowLeft,8.0,-87.78540039061,39.21378909580778,"Moved left, centered on Sullivan, Indiana.
+
+Press i to get more information.",2024-04-23 10:35:30.094000-07:00
+446,{'$oid': '6627f165fb500f596ec80fd5'},81d0d9ba-4272-4015-8f6b-c52b7d9d54e6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:32.934000+00:00,Control,8.0,-87.78540039061,39.21378909580778,"Moved left, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:35:32.934000-07:00
+447,{'$oid': '6627f165fb500f596ec80fd6'},7f5ebfd2-dbe7-4086-bd62-fd87222ee255,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:33.399000+00:00,Control,8.0,-87.78540039061,39.21378909580778,"Moved left, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:35:33.399000-07:00
+448,{'$oid': '6627f16ffb500f596ec80fd7'},061745ad-c227-4c86-8c63-9dcd76dcdbc6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:43.066000+00:00,=,9.0,-87.78540039061,39.21378909580778,"Moved left, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:35:43.066000-07:00
+449,{'$oid': '6627f173fb500f596ec80fd8'},c85e7c1d-34de-4bb0-8a68-e49a8bebf0f2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:47.674000+00:00,Control,9.0,-87.78540039061,39.21378909580778,"Moved left, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:35:47.674000-07:00
+450,{'$oid': '6627f175fb500f596ec80fd9'},b61edac1-8c30-4c2d-9d53-288b7652e8e0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:49.432000+00:00,-,8.0,-87.78540039061,39.21378909580778,"Moved left, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:35:49.432000-07:00
+451,{'$oid': '6627f179fb500f596ec80fda'},62fd40dc-1a12-4379-b6f7-034cc24a5740,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:53.304000+00:00,-,7.0,-87.78540039061,39.21378909580778,"Zoomed in, now at county level, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:35:53.304000-07:00
+452,{'$oid': '6627f17dfb500f596ec80fdb'},343d9a77-0777-46d2-b8fc-30808f2982a2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:35:57.838000+00:00,-,6.0,-87.78540039061,39.21378909580778,"Zoomed out, now at county level, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:35:57.838000-07:00
+453,{'$oid': '6627f182fb500f596ec80fdc'},e06fb061-6264-4e87-a1ea-322035321013,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:02.008000+00:00,Control,6.0,-87.78540039061,39.21378909580778,"Zoomed out, now at county level, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:36:02.008000-07:00
+454,{'$oid': '6627f182fb500f596ec80fdd'},c2064531-f62b-43e9-8d3c-43caf984eab6,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:02.769000+00:00,ArrowLeft,6.0,-88.88403320311022,39.21378909580778,"Zoomed out, now at county level, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:36:02.769000-07:00
+455,{'$oid': '6627f187fb500f596ec80fde'},d3c9e8d3-d219-45c6-8728-1869db4f2033,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:07.217000+00:00,ArrowLeft,6.0,-89.98266601561045,39.21378909580778,"Zoomed out, now at county level, centered on Clark, Illinois.
+
+Press i to get more information.",2024-04-23 10:36:07.217000-07:00
+456,{'$oid': '6627f18afb500f596ec80fdf'},7ebd9320-514b-4c6d-b8f6-e72092de7bea,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:10.298000+00:00,ArrowLeft,6.0,-91.08129882811068,39.21378909580778,"Moved left, centered on Macoupin, Illinois.
+
+Press i to get more information.",2024-04-23 10:36:10.298000-07:00
+457,{'$oid': '6627f18bfb500f596ec80fe0'},08af1bae-3b2f-4a17-9b4f-12182db2374f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:10.741000+00:00,ArrowLeft,6.0,-92.1799316406109,39.21378909580778,"Moved left, centered on Macoupin, Illinois.
+
+Press i to get more information.",2024-04-23 10:36:10.741000-07:00
+458,{'$oid': '6627f18bfb500f596ec80fe1'},5aa00bc6-d67e-4742-903b-920458330b58,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:11.337000+00:00,ArrowLeft,6.0,-93.27856445311113,39.21378909580778,"Moved left, centered on Lincoln, Missouri.
+
+Press i to get more information.",2024-04-23 10:36:11.337000-07:00
+459,{'$oid': '6627f18ffb500f596ec80fe2'},dbb80e43-315f-4a80-926b-4cd004fbff50,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:15.636000+00:00,ArrowUp,6.0,-93.27856445311113,40.05983190214371,"Moved left, centered on Saline, Missouri.
+
+Press i to get more information.",2024-04-23 10:36:15.636000-07:00
+460,{'$oid': '6627f192fb500f596ec80fe3'},7a913a29-93c6-4e47-a46e-12d6d528a93d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:18.647000+00:00,Control,6.0,-93.27856445311113,40.05983190214371,"Moved left, centered on Sullivan, Missouri.
+
+Press i to get more information.",2024-04-23 10:36:18.647000-07:00
+461,{'$oid': '6627f193fb500f596ec80fe4'},229eafeb-9fc3-434f-a036-31fb45e2a6f1,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:19.459000+00:00,ArrowUp,6.0,-93.27856445311113,40.89549872054377,"Moved left, centered on Sullivan, Missouri.
+
+Press i to get more information.",2024-04-23 10:36:19.459000-07:00
+462,{'$oid': '6627f197fb500f596ec80fe5'},4d1b8dc1-ff9a-4661-afc9-c279da01e877,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:23.117000+00:00,ArrowUp,6.0,-93.27856445311113,41.720741227650564,"Moved up, centered on Wayne, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:23.117000-07:00
+463,{'$oid': '6627f19afb500f596ec80fe6'},a0211783-c7a9-476d-b50d-188b1cfaf482,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:26.029000+00:00,ArrowUp,6.0,-93.27856445311113,42.53552040661438,"Moved up, centered on Jasper, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:26.029000-07:00
+464,{'$oid': '6627f19cfb500f596ec80fe7'},1cc53e57-1c17-47c6-88df-fa69847d3058,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:28.862000+00:00,ArrowUp,6.0,-93.27856445311113,43.33980625244129,"Moved up, centered on Hardin, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:28.862000-07:00
+465,{'$oid': '6627f1a0fb500f596ec80fe8'},2d694e93-718b-46e0-834d-a02e9c7fb07c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:32.744000+00:00,Control,6.0,-93.27856445311113,43.33980625244129,"Moved up, centered on Worth, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:32.744000-07:00
+466,{'$oid': '6627f1a2fb500f596ec80fe9'},94b5c73f-e8c7-4dbc-bcf0-5ff39c118e09,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:34.210000+00:00,ArrowUp,6.0,-93.27856445311113,44.13357747050742,"Moved up, centered on Worth, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:34.210000-07:00
+467,{'$oid': '6627f1a4fb500f596ec80fea'},4c8c89f8-ece8-4dee-931d-9e7bab8282ff,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:36.690000+00:00,ArrowUp,6.0,-93.27856445311113,44.91682116966655,"Moved up, centered on Steele, Minnesota.
+
+Press i to get more information.",2024-04-23 10:36:36.690000-07:00
+468,{'$oid': '6627f1a5fb500f596ec80feb'},edf8e802-d8fd-4135-bb2b-53a94e1215a7,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:37.652000+00:00,ArrowDown,6.0,-93.27856445311113,44.13357747050782,"Moved up, centered on Hennepin, Minnesota.
+
+Press i to get more information.",2024-04-23 10:36:37.652000-07:00
+469,{'$oid': '6627f1a6fb500f596ec80fec'},79414e5b-2322-43d7-9993-52880e77872a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:38.130000+00:00,ArrowDown,6.0,-93.27856445311113,43.33980625244209,"Moved up, centered on Steele, Minnesota.
+
+Press i to get more information.",2024-04-23 10:36:38.130000-07:00
+470,{'$oid': '6627f1a7fb500f596ec80fed'},cd0b6a0d-edc7-48eb-82db-b29d2216764a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:39.769000+00:00,Control,6.0,-93.27856445311113,43.33980625244209,"Moved down, centered on Worth, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:39.769000-07:00
+471,{'$oid': '6627f1a9fb500f596ec80fee'},31edee4f-267d-4aa8-8767-157be0e68fd0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:40.781000+00:00,ArrowRight,6.0,-92.17993164061147,43.33980625244209,"Moved down, centered on Worth, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:40.781000-07:00
+472,{'$oid': '6627f1abfb500f596ec80fef'},0d85d257-c74a-46e4-8737-27cb81c0acbf,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:43.870000+00:00,ArrowRight,6.0,-91.08129882811181,43.33980625244209,"Moved down, centered on Howard, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:43.870000-07:00
+473,{'$oid': '6627f1affb500f596ec80ff0'},23673dc8-18c4-4460-8f89-3897abc62906,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:47.694000+00:00,ArrowLeft,6.0,-92.17993164061204,43.33980625244209,"Moved right, centered on Crawford, Wisconsin.
+
+Press i to get more information.",2024-04-23 10:36:47.694000-07:00
+474,{'$oid': '6627f1b2fb500f596ec80ff1'},8ce655fa-1db9-4828-8136-4986e67e29b2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:50.823000+00:00,Control,6.0,-92.17993164061204,43.33980625244209,"Moved right, centered on Howard, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:50.823000-07:00
+475,{'$oid': '6627f1b4fb500f596ec80ff2'},8470cda1-f37a-4051-aaed-bf5eda35d613,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:52.542000+00:00,ArrowLeft,6.0,-93.27856445311227,43.33980625244209,"Moved right, centered on Howard, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:52.542000-07:00
+476,{'$oid': '6627f1b6fb500f596ec80ff3'},936456f7-b49d-4acb-b74c-df650b1fba83,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:36:54.791000+00:00,Control,6.0,-93.27856445311227,43.33980625244209,"Moved left, centered on Worth, Iowa.
+
+Press i to get more information.",2024-04-23 10:36:54.791000-07:00
+477,{'$oid': '6627f1befb500f596ec80ff4'},e8f88660-8af6-45e9-ae7b-8348fc0fe327,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:01.970000+00:00,ArrowLeft,6.0,-94.3771972656125,43.33980625244209,"Moved left, centered on Worth, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:01.970000-07:00
+478,{'$oid': '6627f1bffb500f596ec80ff5'},b0785290-c971-4320-a830-f5aecdb4b92a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:03.678000+00:00,Control,6.0,-94.3771972656125,43.33980625244209,"Moved left, centered on Kossuth, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:03.678000-07:00
+479,{'$oid': '6627f1c0fb500f596ec80ff6'},76bf92a4-e3c5-4d90-b854-792d6806b312,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:03.991000+00:00,Control,6.0,-94.3771972656125,43.33980625244209,"Moved left, centered on Kossuth, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:03.991000-07:00
+480,{'$oid': '6627f1c0fb500f596ec80ff7'},32343ecf-f044-4135-ba0f-d65c7edc80ca,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:04.375000+00:00,Control,6.0,-94.3771972656125,43.33980625244209,"Moved left, centered on Kossuth, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:04.375000-07:00
+481,{'$oid': '6627f1c2fb500f596ec80ff8'},1c3e6403-e3d5-40b7-afbd-c62d15de125f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:06.209000+00:00,ArrowLeft,6.0,-95.47583007811272,43.33980625244209,"Moved left, centered on Kossuth, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:06.209000-07:00
+482,{'$oid': '6627f1c7fb500f596ec80ff9'},51d57648-f7f3-46dc-9bc2-c2ca176d65f3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:10.991000+00:00,ArrowLeft,6.0,-96.57446289061295,43.33980625244209,"Moved left, centered on Osceola, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:10.991000-07:00
+483,{'$oid': '6627f1c9fb500f596ec80ffa'},20bbf259-3200-492b-a39b-7619597dd6b9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:13.901000+00:00,ArrowRight,6.0,-95.47583007811329,43.33980625244209,"Moved left, centered on Lincoln, South Dakota.
+
+Press i to get more information.",2024-04-23 10:37:13.901000-07:00
+484,{'$oid': '6627f1ccfb500f596ec80ffb'},12054099-0f2a-4fea-9af1-54e16a1a9ad5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:16.735000+00:00,ArrowUp,6.0,-95.47583007811329,44.13357747050824,"Moved left, centered on Osceola, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:16.735000-07:00
+485,{'$oid': '6627f1d0fb500f596ec80ffc'},f7a08950-072a-4df4-a0b5-c58111a72981,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:20.160000+00:00,ArrowDown,6.0,-95.47583007811329,43.339806252442514,"Moved right, centered on Murray, Minnesota.
+
+Press i to get more information.",2024-04-23 10:37:20.160000-07:00
+486,{'$oid': '6627f1d2fb500f596ec80ffd'},19c3a94b-349e-42e0-8640-3a54f7a92671,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:22.109000+00:00,ArrowDown,6.0,-95.47583007811329,42.535520406616,"Moved up, centered on Osceola, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:22.109000-07:00
+487,{'$oid': '6627f1d5fb500f596ec80ffe'},5e9de673-1726-4fcc-9aa5-bb8e3c6535ba,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:25.448000+00:00,Control,6.0,-95.47583007811329,42.535520406616,"Moved down, centered on Ida, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:25.448000-07:00
+488,{'$oid': '6627f1d6fb500f596ec80fff'},73708082-7e34-4959-9337-02cc2b8ec842,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:26.175000+00:00,ArrowDown,6.0,-95.47583007811329,41.72074122765267,"Moved down, centered on Ida, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:26.175000-07:00
+489,{'$oid': '6627f1d9fb500f596ec81000'},6ea881e2-e3df-465c-81ea-4f84f6db8e89,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:29.449000+00:00,Control,6.0,-95.47583007811329,41.72074122765267,"Moved down, centered on Shelby, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:29.449000-07:00
+490,{'$oid': '6627f1dafb500f596ec81001'},7afb39d0-aeb8-469b-8cb4-3875ca81b29f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:30.003000+00:00,ArrowDown,6.0,-95.47583007811329,40.8954987205463,"Moved down, centered on Shelby, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:30.003000-07:00
+491,{'$oid': '6627f1ddfb500f596ec81002'},c2218cb7-3972-4f4d-b65b-40188a0919a1,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:33.032000+00:00,Control,6.0,-95.47583007811329,40.8954987205463,"Moved down, centered on Fremont, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:33.032000-07:00
+492,{'$oid': '6627f1ddfb500f596ec81003'},363bf826-2030-4e0a-9f56-674e9e1b06ec,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:33.742000+00:00,ArrowDown,6.0,-95.47583007811329,40.05983190214624,"Moved down, centered on Fremont, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:33.742000-07:00
+493,{'$oid': '6627f1e1fb500f596ec81004'},bdb7dfcd-5c7a-4230-ba4a-afcb2ce6cb71,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:37.359000+00:00,ArrowUp,6.0,-95.47583007811329,40.8954987205463,"Moved down, centered on Richardson, Nebraska.
+
+Press i to get more information.",2024-04-23 10:37:37.359000-07:00
+494,{'$oid': '6627f1e3fb500f596ec81005'},4c1a7cb4-d02b-4037-afa1-ffc32cd59c4a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:39.831000+00:00,Control,6.0,-95.47583007811329,40.8954987205463,"Moved down, centered on Fremont, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:39.831000-07:00
+495,{'$oid': '6627f1e6fb500f596ec81006'},985669e4-7ad4-4033-ba28-5539485c8b27,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:42.110000+00:00,ArrowLeft,6.0,-96.57446289061352,40.8954987205463,"Moved down, centered on Fremont, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:42.110000-07:00
+496,{'$oid': '6627f1e9fb500f596ec81007'},dfa6cd21-52d6-4227-ab11-34425e21125d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:45.182000+00:00,ArrowRight,6.0,-95.47583007811386,40.8954987205463,"Moved up, centered on Lancaster, Nebraska.
+
+Press i to get more information.",2024-04-23 10:37:45.182000-07:00
+497,{'$oid': '6627f1eefb500f596ec81008'},96acaea9-cac8-4d4c-b963-d17985a142ce,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:50.339000+00:00,ArrowRight,6.0,-94.3771972656142,40.8954987205463,"Moved left, centered on Fremont, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:50.339000-07:00
+498,{'$oid': '6627f1f2fb500f596ec81009'},47577483-5f23-46f9-92e4-50105bb97a24,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:54.663000+00:00,ArrowRight,6.0,-93.27856445311454,40.8954987205463,"Moved right, centered on Ringgold, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:54.663000-07:00
+499,{'$oid': '6627f1f7fb500f596ec8100a'},23a9dd78-4655-43e3-b175-cedb19ad93ae,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:37:59.024000+00:00,ArrowRight,6.0,-92.17993164061488,40.8954987205463,"Moved right, centered on Wayne, Iowa.
+
+Press i to get more information.",2024-04-23 10:37:59.024000-07:00
+500,{'$oid': '6627f1fcfb500f596ec8100b'},dd7b570e-854d-4c51-8a3a-f52ab30cc790,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:02.962000+00:00,ArrowRight,6.0,-91.08129882811522,40.8954987205463,"Moved right, centered on Davis, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:02.962000-07:00
+501,{'$oid': '6627f200fb500f596ec8100c'},563cf688-553c-43fb-9cdc-86226c740cfe,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:08.220000+00:00,ArrowRight,6.0,-89.98266601561556,40.8954987205463,"Moved right, centered on Des Moines, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:08.220000-07:00
+502,{'$oid': '6627f203fb500f596ec8100d'},321bec5e-2e61-40e1-9151-857d3e67ebd3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:11.571000+00:00,ArrowLeft,6.0,-91.08129882811579,40.8954987205463,"Moved right, centered on Peoria, Illinois.
+
+Press i to get more information.",2024-04-23 10:38:11.571000-07:00
+503,{'$oid': '6627f206fb500f596ec8100e'},4cc4acc6-f135-4936-bf23-7a48454bbda4,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:14.855000+00:00,Control,6.0,-91.08129882811579,40.8954987205463,"Moved right, centered on Des Moines, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:14.855000-07:00
+504,{'$oid': '6627f20bfb500f596ec8100f'},02f9fc51-fa7e-49cd-ab65-f51d2f5a6d94,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:19.397000+00:00,ArrowUp,6.0,-91.08129882811579,41.720741227653065,"Moved right, centered on Des Moines, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:19.397000-07:00
+505,{'$oid': '6627f20efb500f596ec81010'},5e06534a-1aa6-4c0b-a73e-9b609cb7769e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:22.823000+00:00,Control,6.0,-91.08129882811579,41.720741227653065,"Moved left, centered on Cedar, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:22.823000-07:00
+506,{'$oid': '6627f20ffb500f596ec81011'},4ce2fad6-edc8-4d37-a379-bb38fc7f3158,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:23.602000+00:00,ArrowUp,6.0,-91.08129882811579,42.535520406616826,"Moved left, centered on Cedar, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:23.602000-07:00
+507,{'$oid': '6627f212fb500f596ec81012'},40d0d0bf-08c2-4092-9eb7-7aa1e090d136,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:26.424000+00:00,Control,6.0,-91.08129882811579,42.535520406616826,"Moved up, centered on Dubuque, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:26.424000-07:00
+508,{'$oid': '6627f213fb500f596ec81013'},91fe586d-c0e0-422d-8f5d-836b51f025b9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:27.502000+00:00,ArrowUp,6.0,-91.08129882811579,43.33980625244371,"Moved up, centered on Dubuque, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:27.502000-07:00
+509,{'$oid': '6627f217fb500f596ec81014'},cc64828b-c3d8-45fd-b56f-dd22bda811ee,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:31.875000+00:00,ArrowUp,6.0,-91.08129882811579,44.13357747050978,"Moved up, centered on Crawford, Wisconsin.
+
+Press i to get more information.",2024-04-23 10:38:31.875000-07:00
+510,{'$oid': '6627f21bfb500f596ec81015'},0fb24a39-afe2-4b15-af65-96a88bec47f4,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:35.247000+00:00,ArrowDown,6.0,-91.08129882811579,43.33980625244408,"Moved up, centered on Jackson, Wisconsin.
+
+Press i to get more information.",2024-04-23 10:38:35.247000-07:00
+511,{'$oid': '6627f21cfb500f596ec81016'},2ce503f9-0d01-4aab-931f-75c32928426a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:35.742000+00:00,ArrowDown,6.0,-91.08129882811579,42.53552040661762,"Moved up, centered on Jackson, Wisconsin.
+
+Press i to get more information.",2024-04-23 10:38:35.742000-07:00
+512,{'$oid': '6627f21cfb500f596ec81017'},a7ec787e-ecd2-47c4-b65d-f92938fdc80f,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:36.382000+00:00,ArrowDown,6.0,-91.08129882811579,41.72074122765423,"Moved up, centered on Jackson, Wisconsin.
+
+Press i to get more information.",2024-04-23 10:38:36.382000-07:00
+513,{'$oid': '6627f21ffb500f596ec81018'},6b237e34-89b3-481e-9c3a-7bf5a450276e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:39.230000+00:00,ArrowLeft,6.0,-92.17993164061596,41.72074122765423,"Moved down, centered on Cedar, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:39.230000-07:00
+514,{'$oid': '6627f223fb500f596ec81019'},b0b393cc-4afd-40ad-b22d-edfce17c0273,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:43.065000+00:00,Control,6.0,-92.17993164061596,41.72074122765423,"Moved down, centered on Iowa, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:43.065000-07:00
+515,{'$oid': '6627f226fb500f596ec8101a'},39502c7b-b663-42aa-9fe2-1eac68ca0025,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:45.937000+00:00,ArrowDown,6.0,-92.17993164061596,40.89549872054789,"Moved down, centered on Iowa, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:45.937000-07:00
+516,{'$oid': '6627f229fb500f596ec8101b'},01c9262e-b3fc-4c1b-bc72-8bb610f34dfe,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:48.999000+00:00,ArrowDown,6.0,-92.17993164061596,40.05983190214786,"Moved left, centered on Davis, Iowa.
+
+Press i to get more information.",2024-04-23 10:38:48.999000-07:00
+517,{'$oid': '6627f22cfb500f596ec8101c'},3fe610c9-979d-4484-9c2a-d02f00859227,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:52.678000+00:00,ArrowDown,6.0,-92.17993164061596,39.21378909581114,"Moved down, centered on Knox, Missouri.
+
+Press i to get more information.",2024-04-23 10:38:52.678000-07:00
+518,{'$oid': '6627f230fb500f596ec8101d'},10d5ff8b-431f-4ba5-b0a3-ccf654fc7813,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:55.765000+00:00,ArrowUp,6.0,-92.17993164061596,40.05983190214704,"Moved down, centered on Boone, Missouri.
+
+Press i to get more information.",2024-04-23 10:38:55.765000-07:00
+519,{'$oid': '6627f230fb500f596ec8101e'},074e7412-608b-4d50-9e48-98aa2342a193,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:38:56.222000+00:00,ArrowUp,6.0,-92.17993164061596,40.895498720547124,"Moved down, centered on Boone, Missouri.
+
+Press i to get more information.",2024-04-23 10:38:56.222000-07:00
+520,{'$oid': '6627f236fb500f596ec8101f'},469b96d5-dacf-44fa-9edc-e2f12c646949,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:01.944000+00:00,Control,6.0,-92.17993164061596,40.895498720547124,"Moved up, centered on Davis, Iowa.
+
+Press i to get more information.",2024-04-23 10:39:01.944000-07:00
+521,{'$oid': '6627f23dfb500f596ec81020'},b7b712f2-848f-4929-aa30-098add3f4cd5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:09.337000+00:00,=,7.0,-92.17993164061596,40.89549872054715,"Moved up, centered on Davis, Iowa.
+
+Press i to get more information.",2024-04-23 10:39:09.337000-07:00
+522,{'$oid': '6627f241fb500f596ec81021'},7f8bcbe0-bd49-40be-8787-e89a29d418dd,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:12.714000+00:00,-,6.0,-92.17993164061596,40.89549872054715,"Moved up, centered on Davis, Iowa.
+
+Press i to get more information.",2024-04-23 10:39:12.714000-07:00
+523,{'$oid': '6627f242fb500f596ec81022'},360b5c07-9d49-45bf-8368-0043581b32d9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:14.414000+00:00,-,5.0,-92.17993164061596,40.89549872054715,"Zoomed in, now at county level, centered on Davis, Iowa.
+
+Press i to get more information.",2024-04-23 10:39:14.414000-07:00
+524,{'$oid': '6627f245fb500f596ec81023'},392fc3bd-a1c8-41c1-9ce0-33d309faca01,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:17.720000+00:00,Control,5.0,-92.17993164061596,40.89549872054715,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:17.720000-07:00
+525,{'$oid': '6627f24bfb500f596ec81024'},ce8251e9-9853-4c62-aca9-378afb6adf32,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:23.641000+00:00,-,4.0,-92.17993164061596,40.89549872054715,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:23.641000-07:00
+526,{'$oid': '6627f250fb500f596ec81025'},78873ee3-ee82-4258-82d4-7c6fa56a27a4,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:28.723000+00:00,Control,4.0,-92.17993164061596,40.89549872054715,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:28.723000-07:00
+527,{'$oid': '6627f252fb500f596ec81026'},e79e6c87-7950-488b-a323-ba282bb2130e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:30.178000+00:00,ArrowDown,4.0,-92.17993164061596,37.490817053408065,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:30.178000-07:00
+528,{'$oid': '6627f256fb500f596ec81027'},e9393deb-59c9-4cce-8d56-b0ddc01dc1ec,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:34.106000+00:00,ArrowUp,4.0,-92.17993164061596,40.89549872054718,"Zoomed out, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:34.106000-07:00
+529,{'$oid': '6627f259fb500f596ec81028'},c8070938-c72d-43b2-a8a6-22ca02c40645,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:37.743000+00:00,ArrowDown,4.0,-92.17993164061596,37.490817053408136,"Moved down, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:37.743000-07:00
+530,{'$oid': '6627f25cfb500f596ec81029'},6df8fd28-394d-46b9-a911-5fb366659428,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:40.319000+00:00,ArrowUp,4.0,-92.17993164061596,40.89549872054721,"Moved up, centered on Missouri.
+
+Press i to get more information.",2024-04-23 10:39:40.319000-07:00
+531,{'$oid': '6627f25efb500f596ec8102a'},01f82eb0-bc6b-473d-922a-baf294a1550d,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:42.451000+00:00,ArrowUp,4.0,-92.17993164061596,43.24708343753139,"Moved down, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:42.451000-07:00
+532,{'$oid': '6627f263fb500f596ec8102b'},2e021bb0-555a-4b50-815d-0d4865d0f993,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:46.960000+00:00,ArrowUp,4.0,-92.17993164061596,43.24708343753139,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:46.960000-07:00
+533,{'$oid': '6627f265fb500f596ec8102c'},465dc785-d1f4-4d93-a04e-16a2cce7e0e5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:49.816000+00:00,Control,4.0,-92.17993164061596,43.24708343753139,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:49.816000-07:00
+534,{'$oid': '6627f26cfb500f596ec8102d'},9bf3d96d-224c-4e56-8300-3b1a463a6788,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:39:56.426000+00:00,=,5.0,-92.17993164061596,43.24708343753139,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:39:56.426000-07:00
+535,{'$oid': '6627f272fb500f596ec8102e'},94a352fe-c441-4505-a88c-de78ab721a95,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:02.056000+00:00,Control,5.0,-92.17993164061596,43.24708343753139,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:02.056000-07:00
+536,{'$oid': '6627f273fb500f596ec8102f'},7d09eae4-7531-4423-99cd-d2cc4dca6a08,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:03.343000+00:00,-,4.0,-92.17993164061596,43.24708343753139,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:03.343000-07:00
+537,{'$oid': '6627f275fb500f596ec81030'},9a7e44f2-1684-428f-af59-4fece720a6d9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:05.897000+00:00,Control,4.0,-92.17993164061596,43.24708343753139,"Zoomed in, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:05.897000-07:00
+538,{'$oid': '6627f278fb500f596ec81031'},54a19786-a604-45b5-981d-8fff5ec80620,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:07.977000+00:00,-,3.813781191217037,-96.0,43.24708343753139,"Zoomed in, now at state level, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:07.977000-07:00
+539,{'$oid': '6627f27cfb500f596ec81032'},8452b114-b17c-419e-9c43-4fb421dc693a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:12.408000+00:00,Control,3.813781191217037,-96.0,43.24708343753139,"You've reached the minimum zoom level. Press plus to zoom in.
+
+Press i to get more information.",2024-04-23 10:40:12.408000-07:00
+540,{'$oid': '6627f27dfb500f596ec81033'},36b0ba9e-79c7-4b76-a525-b2f5bb145303,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:13.794000+00:00,ArrowDown,3.813781191217037,-96.0,39.49661376899499,"You've reached the minimum zoom level. Press plus to zoom in.
+
+Press i to get more information.",2024-04-23 10:40:13.794000-07:00
+541,{'$oid': '6627f282fb500f596ec81034'},bd78d490-2f72-4b05-80e9-a072f7647f7a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:18.543000+00:00,ArrowUp,3.813781191217037,-96.0,41.925418283187554,"You've reached the minimum zoom level. Press plus to zoom in.
+
+Press i to get more information.",2024-04-23 10:40:18.543000-07:00
+542,{'$oid': '6627f285fb500f596ec81035'},a5f1dce1-39fc-4796-abe3-c77f2fe7430b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:21.512000+00:00,Control,3.813781191217037,-96.0,41.925418283187554,"Moved down, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:21.512000-07:00
+543,{'$oid': '6627f28cfb500f596ec81036'},873303a7-d73c-4743-b9ae-461bb6b691e9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:28.236000+00:00,=,5.0,-96.0,41.925418283187554,"Moved down, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:28.236000-07:00
+544,{'$oid': '6627f28efb500f596ec81037'},34b5d5aa-c4e5-42ed-8991-d5d14eafd622,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:30.855000+00:00,Control,5.0,-96.0,41.925418283187554,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:30.855000-07:00
+545,{'$oid': '6627f295fb500f596ec81038'},e800eb87-66d2-4978-9db5-b19e1f6a0b75,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:37.051000+00:00,=,6.0,-96.0,41.925418283187554,"Moved up, centered on Iowa.
+
+Press i to get more information.",2024-04-23 10:40:37.051000-07:00
+546,{'$oid': '6627f298fb500f596ec81039'},cf696611-c5f3-451a-a594-92ddd6f7791b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:40.761000+00:00,Control,6.0,-96.0,41.925418283187554,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:40:40.761000-07:00
+547,{'$oid': '6627f29dfb500f596ec8103a'},8f10702a-6dbf-4836-bc0c-b36367099e0b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:45.211000+00:00,=,7.0,-96.0,41.925418283187554,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:40:45.211000-07:00
+548,{'$oid': '6627f2a1fb500f596ec8103b'},0d29a41e-464e-468e-8572-e4f8845af6a3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:49.191000+00:00,Control,7.0,-96.0,41.925418283187554,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:40:49.191000-07:00
+549,{'$oid': '6627f2a3fb500f596ec8103c'},8c4582e7-8f22-4fab-a265-322770c86add,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:51.134000+00:00,ArrowDown,7.0,-96.0,41.515410170093304,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:40:51.134000-07:00
+550,{'$oid': '6627f2a9fb500f596ec8103d'},3e6b9ccd-75d2-46a9-b420-68258c88a2a9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:40:57.865000+00:00,ArrowUp,7.0,-96.0,41.925418283187156,"Zoomed in, now at county level, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:40:57.865000-07:00
+551,{'$oid': '6627f2adfb500f596ec8103e'},3897dd49-e021-4a09-9702-117ed3b8c2e0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:00.964000+00:00,ArrowUp,7.0,-96.0,42.3328083409813,"Moved down, centered on Monona, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:00.964000-07:00
+552,{'$oid': '6627f2b1fb500f596ec8103f'},2a67b277-47ed-49e8-9b8f-b1a947b5c8b1,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:05.471000+00:00,ArrowUp,7.0,-96.0,42.7375765963869,"Moved up, centered on Woodbury, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:05.471000-07:00
+553,{'$oid': '6627f2b4fb500f596ec81040'},4cd3a5fa-ae73-4f83-91b2-b933f1331b4c,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:08.623000+00:00,ArrowUp,7.0,-96.0,43.139719851503884,"Moved up, centered on Plymouth, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:08.623000-07:00
+554,{'$oid': '6627f2b7fb500f596ec81041'},c6bccb64-5c09-4480-90d7-8ef85bff0a9a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:11.273000+00:00,Control,7.0,-96.0,43.139719851503884,"Moved up, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:11.273000-07:00
+555,{'$oid': '6627f2b8fb500f596ec81042'},d0c27a88-9c00-41f4-bbf2-e30bca522d0e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:12.311000+00:00,Control,7.0,-96.0,43.139719851503884,"Moved up, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:12.311000-07:00
+556,{'$oid': '6627f2bbfb500f596ec81043'},97299ed9-ff3a-4d36-bce3-fab6c18fb845,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:15.304000+00:00,Control,7.0,-96.0,43.139719851503884,"Moved up, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:15.304000-07:00
+557,{'$oid': '6627f2bcfb500f596ec81044'},966f6994-3b62-402d-b645-fcfbc0f6cfbf,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:16.586000+00:00,ArrowUp,7.0,-96.0,43.53923544810286,"Moved up, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:16.586000-07:00
+558,{'$oid': '6627f2bffb500f596ec81045'},258913f6-0924-4f19-9c71-c961eb236382,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:19.287000+00:00,Control,7.0,-96.0,43.53923544810286,"Moved up, centered on Nobles, Minnesota.
+
+Press i to get more information.",2024-04-23 10:41:19.287000-07:00
+559,{'$oid': '6627f2c1fb500f596ec81046'},69c27425-8b84-4463-b4b8-4354ecda6e53,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:21.126000+00:00,ArrowDown,7.0,-96.0,43.13971985150346,"Moved up, centered on Nobles, Minnesota.
+
+Press i to get more information.",2024-04-23 10:41:21.126000-07:00
+560,{'$oid': '6627f2c3fb500f596ec81047'},a402f382-165e-4338-84ff-31c26eb27c86,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:23.880000+00:00,Control,7.0,-96.0,43.13971985150346,"Moved up, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:23.880000-07:00
+561,{'$oid': '6627f2c5fb500f596ec81048'},6798ec20-9445-4b8c-a5aa-85fa90554bf5,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:25.478000+00:00,ArrowLeft,7.0,-96.54931640624983,43.13971985150343,"Moved up, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:25.478000-07:00
+562,{'$oid': '6627f2c8fb500f596ec81049'},5580f154-bd45-4446-96da-e54dab0c3a31,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:28.745000+00:00,Control,7.0,-96.54931640624983,43.13971985150343,"Moved down, centered on Lincoln, South Dakota.
+
+Press i to get more information.",2024-04-23 10:41:28.745000-07:00
+563,{'$oid': '6627f2cafb500f596ec8104a'},7473fa92-878a-4117-90f6-8ff7356197a2,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:30.771000+00:00,ArrowRight,7.0,-95.99999999999943,43.13971985150343,"Moved down, centered on Lincoln, South Dakota.
+
+Press i to get more information.",2024-04-23 10:41:30.771000-07:00
+564,{'$oid': '6627f2cefb500f596ec8104b'},2fafdac6-597a-4921-aeab-18d13d5dcca9,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:33.993000+00:00,Control,7.0,-95.99999999999943,43.13971985150343,"Moved left, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:33.993000-07:00
+565,{'$oid': '6627f2d0fb500f596ec8104c'},5983c6cc-eea5-4133-a44e-4b9fd3ad4de8,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:36.382000+00:00,ArrowDown,7.0,-95.99999999999943,42.73757659638608,"Moved left, centered on Sioux, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:36.382000-07:00
+566,{'$oid': '6627f2d2fb500f596ec8104d'},f5c58b51-4053-463a-b500-3cfc5e67bc3b,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:38.793000+00:00,Control,7.0,-95.99999999999943,42.73757659638608,"Moved right, centered on Plymouth, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:38.793000-07:00
+567,{'$oid': '6627f2d6fb500f596ec8104e'},725fe8ce-f0e7-438c-a7ea-28814ff93220,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:42.437000+00:00,ArrowDown,7.0,-95.99999999999943,42.33280834098011,"Moved right, centered on Plymouth, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:42.437000-07:00
+568,{'$oid': '6627f2dafb500f596ec8104f'},b9f66f1d-dfae-4ed5-9fde-db9304ca731e,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:41:46.785000+00:00,i,7.0,-95.99999999999943,42.33280834098011,"Moved down, centered on Woodbury, Iowa.
+
+Press i to get more information.",2024-04-23 10:41:46.785000-07:00
+569,{'$oid': '6627f2ecfb500f596ec81050'},9f5041ff-81b4-4ff8-856a-da99eda7a761,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:42:04.122000+00:00,Control,7.0,-95.99999999999943,42.33280834098011,"In the current view:
+
+No regions with particularly high percentage of transit commuters.
+
+Percentage of transit commuters is low in the bottom-left.
+
+The average percentage of transit commuters is 0.4%.
+
+The county with the highest percentage of transit commuters is Story, Iowa, with 4.8% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Cuming, Nebraska, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-23 10:42:04.122000-07:00
+570,{'$oid': '6627f2f8fb500f596ec81051'},311ebd2e-574a-4ffc-b0de-eb8d7c8491c3,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:42:15.996000+00:00,l,7.0,-95.99999999999943,42.33280834098011,"The current view is bounded by Gregory County, South Dakota on the top-left, Fillmore County, Minnesota on the top-right, Wapello County, Iowa on the bottom-right, and Custer County, Nebraska on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-23 10:42:15.996000-07:00
+571,{'$oid': '6627f302fb500f596ec81052'},04e39120-788b-4baa-97b3-c932f223470a,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:42:26.329000+00:00,Control,7.0,-95.99999999999943,42.33280834098011,"The current view is bounded by Gregory County, South Dakota on the top-left, Fillmore County, Minnesota on the top-right, Wapello County, Iowa on the bottom-right, and Custer County, Nebraska on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-23 10:42:26.329000-07:00
+572,{'$oid': '6627f3c5fb500f596ec81053'},51539d6c-52f3-4272-9b96-3f930aae11f0,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:45:41.675000+00:00,Control,7.0,-95.99999999999943,42.33280834098011,"The current view is bounded by Gregory County, South Dakota on the top-left, Fillmore County, Minnesota on the top-right, Wapello County, Iowa on the bottom-right, and Custer County, Nebraska on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-23 10:45:41.675000-07:00
+573,{'$oid': '6627f585fb500f596ec81054'},3ea0186c-665c-409b-9421-7a19c81534cf,user3,cae46c27-29e3-4ba1-a56d-0d5048c26313,transit,2024-04-23 17:53:09.084000+00:00,Tab,7.0,-95.99999999999943,42.33280834098011,"The current view is bounded by Gregory County, South Dakota on the top-left, Fillmore County, Minnesota on the top-right, Wapello County, Iowa on the bottom-right, and Custer County, Nebraska on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-23 10:53:09.084000-07:00

@@ -1,0 +1,2715 @@
+[{
+  "_id": {
+    "$oid": "662bcf3f440e50a0685328e8"
+  },
+  "uuid": "28b3af64-c1a8-417b-9d76-f60b6cd3fe68",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:55.697Z",
+  "key_stroke": "m",
+  "zoom_level": 5.278800786416162,
+  "lng": -99.13569129447139,
+  "lat": 38.54477428216126,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bcf40440e50a0685328e9"
+  },
+  "uuid": "9feb60b1-a421-412b-b2a5-01c9a59b6bb1",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:56.569Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5.278800786416162,
+  "lng": -99.13569129447139,
+  "lat": 38.54477428216126,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bcf40440e50a0685328ea"
+  },
+  "uuid": "ea1a34a6-2e43-41c5-b75a-5dc61686931e",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:56.805Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5.278800786416162,
+  "lng": -99.13569129447137,
+  "lat": 39.86459995486004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bcf41440e50a0685328eb"
+  },
+  "uuid": "78fc77a2-e62f-44d0-a6e8-4b09a7519eac",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:56.957Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5.278800786416162,
+  "lng": -99.13569129447137,
+  "lat": 40.85794215073361,
+  "stats": "Moved up, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bcf41440e50a0685328ec"
+  },
+  "uuid": "ebe273e1-c91c-43d4-ae12-b5a039462d73",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:57.105Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5.278800786416162,
+  "lng": -99.13569129447137,
+  "lat": 41.828951161625355,
+  "stats": "Moved up, centered on Nebraska.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bcf41440e50a0685328ed"
+  },
+  "uuid": "facf8b31-f6bc-4562-ab14-66a079202892",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:57.737Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5.278800786416162,
+  "lng": -99.13569129447137,
+  "lat": 43.16426476189906,
+  "stats": "Moved up, centered on South Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bcf42440e50a0685328ee"
+  },
+  "uuid": "e9478909-b619-46aa-910f-0d31a8424c1a",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:57.921Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5.278800786416162,
+  "lng": -100.6349185462766,
+  "lat": 43.164264761899005,
+  "stats": "Moved up, centered on South Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bcf42440e50a0685328ef"
+  },
+  "uuid": "f554f991-f068-4dd7-ab00-fe1d45c801f5",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:58.085Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5.278800786416162,
+  "lng": -102.04428362511993,
+  "lat": 43.16426476189898,
+  "stats": "Moved left, centered on South Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bcf42440e50a0685328f0"
+  },
+  "uuid": "f3a42deb-525c-469e-be09-438aec63c099",
+  "user_id": "user6",
+  "session_id": "e91048f9-ba7d-479f-bd2d-5a40d79d301f",
+  "page": "transit",
+  "timestamp": "2024-04-26T15:58:58.220Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5.278800786416162,
+  "lng": -103.25870524152032,
+  "lat": 43.16426476189872,
+  "stats": "Moved left, centered on South Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bcfe2440e50a0685328f1"
+  },
+  "uuid": "8a304837-6f24-4f0c-82f4-cbf9b1e671d0",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:01:38.466Z",
+  "key_stroke": "Tab",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPopulation density is high in the right.\n\nNo regions with particularly low population density.\n\nThe average population density is 246.4 people per square mile.\n\nThe state with the highest population density is District of Columbia, with 10970.5 people per square mile.\n\nThe state with the lowest population density is Wyoming, with 6.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bcfe4440e50a0685328f2"
+  },
+  "uuid": "10537ee4-760c-4b87-8c80-7b7e18a2fde4",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:01:40.224Z",
+  "key_stroke": "m",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bcfe7440e50a0685328f3"
+  },
+  "uuid": "55cd8f81-497c-467a-9aab-1520bb78ad09",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:01:43.648Z",
+  "key_stroke": "Control",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bcfe8440e50a0685328f4"
+  },
+  "uuid": "5aa623ba-23a6-48ad-a1e6-978371aef43f",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:01:44.577Z",
+  "key_stroke": "Alt",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd002440e50a0685328f5"
+  },
+  "uuid": "041b310e-3ca9-4e4c-acd1-06b6ab7b4c48",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:02:10.584Z",
+  "key_stroke": "Alt",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd008440e50a0685328f6"
+  },
+  "uuid": "a876ee6a-2b9f-46c4-8fad-d90caa34dfc6",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:02:16.761Z",
+  "key_stroke": "Alt",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd012440e50a0685328f7"
+  },
+  "uuid": "2449e817-f9ef-4ddd-8610-a4ce2d41299d",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:02:26.888Z",
+  "key_stroke": "Alt",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd017440e50a0685328f8"
+  },
+  "uuid": "47c81aa7-22f8-4156-99d9-73ad24d87cc2",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:02:31.103Z",
+  "key_stroke": "Control",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd02a440e50a0685328f9"
+  },
+  "uuid": "6d4b9e20-7157-4b3b-a9c7-6d51c2870cfa",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:02:50.818Z",
+  "key_stroke": "NumLock",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd02c440e50a0685328fa"
+  },
+  "uuid": "178aed3c-c872-479d-9530-a5b6440b551b",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:02:52.408Z",
+  "key_stroke": "+",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd037440e50a0685328fb"
+  },
+  "uuid": "3452a7d2-60c7-4c4f-9745-bfe0dbbaae7c",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:03:03.505Z",
+  "key_stroke": "NumLock",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd03e440e50a0685328fc"
+  },
+  "uuid": "bdd247d1-7068-41ee-8292-3a8f8cb96750",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:03:10.472Z",
+  "key_stroke": "Control",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd1ed440e50a0685328fd"
+  },
+  "uuid": "673017e6-dcd1-4856-97f2-e5dd50c26cdb",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:10:21.259Z",
+  "key_stroke": "NumLock",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd1f3440e50a0685328fe"
+  },
+  "uuid": "cc77e987-a902-4eee-8146-0b8fe7ead712",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:10:27.130Z",
+  "key_stroke": "NumLock",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd1fa440e50a0685328ff"
+  },
+  "uuid": "b5f96e3b-c3e7-4899-a6af-c66a1cb36e4e",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:10:34.657Z",
+  "key_stroke": "NumLock",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd1fe440e50a068532900"
+  },
+  "uuid": "068c2d7d-d1a4-47ae-8231-46cd3e2b4a61",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:10:38.109Z",
+  "key_stroke": "Tab",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd201440e50a068532901"
+  },
+  "uuid": "12553bf9-a4a2-4454-8e76-a336ccc4f3c4",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:10:41.324Z",
+  "key_stroke": "m",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd204440e50a068532902"
+  },
+  "uuid": "332333bb-b98e-4199-99cd-edad50505704",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:10:44.776Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd209440e50a068532903"
+  },
+  "uuid": "fb345e02-679a-4dfc-839b-1cc475d45232",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:10:49.883Z",
+  "key_stroke": "i",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 38.12022903597813,
+  "stats": "Moved down, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd21e440e50a068532904"
+  },
+  "uuid": "7b8150bc-be5c-422f-8fe1-19617dfaff72",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:11:10.025Z",
+  "key_stroke": "l",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 38.12022903597813,
+  "stats": "The current view is bounded by Idaho, US on the top-left, Ontario, Canada on the top-right, South Carolina, US on the bottom-right, and Sonora, Mexico on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd239440e50a068532905"
+  },
+  "uuid": "15de31d0-6fc0-4ddd-a12e-83a149fb6f70",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:11:37.786Z",
+  "key_stroke": "b",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 38.12022903597813,
+  "stats": "In the current view:\n\nPopulation density is high in the right.\n\nNo regions with particularly low population density.\n\nThe average population density is 81.8 people per square mile.\n\nThe state with the highest population density is Maryland, with 634.5 people per square mile.\n\nThe state with the lowest population density is Wyoming, with 6.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd243440e50a068532906"
+  },
+  "uuid": "92860085-b904-4896-be9b-1c1c7e774843",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:11:47.177Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 38.12022903597813,
+  "stats": "In the current view:\n\nPopulation density is high in the right.\n\nNo regions with particularly low population density.\n\nThe average population density is 81.8 people per square mile.\n\nThe state with the highest population density is Maryland, with 634.5 people per square mile.\n\nThe state with the lowest population density is Wyoming, with 6.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd247440e50a068532907"
+  },
+  "uuid": "1c4d0c91-b0f0-4728-b5a3-87d7ce4856bf",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:11:51.532Z",
+  "key_stroke": "i",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "Moved down, centered on Oklahoma.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd257440e50a068532908"
+  },
+  "uuid": "48d2b702-032b-486e-8f09-65bdf7bb671d",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:12:07.315Z",
+  "key_stroke": "l",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "The current view is bounded by Idaho, US on the top-left, New York, US on the top-right, Florida, US on the bottom-right, and Sonora, Mexico on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd25e440e50a068532909"
+  },
+  "uuid": "3bb23672-9b1c-4426-941b-60155697d132",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:12:14.801Z",
+  "key_stroke": "b",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "In the current view:\n\nPopulation density is high in the top-right, and the bottom-right.\n\nPopulation density is low in the top-left, and the bottom-left.\n\nThe average population density is 88.7 people per square mile.\n\nThe state with the highest population density is Maryland, with 634.5 people per square mile.\n\nThe state with the lowest population density is Wyoming, with 6.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd264440e50a06853290a"
+  },
+  "uuid": "56a2f47c-aa66-4167-b26c-bac6d385bec6",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:12:20.128Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "In the current view:\n\nPopulation density is high in the top-right, and the bottom-right.\n\nPopulation density is low in the top-left, and the bottom-left.\n\nThe average population density is 88.7 people per square mile.\n\nThe state with the highest population density is Maryland, with 634.5 people per square mile.\n\nThe state with the lowest population density is Wyoming, with 6.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd267440e50a06853290b"
+  },
+  "uuid": "7aac9a76-3693-4e4e-beb2-017c421acc8e",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:12:23.455Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -93.80273437499955,
+  "lat": 36.371248723751535,
+  "stats": "Moved right, centered on Arkansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd26a440e50a06853290c"
+  },
+  "uuid": "0f899721-4d3d-45f8-bd7a-a0ec6a348a64",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:12:26.321Z",
+  "key_stroke": "Control",
+  "zoom_level": 5,
+  "lng": -91.60546874999909,
+  "lat": 36.371248723751535,
+  "stats": "Moved right, centered on Arkansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2b9440e50a06853290d"
+  },
+  "uuid": "884a3eca-9433-4f92-95f1-1a60561d91b1",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:13:45.579Z",
+  "key_stroke": "-",
+  "zoom_level": 5,
+  "lng": -91.60546874999909,
+  "lat": 36.371248723751535,
+  "stats": "Moved right, centered on Arkansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2bc440e50a06853290e"
+  },
+  "uuid": "4ee5f8d7-71e3-4e86-b1f1-e3a43cf6ec81",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:13:48.090Z",
+  "key_stroke": "+",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "Zoomed out, now at state level, centered on Oklahoma.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2be440e50a06853290f"
+  },
+  "uuid": "65acc94c-f570-4889-8cce-df6cb53e8aad",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:13:50.531Z",
+  "key_stroke": "+",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "Zoomed in, now at state level, centered on Oklahoma.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2c5440e50a068532910"
+  },
+  "uuid": "101aefcf-cc79-446f-96e0-b505e3605fbc",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:13:57.098Z",
+  "key_stroke": "+",
+  "zoom_level": 6,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "Zoomed in, now at county level, centered on Tulsa, Oklahoma.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2ca440e50a068532911"
+  },
+  "uuid": "004fda1b-127e-47a2-a7df-4df2672e2846",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:14:02.181Z",
+  "key_stroke": "i",
+  "zoom_level": 7,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "Zoomed in, now at county level, centered on Tulsa, Oklahoma.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2db440e50a068532912"
+  },
+  "uuid": "fff59f70-df5e-4311-9daf-ed9f39c898e9",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:14:19.691Z",
+  "key_stroke": "l",
+  "zoom_level": 7,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "The current view is bounded by Gray County, Kansas on the top-left, Phelps County, Missouri on the top-right, Lonoke County, Arkansas on the bottom-right, and Collingsworth County, Texas on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd2e6440e50a068532913"
+  },
+  "uuid": "4d9e604b-c73b-4a9c-98ab-276064657b27",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:14:30.525Z",
+  "key_stroke": "b",
+  "zoom_level": 7,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "In the current view:\n\nPopulation density is high diagonally from bottom-left to top-right.\n\nPopulation density is low in the top-left.\n\nThe average population density is 73.4 people per square mile.\n\nThe county with the highest population density is Tulsa, Oklahoma, with 1173.1 people per square mile.\n\nThe county with the lowest population density is Clark, Kansas, with 2.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd2ed440e50a068532914"
+  },
+  "uuid": "272fdc69-63a1-4e81-948d-6dc1b04a1b66",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:14:37.520Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -96,
+  "lat": 36.371248723751535,
+  "stats": "In the current view:\n\nPopulation density is high diagonally from bottom-left to top-right.\n\nPopulation density is low in the top-left.\n\nThe average population density is 73.4 people per square mile.\n\nThe county with the highest population density is Tulsa, Oklahoma, with 1173.1 people per square mile.\n\nThe county with the lowest population density is Clark, Kansas, with 2.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd2f0440e50a068532915"
+  },
+  "uuid": "10c3977d-7673-4d8b-9b21-42b64e453f1c",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:14:40.605Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -96,
+  "lat": 36.812294276182,
+  "stats": "Moved up, centered on Washington, Oklahoma.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2f3440e50a068532916"
+  },
+  "uuid": "89397b0b-f0b4-49ca-9c0e-6879af196bbe",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:14:43.335Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -96,
+  "lat": 37.25081344888976,
+  "stats": "Moved up, centered on Chautauqua, Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd2f6440e50a068532917"
+  },
+  "uuid": "df720a90-c60a-4cb9-bbc1-737f3ed5b597",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:14:46.584Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -95.45068359375051,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Labette, Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd307440e50a068532918"
+  },
+  "uuid": "0a7fce96-de79-4d83-9039-4c16238458b9",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:02.920Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -94.90136718750102,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Cherokee, Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd31b440e50a068532919"
+  },
+  "uuid": "1943a324-2af2-4a4f-b852-f5df03ea4982",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:23.840Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -94.35205078125159,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Jasper, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd31e440e50a06853291a"
+  },
+  "uuid": "c5c4ffa4-3fbf-43c3-b95e-0ddd67140673",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:26.288Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -93.8027343750021,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Lawrence, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd31e440e50a06853291b"
+  },
+  "uuid": "0c7bd9ce-ec83-4012-9de1-1e9a7fd047ee",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:26.734Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -93.25341796875267,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Lawrence, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd320440e50a06853291c"
+  },
+  "uuid": "a5741b5a-d8ac-4456-aadc-32430c5885a6",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:28.727Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -92.70410156250318,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Webster, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd329440e50a06853291d"
+  },
+  "uuid": "2b40e3c6-d9d5-40c0-bb63-c756d3c54e92",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:37.840Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -92.1547851562537,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Texas, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd32d440e50a06853291e"
+  },
+  "uuid": "a0dc8d2f-6eae-401a-93a2-2575b74fddc2",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:40.925Z",
+  "key_stroke": "Control",
+  "zoom_level": 7,
+  "lng": -91.6054687500042,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Shannon, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd32f440e50a06853291f"
+  },
+  "uuid": "c4d19f13-cfcb-4219-8807-531e7dfe6b18",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:43.763Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -91.6054687500042,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Shannon, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd332440e50a068532920"
+  },
+  "uuid": "3fc8f1cf-3b42-4d18-a49e-cc37f99a3d4d",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:46.001Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -91.05615234375472,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Reynolds, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd332440e50a068532921"
+  },
+  "uuid": "21bde7b4-00c5-4929-86e8-f9cced7c1ab3",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:46.438Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -90.50683593750523,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Reynolds, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd333440e50a068532922"
+  },
+  "uuid": "a5d11057-da18-4f18-8b08-22329b12148e",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:46.880Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -89.9575195312558,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Wayne, Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd335440e50a068532923"
+  },
+  "uuid": "699998f4-9db7-4227-b57d-65bf8a50a3c6",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:48.997Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -89.40820312500631,
+  "lat": 37.25081344888976,
+  "stats": "Moved right, centered on Alexander, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd335440e50a068532924"
+  },
+  "uuid": "feaf898c-45f9-40fb-b8d2-92e25369e6bf",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:49.419Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -89.40820312500631,
+  "lat": 37.68679517373003,
+  "stats": "Moved right, centered on Alexander, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd337440e50a068532925"
+  },
+  "uuid": "ed23a3aa-512b-464d-bccc-e7e5d0b5b97b",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:51.663Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -89.40820312500631,
+  "lat": 38.120229035976024,
+  "stats": "Moved up, centered on Perry, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd338440e50a068532926"
+  },
+  "uuid": "05aea79e-67c2-4194-899e-2c5737a80137",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:52.114Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -89.40820312500631,
+  "lat": 38.55110526667792,
+  "stats": "Moved up, centered on Perry, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd33a440e50a068532927"
+  },
+  "uuid": "67512eb7-5f99-459b-921c-f29a78c30345",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:54.039Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -89.40820312500631,
+  "lat": 38.97941473479591,
+  "stats": "Moved up, centered on Bond, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd33c440e50a068532928"
+  },
+  "uuid": "dcfe7d6a-c996-48ee-bac8-167f8e82bad6",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:56.712Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -88.85888671875688,
+  "lat": 38.97941473479591,
+  "stats": "Moved right, centered on Fayette, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd33d440e50a068532929"
+  },
+  "uuid": "122ce875-b2c7-4123-a02e-0c06f997ae71",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:57.136Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -88.30957031250739,
+  "lat": 38.97941473479591,
+  "stats": "Moved right, centered on Fayette, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd33f440e50a06853292a"
+  },
+  "uuid": "2e12f9e9-b5e1-4551-964d-d38ad027e7f9",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:59.183Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -87.76025390625796,
+  "lat": 38.97941473479591,
+  "stats": "Moved right, centered on Crawford, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd33f440e50a06853292b"
+  },
+  "uuid": "f7eeacc2-5e9d-42ce-951a-7d114e06bc35",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:15:59.612Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -87.21093750000847,
+  "lat": 38.97941473479591,
+  "stats": "Moved right, centered on Crawford, Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd340440e50a06853292c"
+  },
+  "uuid": "aae4da03-2238-493c-a88a-4507b9a5f960",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:00.061Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -86.66162109375898,
+  "lat": 38.97941473479591,
+  "stats": "Moved right, centered on Greene, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd342440e50a06853292d"
+  },
+  "uuid": "767c5614-ddc0-438e-ab3c-789cf569c2eb",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:02.423Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 7,
+  "lng": -86.11230468750955,
+  "lat": 38.97941473479591,
+  "stats": "Moved right, centered on Jackson, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd346440e50a06853292e"
+  },
+  "uuid": "5436f185-4aa7-423d-a39b-0639bd49c856",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:06.759Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -85.56298828126006,
+  "lat": 38.97941473479591,
+  "stats": "Moved right, centered on Jackson, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd349440e50a06853292f"
+  },
+  "uuid": "a623ffe3-1c44-4eb2-b726-6245e2976aed",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:09.024Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 7,
+  "lng": -85.56298828126006,
+  "lat": 39.40514893912095,
+  "stats": "Moved up, centered on Decatur, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd34b440e50a068532930"
+  },
+  "uuid": "91a0739c-b009-4fc9-9ebd-a5bfcd49cc5c",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:11.258Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 7,
+  "lng": -86.11230468751017,
+  "lat": 39.40514893912095,
+  "stats": "Moved left, centered on Johnson, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd351440e50a068532931"
+  },
+  "uuid": "c794b9c4-1957-49c8-807a-cecf229070f1",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:17.545Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 7,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912095,
+  "stats": "Moved right, centered on Jennings, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd353440e50a068532932"
+  },
+  "uuid": "be95bb2c-95fd-4992-8b18-867e7ca2cd75",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:19.804Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 7,
+  "lng": -86.66162109376029,
+  "lat": 39.828299999996005,
+  "stats": "Moved up, centered on Hendricks, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd358440e50a068532933"
+  },
+  "uuid": "e74238ec-8942-40ae-ab2b-b38acd7d5479",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:16:23.950Z",
+  "key_stroke": "i",
+  "zoom_level": 7,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "Moved down, centered on Owen, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd463440e50a068532934"
+  },
+  "uuid": "7ff44394-6399-4ece-90ae-452e9fee12ba",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:20:50.964Z",
+  "key_stroke": "+",
+  "zoom_level": 7,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "In the current view:\n\nPopulation density is high in the top-right.\n\nPopulation density is low in the top-left.\n\nThe average population density is 209.0 people per square mile.\n\nThe county with the highest population density is St. Louis, Missouri, with 4828.6 people per square mile.\n\nThe county with the lowest population density is Gallatin, Illinois, with 15.4 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd468440e50a068532935"
+  },
+  "uuid": "f78aa71d-f130-4657-8e47-ac3fa93c93e1",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:20:55.786Z",
+  "key_stroke": "i",
+  "zoom_level": 8,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "Zoomed in, now at county level, centered on Owen, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd48c440e50a068532936"
+  },
+  "uuid": "0dff5e7d-8473-4c3c-b9bb-24ef17f7cc3e",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:21:32.666Z",
+  "key_stroke": "+",
+  "zoom_level": 8,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "In the current view:\n\nPopulation density is high in the top-right.\n\nPopulation density is low in the bottom-left.\n\nThe average population density is 160.3 people per square mile.\n\nThe county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.\n\nThe county with the lowest population density is Jasper, Illinois, with 18.8 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd492440e50a068532937"
+  },
+  "uuid": "5d3489d4-054e-457d-99f5-76ec36a5cb66",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:21:38.588Z",
+  "key_stroke": "+",
+  "zoom_level": 9,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "Zoomed in, now at county level, centered on Owen, Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd498440e50a068532938"
+  },
+  "uuid": "3eddadeb-0bf8-42e4-b8c3-7ba8b096cb88",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:21:43.978Z",
+  "key_stroke": "i",
+  "zoom_level": 9,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "You've reached the maximum zoom level. Press mininus to zoom out.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd4a9440e50a068532939"
+  },
+  "uuid": "4dc1ab21-064f-4527-a795-29a635c04784",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:22:01.682Z",
+  "key_stroke": "l",
+  "zoom_level": 9,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "The current view is bounded by Edgar County, Illinois on the top-left, Henry County, Indiana on the top-right, Jennings County, Indiana on the bottom-right, and Crawford County, Illinois on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd528440e50a06853293a"
+  },
+  "uuid": "45992094-3127-46a8-b6c3-11431e31139b",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:24:08.594Z",
+  "key_stroke": "i",
+  "zoom_level": 9,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "The current view is bounded by Edgar County, Illinois on the top-left, Henry County, Indiana on the top-right, Jennings County, Indiana on the bottom-right, and Crawford County, Illinois on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd534440e50a06853293b"
+  },
+  "uuid": "f1a06c59-354f-4ec9-aa30-94a2bcedfd44",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:24:20.067Z",
+  "key_stroke": "Control",
+  "zoom_level": 9,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "In the current view:\n\nNo regions with particularly high population density.\n\nNo regions with particularly low population density.\n\nThe average population density is 136.2 people per square mile.\n\nThe county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.\n\nThe county with the lowest population density is Edgar, Illinois, with 27.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd54e440e50a06853293c"
+  },
+  "uuid": "9ddacea3-c521-4b76-ba33-41064c679048",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:24:45.913Z",
+  "key_stroke": "Alt",
+  "zoom_level": 9,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "In the current view:\n\nNo regions with particularly high population density.\n\nNo regions with particularly low population density.\n\nThe average population density is 136.2 people per square mile.\n\nThe county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.\n\nThe county with the lowest population density is Edgar, Illinois, with 27.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd54e440e50a06853293d"
+  },
+  "uuid": "3795206b-61dc-48f6-a7d1-63127db25c66",
+  "user_id": "user6",
+  "session_id": "5ad4fd94-d514-42dc-8179-2c38e52a3571",
+  "page": "index",
+  "timestamp": "2024-04-26T16:24:45.986Z",
+  "key_stroke": "d",
+  "zoom_level": 9,
+  "lng": -86.66162109376029,
+  "lat": 39.40514893912041,
+  "stats": "In the current view:\n\nNo regions with particularly high population density.\n\nNo regions with particularly low population density.\n\nThe average population density is 136.2 people per square mile.\n\nThe county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.\n\nThe county with the lowest population density is Edgar, Illinois, with 27.0 people per square mile.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd566440e50a06853293e"
+  },
+  "uuid": "d8c38318-2f3f-471d-a122-0c39f56d3e9a",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:25:10.596Z",
+  "key_stroke": "Tab",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nNo regions with particularly low percentage of transit commuters.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd569440e50a06853293f"
+  },
+  "uuid": "66a9b2e4-8ca7-48a6-aca5-2de1b1ae3d45",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:25:12.886Z",
+  "key_stroke": "m",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd5aa440e50a068532940"
+  },
+  "uuid": "ccd007e7-91d7-4f96-83ef-5985e35697c0",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:26:18.409Z",
+  "key_stroke": "i",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd5da440e50a068532941"
+  },
+  "uuid": "f365e79e-d169-454c-a036-cd9e9fa1b39b",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:06.568Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nNo regions with particularly low percentage of transit commuters.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd5df440e50a068532942"
+  },
+  "uuid": "773b68d0-b3c4-46cc-917c-158ff01dcbf0",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:10.913Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5e1440e50a068532943"
+  },
+  "uuid": "44bb6b0c-863b-4416-92a5-8506ebccae54",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:13.712Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5ec440e50a068532944"
+  },
+  "uuid": "1b00a413-0aeb-4f2c-95d9-6f3d816d1334",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:24.738Z",
+  "key_stroke": "+",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5f0440e50a068532945"
+  },
+  "uuid": "8fc9ca87-7243-44d5-befc-fdf5916a3da7",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:28.218Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5f3440e50a068532946"
+  },
+  "uuid": "7ea845dc-d1d3-497a-a1da-abfc9ad7af82",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:31.027Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -93.80273437499955,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5f5440e50a068532947"
+  },
+  "uuid": "54327f88-fd6d-4db4-a349-13e6380f083b",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:33.277Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -91.60546874999909,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5f7440e50a068532948"
+  },
+  "uuid": "adb43ff7-c6b7-462c-ae1d-9f1305456c18",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:35.707Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -89.40820312499864,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5f9440e50a068532949"
+  },
+  "uuid": "0e8ee013-090e-4620-877f-ff868129cac5",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:37.542Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -87.21093749999812,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5fb440e50a06853294a"
+  },
+  "uuid": "06413722-4b31-40d4-8ba9-0fa083b26694",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:39.433Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -85.01367187499767,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5fd440e50a06853294b"
+  },
+  "uuid": "b7a59a61-7ad8-47e3-a7b9-8105eb5a33a7",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:41.587Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -82.81640624999716,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd5ff440e50a06853294c"
+  },
+  "uuid": "85f7e85b-87b2-416b-afd6-3c1d45ac4e9d",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:43.332Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -80.875,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd601440e50a06853294d"
+  },
+  "uuid": "0aa1598c-9eb1-4181-b57a-c4d3ebabddf4",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:45.031Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -80.875,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd602440e50a06853294e"
+  },
+  "uuid": "ab450e81-eafd-457d-8689-eaddb54113be",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:46.697Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -80.875,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd603440e50a06853294f"
+  },
+  "uuid": "a3256ee6-b26e-4f03-8097-30f8a926156c",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:47.126Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -80.875,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd605440e50a068532950"
+  },
+  "uuid": "4409ad83-b21a-4f65-abcc-4a72f2319ed0",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:49.233Z",
+  "key_stroke": "+",
+  "zoom_level": 5,
+  "lng": -80.875,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd608440e50a068532951"
+  },
+  "uuid": "b6dc578a-6f8e-42e1-9bdd-10a1655a170f",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:52.193Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -80.875,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at county level, centered on Monroe, Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd60a440e50a068532952"
+  },
+  "uuid": "4a071366-5a5f-4ab2-b217-199f446ad577",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:54.665Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -79.77636718749977,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Fayette, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd60b440e50a068532953"
+  },
+  "uuid": "27f72a9f-cd0f-4987-b71e-727ef2032db8",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:55.109Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -78.67773437499955,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Fayette, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd60d440e50a068532954"
+  },
+  "uuid": "35935ecb-8e77-4f32-a5ca-27ed6208c044",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:57.234Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -77.57910156249932,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Franklin, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd60e440e50a068532955"
+  },
+  "uuid": "2ff13606-3c7a-4bb8-84dd-78b614da5876",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:57.695Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -76.48046874999909,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Franklin, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd60e440e50a068532956"
+  },
+  "uuid": "e4e8dfbc-6ebb-4367-b9eb-167cc6c388cf",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:27:58.129Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -75.38183593749886,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on York, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd612440e50a068532957"
+  },
+  "uuid": "ec41a8f4-3ff0-4923-8b69-593d86cdf39e",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:02.527Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -74.28320312499858,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ocean, New Jersey.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd613440e50a068532958"
+  },
+  "uuid": "74173288-f601-4fbb-bcaf-a23f2141fea2",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:02.960Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -73.1845703124983,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Ocean, New Jersey.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd615440e50a068532959"
+  },
+  "uuid": "8a8d2e53-473a-48b6-a78f-9a82d6a88ca0",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:05.425Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -72.4375,
+  "lat": 39.82830000000004,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd618440e50a06853295a"
+  },
+  "uuid": "a4ede9dd-c00a-4c60-b583-e253af66117f",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:08.737Z",
+  "key_stroke": "Control",
+  "zoom_level": 6,
+  "lng": -73.53613281250023,
+  "lat": 39.82830000000004,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd621440e50a06853295b"
+  },
+  "uuid": "39a1f11f-2adb-48bc-b8a0-5bab0cc9f1a5",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:16.898Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -73.53613281250023,
+  "lat": 39.82830000000004,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd624440e50a06853295c"
+  },
+  "uuid": "37b046bf-0e89-4cf0-9e32-9915684fb4c1",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:20.466Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -74.63476562500045,
+  "lat": 39.82830000000004,
+  "stats": "Moved left, centered on Burlington, New Jersey.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd626440e50a06853295d"
+  },
+  "uuid": "d6dc84aa-0152-4f8b-af49-4778e58f2612",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:22.535Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -74.63476562500045,
+  "lat": 38.97941473479949,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd629440e50a06853295e"
+  },
+  "uuid": "90ebe13a-3ced-41e2-85c3-7d868ec51f11",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:25.354Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -74.63476562500045,
+  "lat": 39.82830000000058,
+  "stats": "Moved up, centered on Burlington, New Jersey.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd62c440e50a06853295f"
+  },
+  "uuid": "7e17bacc-ab13-4ace-b759-d1de71e0fa39",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:28.784Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -75.73339843750068,
+  "lat": 39.82830000000058,
+  "stats": "Moved left, centered on Chester, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd630440e50a068532960"
+  },
+  "uuid": "e6fa9913-694b-4049-98e7-c79fa1dc7271",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:32.503Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -75.73339843750068,
+  "lat": 38.9794147348,
+  "stats": "Moved down, centered on Kent, Delaware.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd632440e50a068532961"
+  },
+  "uuid": "ade19543-b362-4089-aa46-1f9982a7ecec",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:34.152Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -74.63476562500045,
+  "lat": 38.9794147348,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd632440e50a068532962"
+  },
+  "uuid": "9045cbc8-02f7-4c66-80c8-2644e682fad0",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:34.602Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -75.73339843750068,
+  "lat": 38.9794147348,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd634440e50a068532963"
+  },
+  "uuid": "c3893f22-9dd0-46b0-8a60-ab5df5cfdec9",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:36.560Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -75.73339843750068,
+  "lat": 38.12022903597966,
+  "stats": "Moved down, centered on Somerset, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd637440e50a068532964"
+  },
+  "uuid": "018f4b62-7214-4f5a-80af-e86af48b90f9",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:39.870Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -75.73339843750068,
+  "lat": 37.250813448892885,
+  "stats": "Moved down, centered on Northampton, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd63b440e50a068532965"
+  },
+  "uuid": "bbb7fd96-671e-42af-a9e8-435e18332519",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:42.905Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 37.250813448892856,
+  "stats": "Moved left, centered on James City, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd63d440e50a068532966"
+  },
+  "uuid": "87d34d14-259c-4971-93a6-0c395da70462",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:45.496Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -77.93066406250114,
+  "lat": 37.250813448892856,
+  "stats": "Moved left, centered on Amelia, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd640440e50a068532967"
+  },
+  "uuid": "e6c96340-637c-4982-896a-b0a5726d906a",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:48.191Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -77.93066406250114,
+  "lat": 38.120229035980174,
+  "stats": "Moved up, centered on Spotsylvania, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd642440e50a068532968"
+  },
+  "uuid": "39c442cc-2f85-4af9-b868-db2a384a9e4b",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:50.727Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -77.93066406250114,
+  "lat": 38.979414734801,
+  "stats": "Moved up, centered on Fauquier, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd647440e50a068532969"
+  },
+  "uuid": "085d0986-1e77-4c2e-961b-7ecd8a816e40",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:55.472Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -77.93066406250114,
+  "lat": 39.82830000000206,
+  "stats": "Moved up, centered on Franklin, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd64b440e50a06853296a"
+  },
+  "uuid": "cf06d5fa-aaed-4d28-a921-445247fa416d",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:28:59.219Z",
+  "key_stroke": "i",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "Moved right, centered on York, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd65f440e50a06853296b"
+  },
+  "uuid": "84fb4691-261e-4b5e-96e6-c279459c5b40",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:29:19.649Z",
+  "key_stroke": "l",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd669440e50a06853296c"
+  },
+  "uuid": "c06d405b-47e9-426d-be66-155a4238d7c6",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:29:29.753Z",
+  "key_stroke": "l",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd66d440e50a06853296d"
+  },
+  "uuid": "f79154a6-32f5-4b78-8d5a-20a9ba3a3758",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:29:32.930Z",
+  "key_stroke": "b",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right.\n\nPercentage of transit commuters is low in the left.\n\nThe average percentage of transit commuters is 5.8%.\n\nThe county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.\n\nThe county with the lowest percentage of transit commuters is Clinton, Kentucky, with 0.0% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd672440e50a06853296e"
+  },
+  "uuid": "df936388-42ae-4067-887c-f0994e6dfcad",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:29:38.441Z",
+  "key_stroke": "l",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd6e9440e50a06853296f"
+  },
+  "uuid": "9d020bbf-df4b-4b2a-bf27-36c0ff4e3256",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:31:37.866Z",
+  "key_stroke": "i",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd6f6440e50a068532970"
+  },
+  "uuid": "4393b176-010a-42b4-adcc-ec293a587ff9",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:31:50.298Z",
+  "key_stroke": "Control",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right.\n\nPercentage of transit commuters is low in the left.\n\nThe average percentage of transit commuters is 5.8%.\n\nThe county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.\n\nThe county with the lowest percentage of transit commuters is Clinton, Kentucky, with 0.0% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd7b1440e50a068532971"
+  },
+  "uuid": "13bb0d5b-bc23-4726-af02-ccdce4ccdc74",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:34:57.441Z",
+  "key_stroke": "-",
+  "zoom_level": 6,
+  "lng": -76.83203125000091,
+  "lat": 39.82830000000206,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right.\n\nPercentage of transit commuters is low in the left.\n\nThe average percentage of transit commuters is 5.8%.\n\nThe county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.\n\nThe county with the lowest percentage of transit commuters is Clinton, Kentucky, with 0.0% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd7b3440e50a068532972"
+  },
+  "uuid": "035b4398-1410-4dbd-953b-c0391fbe847d",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:34:59.073Z",
+  "key_stroke": "-",
+  "zoom_level": 5,
+  "lng": -80.875,
+  "lat": 39.82830000000206,
+  "stats": "Zoomed out, now at state level, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd7b3440e50a068532973"
+  },
+  "uuid": "103d4e10-78d8-46b3-baba-57d7a7e155dc",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:34:59.329Z",
+  "key_stroke": "-",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000206,
+  "stats": "Zoomed out, now at state level, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd7b9440e50a068532974"
+  },
+  "uuid": "d70cb5ba-c337-4d31-a94d-52b7c568cdae",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:35:05.488Z",
+  "key_stroke": "F5",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000206,
+  "stats": "You've reached the minimum zoom level. Press plus to zoom in.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd7bb440e50a068532975"
+  },
+  "uuid": "68c4f113-532f-4894-a272-eed8361318f6",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:35:07.680Z",
+  "key_stroke": "Tab",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nNo regions with particularly low percentage of transit commuters.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd7bc440e50a068532976"
+  },
+  "uuid": "ed5417d6-4d6b-416f-8f49-bc8032bee8f3",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:35:08.497Z",
+  "key_stroke": "m",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd7bf440e50a068532977"
+  },
+  "uuid": "97fcdd89-cf58-4f7d-bb4f-58327733ab04",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:35:11.834Z",
+  "key_stroke": "i",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd7de440e50a068532978"
+  },
+  "uuid": "54cde547-fbb0-44e9-a33a-bcd9af9c70a8",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:35:42.377Z",
+  "key_stroke": "i",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nNo regions with particularly low percentage of transit commuters.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd7eb440e50a068532979"
+  },
+  "uuid": "091e310b-689e-490b-af94-436d0b9d9bf9",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:35:55.034Z",
+  "key_stroke": "Control",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nNo regions with particularly low percentage of transit commuters.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd7eb440e50a06853297a"
+  },
+  "uuid": "e1ea7755-fb03-46a4-b8cf-b11f8814c8be",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:35:55.315Z",
+  "key_stroke": "Control",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nNo regions with particularly low percentage of transit commuters.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd898440e50a06853297b"
+  },
+  "uuid": "3aad7ca9-dfdb-4d09-9f62-53bc40f1f3e3",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:38:48.721Z",
+  "key_stroke": "+",
+  "zoom_level": 4.076815597050831,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nNo regions with particularly low percentage of transit commuters.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd89c440e50a06853297c"
+  },
+  "uuid": "9811f742-06de-4989-ba4f-f2b51fe3de8d",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:38:52.209Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 39.82830000000004,
+  "stats": "Zoomed in, now at state level, centered on Kansas.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd89e440e50a06853297d"
+  },
+  "uuid": "437d540f-a778-40a5-90aa-1e5a230e0148",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:38:54.606Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -93.80273437499949,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8a1440e50a06853297e"
+  },
+  "uuid": "d235668a-e542-4838-b11d-9b3d6e7f7b69",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:38:57.664Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -91.60546874999898,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Missouri.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8a3440e50a06853297f"
+  },
+  "uuid": "df36b370-0f31-4ae0-bcba-04537b900182",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:38:59.871Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -89.40820312499852,
+  "lat": 39.82830000000004,
+  "stats": "Moved right, centered on Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8a6440e50a068532980"
+  },
+  "uuid": "9ef4a892-27c2-448f-baf2-adbce9bafe49",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:02.484Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -89.40820312499852,
+  "lat": 38.12022903597813,
+  "stats": "Moved down, centered on Illinois.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8a8440e50a068532981"
+  },
+  "uuid": "4417f835-a951-46ef-8f3e-25ef92a711e8",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:04.696Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -87.21093749999807,
+  "lat": 38.12022903597813,
+  "stats": "Moved right, centered on Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8aa440e50a068532982"
+  },
+  "uuid": "c589a3ce-078c-486c-8f1b-69432a831229",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:06.712Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -87.21093749999807,
+  "lat": 36.371248723751535,
+  "stats": "Moved down, centered on Tennessee.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8ad440e50a068532983"
+  },
+  "uuid": "f9aa4d86-e458-424b-9cbd-35ad989e5715",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:09.170Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5,
+  "lng": -87.21093749999807,
+  "lat": 34.582047356636394,
+  "stats": "Moved down, centered on Alabama.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8b3440e50a068532984"
+  },
+  "uuid": "9b73726d-4f34-48e4-824b-ae9ebc0d5917",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:14.928Z",
+  "key_stroke": "i",
+  "zoom_level": 5,
+  "lng": -89.4082031249979,
+  "lat": 34.582047356636394,
+  "stats": "Moved left, centered on Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8c4440e50a068532985"
+  },
+  "uuid": "16073962-b103-49c4-b597-5dbb9102a957",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:31.872Z",
+  "key_stroke": "l",
+  "zoom_level": 5,
+  "lng": -89.4082031249979,
+  "lat": 34.582047356636394,
+  "stats": "The current view is bounded by Colorado, US on the top-left, New York, US on the top-right, San Salvador, The Bahamas on the bottom-right, and Chihuahua, Mexico on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd8cc440e50a068532986"
+  },
+  "uuid": "e954a22e-c220-4aed-bb09-2532cd7028c2",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:40.152Z",
+  "key_stroke": "+",
+  "zoom_level": 5,
+  "lng": -89.4082031249979,
+  "lat": 34.582047356636394,
+  "stats": "The current view is bounded by Colorado, US on the top-left, New York, US on the top-right, San Salvador, The Bahamas on the bottom-right, and Chihuahua, Mexico on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd8cf440e50a068532987"
+  },
+  "uuid": "14076897-b1e4-425a-b15b-4615d0f79297",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:43.496Z",
+  "key_stroke": "+",
+  "zoom_level": 6,
+  "lng": -89.4082031249979,
+  "lat": 34.582047356636394,
+  "stats": "Zoomed in, now at county level, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8d3440e50a068532988"
+  },
+  "uuid": "3b6925b6-bb46-4121-aed7-a3ffad655ee8",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:47.348Z",
+  "key_stroke": "+",
+  "zoom_level": 7,
+  "lng": -89.4082031249979,
+  "lat": 34.582047356636394,
+  "stats": "Zoomed in, now at county level, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8d7440e50a068532989"
+  },
+  "uuid": "e9b1ea02-c808-48d0-8fcc-19e8a12324ac",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:39:51.229Z",
+  "key_stroke": "+",
+  "zoom_level": 8,
+  "lng": -89.4082031249979,
+  "lat": 34.582047356636394,
+  "stats": "Zoomed in, now at county level, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8e2440e50a06853298a"
+  },
+  "uuid": "03009df0-5b34-4e56-b96c-b6de5dd045be",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:02.381Z",
+  "key_stroke": "+",
+  "zoom_level": 9,
+  "lng": -89.4082031249979,
+  "lat": 34.582047356636394,
+  "stats": "Zoomed in, now at county level, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8e2440e50a06853298b"
+  },
+  "uuid": "3acd373b-53ce-4f94-91ca-745565011b32",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:02.598Z",
+  "key_stroke": "+",
+  "zoom_level": 9,
+  "lng": -89.40820312499795,
+  "lat": 34.582047356636394,
+  "stats": "Zoomed in, now at county level, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8e9440e50a06853298c"
+  },
+  "uuid": "7398ef07-eb91-448e-aac1-8985965683cd",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:09.004Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 9,
+  "lng": -89.40820312499795,
+  "lat": 34.582047356636394,
+  "stats": "You've reached the maximum zoom level. Press mininus to zoom out.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8ec440e50a06853298d"
+  },
+  "uuid": "13464d23-c1e8-426d-8ef5-24e6e99d68bf",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:12.505Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 9,
+  "lng": -89.40820312499795,
+  "lat": 34.468905481027406,
+  "stats": "Moved down, centered on Lafayette, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8ef440e50a06853298e"
+  },
+  "uuid": "bb499110-8f43-473b-8e13-38544cba85df",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:15.461Z",
+  "key_stroke": "l",
+  "zoom_level": 9,
+  "lng": -89.40820312499795,
+  "lat": 34.582047356636394,
+  "stats": "Moved up, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd8f2440e50a06853298f"
+  },
+  "uuid": "4ae0770a-50dd-4e67-9939-2c65d3fde536",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:18.173Z",
+  "key_stroke": "i",
+  "zoom_level": 9,
+  "lng": -89.40820312499795,
+  "lat": 34.582047356636394,
+  "stats": "Moved up, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd902440e50a068532990"
+  },
+  "uuid": "649d9f53-8a13-47a5-b192-dc31bd19e078",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:34.206Z",
+  "key_stroke": "l",
+  "zoom_level": 9,
+  "lng": -89.40820312499795,
+  "lat": 34.582047356636394,
+  "stats": "The current view is bounded by Saint Francis County, Arkansas on the top-left, Alcorn County, Mississippi on the top-right, Itawamba County, Mississippi on the bottom-right, and Coahoma County, Mississippi on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd90e440e50a068532991"
+  },
+  "uuid": "fc5bc699-7d70-4110-9d50-1519f635eeeb",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:46.236Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 9,
+  "lng": -89.40820312499795,
+  "lat": 34.582047356636394,
+  "stats": "The current view is bounded by Saint Francis County, Arkansas on the top-left, Alcorn County, Mississippi on the top-right, Itawamba County, Mississippi on the bottom-right, and Coahoma County, Mississippi on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662bd911440e50a068532992"
+  },
+  "uuid": "0e231b85-859c-432d-80be-d60b1f8c0793",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:49.035Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 9,
+  "lng": -89.27087402343545,
+  "lat": 34.582047356636394,
+  "stats": "Moved right, centered on Marshall, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd913440e50a068532993"
+  },
+  "uuid": "a6f01d88-9e64-4473-94fe-55f9ab605ca3",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:51.345Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 9,
+  "lng": -89.27087402343545,
+  "lat": 34.468905481027406,
+  "stats": "Moved down, centered on Lafayette, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd915440e50a068532994"
+  },
+  "uuid": "66970be2-4d67-4a8e-8ec5-24e2864fe208",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:53.649Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 9,
+  "lng": -89.27087402343545,
+  "lat": 34.3556100226874,
+  "stats": "Moved down, centered on Lafayette, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd918440e50a068532995"
+  },
+  "uuid": "8b45ea2c-2a77-4b55-af46-dfcfae1a7ca1",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:40:56.611Z",
+  "key_stroke": "Control",
+  "zoom_level": 9,
+  "lng": -89.27087402343545,
+  "lat": 34.242161216726586,
+  "stats": "Moved down, centered on Lafayette, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd921440e50a068532996"
+  },
+  "uuid": "454ac42c-affb-48a6-9b2b-8969ba3b1bd2",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:41:05.400Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 9,
+  "lng": -89.27087402343545,
+  "lat": 34.242161216726586,
+  "stats": "Moved down, centered on Lafayette, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd923440e50a068532997"
+  },
+  "uuid": "1b1ffc54-577e-40e9-b77c-9947ebf0203e",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:41:07.219Z",
+  "key_stroke": "Control",
+  "zoom_level": 9,
+  "lng": -89.13354492187295,
+  "lat": 34.242161216726586,
+  "stats": "Moved right, centered on Pontotoc, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd9ce440e50a068532998"
+  },
+  "uuid": "daf4e30c-4c09-48eb-852d-ef3510a679e3",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:43:58.881Z",
+  "key_stroke": "Alt",
+  "zoom_level": 9,
+  "lng": -89.13354492187295,
+  "lat": 34.242161216726586,
+  "stats": "Moved right, centered on Pontotoc, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd9cf440e50a068532999"
+  },
+  "uuid": "beed2426-154c-472e-b98d-37a8d9127409",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:43:58.968Z",
+  "key_stroke": "s",
+  "zoom_level": 9,
+  "lng": -89.13354492187295,
+  "lat": 34.242161216726586,
+  "stats": "Moved right, centered on Pontotoc, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bd9d4440e50a06853299a"
+  },
+  "uuid": "8c25889b-8b52-47dc-b452-e944b9463075",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:44:04.208Z",
+  "key_stroke": "Control",
+  "zoom_level": 9,
+  "lng": -89.13354492187295,
+  "lat": 34.242161216726586,
+  "stats": "Moved right, centered on Pontotoc, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bdd061a4ee37ee22d2ae4"
+  },
+  "uuid": "c12cdee5-ad47-481a-84ce-c5726322099d",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:57:35.726Z",
+  "key_stroke": "Alt",
+  "zoom_level": 9,
+  "lng": -89.13354492187295,
+  "lat": 34.242161216726586,
+  "stats": "Moved right, centered on Pontotoc, Mississippi.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662bdd101a4ee37ee22d2ae5"
+  },
+  "uuid": "233c681d-cc2a-446a-ac2e-d4d723f5686a",
+  "user_id": "user6",
+  "session_id": "c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1",
+  "page": "transit",
+  "timestamp": "2024-04-26T16:57:52.853Z",
+  "key_stroke": "Control",
+  "zoom_level": 9,
+  "lng": -89.13354492187295,
+  "lat": 34.242161216726586,
+  "stats": "Moved right, centered on Pontotoc, Mississippi.\n\nPress i to get more information."
+}]

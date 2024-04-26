@@ -1,0 +1,364 @@
+,_id,uuid,user_id,session_id,page,timestamp,key_stroke,zoom_level,lng,lat,stats,timestamp_pst
+9,{'$oid': '662bcfe2440e50a0685328f1'},8a304837-6f24-4f0c-82f4-cbf9b1e671d0,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:01:38.466000+00:00,Tab,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Population density is high in the right.
+
+No regions with particularly low population density.
+
+The average population density is 246.4 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:01:38.466000-07:00
+10,{'$oid': '662bcfe4440e50a0685328f2'},10537ee4-760c-4b87-8c80-7b7e18a2fde4,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:01:40.224000+00:00,m,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:01:40.224000-07:00
+11,{'$oid': '662bcfe7440e50a0685328f3'},55cd8f81-497c-467a-9aab-1520bb78ad09,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:01:43.648000+00:00,Control,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:01:43.648000-07:00
+12,{'$oid': '662bcfe8440e50a0685328f4'},5aa623ba-23a6-48ad-a1e6-978371aef43f,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:01:44.577000+00:00,Alt,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:01:44.577000-07:00
+13,{'$oid': '662bd002440e50a0685328f5'},041b310e-3ca9-4e4c-acd1-06b6ab7b4c48,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:02:10.584000+00:00,Alt,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:02:10.584000-07:00
+14,{'$oid': '662bd008440e50a0685328f6'},a876ee6a-2b9f-46c4-8fad-d90caa34dfc6,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:02:16.761000+00:00,Alt,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:02:16.761000-07:00
+15,{'$oid': '662bd012440e50a0685328f7'},2449e817-f9ef-4ddd-8610-a4ce2d41299d,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:02:26.888000+00:00,Alt,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:02:26.888000-07:00
+16,{'$oid': '662bd017440e50a0685328f8'},47c81aa7-22f8-4156-99d9-73ad24d87cc2,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:02:31.103000+00:00,Control,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:02:31.103000-07:00
+17,{'$oid': '662bd02a440e50a0685328f9'},6d4b9e20-7157-4b3b-a9c7-6d51c2870cfa,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:02:50.818000+00:00,NumLock,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:02:50.818000-07:00
+18,{'$oid': '662bd02c440e50a0685328fa'},178aed3c-c872-479d-9530-a5b6440b551b,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:02:52.408000+00:00,+,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:02:52.408000-07:00
+19,{'$oid': '662bd037440e50a0685328fb'},3452a7d2-60c7-4c4f-9745-bfe0dbbaae7c,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:03:03.505000+00:00,NumLock,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:03:03.505000-07:00
+20,{'$oid': '662bd03e440e50a0685328fc'},bdd247d1-7068-41ee-8292-3a8f8cb96750,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:03:10.472000+00:00,Control,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:03:10.472000-07:00
+21,{'$oid': '662bd1ed440e50a0685328fd'},673017e6-dcd1-4856-97f2-e5dd50c26cdb,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:10:21.259000+00:00,NumLock,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:10:21.259000-07:00
+22,{'$oid': '662bd1f3440e50a0685328fe'},cc77e987-a902-4eee-8146-0b8fe7ead712,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:10:27.130000+00:00,NumLock,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:10:27.130000-07:00
+23,{'$oid': '662bd1fa440e50a0685328ff'},b5f96e3b-c3e7-4899-a6af-c66a1cb36e4e,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:10:34.657000+00:00,NumLock,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:10:34.657000-07:00
+24,{'$oid': '662bd1fe440e50a068532900'},068c2d7d-d1a4-47ae-8231-46cd3e2b4a61,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:10:38.109000+00:00,Tab,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:10:38.109000-07:00
+25,{'$oid': '662bd201440e50a068532901'},12553bf9-a4a2-4454-8e76-a336ccc4f3c4,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:10:41.324000+00:00,m,5.0,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:10:41.324000-07:00
+26,{'$oid': '662bd204440e50a068532902'},332333bb-b98e-4199-99cd-edad50505704,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:10:44.776000+00:00,ArrowDown,5.0,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:10:44.776000-07:00
+27,{'$oid': '662bd209440e50a068532903'},fb345e02-679a-4dfc-839b-1cc475d45232,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:10:49.883000+00:00,i,5.0,-96.0,38.12022903597813,"Moved down, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:10:49.883000-07:00
+28,{'$oid': '662bd21e440e50a068532904'},7b8150bc-be5c-422f-8fe1-19617dfaff72,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:11:10.025000+00:00,l,5.0,-96.0,38.12022903597813,"The current view is bounded by Idaho, US on the top-left, Ontario, Canada on the top-right, South Carolina, US on the bottom-right, and Sonora, Mexico on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:11:10.025000-07:00
+29,{'$oid': '662bd239440e50a068532905'},15de31d0-6fc0-4ddd-a12e-83a149fb6f70,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:11:37.786000+00:00,b,5.0,-96.0,38.12022903597813,"In the current view:
+
+Population density is high in the right.
+
+No regions with particularly low population density.
+
+The average population density is 81.8 people per square mile.
+
+The state with the highest population density is Maryland, with 634.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:11:37.786000-07:00
+30,{'$oid': '662bd243440e50a068532906'},92860085-b904-4896-be9b-1c1c7e774843,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:11:47.177000+00:00,ArrowDown,5.0,-96.0,38.12022903597813,"In the current view:
+
+Population density is high in the right.
+
+No regions with particularly low population density.
+
+The average population density is 81.8 people per square mile.
+
+The state with the highest population density is Maryland, with 634.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:11:47.177000-07:00
+31,{'$oid': '662bd247440e50a068532907'},1c4d0c91-b0f0-4728-b5a3-87d7ce4856bf,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:11:51.532000+00:00,i,5.0,-96.0,36.371248723751535,"Moved down, centered on Oklahoma.
+
+Press i to get more information.",2024-04-26 09:11:51.532000-07:00
+32,{'$oid': '662bd257440e50a068532908'},48d2b702-032b-486e-8f09-65bdf7bb671d,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:12:07.315000+00:00,l,5.0,-96.0,36.371248723751535,"The current view is bounded by Idaho, US on the top-left, New York, US on the top-right, Florida, US on the bottom-right, and Sonora, Mexico on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:12:07.315000-07:00
+33,{'$oid': '662bd25e440e50a068532909'},3bb23672-9b1c-4426-941b-60155697d132,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:12:14.801000+00:00,b,5.0,-96.0,36.371248723751535,"In the current view:
+
+Population density is high in the top-right, and the bottom-right.
+
+Population density is low in the top-left, and the bottom-left.
+
+The average population density is 88.7 people per square mile.
+
+The state with the highest population density is Maryland, with 634.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:12:14.801000-07:00
+34,{'$oid': '662bd264440e50a06853290a'},56a2f47c-aa66-4167-b26c-bac6d385bec6,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:12:20.128000+00:00,ArrowRight,5.0,-96.0,36.371248723751535,"In the current view:
+
+Population density is high in the top-right, and the bottom-right.
+
+Population density is low in the top-left, and the bottom-left.
+
+The average population density is 88.7 people per square mile.
+
+The state with the highest population density is Maryland, with 634.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:12:20.128000-07:00
+35,{'$oid': '662bd267440e50a06853290b'},7aac9a76-3693-4e4e-beb2-017c421acc8e,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:12:23.455000+00:00,ArrowRight,5.0,-93.80273437499955,36.371248723751535,"Moved right, centered on Arkansas.
+
+Press i to get more information.",2024-04-26 09:12:23.455000-07:00
+36,{'$oid': '662bd26a440e50a06853290c'},0f899721-4d3d-45f8-bd7a-a0ec6a348a64,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:12:26.321000+00:00,Control,5.0,-91.60546874999909,36.371248723751535,"Moved right, centered on Arkansas.
+
+Press i to get more information.",2024-04-26 09:12:26.321000-07:00
+37,{'$oid': '662bd2b9440e50a06853290d'},884a3eca-9433-4f92-95f1-1a60561d91b1,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:13:45.579000+00:00,-,5.0,-91.60546874999909,36.371248723751535,"Moved right, centered on Arkansas.
+
+Press i to get more information.",2024-04-26 09:13:45.579000-07:00
+38,{'$oid': '662bd2bc440e50a06853290e'},4ee5f8d7-71e3-4e86-b1f1-e3a43cf6ec81,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:13:48.090000+00:00,+,4.076815597050831,-96.0,36.371248723751535,"Zoomed out, now at state level, centered on Oklahoma.
+
+Press i to get more information.",2024-04-26 09:13:48.090000-07:00
+39,{'$oid': '662bd2be440e50a06853290f'},65acc94c-f570-4889-8cce-df6cb53e8aad,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:13:50.531000+00:00,+,5.0,-96.0,36.371248723751535,"Zoomed in, now at state level, centered on Oklahoma.
+
+Press i to get more information.",2024-04-26 09:13:50.531000-07:00
+40,{'$oid': '662bd2c5440e50a068532910'},101aefcf-cc79-446f-96e0-b505e3605fbc,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:13:57.098000+00:00,+,6.0,-96.0,36.371248723751535,"Zoomed in, now at county level, centered on Tulsa, Oklahoma.
+
+Press i to get more information.",2024-04-26 09:13:57.098000-07:00
+41,{'$oid': '662bd2ca440e50a068532911'},004fda1b-127e-47a2-a7df-4df2672e2846,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:14:02.181000+00:00,i,7.0,-96.0,36.371248723751535,"Zoomed in, now at county level, centered on Tulsa, Oklahoma.
+
+Press i to get more information.",2024-04-26 09:14:02.181000-07:00
+42,{'$oid': '662bd2db440e50a068532912'},fff59f70-df5e-4311-9daf-ed9f39c898e9,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:14:19.691000+00:00,l,7.0,-96.0,36.371248723751535,"The current view is bounded by Gray County, Kansas on the top-left, Phelps County, Missouri on the top-right, Lonoke County, Arkansas on the bottom-right, and Collingsworth County, Texas on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:14:19.691000-07:00
+43,{'$oid': '662bd2e6440e50a068532913'},4d9e604b-c73b-4a9c-98ab-276064657b27,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:14:30.525000+00:00,b,7.0,-96.0,36.371248723751535,"In the current view:
+
+Population density is high diagonally from bottom-left to top-right.
+
+Population density is low in the top-left.
+
+The average population density is 73.4 people per square mile.
+
+The county with the highest population density is Tulsa, Oklahoma, with 1173.1 people per square mile.
+
+The county with the lowest population density is Clark, Kansas, with 2.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:14:30.525000-07:00
+44,{'$oid': '662bd2ed440e50a068532914'},272fdc69-63a1-4e81-948d-6dc1b04a1b66,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:14:37.520000+00:00,ArrowUp,7.0,-96.0,36.371248723751535,"In the current view:
+
+Population density is high diagonally from bottom-left to top-right.
+
+Population density is low in the top-left.
+
+The average population density is 73.4 people per square mile.
+
+The county with the highest population density is Tulsa, Oklahoma, with 1173.1 people per square mile.
+
+The county with the lowest population density is Clark, Kansas, with 2.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:14:37.520000-07:00
+45,{'$oid': '662bd2f0440e50a068532915'},10c3977d-7673-4d8b-9b21-42b64e453f1c,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:14:40.605000+00:00,ArrowUp,7.0,-96.0,36.812294276182,"Moved up, centered on Washington, Oklahoma.
+
+Press i to get more information.",2024-04-26 09:14:40.605000-07:00
+46,{'$oid': '662bd2f3440e50a068532916'},89397b0b-f0b4-49ca-9c0e-6879af196bbe,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:14:43.335000+00:00,ArrowRight,7.0,-96.0,37.25081344888976,"Moved up, centered on Chautauqua, Kansas.
+
+Press i to get more information.",2024-04-26 09:14:43.335000-07:00
+47,{'$oid': '662bd2f6440e50a068532917'},df720a90-c60a-4cb9-bbc1-737f3ed5b597,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:14:46.584000+00:00,ArrowRight,7.0,-95.45068359375051,37.25081344888976,"Moved right, centered on Labette, Kansas.
+
+Press i to get more information.",2024-04-26 09:14:46.584000-07:00
+48,{'$oid': '662bd307440e50a068532918'},0a7fce96-de79-4d83-9039-4c16238458b9,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:02.920000+00:00,ArrowRight,7.0,-94.90136718750102,37.25081344888976,"Moved right, centered on Cherokee, Kansas.
+
+Press i to get more information.",2024-04-26 09:15:02.920000-07:00
+49,{'$oid': '662bd31b440e50a068532919'},1943a324-2af2-4a4f-b852-f5df03ea4982,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:23.840000+00:00,ArrowRight,7.0,-94.35205078125159,37.25081344888976,"Moved right, centered on Jasper, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:23.840000-07:00
+50,{'$oid': '662bd31e440e50a06853291a'},c5c4ffa4-3fbf-43c3-b95e-0ddd67140673,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:26.288000+00:00,ArrowRight,7.0,-93.8027343750021,37.25081344888976,"Moved right, centered on Lawrence, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:26.288000-07:00
+51,{'$oid': '662bd31e440e50a06853291b'},0c7bd9ce-ec83-4012-9de1-1e9a7fd047ee,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:26.734000+00:00,ArrowRight,7.0,-93.25341796875267,37.25081344888976,"Moved right, centered on Lawrence, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:26.734000-07:00
+52,{'$oid': '662bd320440e50a06853291c'},a5741b5a-d8ac-4456-aadc-32430c5885a6,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:28.727000+00:00,ArrowRight,7.0,-92.70410156250318,37.25081344888976,"Moved right, centered on Webster, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:28.727000-07:00
+53,{'$oid': '662bd329440e50a06853291d'},2b40e3c6-d9d5-40c0-bb63-c756d3c54e92,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:37.840000+00:00,ArrowRight,7.0,-92.1547851562537,37.25081344888976,"Moved right, centered on Texas, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:37.840000-07:00
+54,{'$oid': '662bd32d440e50a06853291e'},a0dc8d2f-6eae-401a-93a2-2575b74fddc2,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:40.925000+00:00,Control,7.0,-91.6054687500042,37.25081344888976,"Moved right, centered on Shannon, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:40.925000-07:00
+55,{'$oid': '662bd32f440e50a06853291f'},c4d19f13-cfcb-4219-8807-531e7dfe6b18,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:43.763000+00:00,ArrowRight,7.0,-91.6054687500042,37.25081344888976,"Moved right, centered on Shannon, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:43.763000-07:00
+56,{'$oid': '662bd332440e50a068532920'},3fc8f1cf-3b42-4d18-a49e-cc37f99a3d4d,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:46.001000+00:00,ArrowRight,7.0,-91.05615234375472,37.25081344888976,"Moved right, centered on Reynolds, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:46.001000-07:00
+57,{'$oid': '662bd332440e50a068532921'},21bde7b4-00c5-4929-86e8-f9cced7c1ab3,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:46.438000+00:00,ArrowRight,7.0,-90.50683593750523,37.25081344888976,"Moved right, centered on Reynolds, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:46.438000-07:00
+58,{'$oid': '662bd333440e50a068532922'},a5d11057-da18-4f18-8b08-22329b12148e,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:46.880000+00:00,ArrowRight,7.0,-89.9575195312558,37.25081344888976,"Moved right, centered on Wayne, Missouri.
+
+Press i to get more information.",2024-04-26 09:15:46.880000-07:00
+59,{'$oid': '662bd335440e50a068532923'},699998f4-9db7-4227-b57d-65bf8a50a3c6,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:48.997000+00:00,ArrowUp,7.0,-89.40820312500631,37.25081344888976,"Moved right, centered on Alexander, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:48.997000-07:00
+60,{'$oid': '662bd335440e50a068532924'},feaf898c-45f9-40fb-b8d2-92e25369e6bf,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:49.419000+00:00,ArrowUp,7.0,-89.40820312500631,37.68679517373003,"Moved right, centered on Alexander, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:49.419000-07:00
+61,{'$oid': '662bd337440e50a068532925'},ed23a3aa-512b-464d-bccc-e7e5d0b5b97b,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:51.663000+00:00,ArrowUp,7.0,-89.40820312500631,38.120229035976024,"Moved up, centered on Perry, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:51.663000-07:00
+62,{'$oid': '662bd338440e50a068532926'},05aea79e-67c2-4194-899e-2c5737a80137,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:52.114000+00:00,ArrowUp,7.0,-89.40820312500631,38.55110526667792,"Moved up, centered on Perry, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:52.114000-07:00
+63,{'$oid': '662bd33a440e50a068532927'},67512eb7-5f99-459b-921c-f29a78c30345,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:54.039000+00:00,ArrowRight,7.0,-89.40820312500631,38.97941473479591,"Moved up, centered on Bond, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:54.039000-07:00
+64,{'$oid': '662bd33c440e50a068532928'},dcfe7d6a-c996-48ee-bac8-167f8e82bad6,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:56.712000+00:00,ArrowRight,7.0,-88.85888671875688,38.97941473479591,"Moved right, centered on Fayette, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:56.712000-07:00
+65,{'$oid': '662bd33d440e50a068532929'},122ce875-b2c7-4123-a02e-0c06f997ae71,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:57.136000+00:00,ArrowRight,7.0,-88.30957031250739,38.97941473479591,"Moved right, centered on Fayette, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:57.136000-07:00
+66,{'$oid': '662bd33f440e50a06853292a'},2e12f9e9-b5e1-4551-964d-d38ad027e7f9,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:59.183000+00:00,ArrowRight,7.0,-87.76025390625796,38.97941473479591,"Moved right, centered on Crawford, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:59.183000-07:00
+67,{'$oid': '662bd33f440e50a06853292b'},f7eeacc2-5e9d-42ce-951a-7d114e06bc35,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:15:59.612000+00:00,ArrowRight,7.0,-87.21093750000847,38.97941473479591,"Moved right, centered on Crawford, Illinois.
+
+Press i to get more information.",2024-04-26 09:15:59.612000-07:00
+68,{'$oid': '662bd340440e50a06853292c'},aae4da03-2238-493c-a88a-4507b9a5f960,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:00.061000+00:00,ArrowRight,7.0,-86.66162109375898,38.97941473479591,"Moved right, centered on Greene, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:00.061000-07:00
+69,{'$oid': '662bd342440e50a06853292d'},767c5614-ddc0-438e-ab3c-789cf569c2eb,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:02.423000+00:00,ArrowRight,7.0,-86.11230468750955,38.97941473479591,"Moved right, centered on Jackson, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:02.423000-07:00
+70,{'$oid': '662bd346440e50a06853292e'},5436f185-4aa7-423d-a39b-0639bd49c856,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:06.759000+00:00,ArrowUp,7.0,-85.56298828126006,38.97941473479591,"Moved right, centered on Jackson, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:06.759000-07:00
+71,{'$oid': '662bd349440e50a06853292f'},a623ffe3-1c44-4eb2-b726-6245e2976aed,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:09.024000+00:00,ArrowLeft,7.0,-85.56298828126006,39.40514893912095,"Moved up, centered on Decatur, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:09.024000-07:00
+72,{'$oid': '662bd34b440e50a068532930'},91a0739c-b009-4fc9-9ebd-a5bfcd49cc5c,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:11.258000+00:00,ArrowLeft,7.0,-86.11230468751017,39.40514893912095,"Moved left, centered on Johnson, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:11.258000-07:00
+73,{'$oid': '662bd351440e50a068532931'},c794b9c4-1957-49c8-807a-cecf229070f1,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:17.545000+00:00,ArrowUp,7.0,-86.66162109376029,39.40514893912095,"Moved right, centered on Jennings, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:17.545000-07:00
+74,{'$oid': '662bd353440e50a068532932'},be95bb2c-95fd-4992-8b18-867e7ca2cd75,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:19.804000+00:00,ArrowDown,7.0,-86.66162109376029,39.828299999996005,"Moved up, centered on Hendricks, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:19.804000-07:00
+75,{'$oid': '662bd358440e50a068532933'},e74238ec-8942-40ae-ab2b-b38acd7d5479,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:16:23.950000+00:00,i,7.0,-86.66162109376029,39.40514893912041,"Moved down, centered on Owen, Indiana.
+
+Press i to get more information.",2024-04-26 09:16:23.950000-07:00
+76,{'$oid': '662bd463440e50a068532934'},7ff44394-6399-4ece-90ae-452e9fee12ba,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:20:50.964000+00:00,+,7.0,-86.66162109376029,39.40514893912041,"In the current view:
+
+Population density is high in the top-right.
+
+Population density is low in the top-left.
+
+The average population density is 209.0 people per square mile.
+
+The county with the highest population density is St. Louis, Missouri, with 4828.6 people per square mile.
+
+The county with the lowest population density is Gallatin, Illinois, with 15.4 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:20:50.964000-07:00
+77,{'$oid': '662bd468440e50a068532935'},f78aa71d-f130-4657-8e47-ac3fa93c93e1,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:20:55.786000+00:00,i,8.0,-86.66162109376029,39.40514893912041,"Zoomed in, now at county level, centered on Owen, Indiana.
+
+Press i to get more information.",2024-04-26 09:20:55.786000-07:00
+78,{'$oid': '662bd48c440e50a068532936'},0dff5e7d-8473-4c3c-b9bb-24ef17f7cc3e,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:21:32.666000+00:00,+,8.0,-86.66162109376029,39.40514893912041,"In the current view:
+
+Population density is high in the top-right.
+
+Population density is low in the bottom-left.
+
+The average population density is 160.3 people per square mile.
+
+The county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.
+
+The county with the lowest population density is Jasper, Illinois, with 18.8 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:21:32.666000-07:00
+79,{'$oid': '662bd492440e50a068532937'},5d3489d4-054e-457d-99f5-76ec36a5cb66,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:21:38.588000+00:00,+,9.0,-86.66162109376029,39.40514893912041,"Zoomed in, now at county level, centered on Owen, Indiana.
+
+Press i to get more information.",2024-04-26 09:21:38.588000-07:00
+80,{'$oid': '662bd498440e50a068532938'},3eddadeb-0bf8-42e4-b8c3-7ba8b096cb88,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:21:43.978000+00:00,i,9.0,-86.66162109376029,39.40514893912041,"You've reached the maximum zoom level. Press mininus to zoom out.
+
+Press i to get more information.",2024-04-26 09:21:43.978000-07:00
+81,{'$oid': '662bd4a9440e50a068532939'},4dc1ab21-064f-4527-a795-29a635c04784,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:22:01.682000+00:00,l,9.0,-86.66162109376029,39.40514893912041,"The current view is bounded by Edgar County, Illinois on the top-left, Henry County, Indiana on the top-right, Jennings County, Indiana on the bottom-right, and Crawford County, Illinois on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:22:01.682000-07:00
+82,{'$oid': '662bd528440e50a06853293a'},45992094-3127-46a8-b6c3-11431e31139b,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:24:08.594000+00:00,i,9.0,-86.66162109376029,39.40514893912041,"The current view is bounded by Edgar County, Illinois on the top-left, Henry County, Indiana on the top-right, Jennings County, Indiana on the bottom-right, and Crawford County, Illinois on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:24:08.594000-07:00
+83,{'$oid': '662bd534440e50a06853293b'},f1a06c59-354f-4ec9-aa30-94a2bcedfd44,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:24:20.067000+00:00,Control,9.0,-86.66162109376029,39.40514893912041,"In the current view:
+
+No regions with particularly high population density.
+
+No regions with particularly low population density.
+
+The average population density is 136.2 people per square mile.
+
+The county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.
+
+The county with the lowest population density is Edgar, Illinois, with 27.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:24:20.067000-07:00
+84,{'$oid': '662bd54e440e50a06853293c'},9ddacea3-c521-4b76-ba33-41064c679048,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:24:45.913000+00:00,Alt,9.0,-86.66162109376029,39.40514893912041,"In the current view:
+
+No regions with particularly high population density.
+
+No regions with particularly low population density.
+
+The average population density is 136.2 people per square mile.
+
+The county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.
+
+The county with the lowest population density is Edgar, Illinois, with 27.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:24:45.913000-07:00
+85,{'$oid': '662bd54e440e50a06853293d'},3795206b-61dc-48f6-a7d1-63127db25c66,user1,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-26 16:24:45.986000+00:00,d,9.0,-86.66162109376029,39.40514893912041,"In the current view:
+
+No regions with particularly high population density.
+
+No regions with particularly low population density.
+
+The average population density is 136.2 people per square mile.
+
+The county with the highest population density is Marion, Indiana, with 2450.4 people per square mile.
+
+The county with the lowest population density is Edgar, Illinois, with 27.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:24:45.986000-07:00

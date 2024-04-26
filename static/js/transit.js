@@ -409,7 +409,7 @@ const logMessage = async (keystroke) => {
     console.log(keystroke)
     
     const eventData = {
-        user_id: "user3",
+        user_id: "user6",
         session_id: "session5678",
         timestamp: new Date().toISOString(),
         key_stroke: keystroke,

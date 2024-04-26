@@ -1,0 +1,270 @@
+,_id,uuid,user_id,session_id,page,timestamp,key_stroke,zoom_level,lng,lat,stats,timestamp_pst
+0,{'$oid': '662977f51437491ce5eb3321'},2bf2bd00-9d91-446f-b45e-e68130d9ebf1,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:21:56.836000+00:00,Tab,4.0,-98.5795,39.8283,,2024-04-24 14:21:56.836000-07:00
+1,{'$oid': '662977f71437491ce5eb3322'},34279031-320a-4c0a-8d92-ae3f79090574,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:21:58.438000+00:00,m,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 14:21:58.438000-07:00
+2,{'$oid': '662978671437491ce5eb3323'},e28bb5ee-4639-42cb-ae8c-f177f1a41d6e,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:23:50.517000+00:00,i,4.0,-98.5795,39.8283,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+Percentage of transit commuters is low in the bottom-right.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:23:50.517000-07:00
+3,{'$oid': '662978761437491ce5eb3324'},c9ac39aa-b30e-404a-9c54-0493cc82bbf6,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:05.623000+00:00,l,4.0,-98.5795,39.8283,"The current view is bounded by British Columbia, Canada on the top-left, Quebec, Canada on the top-right, Hamilton city, Bermuda on the bottom-right, and California, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:24:05.623000-07:00
+4,{'$oid': '662978851437491ce5eb3325'},72afed1f-fd1f-41de-ad10-3b927a9ea619,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:20.989000+00:00,ArrowUp,4.0,-98.5795,39.8283,"The current view is bounded by British Columbia, Canada on the top-left, Quebec, Canada on the top-right, Hamilton city, Bermuda on the bottom-right, and California, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:24:20.989000-07:00
+5,{'$oid': '6629788b1437491ce5eb3326'},dc456210-14ad-4406-9303-d24cedc5571f,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:26.242000+00:00,=,4.0,-98.5795,43.119768021215066,"Moved up, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 14:24:26.242000-07:00
+6,{'$oid': '662978911437491ce5eb3327'},d571b450-9119-4b67-99f2-9f8d82f5e219,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:32.187000+00:00,ArrowUp,5.0,-98.5795,43.119768021215066,"Zoomed in, now at state level, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 14:24:32.187000-07:00
+7,{'$oid': '662978951437491ce5eb3328'},bd2dde65-5687-4b70-b38d-6900ad5af649,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:36.505000+00:00,ArrowUp,5.0,-98.5795,44.70256954018299,"Moved up, centered on South Dakota.
+
+Press i to get more information.",2024-04-24 14:24:36.505000-07:00
+8,{'$oid': '662978991437491ce5eb3329'},1ec36757-5b86-4b14-857a-7afe3e25d9ae,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:40.406000+00:00,ArrowUp,5.0,-98.5795,46.24325177628336,"Moved up, centered on North Dakota.
+
+Press i to get more information.",2024-04-24 14:24:40.406000-07:00
+9,{'$oid': '6629789b1437491ce5eb332a'},c69b04b6-d49f-4670-9f59-ebea13a42092,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:42.766000+00:00,ArrowRight,5.0,-98.5795,47.74185128641807,"Moved up, centered on North Dakota.
+
+Press i to get more information.",2024-04-24 14:24:42.766000-07:00
+10,{'$oid': '6629789e1437491ce5eb332b'},4df4c1fe-4299-4ea7-9915-3bbffa92268a,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:45.982000+00:00,ArrowUp,5.0,-96.38223437500017,47.74185128641807,"Moved right, centered on Minnesota.
+
+Press i to get more information.",2024-04-24 14:24:45.982000-07:00
+11,{'$oid': '662978a01437491ce5eb332c'},d27bdc12-c8db-46eb-9b6a-e8778c858f9d,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:47.749000+00:00,ArrowRight,5.0,-96.38223437500017,47.807510227186356,"Moved up, centered on Minnesota.
+
+Press i to get more information.",2024-04-24 14:24:47.749000-07:00
+12,{'$oid': '662978a31437491ce5eb332d'},449ea5e5-a4be-43bf-9320-f60c402954a8,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:50.029000+00:00,ArrowRight,5.0,-94.18496875000028,47.807510227186356,"Moved right, centered on Minnesota.
+
+Press i to get more information.",2024-04-24 14:24:50.029000-07:00
+13,{'$oid': '662978a41437491ce5eb332e'},2020cb60-cb9c-4a24-94de-479780d88b52,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:51.917000+00:00,ArrowRight,5.0,-91.9877031250004,47.807510227186356,"Moved right, centered on Minnesota.
+
+Press i to get more information.",2024-04-24 14:24:51.917000-07:00
+14,{'$oid': '662978ab1437491ce5eb332f'},efb52a0c-122c-44dc-8568-dbf83f748c38,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:24:58.958000+00:00,ArrowDown,5.0,-89.79043750000051,47.807510227186356,"Moved right, centered on Minnesota.
+
+Press i to get more information.",2024-04-24 14:24:58.958000-07:00
+15,{'$oid': '662978b01437491ce5eb3330'},33716bb5-7e77-4340-b87c-fd6a63d4b7cd,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:03.500000+00:00,ArrowRight,5.0,-89.79043750000051,46.31077917595934,"Moved down, centered on Michigan.
+
+Press i to get more information.",2024-04-24 14:25:03.500000-07:00
+16,{'$oid': '662978b31437491ce5eb3331'},19cfabd9-28c0-4029-81db-00d6a2eee1c1,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:06.693000+00:00,ArrowDown,5.0,-87.59317187500068,46.31077917595934,"Moved right, centered on Michigan.
+
+Press i to get more information.",2024-04-24 14:25:06.693000-07:00
+17,{'$oid': '662978b71437491ce5eb3332'},a918d0cc-4191-4b2f-9ddc-68effd83fbe5,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:10.918000+00:00,ArrowRight,5.0,-87.59317187500068,44.77196978679984,"Moved down, centered on Wisconsin.
+
+Press i to get more information.",2024-04-24 14:25:10.918000-07:00
+18,{'$oid': '662978ba1437491ce5eb3333'},d4dc16f7-2bb5-40f5-a712-f6eff36a9366,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:13.495000+00:00,ArrowDown,5.0,-85.39590625000079,44.77196978679984,"Moved right, centered on Michigan.
+
+Press i to get more information.",2024-04-24 14:25:13.495000-07:00
+19,{'$oid': '662978bc1437491ce5eb3334'},1d6e03de-149e-4c33-a993-324663bd989f,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:15.350000+00:00,ArrowDown,5.0,-85.39590625000079,43.19104014146521,"Moved down, centered on Michigan.
+
+Press i to get more information.",2024-04-24 14:25:15.350000-07:00
+20,{'$oid': '662978bf1437491ce5eb3335'},bda9bad8-0690-4ad3-bafa-1080e8645944,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:18.035000+00:00,ArrowRight,5.0,-85.39590625000079,41.56807370424178,"Moved down, centered on Indiana.
+
+Press i to get more information.",2024-04-24 14:25:18.035000-07:00
+21,{'$oid': '662978c01437491ce5eb3336'},37d098d0-0fa9-4449-b3e6-03f2b6d1037b,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:20.022000+00:00,ArrowRight,5.0,-83.19864062500096,41.56807370424178,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-24 14:25:20.022000-07:00
+22,{'$oid': '662978c31437491ce5eb3337'},af9f8e2d-e401-4f5d-93dd-9ce0c4be1811,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:22.837000+00:00,ArrowRight,5.0,-81.00137500000108,41.56807370424178,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-24 14:25:22.837000-07:00
+23,{'$oid': '662978c61437491ce5eb3338'},058c7eb4-a0e4-454d-a641-6521d6c20f9f,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:25.883000+00:00,ArrowUp,5.0,-78.80410937500119,41.56807370424178,"Moved right, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:25:25.883000-07:00
+24,{'$oid': '662978ca1437491ce5eb3339'},10664472-234a-404c-b084-dbcc0670ff8e,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:29.351000+00:00,ArrowLeft,5.0,-78.80410937500119,43.19104014146481,"Moved up, centered on New York.
+
+Press i to get more information.",2024-04-24 14:25:29.351000-07:00
+25,{'$oid': '662978cc1437491ce5eb333a'},107f8da5-812f-41dd-8346-f710036ebb91,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:31.813000+00:00,ArrowRight,5.0,-81.00137500000164,43.19104014146481,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-24 14:25:31.813000-07:00
+26,{'$oid': '662978cf1437491ce5eb333b'},2265c394-7c84-4420-a695-fa226b97bee1,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:34.119000+00:00,ArrowUp,5.0,-78.80410937500176,43.19104014146481,"Moved right, centered on New York.
+
+Press i to get more information.",2024-04-24 14:25:34.119000-07:00
+27,{'$oid': '662978d01437491ce5eb333c'},a48c1721-17f0-4d94-b7a4-72cd8d6dc9de,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:35.975000+00:00,ArrowDown,5.0,-78.80410937500176,44.771969786799076,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-24 14:25:35.975000-07:00
+28,{'$oid': '662978d31437491ce5eb333d'},bda21c28-ed90-400f-b410-4afd3ffb7a97,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:38.030000+00:00,ArrowRight,5.0,-78.80410937500176,43.19104014146444,"Moved down, centered on New York.
+
+Press i to get more information.",2024-04-24 14:25:38.030000-07:00
+29,{'$oid': '662978d41437491ce5eb333e'},59ec4fc0-fcb1-4227-ba38-847235ed25a6,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:39.630000+00:00,ArrowRight,5.0,-78.0625,43.19104014146444,"Moved right, centered on New York.
+
+Press i to get more information.",2024-04-24 14:25:39.630000-07:00
+30,{'$oid': '662978d51437491ce5eb333f'},b4f4915d-d584-4725-bf97-fec09ba2bbf1,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:41.012000+00:00,ArrowDown,5.0,-78.0625,43.19104014146444,"Moved right, centered on New York.
+
+Press i to get more information.",2024-04-24 14:25:41.012000-07:00
+31,{'$oid': '662978d81437491ce5eb3340'},42446353-a846-4413-b337-94e1f0109576,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:43.475000+00:00,ArrowDown,5.0,-78.0625,41.56807370424099,"Moved down, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:25:43.475000-07:00
+32,{'$oid': '662978da1437491ce5eb3341'},2699c65b-663d-4159-a196-d269e5c8d399,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:45.228000+00:00,ArrowDown,5.0,-78.0625,39.90328927922516,"Moved down, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:25:45.228000-07:00
+33,{'$oid': '662978dc1437491ce5eb3342'},c1750390-0dd1-4306-a261-2907a7babec1,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:47.963000+00:00,ArrowDown,5.0,-78.0625,38.19705068894808,"Moved down, centered on Virginia.
+
+Press i to get more information.",2024-04-24 14:25:47.963000-07:00
+34,{'$oid': '662978de1437491ce5eb3343'},7241286f-4fee-4fbe-a651-6989dfa64459,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:49.735000+00:00,ArrowLeft,5.0,-78.0625,36.44987599517316,"Moved down, centered on North Carolina.
+
+Press i to get more information.",2024-04-24 14:25:49.735000-07:00
+35,{'$oid': '662978e01437491ce5eb3344'},2ccfad54-22c5-440c-818c-f117843c3b63,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:51.679000+00:00,ArrowUp,5.0,-80.2597656250004,36.44987599517316,"Moved left, centered on North Carolina.
+
+Press i to get more information.",2024-04-24 14:25:51.679000-07:00
+36,{'$oid': '662978e31437491ce5eb3345'},393c3b1f-be1c-4337-bbab-c6e045e8d79b,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:54.436000+00:00,ArrowUp,5.0,-80.2597656250004,38.19705068894899,"Moved up, centered on West Virginia.
+
+Press i to get more information.",2024-04-24 14:25:54.436000-07:00
+37,{'$oid': '662978e51437491ce5eb3346'},0e86f4ab-476c-4bc2-b74e-614d5a258852,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:56.044000+00:00,ArrowLeft,5.0,-80.2597656250004,39.90328927922687,"Moved up, centered on Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:25:56.044000-07:00
+38,{'$oid': '662978e61437491ce5eb3347'},7174d888-687e-483c-87af-9c4ca4f2e0bb,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:57.772000+00:00,ArrowDown,5.0,-82.4570312500008,39.90328927922687,"Moved left, centered on Ohio.
+
+Press i to get more information.",2024-04-24 14:25:57.772000-07:00
+39,{'$oid': '662978e81437491ce5eb3348'},3f38b554-d237-4b24-8cca-8c7590f986ac,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:25:59.725000+00:00,ArrowDown,5.0,-82.4570312500008,38.197050688949815,"Moved down, centered on West Virginia.
+
+Press i to get more information.",2024-04-24 14:25:59.725000-07:00
+40,{'$oid': '662978eb1437491ce5eb3349'},b0c5cad5-040b-476f-8e65-df7ea0628e9b,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:26:02.077000+00:00,ArrowUp,5.0,-82.4570312500008,36.449875995174935,"Moved down, centered on Tennessee.
+
+Press i to get more information.",2024-04-24 14:26:02.077000-07:00
+41,{'$oid': '6629790a1437491ce5eb334a'},4c9a799b-b55f-4234-8623-4846fde114e8,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:26:32.836000+00:00,i,5.0,-82.4570312500008,38.19705068895067,"Moved up, centered on West Virginia.
+
+Press i to get more information.",2024-04-24 14:26:32.836000-07:00
+42,{'$oid': '662979151437491ce5eb334b'},5ce784f4-98d4-4db2-875c-765cd0ef89a0,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:26:44.574000+00:00,l,5.0,-82.4570312500008,38.19705068895067,"The current view is bounded by Iowa, US on the top-left, Maine, US on the top-right, Hamilton city, Bermuda on the bottom-right, and Texas, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:26:44.574000-07:00
+43,{'$oid': '662979391437491ce5eb334c'},a52db862-f91a-4abf-ae85-30725a8d1ca6,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:27:20.124000+00:00,=,5.0,-82.4570312500008,38.19705068895067,"The current view is bounded by Iowa, US on the top-left, Maine, US on the top-right, Hamilton city, Bermuda on the bottom-right, and Texas, US on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:27:20.124000-07:00
+44,{'$oid': '6629798c1437491ce5eb334d'},80acfa6d-d99a-4889-98b2-e286a984c2e2,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:28:43.038000+00:00,ArrowUp,6.0,-82.4570312500008,38.19705068895067,"Zoomed in, now at county level, centered on Wayne, West Virginia.
+
+Press i to get more information.",2024-04-24 14:28:43.038000-07:00
+45,{'$oid': '6629798f1437491ce5eb334e'},b041f369-18c3-46e7-b3d5-0eb295532295,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:28:46.054000+00:00,ArrowRight,6.0,-82.4570312500008,39.055323094955355,"Moved up, centered on Jackson, Ohio.
+
+Press i to get more information.",2024-04-24 14:28:46.054000-07:00
+46,{'$oid': '662979921437491ce5eb334f'},7031f26e-e415-473a-93f6-82ee3e13b463,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:28:50.014000+00:00,ArrowRight,6.0,-81.35839843750114,39.055323094955355,"Moved right, centered on Wirt, West Virginia.
+
+Press i to get more information.",2024-04-24 14:28:50.014000-07:00
+47,{'$oid': '662979951437491ce5eb3350'},105bfe4b-05b1-47b4-b396-b83382841b12,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:28:52.656000+00:00,ArrowRight,6.0,-80.25976562500148,39.055323094955355,"Moved right, centered on Upshur, West Virginia.
+
+Press i to get more information.",2024-04-24 14:28:52.656000-07:00
+48,{'$oid': '662979981437491ce5eb3351'},8fa62c16-0af1-42a2-a547-569d165ea84c,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:28:55.233000+00:00,ArrowRight,6.0,-79.16113281250182,39.055323094955355,"Moved right, centered on Grant, West Virginia.
+
+Press i to get more information.",2024-04-24 14:28:55.233000-07:00
+49,{'$oid': '6629799b1437491ce5eb3352'},361f7394-0314-4356-b7b4-b55934ecc75a,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:28:58.863000+00:00,ArrowRight,6.0,-78.06250000000216,39.055323094955355,"Moved right, centered on Clarke, Virginia.
+
+Press i to get more information.",2024-04-24 14:28:58.863000-07:00
+50,{'$oid': '6629799e1437491ce5eb3353'},a5212023-3fdc-4db1-897e-6f1475c30c49,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:01.732000+00:00,ArrowUp,6.0,-76.9638671875025,39.055323094955355,"Moved right, centered on Montgomery, Maryland.
+
+Press i to get more information.",2024-04-24 14:29:01.732000-07:00
+51,{'$oid': '662979a11437491ce5eb3354'},eb2a024b-f4b3-473f-a6d7-65c55c317df0,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:04.143000+00:00,ArrowDown,6.0,-76.9638671875025,39.903289279227664,"Moved up, centered on York, Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:29:04.143000-07:00
+52,{'$oid': '662979a31437491ce5eb3355'},391bbaf2-e5ac-4f8a-a536-c59bd0c5fa55,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:06.150000+00:00,ArrowDown,6.0,-76.9638671875025,39.055323094954474,"Moved down, centered on Montgomery, Maryland.
+
+Press i to get more information.",2024-04-24 14:29:06.150000-07:00
+53,{'$oid': '662979a51437491ce5eb3356'},aee4496e-9693-4672-a4f7-47e2273accc2,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:08.846000+00:00,ArrowRight,6.0,-76.9638671875025,38.19705068894888,"Moved down, centered on Westmoreland, Virginia.
+
+Press i to get more information.",2024-04-24 14:29:08.846000-07:00
+54,{'$oid': '662979a81437491ce5eb3357'},4598d8b3-6622-40db-b412-784729774ceb,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:11.084000+00:00,ArrowRight,6.0,-75.86523437500284,38.197050688948906,"Moved right, centered on Somerset, Maryland.
+
+Press i to get more information.",2024-04-24 14:29:11.084000-07:00
+55,{'$oid': '662979aa1437491ce5eb3358'},360863a5-5b54-47ec-b2c6-f445d68a47a9,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:13.372000+00:00,ArrowLeft,6.0,-74.76660156250318,38.197050688948906,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-24 14:29:13.372000-07:00
+56,{'$oid': '662979ac1437491ce5eb3359'},cee713d9-2c60-47bd-9599-fe6c92d1c988,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:15.308000+00:00,ArrowUp,6.0,-75.86523437500341,38.197050688948906,"Moved left, centered on Somerset, Maryland.
+
+Press i to get more information.",2024-04-24 14:29:15.308000-07:00
+57,{'$oid': '662979ae1437491ce5eb335a'},911b518b-472c-48ec-b5b5-239543c4a4b1,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:17.468000+00:00,ArrowUp,6.0,-75.86523437500341,39.05532309495359,"Moved up, centered on Caroline, Maryland.
+
+Press i to get more information.",2024-04-24 14:29:17.468000-07:00
+58,{'$oid': '662979b01437491ce5eb335b'},5d672048-d6ce-4818-a0f6-76b74e321464,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:20.021000+00:00,ArrowDown,6.0,-75.86523437500341,39.90328927922596,"Moved up, centered on Chester, Pennsylvania.
+
+Press i to get more information.",2024-04-24 14:29:20.021000-07:00
+59,{'$oid': '662979b21437491ce5eb335c'},7be7395e-ba1c-4dd4-8f41-0933042d48fc,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:21.910000+00:00,ArrowDown,6.0,-75.86523437500341,39.05532309495274,"Moved down, centered on Caroline, Maryland.
+
+Press i to get more information.",2024-04-24 14:29:21.910000-07:00
+60,{'$oid': '662979b41437491ce5eb335d'},0f231942-0dc3-4668-a2e4-72610abfbbeb,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:23.478000+00:00,ArrowDown,6.0,-75.86523437500341,38.197050688947115,"Moved down, centered on Somerset, Maryland.
+
+Press i to get more information.",2024-04-24 14:29:23.478000-07:00
+61,{'$oid': '662979b71437491ce5eb335e'},c5cf82f9-8b25-44fc-b2f1-a1db3fa5ea02,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:26.339000+00:00,ArrowDown,6.0,-75.86523437500341,37.3285417115343,"Moved down, centered on Northampton, Virginia.
+
+Press i to get more information.",2024-04-24 14:29:26.339000-07:00
+62,{'$oid': '662979b91437491ce5eb335f'},ce8f0de1-b702-46e4-98ec-ed107512ee2c,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:28.562000+00:00,ArrowUp,6.0,-75.86523437500341,36.44987599517039,"Moved down, centered on Currituck, North Carolina.
+
+Press i to get more information.",2024-04-24 14:29:28.562000-07:00
+63,{'$oid': '662979ba1437491ce5eb3360'},086d7dd1-b7b7-4da3-9907-3b7c851059b7,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:30.023000+00:00,ArrowRight,6.0,-75.86523437500341,37.32854171153343,"Moved up, centered on Northampton, Virginia.
+
+Press i to get more information.",2024-04-24 14:29:30.023000-07:00
+64,{'$oid': '662979bc1437491ce5eb3361'},70eca718-e59b-4f8a-8589-8a1181d89677,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:31.814000+00:00,ArrowLeft,6.0,-74.76660156250381,37.32854171153342,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-24 14:29:31.814000-07:00
+65,{'$oid': '662979bf1437491ce5eb3362'},875f2905-4666-4a7c-a482-8bf8daa91b50,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:29:34.126000+00:00,i,6.0,-75.86523437500398,37.32854171153342,"Moved left, centered on Northampton, Virginia.
+
+Press i to get more information.",2024-04-24 14:29:34.126000-07:00
+66,{'$oid': '66297a1b1437491ce5eb3363'},e7638705-8618-4c1c-b618-edec3522806f,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:05.749000+00:00,ArrowLeft,6.0,-75.86523437500398,37.32854171153342,"In the current view:
+
+Percentage of transit commuters is high in the bottom-left.
+
+Percentage of transit commuters is low in the right.
+
+The average percentage of transit commuters is 0.7%.
+
+The county with the highest percentage of transit commuters is District of Columbia, District of Columbia, with 25.5% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Poquoson, Virginia, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 14:31:05.749000-07:00
+67,{'$oid': '66297a1d1437491ce5eb3364'},2afd591f-775d-4022-b789-cfb8d5070986,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:08.088000+00:00,ArrowLeft,6.0,-76.96386718750415,37.32854171153342,"Moved left, centered on Charles City, Virginia.
+
+Press i to get more information.",2024-04-24 14:31:08.088000-07:00
+68,{'$oid': '66297a1f1437491ce5eb3365'},689eb591-c224-40c6-bd9e-ad9b767db9c9,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:10.552000+00:00,ArrowLeft,6.0,-78.06250000000432,37.32854171153342,"Moved left, centered on Amelia, Virginia.
+
+Press i to get more information.",2024-04-24 14:31:10.552000-07:00
+69,{'$oid': '66297a221437491ce5eb3366'},1859482c-52f0-4eb4-83ce-004723da97fb,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:13.052000+00:00,ArrowLeft,6.0,-79.16113281250455,37.32854171153342,"Moved left, centered on Campbell, Virginia.
+
+Press i to get more information.",2024-04-24 14:31:13.052000-07:00
+70,{'$oid': '66297a241437491ce5eb3367'},e1e8bcc3-8713-41b0-9000-7406b5fcf410,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:15.192000+00:00,ArrowLeft,6.0,-80.25976562500472,37.32854171153342,"Moved left, centered on Roanoke, Virginia.
+
+Press i to get more information.",2024-04-24 14:31:15.192000-07:00
+71,{'$oid': '66297a261437491ce5eb3368'},248295a5-ee18-41a6-88bf-d20dafd72e55,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:17.622000+00:00,ArrowLeft,6.0,-81.35839843750489,37.32854171153342,"Moved left, centered on Tazewell, Virginia.
+
+Press i to get more information.",2024-04-24 14:31:17.622000-07:00
+72,{'$oid': '66297a291437491ce5eb3369'},0592a477-bad6-4fb6-b13a-1a1e2604345c,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:20.599000+00:00,ArrowRight,6.0,-82.45703125000512,37.32854171153342,"Moved left, centered on Pike, Kentucky.
+
+Press i to get more information.",2024-04-24 14:31:20.599000-07:00
+73,{'$oid': '66297a2b1437491ce5eb336a'},de9b24b6-8289-489a-9217-7fcc623ea699,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:23.021000+00:00,ArrowDown,6.0,-81.35839843750546,37.32854171153342,"Moved right, centered on Tazewell, Virginia.
+
+Press i to get more information.",2024-04-24 14:31:23.021000-07:00
+74,{'$oid': '66297a301437491ce5eb336b'},2248cf7e-0006-49eb-a973-41d1b808849e,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:27.846000+00:00,ArrowDown,6.0,-81.35839843750546,36.44987599516949,"Moved down, centered on Ashe, North Carolina.
+
+Press i to get more information.",2024-04-24 14:31:27.846000-07:00
+75,{'$oid': '66297a331437491ce5eb336c'},0f83ba38-19ab-48b4-92fe-1875c2ad16ab,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:30.207000+00:00,ArrowLeft,6.0,-81.35839843750546,35.56114380363263,"Moved down, centered on Lincoln, North Carolina.
+
+Press i to get more information.",2024-04-24 14:31:30.207000-07:00
+76,{'$oid': '66297a371437491ce5eb336d'},4984eff4-7e8f-47da-91a0-4471c84783e3,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:33.107000+00:00,i,6.0,-82.45703125000563,35.56114380363263,"Moved left, centered on Buncombe, North Carolina.
+
+Press i to get more information.",2024-04-24 14:31:33.107000-07:00
+77,{'$oid': '66297a471437491ce5eb336e'},cfb40345-1a07-4696-85b6-8ed2ba93330b,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:31:50.759000+00:00,l,6.0,-82.45703125000563,35.56114380363263,"The current view is bounded by Perry County, Illinois on the top-left, Worcester County, Maryland on the top-right, Carteret County, North Carolina on the bottom-right, and Leake County, Mississippi on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:31:50.759000-07:00
+78,{'$oid': '66297cb4cf0c252a19ef876c'},98de48aa-4d6d-4003-955c-d4f3b8140413,user5,33fd66d1-1561-4cb2-b3e4-7c553232e302,transit,2024-04-24 21:42:04.461000+00:00,Control,6.0,-82.45703125000563,35.56114380363263,"The current view is bounded by Perry County, Illinois on the top-left, Worcester County, Maryland on the top-right, Carteret County, North Carolina on the bottom-right, and Leake County, Mississippi on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-24 14:42:04.461000-07:00

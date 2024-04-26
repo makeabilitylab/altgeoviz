@@ -1,0 +1,1455 @@
+[{
+  "_id": {
+    "$oid": "662977f51437491ce5eb3321"
+  },
+  "uuid": "2bf2bd00-9d91-446f-b45e-e68130d9ebf1",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:21:56.836Z",
+  "key_stroke": "Tab",
+  "zoom_level": 4,
+  "lng": -98.5795,
+  "lat": 39.8283,
+  "stats": ""
+},
+{
+  "_id": {
+    "$oid": "662977f71437491ce5eb3322"
+  },
+  "uuid": "34279031-320a-4c0a-8d92-ae3f79090574",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:21:58.438Z",
+  "key_stroke": "m",
+  "zoom_level": 4,
+  "lng": -98.5795,
+  "lat": 39.8283,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662978671437491ce5eb3323"
+  },
+  "uuid": "e28bb5ee-4639-42cb-ae8c-f177f1a41d6e",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:23:50.517Z",
+  "key_stroke": "i",
+  "zoom_level": 4,
+  "lng": -98.5795,
+  "lat": 39.8283,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.5%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662978761437491ce5eb3324"
+  },
+  "uuid": "c9ac39aa-b30e-404a-9c54-0493cc82bbf6",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:05.623Z",
+  "key_stroke": "l",
+  "zoom_level": 4,
+  "lng": -98.5795,
+  "lat": 39.8283,
+  "stats": "The current view is bounded by British Columbia, Canada on the top-left, Quebec, Canada on the top-right, Hamilton city, Bermuda on the bottom-right, and California, US on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662978851437491ce5eb3325"
+  },
+  "uuid": "72afed1f-fd1f-41de-ad10-3b927a9ea619",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:20.989Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 4,
+  "lng": -98.5795,
+  "lat": 39.8283,
+  "stats": "The current view is bounded by British Columbia, Canada on the top-left, Quebec, Canada on the top-right, Hamilton city, Bermuda on the bottom-right, and California, US on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "6629788b1437491ce5eb3326"
+  },
+  "uuid": "dc456210-14ad-4406-9303-d24cedc5571f",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:26.242Z",
+  "key_stroke": "=",
+  "zoom_level": 4,
+  "lng": -98.5795,
+  "lat": 43.119768021215066,
+  "stats": "Moved up, centered on South Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978911437491ce5eb3327"
+  },
+  "uuid": "d571b450-9119-4b67-99f2-9f8d82f5e219",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:32.187Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -98.5795,
+  "lat": 43.119768021215066,
+  "stats": "Zoomed in, now at state level, centered on South Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978951437491ce5eb3328"
+  },
+  "uuid": "bd2dde65-5687-4b70-b38d-6900ad5af649",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:36.505Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -98.5795,
+  "lat": 44.70256954018299,
+  "stats": "Moved up, centered on South Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978991437491ce5eb3329"
+  },
+  "uuid": "1ec36757-5b86-4b14-857a-7afe3e25d9ae",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:40.406Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -98.5795,
+  "lat": 46.24325177628336,
+  "stats": "Moved up, centered on North Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "6629789b1437491ce5eb332a"
+  },
+  "uuid": "c69b04b6-d49f-4670-9f59-ebea13a42092",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:42.766Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -98.5795,
+  "lat": 47.74185128641807,
+  "stats": "Moved up, centered on North Dakota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "6629789e1437491ce5eb332b"
+  },
+  "uuid": "4df4c1fe-4299-4ea7-9915-3bbffa92268a",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:45.982Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -96.38223437500017,
+  "lat": 47.74185128641807,
+  "stats": "Moved right, centered on Minnesota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978a01437491ce5eb332c"
+  },
+  "uuid": "d27bdc12-c8db-46eb-9b6a-e8778c858f9d",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:47.749Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -96.38223437500017,
+  "lat": 47.807510227186356,
+  "stats": "Moved up, centered on Minnesota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978a31437491ce5eb332d"
+  },
+  "uuid": "449ea5e5-a4be-43bf-9320-f60c402954a8",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:50.029Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -94.18496875000028,
+  "lat": 47.807510227186356,
+  "stats": "Moved right, centered on Minnesota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978a41437491ce5eb332e"
+  },
+  "uuid": "2020cb60-cb9c-4a24-94de-479780d88b52",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:51.917Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -91.9877031250004,
+  "lat": 47.807510227186356,
+  "stats": "Moved right, centered on Minnesota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978ab1437491ce5eb332f"
+  },
+  "uuid": "efb52a0c-122c-44dc-8568-dbf83f748c38",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:24:58.958Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -89.79043750000051,
+  "lat": 47.807510227186356,
+  "stats": "Moved right, centered on Minnesota.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978b01437491ce5eb3330"
+  },
+  "uuid": "33716bb5-7e77-4340-b87c-fd6a63d4b7cd",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:03.500Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -89.79043750000051,
+  "lat": 46.31077917595934,
+  "stats": "Moved down, centered on Michigan.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978b31437491ce5eb3331"
+  },
+  "uuid": "19cfabd9-28c0-4029-81db-00d6a2eee1c1",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:06.693Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -87.59317187500068,
+  "lat": 46.31077917595934,
+  "stats": "Moved right, centered on Michigan.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978b71437491ce5eb3332"
+  },
+  "uuid": "a918d0cc-4191-4b2f-9ddc-68effd83fbe5",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:10.918Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -87.59317187500068,
+  "lat": 44.77196978679984,
+  "stats": "Moved down, centered on Wisconsin.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978ba1437491ce5eb3333"
+  },
+  "uuid": "d4dc16f7-2bb5-40f5-a712-f6eff36a9366",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:13.495Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -85.39590625000079,
+  "lat": 44.77196978679984,
+  "stats": "Moved right, centered on Michigan.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978bc1437491ce5eb3334"
+  },
+  "uuid": "1d6e03de-149e-4c33-a993-324663bd989f",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:15.350Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -85.39590625000079,
+  "lat": 43.19104014146521,
+  "stats": "Moved down, centered on Michigan.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978bf1437491ce5eb3335"
+  },
+  "uuid": "bda9bad8-0690-4ad3-bafa-1080e8645944",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:18.035Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -85.39590625000079,
+  "lat": 41.56807370424178,
+  "stats": "Moved down, centered on Indiana.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978c01437491ce5eb3336"
+  },
+  "uuid": "37d098d0-0fa9-4449-b3e6-03f2b6d1037b",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:20.022Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -83.19864062500096,
+  "lat": 41.56807370424178,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978c31437491ce5eb3337"
+  },
+  "uuid": "af9f8e2d-e401-4f5d-93dd-9ce0c4be1811",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:22.837Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -81.00137500000108,
+  "lat": 41.56807370424178,
+  "stats": "Moved right, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978c61437491ce5eb3338"
+  },
+  "uuid": "058c7eb4-a0e4-454d-a641-6521d6c20f9f",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:25.883Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -78.80410937500119,
+  "lat": 41.56807370424178,
+  "stats": "Moved right, centered on Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978ca1437491ce5eb3339"
+  },
+  "uuid": "10664472-234a-404c-b084-dbcc0670ff8e",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:29.351Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5,
+  "lng": -78.80410937500119,
+  "lat": 43.19104014146481,
+  "stats": "Moved up, centered on New York.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978cc1437491ce5eb333a"
+  },
+  "uuid": "107f8da5-812f-41dd-8346-f710036ebb91",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:31.813Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -81.00137500000164,
+  "lat": 43.19104014146481,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978cf1437491ce5eb333b"
+  },
+  "uuid": "2265c394-7c84-4420-a695-fa226b97bee1",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:34.119Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -78.80410937500176,
+  "lat": 43.19104014146481,
+  "stats": "Moved right, centered on New York.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978d01437491ce5eb333c"
+  },
+  "uuid": "a48c1721-17f0-4d94-b7a4-72cd8d6dc9de",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:35.975Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -78.80410937500176,
+  "lat": 44.771969786799076,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978d31437491ce5eb333d"
+  },
+  "uuid": "bda21c28-ed90-400f-b410-4afd3ffb7a97",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:38.030Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -78.80410937500176,
+  "lat": 43.19104014146444,
+  "stats": "Moved down, centered on New York.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978d41437491ce5eb333e"
+  },
+  "uuid": "59ec4fc0-fcb1-4227-ba38-847235ed25a6",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:39.630Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 5,
+  "lng": -78.0625,
+  "lat": 43.19104014146444,
+  "stats": "Moved right, centered on New York.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978d51437491ce5eb333f"
+  },
+  "uuid": "b4f4915d-d584-4725-bf97-fec09ba2bbf1",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:41.012Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -78.0625,
+  "lat": 43.19104014146444,
+  "stats": "Moved right, centered on New York.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978d81437491ce5eb3340"
+  },
+  "uuid": "42446353-a846-4413-b337-94e1f0109576",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:43.475Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -78.0625,
+  "lat": 41.56807370424099,
+  "stats": "Moved down, centered on Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978da1437491ce5eb3341"
+  },
+  "uuid": "2699c65b-663d-4159-a196-d269e5c8d399",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:45.228Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -78.0625,
+  "lat": 39.90328927922516,
+  "stats": "Moved down, centered on Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978dc1437491ce5eb3342"
+  },
+  "uuid": "c1750390-0dd1-4306-a261-2907a7babec1",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:47.963Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -78.0625,
+  "lat": 38.19705068894808,
+  "stats": "Moved down, centered on Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978de1437491ce5eb3343"
+  },
+  "uuid": "7241286f-4fee-4fbe-a651-6989dfa64459",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:49.735Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5,
+  "lng": -78.0625,
+  "lat": 36.44987599517316,
+  "stats": "Moved down, centered on North Carolina.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978e01437491ce5eb3344"
+  },
+  "uuid": "2ccfad54-22c5-440c-818c-f117843c3b63",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:51.679Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -80.2597656250004,
+  "lat": 36.44987599517316,
+  "stats": "Moved left, centered on North Carolina.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978e31437491ce5eb3345"
+  },
+  "uuid": "393c3b1f-be1c-4337-bbab-c6e045e8d79b",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:54.436Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -80.2597656250004,
+  "lat": 38.19705068894899,
+  "stats": "Moved up, centered on West Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978e51437491ce5eb3346"
+  },
+  "uuid": "0e86f4ab-476c-4bc2-b74e-614d5a258852",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:56.044Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 5,
+  "lng": -80.2597656250004,
+  "lat": 39.90328927922687,
+  "stats": "Moved up, centered on Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978e61437491ce5eb3347"
+  },
+  "uuid": "7174d888-687e-483c-87af-9c4ca4f2e0bb",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:57.772Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -82.4570312500008,
+  "lat": 39.90328927922687,
+  "stats": "Moved left, centered on Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978e81437491ce5eb3348"
+  },
+  "uuid": "3f38b554-d237-4b24-8cca-8c7590f986ac",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:25:59.725Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 5,
+  "lng": -82.4570312500008,
+  "lat": 38.197050688949815,
+  "stats": "Moved down, centered on West Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662978eb1437491ce5eb3349"
+  },
+  "uuid": "b0c5cad5-040b-476f-8e65-df7ea0628e9b",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:26:02.077Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 5,
+  "lng": -82.4570312500008,
+  "lat": 36.449875995174935,
+  "stats": "Moved down, centered on Tennessee.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "6629790a1437491ce5eb334a"
+  },
+  "uuid": "4c9a799b-b55f-4234-8623-4846fde114e8",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:26:32.836Z",
+  "key_stroke": "i",
+  "zoom_level": 5,
+  "lng": -82.4570312500008,
+  "lat": 38.19705068895067,
+  "stats": "Moved up, centered on West Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979151437491ce5eb334b"
+  },
+  "uuid": "5ce784f4-98d4-4db2-875c-765cd0ef89a0",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:26:44.574Z",
+  "key_stroke": "l",
+  "zoom_level": 5,
+  "lng": -82.4570312500008,
+  "lat": 38.19705068895067,
+  "stats": "The current view is bounded by Iowa, US on the top-left, Maine, US on the top-right, Hamilton city, Bermuda on the bottom-right, and Texas, US on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662979391437491ce5eb334c"
+  },
+  "uuid": "a52db862-f91a-4abf-ae85-30725a8d1ca6",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:27:20.124Z",
+  "key_stroke": "=",
+  "zoom_level": 5,
+  "lng": -82.4570312500008,
+  "lat": 38.19705068895067,
+  "stats": "The current view is bounded by Iowa, US on the top-left, Maine, US on the top-right, Hamilton city, Bermuda on the bottom-right, and Texas, US on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "6629798c1437491ce5eb334d"
+  },
+  "uuid": "80acfa6d-d99a-4889-98b2-e286a984c2e2",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:28:43.038Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -82.4570312500008,
+  "lat": 38.19705068895067,
+  "stats": "Zoomed in, now at county level, centered on Wayne, West Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "6629798f1437491ce5eb334e"
+  },
+  "uuid": "b041f369-18c3-46e7-b3d5-0eb295532295",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:28:46.054Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -82.4570312500008,
+  "lat": 39.055323094955355,
+  "stats": "Moved up, centered on Jackson, Ohio.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979921437491ce5eb334f"
+  },
+  "uuid": "7031f26e-e415-473a-93f6-82ee3e13b463",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:28:50.014Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -81.35839843750114,
+  "lat": 39.055323094955355,
+  "stats": "Moved right, centered on Wirt, West Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979951437491ce5eb3350"
+  },
+  "uuid": "105bfe4b-05b1-47b4-b396-b83382841b12",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:28:52.656Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -80.25976562500148,
+  "lat": 39.055323094955355,
+  "stats": "Moved right, centered on Upshur, West Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979981437491ce5eb3351"
+  },
+  "uuid": "8fa62c16-0af1-42a2-a547-569d165ea84c",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:28:55.233Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -79.16113281250182,
+  "lat": 39.055323094955355,
+  "stats": "Moved right, centered on Grant, West Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "6629799b1437491ce5eb3352"
+  },
+  "uuid": "361f7394-0314-4356-b7b4-b55934ecc75a",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:28:58.863Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -78.06250000000216,
+  "lat": 39.055323094955355,
+  "stats": "Moved right, centered on Clarke, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "6629799e1437491ce5eb3353"
+  },
+  "uuid": "a5212023-3fdc-4db1-897e-6f1475c30c49",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:01.732Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -76.9638671875025,
+  "lat": 39.055323094955355,
+  "stats": "Moved right, centered on Montgomery, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979a11437491ce5eb3354"
+  },
+  "uuid": "eb2a024b-f4b3-473f-a6d7-65c55c317df0",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:04.143Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -76.9638671875025,
+  "lat": 39.903289279227664,
+  "stats": "Moved up, centered on York, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979a31437491ce5eb3355"
+  },
+  "uuid": "391bbaf2-e5ac-4f8a-a536-c59bd0c5fa55",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:06.150Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -76.9638671875025,
+  "lat": 39.055323094954474,
+  "stats": "Moved down, centered on Montgomery, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979a51437491ce5eb3356"
+  },
+  "uuid": "aee4496e-9693-4672-a4f7-47e2273accc2",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:08.846Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -76.9638671875025,
+  "lat": 38.19705068894888,
+  "stats": "Moved down, centered on Westmoreland, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979a81437491ce5eb3357"
+  },
+  "uuid": "4598d8b3-6622-40db-b412-784729774ceb",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:11.084Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -75.86523437500284,
+  "lat": 38.197050688948906,
+  "stats": "Moved right, centered on Somerset, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979aa1437491ce5eb3358"
+  },
+  "uuid": "360863a5-5b54-47ec-b2c6-f445d68a47a9",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:13.372Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -74.76660156250318,
+  "lat": 38.197050688948906,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979ac1437491ce5eb3359"
+  },
+  "uuid": "cee713d9-2c60-47bd-9599-fe6c92d1c988",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:15.308Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 38.197050688948906,
+  "stats": "Moved left, centered on Somerset, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979ae1437491ce5eb335a"
+  },
+  "uuid": "911b518b-472c-48ec-b5b5-239543c4a4b1",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:17.468Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 39.05532309495359,
+  "stats": "Moved up, centered on Caroline, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979b01437491ce5eb335b"
+  },
+  "uuid": "5d672048-d6ce-4818-a0f6-76b74e321464",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:20.021Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 39.90328927922596,
+  "stats": "Moved up, centered on Chester, Pennsylvania.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979b21437491ce5eb335c"
+  },
+  "uuid": "7be7395e-ba1c-4dd4-8f41-0933042d48fc",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:21.910Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 39.05532309495274,
+  "stats": "Moved down, centered on Caroline, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979b41437491ce5eb335d"
+  },
+  "uuid": "0f231942-0dc3-4668-a2e4-72610abfbbeb",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:23.478Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 38.197050688947115,
+  "stats": "Moved down, centered on Somerset, Maryland.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979b71437491ce5eb335e"
+  },
+  "uuid": "c5cf82f9-8b25-44fc-b2f1-a1db3fa5ea02",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:26.339Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 37.3285417115343,
+  "stats": "Moved down, centered on Northampton, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979b91437491ce5eb335f"
+  },
+  "uuid": "ce8f0de1-b702-46e4-98ec-ed107512ee2c",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:28.562Z",
+  "key_stroke": "ArrowUp",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 36.44987599517039,
+  "stats": "Moved down, centered on Currituck, North Carolina.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979ba1437491ce5eb3360"
+  },
+  "uuid": "086d7dd1-b7b7-4da3-9907-3b7c851059b7",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:30.023Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -75.86523437500341,
+  "lat": 37.32854171153343,
+  "stats": "Moved up, centered on Northampton, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979bc1437491ce5eb3361"
+  },
+  "uuid": "70eca718-e59b-4f8a-8589-8a1181d89677",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:31.814Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -74.76660156250381,
+  "lat": 37.32854171153342,
+  "stats": "Currently out of bounds. Please move back on the map.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662979bf1437491ce5eb3362"
+  },
+  "uuid": "875f2905-4666-4a7c-a482-8bf8daa91b50",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:29:34.126Z",
+  "key_stroke": "i",
+  "zoom_level": 6,
+  "lng": -75.86523437500398,
+  "lat": 37.32854171153342,
+  "stats": "Moved left, centered on Northampton, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a1b1437491ce5eb3363"
+  },
+  "uuid": "e7638705-8618-4c1c-b618-edec3522806f",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:05.749Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -75.86523437500398,
+  "lat": 37.32854171153342,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the bottom-left.\n\nPercentage of transit commuters is low in the right.\n\nThe average percentage of transit commuters is 0.7%.\n\nThe county with the highest percentage of transit commuters is District of Columbia, District of Columbia, with 25.5% of people who take transit to work.\n\nThe county with the lowest percentage of transit commuters is Poquoson, Virginia, with 0.0% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "66297a1d1437491ce5eb3364"
+  },
+  "uuid": "2afd591f-775d-4022-b789-cfb8d5070986",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:08.088Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -76.96386718750415,
+  "lat": 37.32854171153342,
+  "stats": "Moved left, centered on Charles City, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a1f1437491ce5eb3365"
+  },
+  "uuid": "689eb591-c224-40c6-bd9e-ad9b767db9c9",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:10.552Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -78.06250000000432,
+  "lat": 37.32854171153342,
+  "stats": "Moved left, centered on Amelia, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a221437491ce5eb3366"
+  },
+  "uuid": "1859482c-52f0-4eb4-83ce-004723da97fb",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:13.052Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -79.16113281250455,
+  "lat": 37.32854171153342,
+  "stats": "Moved left, centered on Campbell, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a241437491ce5eb3367"
+  },
+  "uuid": "e1e8bcc3-8713-41b0-9000-7406b5fcf410",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:15.192Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -80.25976562500472,
+  "lat": 37.32854171153342,
+  "stats": "Moved left, centered on Roanoke, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a261437491ce5eb3368"
+  },
+  "uuid": "248295a5-ee18-41a6-88bf-d20dafd72e55",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:17.622Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -81.35839843750489,
+  "lat": 37.32854171153342,
+  "stats": "Moved left, centered on Tazewell, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a291437491ce5eb3369"
+  },
+  "uuid": "0592a477-bad6-4fb6-b13a-1a1e2604345c",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:20.599Z",
+  "key_stroke": "ArrowRight",
+  "zoom_level": 6,
+  "lng": -82.45703125000512,
+  "lat": 37.32854171153342,
+  "stats": "Moved left, centered on Pike, Kentucky.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a2b1437491ce5eb336a"
+  },
+  "uuid": "de9b24b6-8289-489a-9217-7fcc623ea699",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:23.021Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -81.35839843750546,
+  "lat": 37.32854171153342,
+  "stats": "Moved right, centered on Tazewell, Virginia.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a301437491ce5eb336b"
+  },
+  "uuid": "2248cf7e-0006-49eb-a973-41d1b808849e",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:27.846Z",
+  "key_stroke": "ArrowDown",
+  "zoom_level": 6,
+  "lng": -81.35839843750546,
+  "lat": 36.44987599516949,
+  "stats": "Moved down, centered on Ashe, North Carolina.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a331437491ce5eb336c"
+  },
+  "uuid": "0f83ba38-19ab-48b4-92fe-1875c2ad16ab",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:30.207Z",
+  "key_stroke": "ArrowLeft",
+  "zoom_level": 6,
+  "lng": -81.35839843750546,
+  "lat": 35.56114380363263,
+  "stats": "Moved down, centered on Lincoln, North Carolina.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a371437491ce5eb336d"
+  },
+  "uuid": "4984eff4-7e8f-47da-91a0-4471c84783e3",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:33.107Z",
+  "key_stroke": "i",
+  "zoom_level": 6,
+  "lng": -82.45703125000563,
+  "lat": 35.56114380363263,
+  "stats": "Moved left, centered on Buncombe, North Carolina.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "66297a471437491ce5eb336e"
+  },
+  "uuid": "cfb40345-1a07-4696-85b6-8ed2ba93330b",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:31:50.759Z",
+  "key_stroke": "l",
+  "zoom_level": 6,
+  "lng": -82.45703125000563,
+  "lat": 35.56114380363263,
+  "stats": "The current view is bounded by Perry County, Illinois on the top-left, Worcester County, Maryland on the top-right, Carteret County, North Carolina on the bottom-right, and Leake County, Mississippi on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "66297cb4cf0c252a19ef876c"
+  },
+  "uuid": "98de48aa-4d6d-4003-955c-d4f3b8140413",
+  "user_id": "user5",
+  "session_id": "33fd66d1-1561-4cb2-b3e4-7c553232e302",
+  "page": "transit",
+  "timestamp": "2024-04-24T21:42:04.461Z",
+  "key_stroke": "Control",
+  "zoom_level": 6,
+  "lng": -82.45703125000563,
+  "lat": 35.56114380363263,
+  "stats": "The current view is bounded by Perry County, Illinois on the top-left, Worcester County, Maryland on the top-right, Carteret County, North Carolina on the bottom-right, and Leake County, Mississippi on the bottom-left.\n\nPress b to go back.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4dc06b7a55f5a28ac044"
+  },
+  "uuid": "d6dbfd02-fd4a-49d1-877d-052fc420c182",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:46:24.427Z",
+  "key_stroke": "Shift",
+  "zoom_level": 4.3987436919381935,
+  "lng": -96,
+  "lat": 38.5388213867339,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-left, and vertically through the center.\n\nThe average percentage of transit commuters is 2.3%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4dc06b7a55f5a28ac045"
+  },
+  "uuid": "1b3e01e9-efab-4f95-9c4e-e695f04c5dfa",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:46:24.441Z",
+  "key_stroke": "Meta",
+  "zoom_level": 4.3987436919381935,
+  "lng": -96,
+  "lat": 38.5388213867339,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-left, and vertically through the center.\n\nThe average percentage of transit commuters is 2.3%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4dc36b7a55f5a28ac046"
+  },
+  "uuid": "53e09e32-c773-49c5-a55b-de89132d6696",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:46:27.168Z",
+  "key_stroke": "Shift",
+  "zoom_level": 4.3987436919381935,
+  "lng": -96,
+  "lat": 38.5388213867339,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-left, and vertically through the center.\n\nThe average percentage of transit commuters is 2.3%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4dc36b7a55f5a28ac047"
+  },
+  "uuid": "134c35d4-cbf7-453d-ac2f-2803cc3a5ce2",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:46:27.170Z",
+  "key_stroke": "Meta",
+  "zoom_level": 4.3987436919381935,
+  "lng": -96,
+  "lat": 38.5388213867339,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-left, and vertically through the center.\n\nThe average percentage of transit commuters is 2.3%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4dc76b7a55f5a28ac048"
+  },
+  "uuid": "2fe85707-c891-47b4-a9ac-72afdeeb2edf",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:46:31.130Z",
+  "key_stroke": "Meta",
+  "zoom_level": 4.3987436919381935,
+  "lng": -96,
+  "lat": 38.5388213867339,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-left, and vertically through the center.\n\nThe average percentage of transit commuters is 2.3%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e1d6b7a55f5a28ac049"
+  },
+  "uuid": "a91ad4a3-bf0a-44fe-a102-1ea4a78aa14a",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:47:57.115Z",
+  "key_stroke": "Meta",
+  "zoom_level": 4.382117373350784,
+  "lng": -96,
+  "lat": 41.06001694232668,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.6%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e1d6b7a55f5a28ac04a"
+  },
+  "uuid": "ebad7217-c999-493c-b8e9-106b299b4934",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:47:57.386Z",
+  "key_stroke": "-",
+  "zoom_level": 4.382117373350784,
+  "lng": -96,
+  "lat": 41.06001694232668,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.6%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e1d6b7a55f5a28ac04b"
+  },
+  "uuid": "bde9e332-5c14-4a68-a719-dc4264ea24f6",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:47:57.548Z",
+  "key_stroke": "-",
+  "zoom_level": 4.534196476123366,
+  "lng": -96,
+  "lat": 41.06001694232668,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.6%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e1e6b7a55f5a28ac04c"
+  },
+  "uuid": "f49fa62d-d257-46cc-a598-400516ca6250",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:47:58.812Z",
+  "key_stroke": "Meta",
+  "zoom_level": 4.7043494815236215,
+  "lng": -96,
+  "lat": 41.06001694232671,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.6%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e1f6b7a55f5a28ac04d"
+  },
+  "uuid": "1d7399f5-71df-4930-b978-a8626a8977b1",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:47:59.036Z",
+  "key_stroke": "z",
+  "zoom_level": 4.7043494815236215,
+  "lng": -96,
+  "lat": 41.06001694232671,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.6%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e206b7a55f5a28ac04e"
+  },
+  "uuid": "915c50dc-8152-4057-9a86-f13805e06145",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:47:59.951Z",
+  "key_stroke": "Meta",
+  "zoom_level": 4.7043494815236215,
+  "lng": -96,
+  "lat": 41.06001694232671,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.6%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e206b7a55f5a28ac04f"
+  },
+  "uuid": "904f5598-e2b7-44ae-9fbc-ea119cb49800",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:48:00.098Z",
+  "key_stroke": "0",
+  "zoom_level": 4.7043494815236215,
+  "lng": -96,
+  "lat": 41.06001694232671,
+  "stats": "In the current view:\n\nPercentage of transit commuters is high in the top-right, and the top-left.\n\nPercentage of transit commuters is low in the bottom-right.\n\nThe average percentage of transit commuters is 2.6%.\n\nThe state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.\n\nThe state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.\n\nPress l to hear the boundary of the current view.\n\nPress m to interact with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e286b7a55f5a28ac050"
+  },
+  "uuid": "f947c8fd-cab2-4035-b2fa-a661a29ee03e",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:48:08.177Z",
+  "key_stroke": "m",
+  "zoom_level": 4.382117373350784,
+  "lng": -96,
+  "lat": 41.74999206131258,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e286b7a55f5a28ac051"
+  },
+  "uuid": "145b9368-01b7-4508-a2ec-3321e6a9a591",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:48:08.550Z",
+  "key_stroke": "=",
+  "zoom_level": 4.382117373350784,
+  "lng": -96,
+  "lat": 41.74999206131258,
+  "stats": "Now interacting with the map."
+},
+{
+  "_id": {
+    "$oid": "662b4e296b7a55f5a28ac052"
+  },
+  "uuid": "f1a723e1-1dc6-4d5b-99a2-70efd0da1d45",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:48:09.102Z",
+  "key_stroke": "-",
+  "zoom_level": 5,
+  "lng": -96,
+  "lat": 41.74999206131258,
+  "stats": "Zoomed in, now at state level, centered on Iowa.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662b4e296b7a55f5a28ac053"
+  },
+  "uuid": "7ce252f6-a6ca-4d8f-a85e-2bd11c1093e3",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:48:09.284Z",
+  "key_stroke": "-",
+  "zoom_level": 4.382117373350784,
+  "lng": -96,
+  "lat": 41.74999206131258,
+  "stats": "Zoomed in, now at state level, centered on Iowa.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662b4e296b7a55f5a28ac054"
+  },
+  "uuid": "829c375a-ef00-4b1f-bbe9-702272c2228f",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:48:09.434Z",
+  "key_stroke": "-",
+  "zoom_level": 4.382117373350784,
+  "lng": -96,
+  "lat": 41.74999206131238,
+  "stats": "Zoomed out, now at state level, centered on Iowa.\n\nPress i to get more information."
+},
+{
+  "_id": {
+    "$oid": "662b4e296b7a55f5a28ac055"
+  },
+  "uuid": "d3bad1b7-d870-4bc1-8552-32ac1dd690ef",
+  "user_id": "user5",
+  "session_id": "ee266d13-cc8c-4b26-a69f-e9057a934d98",
+  "page": "transit",
+  "timestamp": "2024-04-26T06:48:09.569Z",
+  "key_stroke": "-",
+  "zoom_level": 4.382117373350784,
+  "lng": -96,
+  "lat": 41.74999206131184,
+  "stats": "You've reached the minimum zoom level. Press plus to zoom in.\n\nPress i to get more information."
+}]

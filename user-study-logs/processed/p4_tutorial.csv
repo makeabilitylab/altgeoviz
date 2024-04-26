@@ -1,0 +1,185 @@
+,_id,uuid,user_id,session_id,page,timestamp,key_stroke,zoom_level,lng,lat,stats,timestamp_pst
+1408,{'$oid': '66294560e895769bf3f9add4'},c5cfa06f-a2b5-440f-8589-94f5ac2effec,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:08.432000+00:00,Control,4.0,-98.5795,39.8283,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 217.8 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 10:46:08.432000-07:00
+1409,{'$oid': '66294561e895769bf3f9add5'},2e135402-c138-4ddf-b946-82fc5adac022,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:09.380000+00:00,Tab,4.0,-98.5795,39.8283,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the top-left.
+
+The average population density is 217.8 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 10:46:09.380000-07:00
+1410,{'$oid': '66294563e895769bf3f9add6'},eaaa3f13-af68-4014-97d2-c0c591dab51b,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:11.455000+00:00,m,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 10:46:11.455000-07:00
+1411,{'$oid': '66294573e895769bf3f9add7'},8fd1bbf5-d9a0-4e98-a747-09871871ca85,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:27.165000+00:00,Shift,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 10:46:27.165000-07:00
+1412,{'$oid': '66294574e895769bf3f9add8'},46542db3-7893-4859-8ebb-1f32b03d45e1,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:28.904000+00:00,Shift,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 10:46:28.904000-07:00
+1413,{'$oid': '66294577e895769bf3f9add9'},a487db29-193d-49e5-8575-2a82af5d89fe,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:31.807000+00:00,Shift,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 10:46:31.807000-07:00
+1414,{'$oid': '6629457de895769bf3f9adda'},b5c7c892-dc93-43e9-86d4-0c1efdf83110,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:37.631000+00:00,NumLock,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 10:46:37.631000-07:00
+1415,{'$oid': '6629457ee895769bf3f9addb'},45136694-6586-48e1-ab45-f67e1ae0c0c0,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:38.306000+00:00,+,4.0,-98.5795,39.8283,Now interacting with the map.,2024-04-24 10:46:38.306000-07:00
+1416,{'$oid': '66294584e895769bf3f9addc'},0e4571b0-779a-433e-9195-a9e1b7f5e5c8,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:44.059000+00:00,NumLock,5.0,-98.5795,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:46:44.059000-07:00
+1417,{'$oid': '6629458ae895769bf3f9addd'},20cd38fa-893b-4497-9f93-8f02fc8a5392,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:50.548000+00:00,NumLock,5.0,-98.5795,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:46:50.548000-07:00
+1418,{'$oid': '6629458be895769bf3f9adde'},fc474c25-5023-43e9-b246-65dcdda75659,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:50.970000+00:00,-,5.0,-98.5795,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:46:50.970000-07:00
+1419,{'$oid': '6629458de895769bf3f9addf'},41aa82e7-935b-4725-8ec7-218401e9757d,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:53.450000+00:00,-,4.0,-98.5795,39.82830000000004,"Zoomed out, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:46:53.450000-07:00
+1420,{'$oid': '66294590e895769bf3f9ade0'},cf2d20ad-63d6-4426-a4cf-310c4a8990a8,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:56.516000+00:00,+,3.748061784857061,-96.0,39.397120826760414,"You've reached the minimum zoom level. Press plus to zoom in.
+
+Press i to get more information.",2024-04-24 10:46:56.516000-07:00
+1421,{'$oid': '66294592e895769bf3f9ade1'},66299988-dc5d-4671-84a3-9eaee2c19c6e,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:46:58.244000+00:00,+,5.0,-96.0,39.397120826760414,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:46:58.244000-07:00
+1422,{'$oid': '6629459ce895769bf3f9ade2'},840bf4d7-15e3-4d9b-806e-a4304adf4c25,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:08.317000+00:00,Tab,6.0,-96.0,39.397120826760414,"Zoomed in, now at county level, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:08.317000-07:00
+1423,{'$oid': '6629459ee895769bf3f9ade3'},edd85c23-5b7a-4cd4-8d79-fbc88d106420,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:10.731000+00:00,+,6.0,-96.0,39.397120826760414,"Zoomed in, now at county level, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:10.731000-07:00
+1424,{'$oid': '6629459fe895769bf3f9ade4'},36da86a8-c0b0-450f-a722-ff28441e6692,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:11.799000+00:00,+,7.0,-96.0,39.397120826760414,"Zoomed in, now at county level, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:11.799000-07:00
+1425,{'$oid': '662945a0e895769bf3f9ade5'},3472577e-6ae1-4929-a5b6-396642540a26,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:12.551000+00:00,Escape,8.0,-96.0,39.397120826760414,"Zoomed in, now at county level, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:12.551000-07:00
+1426,{'$oid': '662945a1e895769bf3f9ade6'},b55b15e5-1299-4265-a10f-d2615e87e4d4,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:13.911000+00:00,Tab,8.0,-96.0,39.397120826760414,"Zoomed in, now at county level, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:13.911000-07:00
+1427,{'$oid': '662945a4e895769bf3f9ade7'},efaa6ccb-a0b8-45f1-a0e1-5fe9773430ff,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:16.427000+00:00,m,8.0,-96.0,39.397120826760414,Now interacting with the map.,2024-04-24 10:47:16.427000-07:00
+1428,{'$oid': '662945aae895769bf3f9ade8'},de75a98f-77b8-46e7-90ff-b3b1f989d751,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:22.752000+00:00,Tab,8.0,-96.0,39.397120826760414,Now interacting with the map.,2024-04-24 10:47:22.752000-07:00
+1429,{'$oid': '662945ade895769bf3f9ade9'},54af1103-9b11-4375-92b2-30f05892b1ca,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:25.571000+00:00,ArrowDown,8.0,-96.0,39.397120826760414,Now interacting with the map.,2024-04-24 10:47:25.571000-07:00
+1430,{'$oid': '662945aee895769bf3f9adea'},69fda834-2d5e-45d8-9c10-174c53990066,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:26.247000+00:00,ArrowUp,8.0,-96.0,39.18455172993794,Now interacting with the map.,2024-04-24 10:47:26.247000-07:00
+1431,{'$oid': '662945aee895769bf3f9adeb'},d59d7271-3c84-4ba4-a8ff-cd2eb95f19b7,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:26.654000+00:00,ArrowUp,8.0,-96.0,39.3971208267609,"Moved down, centered on Shawnee, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:26.654000-07:00
+1432,{'$oid': '662945afe895769bf3f9adec'},9e5de3b1-5819-488d-85a9-274842d2c8e4,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:27.059000+00:00,ArrowRight,8.0,-96.0,39.60904416396795,"Moved up, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:27.059000-07:00
+1433,{'$oid': '662945afe895769bf3f9aded'},b4416907-46dc-4ed7-a7bf-5fe2db4e21df,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:27.803000+00:00,NumLock,8.0,-95.7253417968754,39.60904416396795,"Moved right, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:27.803000-07:00
+1434,{'$oid': '662945b5e895769bf3f9adee'},547deba6-9219-42aa-8476-f6fc5bad8709,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:33.028000+00:00,ArrowUp,8.0,-95.7253417968754,39.60904416396795,"Moved right, centered on Jackson, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:33.028000-07:00
+1435,{'$oid': '662945b8e895769bf3f9adef'},ac46b892-5ef6-495d-a661-92092dd2e537,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:36.336000+00:00,ArrowRight,8.0,-95.7253417968754,39.82032081283538,"Moved up, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:36.336000-07:00
+1436,{'$oid': '662945c2e895769bf3f9adf0'},3d37e5e3-ad1f-42a2-a38f-1fb5c51a5a92,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:46.750000+00:00,NumLock,8.0,-95.4506835937508,39.82032081283538,"Moved right, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:46.750000-07:00
+1437,{'$oid': '662945c3e895769bf3f9adf1'},84a86995-1a5c-405b-8ecf-c1f9e4051d0e,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:47.646000+00:00,-,8.0,-95.4506835937508,39.82032081283538,"Moved right, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:47.646000-07:00
+1438,{'$oid': '662945c4e895769bf3f9adf2'},d92bdfcb-819b-4df2-80a6-93d9b4e97ebb,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:48.827000+00:00,+,7.0,-95.4506835937508,39.82032081283538,"Zoomed out, now at county level, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:48.827000-07:00
+1439,{'$oid': '662945c7e895769bf3f9adf3'},b8dfee96-8efe-4321-95dc-3dc285ad4cfc,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:50.962000+00:00,-,8.0,-95.4506835937508,39.82032081283538,"Zoomed in, now at county level, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:50.962000-07:00
+1440,{'$oid': '662945cbe895769bf3f9adf4'},3cffb5ce-c0fc-438e-a2a9-20f0ee9ae3d3,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:47:55.756000+00:00,-,7.0,-95.4506835937508,39.82032081283538,"Zoomed out, now at county level, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:47:55.756000-07:00
+1441,{'$oid': '662945d0e895769bf3f9adf5'},a15787c4-353e-4d2a-bde7-5171d2d6710e,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:00.300000+00:00,+,6.0,-95.4506835937508,39.82032081283538,"Zoomed out, now at county level, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:48:00.300000-07:00
+1442,{'$oid': '662945d3e895769bf3f9adf6'},32f3cf0d-97a7-4517-a4f5-80b7b1f7b019,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:03.212000+00:00,-,7.0,-95.4506835937508,39.82032081283538,"Zoomed in, now at county level, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:48:03.212000-07:00
+1443,{'$oid': '662945d7e895769bf3f9adf7'},95532e23-43b2-409d-948e-7b871efebba5,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:07.132000+00:00,-,6.0,-95.4506835937508,39.82032081283538,"Zoomed out, now at county level, centered on Brown, Kansas.
+
+Press i to get more information.",2024-04-24 10:48:07.132000-07:00
+1444,{'$oid': '662945e7e895769bf3f9adf8'},9ea40005-99c0-4f7e-80cf-c720f8267a6e,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:23.551000+00:00,NumLock,5.0,-95.4506835937508,39.82032081283538,"Zoomed out, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:48:23.551000-07:00
+1445,{'$oid': '662945ebe895769bf3f9adf9'},4f86e52e-6c67-4177-ba62-b8c84aa5dddc,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:27.149000+00:00,Tab,5.0,-95.4506835937508,39.82032081283538,"Zoomed out, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:48:27.149000-07:00
+1446,{'$oid': '662945ede895769bf3f9adfa'},66ebeaf4-45ca-42ae-9b8a-20b24fb02e77,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:29.345000+00:00,ArrowRight,5.0,-95.4506835937508,39.82032081283538,"Zoomed out, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-24 10:48:29.345000-07:00
+1447,{'$oid': '662945efe895769bf3f9adfb'},37563c43-d2c5-48e7-af9a-40ef79cff6c9,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:31.342000+00:00,ArrowRight,5.0,-93.25341796875068,39.82032081283538,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-24 10:48:31.342000-07:00
+1448,{'$oid': '662945f1e895769bf3f9adfc'},1bfa97b9-6d78-4bd4-b56c-cdb9be05e42c,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:33.201000+00:00,ArrowRight,5.0,-91.05615234375057,39.82032081283538,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:33.201000-07:00
+1449,{'$oid': '662945f3e895769bf3f9adfd'},dfbcd72e-5297-4ea0-8549-de9145be8a8d,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:35.448000+00:00,ArrowRight,5.0,-88.85888671875045,39.82032081283538,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:35.448000-07:00
+1450,{'$oid': '662945f8e895769bf3f9adfe'},629372c9-507c-4062-85ba-153398cdff01,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:40.717000+00:00,NumLock,5.0,-86.66162109375034,39.82032081283538,"Moved right, centered on Indiana.
+
+Press i to get more information.",2024-04-24 10:48:40.717000-07:00
+1451,{'$oid': '662945f9e895769bf3f9adff'},5fb2afb0-c15b-40ca-a12b-81e26f6bc78b,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:41.641000+00:00,-,5.0,-86.66162109375034,39.82032081283538,"Moved right, centered on Indiana.
+
+Press i to get more information.",2024-04-24 10:48:41.641000-07:00
+1452,{'$oid': '662945fde895769bf3f9ae00'},914616b2-cb05-414f-98a2-5ef1487747bb,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:45.765000+00:00,NumLock,4.0,-90.87255859375,39.82032081283538,"Zoomed out, now at state level, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:45.765000-07:00
+1453,{'$oid': '66294600e895769bf3f9ae01'},7b1bdbd1-c28a-486b-81c5-717028558530,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:48.419000+00:00,Tab,4.0,-90.87255859375,39.82032081283538,"Zoomed out, now at state level, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:48.419000-07:00
+1454,{'$oid': '66294603e895769bf3f9ae02'},0edbf9e8-56b2-4e2c-b926-050f72822d03,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:50.935000+00:00,ArrowRight,4.0,-90.87255859375,39.82032081283538,"Zoomed out, now at state level, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:50.935000-07:00
+1455,{'$oid': '66294605e895769bf3f9ae03'},45b869f7-88e1-40db-888e-b0f89d0a605f,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:53.313000+00:00,ArrowRight,4.0,-90.87255859375,39.82032081283538,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:53.313000-07:00
+1456,{'$oid': '66294608e895769bf3f9ae04'},8ce9fe52-22ee-4ba5-a355-7cc3a22fa01b,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:56.002000+00:00,ArrowRight,4.0,-90.87255859375,39.82032081283538,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:56.002000-07:00
+1457,{'$oid': '6629460ae895769bf3f9ae05'},71e9014c-91c6-4bb7-ac24-04e8be9f9e57,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:48:58.423000+00:00,ArrowDown,4.0,-90.87255859375,39.82032081283538,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:48:58.423000-07:00
+1458,{'$oid': '6629460ce895769bf3f9ae06'},f83fa42d-f88f-4dcc-b6c6-aa180c396a50,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:49:00.579000+00:00,ArrowUp,4.0,-90.87255859375,36.36288281265638,"Moved down, centered on Arkansas.
+
+Press i to get more information.",2024-04-24 10:49:00.579000-07:00
+1459,{'$oid': '6629460fe895769bf3f9ae07'},caf989c4-8fc1-4208-9334-c8a2f154fd2d,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:49:03.674000+00:00,ArrowRight,4.0,-90.87255859375,39.82032081283589,"Moved up, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:49:03.674000-07:00
+1460,{'$oid': '66294612e895769bf3f9ae08'},86d053b7-f151-4567-9229-6befd2a22918,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:49:06.002000+00:00,ArrowRight,4.0,-90.87255859375,39.82032081283589,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:49:06.002000-07:00
+1461,{'$oid': '66294612e895769bf3f9ae09'},e0c55bdd-f7da-444a-bb78-a742f4caf951,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:49:06.426000+00:00,ArrowRight,4.0,-90.87255859375,39.82032081283589,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:49:06.426000-07:00
+1462,{'$oid': '66294617e895769bf3f9ae0a'},d4238879-f7c5-4cfa-b4da-a8f39fb3079f,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:49:10.780000+00:00,i,4.0,-90.87255859375,39.82032081283589,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-24 10:49:10.780000-07:00
+1463,{'$oid': '6629462ae895769bf3f9ae0b'},32ae41f1-d835-44c2-bff4-0a2991a405e0,user4,5ad4fd94-d514-42dc-8179-2c38e52a3571,index,2024-04-24 17:49:29.960000+00:00,Alt,4.0,-90.87255859375,39.82032081283589,"In the current view:
+
+Population density is high in the right.
+
+Population density is low in the left.
+
+The average population density is 262.5 people per square mile.
+
+The state with the highest population density is District of Columbia, with 10970.5 people per square mile.
+
+The state with the lowest population density is Wyoming, with 6.0 people per square mile.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-24 10:49:29.960000-07:00

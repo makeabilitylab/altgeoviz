@@ -1,0 +1,414 @@
+,_id,uuid,user_id,session_id,page,timestamp,key_stroke,zoom_level,lng,lat,stats,timestamp_pst
+86,{'$oid': '662bd566440e50a06853293e'},d8c38318-2f3f-471d-a122-0c39f56d3e9a,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:25:10.596000+00:00,Tab,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:25:10.596000-07:00
+87,{'$oid': '662bd569440e50a06853293f'},66a9b2e4-8ca7-48a6-aca5-2de1b1ae3d45,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:25:12.886000+00:00,m,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:25:12.886000-07:00
+88,{'$oid': '662bd5aa440e50a068532940'},ccd007e7-91d7-4f96-83ef-5985e35697c0,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:26:18.409000+00:00,i,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:26:18.409000-07:00
+89,{'$oid': '662bd5da440e50a068532941'},f365e79e-d169-454c-a036-cd9e9fa1b39b,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:06.568000+00:00,ArrowRight,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:27:06.568000-07:00
+90,{'$oid': '662bd5df440e50a068532942'},773b68d0-b3c4-46cc-917c-158ff01dcbf0,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:10.913000+00:00,ArrowRight,4.076815597050831,-96.0,39.82830000000004,"Moved right, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:27:10.913000-07:00
+91,{'$oid': '662bd5e1440e50a068532943'},44bb6b0c-863b-4416-92a5-8506ebccae54,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:13.712000+00:00,ArrowRight,4.076815597050831,-96.0,39.82830000000004,"Moved right, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:27:13.712000-07:00
+92,{'$oid': '662bd5ec440e50a068532944'},1b00a413-0aeb-4f2c-95d9-6f3d816d1334,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:24.738000+00:00,+,4.076815597050831,-96.0,39.82830000000004,"Moved right, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:27:24.738000-07:00
+93,{'$oid': '662bd5f0440e50a068532945'},8fc9ca87-7243-44d5-befc-fdf5916a3da7,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:28.218000+00:00,ArrowRight,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:27:28.218000-07:00
+94,{'$oid': '662bd5f3440e50a068532946'},7ea845dc-d1d3-497a-a1da-abfc9ad7af82,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:31.027000+00:00,ArrowRight,5.0,-93.80273437499955,39.82830000000004,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-26 09:27:31.027000-07:00
+95,{'$oid': '662bd5f5440e50a068532947'},54327f88-fd6d-4db4-a349-13e6380f083b,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:33.277000+00:00,ArrowRight,5.0,-91.60546874999909,39.82830000000004,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-26 09:27:33.277000-07:00
+96,{'$oid': '662bd5f7440e50a068532948'},adb43ff7-c6b7-462c-ae1d-9f1305456c18,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:35.707000+00:00,ArrowRight,5.0,-89.40820312499864,39.82830000000004,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-26 09:27:35.707000-07:00
+97,{'$oid': '662bd5f9440e50a068532949'},0e8ee013-090e-4620-877f-ff868129cac5,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:37.542000+00:00,ArrowRight,5.0,-87.21093749999812,39.82830000000004,"Moved right, centered on Indiana.
+
+Press i to get more information.",2024-04-26 09:27:37.542000-07:00
+98,{'$oid': '662bd5fb440e50a06853294a'},06413722-4b31-40d4-8ba9-0fa083b26694,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:39.433000+00:00,ArrowRight,5.0,-85.01367187499767,39.82830000000004,"Moved right, centered on Indiana.
+
+Press i to get more information.",2024-04-26 09:27:39.433000-07:00
+99,{'$oid': '662bd5fd440e50a06853294b'},b7a59a61-7ad8-47e3-a7b9-8105eb5a33a7,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:41.587000+00:00,ArrowRight,5.0,-82.81640624999716,39.82830000000004,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:27:41.587000-07:00
+100,{'$oid': '662bd5ff440e50a06853294c'},85f7e85b-87b2-416b-afd6-3c1d45ac4e9d,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:43.332000+00:00,ArrowRight,5.0,-80.875,39.82830000000004,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:27:43.332000-07:00
+101,{'$oid': '662bd601440e50a06853294d'},0aa1598c-9eb1-4181-b57a-c4d3ebabddf4,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:45.031000+00:00,ArrowRight,5.0,-80.875,39.82830000000004,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:27:45.031000-07:00
+102,{'$oid': '662bd602440e50a06853294e'},ab450e81-eafd-457d-8689-eaddb54113be,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:46.697000+00:00,ArrowRight,5.0,-80.875,39.82830000000004,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:27:46.697000-07:00
+103,{'$oid': '662bd603440e50a06853294f'},a3256ee6-b26e-4f03-8097-30f8a926156c,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:47.126000+00:00,ArrowRight,5.0,-80.875,39.82830000000004,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:27:47.126000-07:00
+104,{'$oid': '662bd605440e50a068532950'},4409ad83-b21a-4f65-abcc-4a72f2319ed0,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:49.233000+00:00,+,5.0,-80.875,39.82830000000004,"Moved right, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:27:49.233000-07:00
+105,{'$oid': '662bd608440e50a068532951'},b6dc578a-6f8e-42e1-9bdd-10a1655a170f,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:52.193000+00:00,ArrowRight,6.0,-80.875,39.82830000000004,"Zoomed in, now at county level, centered on Monroe, Ohio.
+
+Press i to get more information.",2024-04-26 09:27:52.193000-07:00
+106,{'$oid': '662bd60a440e50a068532952'},4a071366-5a5f-4ab2-b217-199f446ad577,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:54.665000+00:00,ArrowRight,6.0,-79.77636718749977,39.82830000000004,"Moved right, centered on Fayette, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:27:54.665000-07:00
+107,{'$oid': '662bd60b440e50a068532953'},27f72a9f-cd0f-4987-b71e-727ef2032db8,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:55.109000+00:00,ArrowRight,6.0,-78.67773437499955,39.82830000000004,"Moved right, centered on Fayette, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:27:55.109000-07:00
+108,{'$oid': '662bd60d440e50a068532954'},35935ecb-8e77-4f32-a5ca-27ed6208c044,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:57.234000+00:00,ArrowRight,6.0,-77.57910156249932,39.82830000000004,"Moved right, centered on Franklin, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:27:57.234000-07:00
+109,{'$oid': '662bd60e440e50a068532955'},2ff13606-3c7a-4bb8-84dd-78b614da5876,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:57.695000+00:00,ArrowRight,6.0,-76.48046874999909,39.82830000000004,"Moved right, centered on Franklin, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:27:57.695000-07:00
+110,{'$oid': '662bd60e440e50a068532956'},e4e8dfbc-6ebb-4367-b9eb-167cc6c388cf,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:27:58.129000+00:00,ArrowRight,6.0,-75.38183593749886,39.82830000000004,"Moved right, centered on York, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:27:58.129000-07:00
+111,{'$oid': '662bd612440e50a068532957'},ec41a8f4-3ff0-4923-8b69-593d86cdf39e,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:02.527000+00:00,ArrowRight,6.0,-74.28320312499858,39.82830000000004,"Moved right, centered on Ocean, New Jersey.
+
+Press i to get more information.",2024-04-26 09:28:02.527000-07:00
+112,{'$oid': '662bd613440e50a068532958'},74173288-f601-4fbb-bcaf-a23f2141fea2,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:02.960000+00:00,ArrowRight,6.0,-73.1845703124983,39.82830000000004,"Moved right, centered on Ocean, New Jersey.
+
+Press i to get more information.",2024-04-26 09:28:02.960000-07:00
+113,{'$oid': '662bd615440e50a068532959'},8a8d2e53-473a-48b6-a78f-9a82d6a88ca0,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:05.425000+00:00,ArrowLeft,6.0,-72.4375,39.82830000000004,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-26 09:28:05.425000-07:00
+114,{'$oid': '662bd618440e50a06853295a'},a4ede9dd-c00a-4c60-b583-e253af66117f,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:08.737000+00:00,Control,6.0,-73.53613281250023,39.82830000000004,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-26 09:28:08.737000-07:00
+115,{'$oid': '662bd621440e50a06853295b'},39a1f11f-2adb-48bc-b8a0-5bab0cc9f1a5,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:16.898000+00:00,ArrowLeft,6.0,-73.53613281250023,39.82830000000004,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-26 09:28:16.898000-07:00
+116,{'$oid': '662bd624440e50a06853295c'},37b046bf-0e89-4cf0-9e32-9915684fb4c1,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:20.466000+00:00,ArrowDown,6.0,-74.63476562500045,39.82830000000004,"Moved left, centered on Burlington, New Jersey.
+
+Press i to get more information.",2024-04-26 09:28:20.466000-07:00
+117,{'$oid': '662bd626440e50a06853295d'},d6dc84aa-0152-4f8b-af49-4778e58f2612,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:22.535000+00:00,ArrowUp,6.0,-74.63476562500045,38.97941473479949,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-26 09:28:22.535000-07:00
+118,{'$oid': '662bd629440e50a06853295e'},90ebe13a-3ced-41e2-85c3-7d868ec51f11,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:25.354000+00:00,ArrowLeft,6.0,-74.63476562500045,39.82830000000058,"Moved up, centered on Burlington, New Jersey.
+
+Press i to get more information.",2024-04-26 09:28:25.354000-07:00
+119,{'$oid': '662bd62c440e50a06853295f'},7e17bacc-ab13-4ace-b759-d1de71e0fa39,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:28.784000+00:00,ArrowDown,6.0,-75.73339843750068,39.82830000000058,"Moved left, centered on Chester, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:28:28.784000-07:00
+120,{'$oid': '662bd630440e50a068532960'},e6fa9913-694b-4049-98e7-c79fa1dc7271,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:32.503000+00:00,ArrowRight,6.0,-75.73339843750068,38.9794147348,"Moved down, centered on Kent, Delaware.
+
+Press i to get more information.",2024-04-26 09:28:32.503000-07:00
+121,{'$oid': '662bd632440e50a068532961'},ade19543-b362-4089-aa46-1f9982a7ecec,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:34.152000+00:00,ArrowLeft,6.0,-74.63476562500045,38.9794147348,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-26 09:28:34.152000-07:00
+122,{'$oid': '662bd632440e50a068532962'},9045cbc8-02f7-4c66-80c8-2644e682fad0,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:34.602000+00:00,ArrowDown,6.0,-75.73339843750068,38.9794147348,"Currently out of bounds. Please move back on the map.
+
+Press i to get more information.",2024-04-26 09:28:34.602000-07:00
+123,{'$oid': '662bd634440e50a068532963'},c3893f22-9dd0-46b0-8a60-ab5df5cfdec9,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:36.560000+00:00,ArrowDown,6.0,-75.73339843750068,38.12022903597966,"Moved down, centered on Somerset, Maryland.
+
+Press i to get more information.",2024-04-26 09:28:36.560000-07:00
+124,{'$oid': '662bd637440e50a068532964'},018f4b62-7214-4f5a-80af-e86af48b90f9,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:39.870000+00:00,ArrowLeft,6.0,-75.73339843750068,37.250813448892885,"Moved down, centered on Northampton, Virginia.
+
+Press i to get more information.",2024-04-26 09:28:39.870000-07:00
+125,{'$oid': '662bd63b440e50a068532965'},bbb7fd96-671e-42af-a9e8-435e18332519,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:42.905000+00:00,ArrowLeft,6.0,-76.83203125000091,37.250813448892856,"Moved left, centered on James City, Virginia.
+
+Press i to get more information.",2024-04-26 09:28:42.905000-07:00
+126,{'$oid': '662bd63d440e50a068532966'},87d34d14-259c-4971-93a6-0c395da70462,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:45.496000+00:00,ArrowUp,6.0,-77.93066406250114,37.250813448892856,"Moved left, centered on Amelia, Virginia.
+
+Press i to get more information.",2024-04-26 09:28:45.496000-07:00
+127,{'$oid': '662bd640440e50a068532967'},e6c96340-637c-4982-896a-b0a5726d906a,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:48.191000+00:00,ArrowUp,6.0,-77.93066406250114,38.120229035980174,"Moved up, centered on Spotsylvania, Virginia.
+
+Press i to get more information.",2024-04-26 09:28:48.191000-07:00
+128,{'$oid': '662bd642440e50a068532968'},39c442cc-2f85-4af9-b868-db2a384a9e4b,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:50.727000+00:00,ArrowUp,6.0,-77.93066406250114,38.979414734801,"Moved up, centered on Fauquier, Virginia.
+
+Press i to get more information.",2024-04-26 09:28:50.727000-07:00
+129,{'$oid': '662bd647440e50a068532969'},085d0986-1e77-4c2e-961b-7ecd8a816e40,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:55.472000+00:00,ArrowRight,6.0,-77.93066406250114,39.82830000000206,"Moved up, centered on Franklin, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:28:55.472000-07:00
+130,{'$oid': '662bd64b440e50a06853296a'},cf06d5fa-aaed-4d28-a921-445247fa416d,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:28:59.219000+00:00,i,6.0,-76.83203125000091,39.82830000000206,"Moved right, centered on York, Pennsylvania.
+
+Press i to get more information.",2024-04-26 09:28:59.219000-07:00
+131,{'$oid': '662bd65f440e50a06853296b'},84fb4691-261e-4b5e-96e6-c279459c5b40,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:29:19.649000+00:00,l,6.0,-76.83203125000091,39.82830000000206,"The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:29:19.649000-07:00
+132,{'$oid': '662bd669440e50a06853296c'},c06d405b-47e9-426d-be66-155a4238d7c6,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:29:29.753000+00:00,l,6.0,-76.83203125000091,39.82830000000206,"The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:29:29.753000-07:00
+133,{'$oid': '662bd66d440e50a06853296d'},f79154a6-32f5-4b78-8d5a-20a9ba3a3758,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:29:32.930000+00:00,b,6.0,-76.83203125000091,39.82830000000206,"In the current view:
+
+Percentage of transit commuters is high in the top-right.
+
+Percentage of transit commuters is low in the left.
+
+The average percentage of transit commuters is 5.8%.
+
+The county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Clinton, Kentucky, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:29:32.930000-07:00
+134,{'$oid': '662bd672440e50a06853296e'},df936388-42ae-4067-887c-f0994e6dfcad,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:29:38.441000+00:00,l,6.0,-76.83203125000091,39.82830000000206,"The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:29:38.441000-07:00
+135,{'$oid': '662bd6e9440e50a06853296f'},9d020bbf-df4b-4b2a-bf27-36c0ff4e3256,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:31:37.866000+00:00,i,6.0,-76.83203125000091,39.82830000000206,"The current view is bounded by Barry County, Michigan on the top-left, Knox County, Maine on the top-right, Nantucket County, Massachusetts on the bottom-right, and Cumberland County, Kentucky on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:31:37.866000-07:00
+136,{'$oid': '662bd6f6440e50a068532970'},4393b176-010a-42b4-adcc-ec293a587ff9,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:31:50.298000+00:00,Control,6.0,-76.83203125000091,39.82830000000206,"In the current view:
+
+Percentage of transit commuters is high in the top-right.
+
+Percentage of transit commuters is low in the left.
+
+The average percentage of transit commuters is 5.8%.
+
+The county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Clinton, Kentucky, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:31:50.298000-07:00
+137,{'$oid': '662bd7b1440e50a068532971'},13bb0d5b-bc23-4726-af02-ccdce4ccdc74,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:34:57.441000+00:00,-,6.0,-76.83203125000091,39.82830000000206,"In the current view:
+
+Percentage of transit commuters is high in the top-right.
+
+Percentage of transit commuters is low in the left.
+
+The average percentage of transit commuters is 5.8%.
+
+The county with the highest percentage of transit commuters is Bronx, New York, with 56.3% of people who take transit to work.
+
+The county with the lowest percentage of transit commuters is Clinton, Kentucky, with 0.0% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:34:57.441000-07:00
+138,{'$oid': '662bd7b3440e50a068532972'},035b4398-1410-4dbd-953b-c0391fbe847d,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:34:59.073000+00:00,-,5.0,-80.875,39.82830000000206,"Zoomed out, now at state level, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:34:59.073000-07:00
+139,{'$oid': '662bd7b3440e50a068532973'},103d4e10-78d8-46b3-baba-57d7a7e155dc,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:34:59.329000+00:00,-,4.076815597050831,-96.0,39.82830000000206,"Zoomed out, now at state level, centered on Ohio.
+
+Press i to get more information.",2024-04-26 09:34:59.329000-07:00
+140,{'$oid': '662bd7b9440e50a068532974'},d70cb5ba-c337-4d31-a94d-52b7c568cdae,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:35:05.488000+00:00,F5,4.076815597050831,-96.0,39.82830000000206,"You've reached the minimum zoom level. Press plus to zoom in.
+
+Press i to get more information.",2024-04-26 09:35:05.488000-07:00
+141,{'$oid': '662bd7bb440e50a068532975'},68c4f113-532f-4894-a272-eed8361318f6,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:35:07.680000+00:00,Tab,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:35:07.680000-07:00
+142,{'$oid': '662bd7bc440e50a068532976'},ed5417d6-4d6b-416f-8f49-bc8032bee8f3,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:35:08.497000+00:00,m,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:35:08.497000-07:00
+143,{'$oid': '662bd7bf440e50a068532977'},97fcdd89-cf58-4f7d-bb4f-58327733ab04,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:35:11.834000+00:00,i,4.076815597050831,-96.0,39.82830000000004,Now interacting with the map.,2024-04-26 09:35:11.834000-07:00
+144,{'$oid': '662bd7de440e50a068532978'},54cde547-fbb0-44e9-a33a-bcd9af9c70a8,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:35:42.377000+00:00,i,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:35:42.377000-07:00
+145,{'$oid': '662bd7eb440e50a068532979'},091e310b-689e-490b-af94-436d0b9d9bf9,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:35:55.034000+00:00,Control,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:35:55.034000-07:00
+146,{'$oid': '662bd7eb440e50a06853297a'},e1ea7755-fb03-46a4-b8cf-b11f8814c8be,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:35:55.315000+00:00,Control,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:35:55.315000-07:00
+147,{'$oid': '662bd898440e50a06853297b'},3aad7ca9-dfdb-4d09-9f62-53bc40f1f3e3,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:38:48.721000+00:00,+,4.076815597050831,-96.0,39.82830000000004,"In the current view:
+
+Percentage of transit commuters is high in the top-right, and the top-left.
+
+No regions with particularly low percentage of transit commuters.
+
+The average percentage of transit commuters is 2.5%.
+
+The state with the highest percentage of transit commuters is District of Columbia, with 25.5% of people who take transit to work.
+
+The state with the lowest percentage of transit commuters is Mississippi, with 0.3% of people who take transit to work.
+
+Press l to hear the boundary of the current view.
+
+Press m to interact with the map.",2024-04-26 09:38:48.721000-07:00
+148,{'$oid': '662bd89c440e50a06853297c'},9811f742-06de-4989-ba4f-f2b51fe3de8d,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:38:52.209000+00:00,ArrowRight,5.0,-96.0,39.82830000000004,"Zoomed in, now at state level, centered on Kansas.
+
+Press i to get more information.",2024-04-26 09:38:52.209000-07:00
+149,{'$oid': '662bd89e440e50a06853297d'},437d540f-a778-40a5-90aa-1e5a230e0148,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:38:54.606000+00:00,ArrowRight,5.0,-93.80273437499949,39.82830000000004,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-26 09:38:54.606000-07:00
+150,{'$oid': '662bd8a1440e50a06853297e'},d235668a-e542-4838-b11d-9b3d6e7f7b69,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:38:57.664000+00:00,ArrowRight,5.0,-91.60546874999898,39.82830000000004,"Moved right, centered on Missouri.
+
+Press i to get more information.",2024-04-26 09:38:57.664000-07:00
+151,{'$oid': '662bd8a3440e50a06853297f'},df36b370-0f31-4ae0-bcba-04537b900182,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:38:59.871000+00:00,ArrowDown,5.0,-89.40820312499852,39.82830000000004,"Moved right, centered on Illinois.
+
+Press i to get more information.",2024-04-26 09:38:59.871000-07:00
+152,{'$oid': '662bd8a6440e50a068532980'},9ef4a892-27c2-448f-baf2-adbce9bafe49,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:02.484000+00:00,ArrowRight,5.0,-89.40820312499852,38.12022903597813,"Moved down, centered on Illinois.
+
+Press i to get more information.",2024-04-26 09:39:02.484000-07:00
+153,{'$oid': '662bd8a8440e50a068532981'},4417f835-a951-46ef-8f3e-25ef92a711e8,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:04.696000+00:00,ArrowDown,5.0,-87.21093749999807,38.12022903597813,"Moved right, centered on Indiana.
+
+Press i to get more information.",2024-04-26 09:39:04.696000-07:00
+154,{'$oid': '662bd8aa440e50a068532982'},c589a3ce-078c-486c-8f1b-69432a831229,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:06.712000+00:00,ArrowDown,5.0,-87.21093749999807,36.371248723751535,"Moved down, centered on Tennessee.
+
+Press i to get more information.",2024-04-26 09:39:06.712000-07:00
+155,{'$oid': '662bd8ad440e50a068532983'},f9aa4d86-e458-424b-9cbd-35ad989e5715,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:09.170000+00:00,ArrowLeft,5.0,-87.21093749999807,34.582047356636394,"Moved down, centered on Alabama.
+
+Press i to get more information.",2024-04-26 09:39:09.170000-07:00
+156,{'$oid': '662bd8b3440e50a068532984'},9b73726d-4f34-48e4-824b-ae9ebc0d5917,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:14.928000+00:00,i,5.0,-89.4082031249979,34.582047356636394,"Moved left, centered on Mississippi.
+
+Press i to get more information.",2024-04-26 09:39:14.928000-07:00
+157,{'$oid': '662bd8c4440e50a068532985'},16073962-b103-49c4-b597-5dbb9102a957,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:31.872000+00:00,l,5.0,-89.4082031249979,34.582047356636394,"The current view is bounded by Colorado, US on the top-left, New York, US on the top-right, San Salvador, The Bahamas on the bottom-right, and Chihuahua, Mexico on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:39:31.872000-07:00
+158,{'$oid': '662bd8cc440e50a068532986'},e954a22e-c220-4aed-bb09-2532cd7028c2,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:40.152000+00:00,+,5.0,-89.4082031249979,34.582047356636394,"The current view is bounded by Colorado, US on the top-left, New York, US on the top-right, San Salvador, The Bahamas on the bottom-right, and Chihuahua, Mexico on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:39:40.152000-07:00
+159,{'$oid': '662bd8cf440e50a068532987'},14076897-b1e4-425a-b15b-4615d0f79297,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:43.496000+00:00,+,6.0,-89.4082031249979,34.582047356636394,"Zoomed in, now at county level, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:39:43.496000-07:00
+160,{'$oid': '662bd8d3440e50a068532988'},3b6925b6-bb46-4121-aed7-a3ffad655ee8,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:47.348000+00:00,+,7.0,-89.4082031249979,34.582047356636394,"Zoomed in, now at county level, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:39:47.348000-07:00
+161,{'$oid': '662bd8d7440e50a068532989'},e9b1ea02-c808-48d0-8fcc-19e8a12324ac,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:39:51.229000+00:00,+,8.0,-89.4082031249979,34.582047356636394,"Zoomed in, now at county level, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:39:51.229000-07:00
+162,{'$oid': '662bd8e2440e50a06853298a'},03009df0-5b34-4e56-b96c-b6de5dd045be,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:02.381000+00:00,+,9.0,-89.4082031249979,34.582047356636394,"Zoomed in, now at county level, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:02.381000-07:00
+163,{'$oid': '662bd8e2440e50a06853298b'},3acd373b-53ce-4f94-91ca-745565011b32,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:02.598000+00:00,+,9.0,-89.40820312499795,34.582047356636394,"Zoomed in, now at county level, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:02.598000-07:00
+164,{'$oid': '662bd8e9440e50a06853298c'},7398ef07-eb91-448e-aac1-8985965683cd,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:09.004000+00:00,ArrowDown,9.0,-89.40820312499795,34.582047356636394,"You've reached the maximum zoom level. Press mininus to zoom out.
+
+Press i to get more information.",2024-04-26 09:40:09.004000-07:00
+165,{'$oid': '662bd8ec440e50a06853298d'},13464d23-c1e8-426d-8ef5-24e6e99d68bf,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:12.505000+00:00,ArrowUp,9.0,-89.40820312499795,34.468905481027406,"Moved down, centered on Lafayette, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:12.505000-07:00
+166,{'$oid': '662bd8ef440e50a06853298e'},bb499110-8f43-473b-8e13-38544cba85df,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:15.461000+00:00,l,9.0,-89.40820312499795,34.582047356636394,"Moved up, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:15.461000-07:00
+167,{'$oid': '662bd8f2440e50a06853298f'},4ae0770a-50dd-4e67-9939-2c65d3fde536,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:18.173000+00:00,i,9.0,-89.40820312499795,34.582047356636394,"Moved up, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:18.173000-07:00
+168,{'$oid': '662bd902440e50a068532990'},649d9f53-8a13-47a5-b192-dc31bd19e078,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:34.206000+00:00,l,9.0,-89.40820312499795,34.582047356636394,"The current view is bounded by Saint Francis County, Arkansas on the top-left, Alcorn County, Mississippi on the top-right, Itawamba County, Mississippi on the bottom-right, and Coahoma County, Mississippi on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:40:34.206000-07:00
+169,{'$oid': '662bd90e440e50a068532991'},fc5bc699-7d70-4110-9d50-1519f635eeeb,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:46.236000+00:00,ArrowRight,9.0,-89.40820312499795,34.582047356636394,"The current view is bounded by Saint Francis County, Arkansas on the top-left, Alcorn County, Mississippi on the top-right, Itawamba County, Mississippi on the bottom-right, and Coahoma County, Mississippi on the bottom-left.
+
+Press b to go back.
+
+Press m to interact with the map.",2024-04-26 09:40:46.236000-07:00
+170,{'$oid': '662bd911440e50a068532992'},0e231b85-859c-432d-80be-d60b1f8c0793,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:49.035000+00:00,ArrowDown,9.0,-89.27087402343545,34.582047356636394,"Moved right, centered on Marshall, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:49.035000-07:00
+171,{'$oid': '662bd913440e50a068532993'},a6f01d88-9e64-4473-94fe-55f9ab605ca3,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:51.345000+00:00,ArrowDown,9.0,-89.27087402343545,34.468905481027406,"Moved down, centered on Lafayette, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:51.345000-07:00
+172,{'$oid': '662bd915440e50a068532994'},66970be2-4d67-4a8e-8ec5-24e2864fe208,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:53.649000+00:00,ArrowDown,9.0,-89.27087402343545,34.3556100226874,"Moved down, centered on Lafayette, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:53.649000-07:00
+173,{'$oid': '662bd918440e50a068532995'},8b45ea2c-2a77-4b55-af46-dfcfae1a7ca1,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:40:56.611000+00:00,Control,9.0,-89.27087402343545,34.242161216726586,"Moved down, centered on Lafayette, Mississippi.
+
+Press i to get more information.",2024-04-26 09:40:56.611000-07:00
+174,{'$oid': '662bd921440e50a068532996'},454ac42c-affb-48a6-9b2b-8969ba3b1bd2,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:41:05.400000+00:00,ArrowRight,9.0,-89.27087402343545,34.242161216726586,"Moved down, centered on Lafayette, Mississippi.
+
+Press i to get more information.",2024-04-26 09:41:05.400000-07:00
+175,{'$oid': '662bd923440e50a068532997'},1b1ffc54-577e-40e9-b77c-9947ebf0203e,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:41:07.219000+00:00,Control,9.0,-89.13354492187295,34.242161216726586,"Moved right, centered on Pontotoc, Mississippi.
+
+Press i to get more information.",2024-04-26 09:41:07.219000-07:00
+176,{'$oid': '662bd9ce440e50a068532998'},daf4e30c-4c09-48eb-852d-ef3510a679e3,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:43:58.881000+00:00,Alt,9.0,-89.13354492187295,34.242161216726586,"Moved right, centered on Pontotoc, Mississippi.
+
+Press i to get more information.",2024-04-26 09:43:58.881000-07:00
+177,{'$oid': '662bd9cf440e50a068532999'},beed2426-154c-472e-b98d-37a8d9127409,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:43:58.968000+00:00,s,9.0,-89.13354492187295,34.242161216726586,"Moved right, centered on Pontotoc, Mississippi.
+
+Press i to get more information.",2024-04-26 09:43:58.968000-07:00
+178,{'$oid': '662bd9d4440e50a06853299a'},8c25889b-8b52-47dc-b452-e944b9463075,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:44:04.208000+00:00,Control,9.0,-89.13354492187295,34.242161216726586,"Moved right, centered on Pontotoc, Mississippi.
+
+Press i to get more information.",2024-04-26 09:44:04.208000-07:00
+179,{'$oid': '662bdd061a4ee37ee22d2ae4'},c12cdee5-ad47-481a-84ce-c5726322099d,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:57:35.726000+00:00,Alt,9.0,-89.13354492187295,34.242161216726586,"Moved right, centered on Pontotoc, Mississippi.
+
+Press i to get more information.",2024-04-26 09:57:35.726000-07:00
+180,{'$oid': '662bdd101a4ee37ee22d2ae5'},233c681d-cc2a-446a-ac2e-d4d723f5686a,user1,c56bb4c4-d024-4ebe-aaf5-2ab8fd7e68c1,transit,2024-04-26 16:57:52.853000+00:00,Control,9.0,-89.13354492187295,34.242161216726586,"Moved right, centered on Pontotoc, Mississippi.
+
+Press i to get more information.",2024-04-26 09:57:52.853000-07:00
