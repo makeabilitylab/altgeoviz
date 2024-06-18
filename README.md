@@ -1,7 +1,7 @@
 # AltGeoViz
 AltGeoViz is an open-source system that auto-generates summaries of interactive and dynamic geovisualization.
 <br>
-Check out our [live demo](https://accessible-map-420308.uw.r.appspot.com/)
+Check out our [live demo](https://accessible-map-420308.uw.r.appspot.com/).
 <br>
 <br>
 ![AltGeoViz](/figures/project-teaser.png)
