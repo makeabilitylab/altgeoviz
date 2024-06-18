@@ -3,6 +3,17 @@ AltGeoViz is an open-source system that auto-generates summaries of interactive 
 <br>
 Check out our [live demo](https://accessible-map-420308.uw.r.appspot.com/)
 
-This repository contains the code for the AltGeoViz prototype, which is our IEEE VIS '24 submission titled "AltGeoViz: Facilitating Accessible Geovisualization" by Chu Li, Rock Yuren Pang, Ather Sharif, Arnavi Chheda-Kothary, Jeffrey Heer, and Jon E. Froehlich.
+This repository contains the code for the AltGeoViz prototype, which is our IEEE VIS '24 submission titled *AltGeoViz: Facilitating Accessible Geovisualization* by Chu Li, Rock Yuren Pang, Ather Sharif, Arnavi Chheda-Kothary, Jeffrey Heer, and Jon E. Froehlich.
+
+### Cite AltGeoViz
+```
+@inproceedings{li2024altgeoviz,
+  title={AltGeoViz: Facilitating Accessible Geovisualization},
+  author={Li, Chu and Yuren, Pang and Sharif, Ather and Chheda-Kothary, Arnavi and Heer, Jeffrey and Froehlich, Jon E. },
+  booktitle={(to appear in) IEEE TVCG},
+  series={IEEE VIS '24 Short Papers},
+  year={2024}
+}
+```
 
 
