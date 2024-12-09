@@ -6,7 +6,7 @@ Check out our [paper preprint](https://arxiv.org/pdf/2406.13853), [live demo](ht
 <br>
 ![AltGeoViz](/figures/project-teaser.png)
 
-This repository contains the code for the AltGeoViz prototype, which is our IEEE VIS '24 submission titled *AltGeoViz: Facilitating Accessible Geovisualization* by Chu Li, Rock Yuren Pang, Ather Sharif, Arnavi Chheda-Kothary, Jeffrey Heer, and Jon E. Froehlich.
+This repository contains the code for the AltGeoViz prototype, which is our IEEE VIS '24 short paper titled *AltGeoViz: Facilitating Accessible Geovisualization* by Chu Li, Rock Yuren Pang, Ather Sharif, Arnavi Chheda-Kothary, Jeffrey Heer, and Jon E. Froehlich.
 
 ### Cite AltGeoViz
 ```
