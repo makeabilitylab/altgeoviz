@@ -11,12 +11,13 @@ This repository contains the code for the AltGeoViz prototype, which is our IEEE
 ### Cite AltGeoViz
 ```
 @inproceedings{li2024altgeoviz,
-  title={AltGeoViz: Facilitating Accessible Geovisualization},
-  author={Li, Chu and Yuren, Pang and Sharif, Ather and Chheda-Kothary, Arnavi and Heer, Jeffrey and Froehlich, Jon E. },
-  booktitle={(to appear in) IEEE TVCG},
-  series={IEEE VIS '24 Short Papers},
-  year={2024}
-}
+  author={Li, Chu and Pang, Rock Yuren and Sharif, Ather and Chheda-Kothary, Arnavi and Heer, Jeffrey and Froehlich, Jon E.},
+  booktitle={2024 IEEE Visualization and Visual Analytics (VIS)}, 
+  title={AltGeoViz: Facilitating Accessible Geovisualization}, 
+  year={2024},
+  pages={61-65},
+  keywords={Navigation;Visual analytics;Data visualization;Market research;Spatial databases;dynamic geovisualization;accessibility;alt-text;screen-reader},
+  doi={10.1109/VIS55277.2024.00020}}
 ```
 
 
